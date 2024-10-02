@@ -1,0 +1,575 @@
+<template>
+  <div class="home">
+    <!-- Bagian Header -->
+    <header class="header">
+      <div class="logo-container">
+        <router-link to="/">
+          <img
+            src="@/assets/LogoDukcapil.png"
+            alt="Logo Disdukcapil Kabupaten Ende"
+            class="logo"
+          />
+        </router-link>
+        <div class="header-title">
+          <h1 style="font-size: xx-large">
+            Dinas Pendudukan dan Pencatatan Sipil Kabupaten Ende
+          </h1>
+        </div>
+      </div>
+      <!-- Bagian Pencarian -->
+      <div class="search-container">
+        <input type="text" placeholder="Cari..." class="search-input" />
+        <button class="search-button">🔍</button>
+        <!-- Tombol pencarian -->
+      </div>
+    </header>
+
+    <!-- Bagian Navigasi -->
+    <nav class="navbar">
+      <ul>
+        <li
+  class="dropdown"
+  @mouseenter="showDropdown('profil')"
+  @mouseleave="hideDropdown('profil')"
+>
+  <router-link to="" class="dropdown-toggle">
+    Profil
+  </router-link>
+  <ul class="dropdown-menu" v-if="dropdownVisible.profil">
+    <div class="menu-gridd">
+      <li>
+        <router-link to="/profil/visi-misi" class="menu-griddd"><p style="margin: 5px 5px;">Visi dan Misi</p></router-link
+        >
+      </li>
+      <li>
+        <router-link to="/profil/strategi" class="menu-griddd"><p style="margin: 5px 5px;">Strategi dan Kebijakan</p></router-link
+        >
+      </li>
+      <li>
+        <router-link to="/profil/visi" class="menu-griddd"><p style="margin: 5px 5px;">Penghargaan</p></router-link
+        >
+      </li>
+      <li>
+        <router-link to="/profil/visi" class="menu-griddd"><p style="margin: 5px 5px;">Tujuan dan Saran</p></router-link
+        >
+      </li>
+      <li>
+        <router-link to="/profil/visi" class="menu-griddd"><p style="margin: 5px 5px;">Ketenagaan</p></router-link
+        >
+      </li>
+      <li>
+        <router-link to="/profil/visi" class="menu-griddd"><p style="margin: 5px 5px;">LHKPN</p></router-link
+        >
+      </li>
+      <li>
+        <router-link to="/profil/visi" class="menu-griddd"><p style="margin: 5px 5px;">Struktur Organisasi</p></router-link
+        >
+      </li>
+      <li>
+        <router-link to="/profil/visi" class="menu-griddd"><p style="margin: 5px 5px;">Sarana dan Prasarana</p></router-link
+        >
+      </li>
+      <li>
+        <router-link to="/profil/visi" class="menu-griddd"><p style="margin: 5px 5px;">IKM</p></router-link
+        >
+      </li>
+      <li>
+        <router-link to="/profil/visi" class="menu-griddd"><p style="margin: 5px 5px;">Tupoksi</p></router-link
+        >
+      </li>
+      <li>
+        <router-link to="/profil/visi" class="menu-griddd"><p style="margin: 5px 5px;">Maklumat Pelayanan</p></router-link
+        >
+      </li>
+      <li>
+        <router-link to="/profil/visi" class="menu-griddd"><p style="margin: 5px 5px;">Inovasi</p></router-link
+        >
+      </li>
+    </div>
+
+    
+  </ul>
+</li>
+
+<!-- Standar Pelayanan Menu with Dropdown -->
+<li
+  class="dropdown"
+  @mouseenter="showDropdown('layanan')"
+  @mouseleave="hideDropdown('layanan')"
+>
+  <router-link to="" class="dropdown-toggle">
+    Standar Pelayanan
+  </router-link>
+  <ul class="dropdown-menu" v-if="dropdownVisible.layanan">
+    <div class="menu-gridd">
+    <!-- <li>
+      <router-link to="/standar-pelayanan/pencatatan" class="menu-griddd"><p style="margin: 5px 5px;">Pencatatan</p></router-link>
+    </li> -->
+
+    <li
+  class="dropdown"
+  @mouseenter="showDropdown('pencatatan')"
+  @mouseleave="hideDropdown('pencatatan')"
+>
+  <router-link to="" class="dropdown-toggle menu-griddd">
+    <p  style="margin: 5px 5px;">Pencatatan 2</p>
+  </router-link>
+  <ul class="dropdown-menu" style="margin-top: 3px;" v-if="dropdownVisible.pencatatan">
+    <div class="menu-gridd">
+    <li>
+      <router-link to="/standar-pelayanan/pencatatan/kami" class="menu-griddd"><p style="margin: 5px 5px;">Kami</p></router-link>
+    </li>
+    
+    </div>
+
+  </ul>
+</li>
+
+    <li>
+      <router-link to="/standar-pelayanan/penerbitan" class="menu-griddd"><p style="margin: 5px 5px;">Penerbitan</p></router-link>
+    </li>
+    <li>
+      <router-link to="/standar-pelayanan/pembatalan" class="menu-griddd"><p style="margin: 5px 5px;">Pembatalan</p></router-link>
+    </li>
+    </div>
+
+  </ul>
+</li>
+
+<!-- Data Penduduk Menu with Dropdown -->
+<li
+  class="dropdown"
+  @mouseenter="showDropdown('penduduk')"
+  @mouseleave="hideDropdown('penduduk')"
+>
+  <router-link to="" class="dropdown-toggle">
+    Data Penduduk
+  </router-link>
+  <ul class="dropdown-menu" v-if="dropdownVisible.penduduk">
+    <div class="menu-gridd">
+      <li>
+      <router-link to="/data-penduduk/jumlah-penduduk" class="menu-griddd"><p style="margin: 5px 5px;">Jumlah Penduduk</p></router-link
+      >
+    </li>
+    <li>
+      <router-link to="/data-penduduk/pendidikan" class="menu-griddd"><p style="margin: 5px 5px;">Pendidikan</p></router-link>
+    </li>
+    <li><router-link to="/data-penduduk/disabilitas" class="menu-griddd"><p style="margin: 5px 5px;">Disabilitas</p></router-link></li>
+    <li>
+      <router-link to="/data-penduduk/jumlah-kepala" class="menu-griddd"><p style="margin: 5px 5px;">Jumlah Kepala Keluarga</p></router-link
+      >
+    </li>
+    <li>
+      <router-link to="/data-penduduk/kelompok" class="menu-griddd"><p style="margin: 5px 5px;">Kelompok Umur</p></router-link>
+    </li>
+    <li><router-link to="/data-penduduk/golongan" class="menu-griddd"><p style="margin: 5px 5px;">Golongan Darahs</p></router-link></li>
+    <li>
+      <router-link to="/data-penduduk/wajib-ktp" class="menu-griddd"><p style="margin: 5px 5px;">Wajib KTP</p></router-link
+      >
+    </li>
+    <li>
+      <router-link to="/data-penduduk/status-kawin" class="menu-griddd"><p style="margin: 5px 5px;">Status Kawin</p></router-link>
+    </li>
+    <li><router-link to="/data-penduduk/pekerjaan" class="menu-griddd"><p style="margin: 5px 5px;">Pekerjaan</p></router-link></li>
+    <li>
+      <router-link to="/data-penduduk/anak-tahun" class="menu-griddd"><p style="margin: 5px 5px;">Anak 0 - 18 Tahun</p></router-link
+      >
+    </li>
+    <li>
+      <router-link to="/data-penduduk/agama" class="menu-griddd"><p style="margin: 5px 5px;">Agama</p></router-link>
+    </li>
+    </div>
+    
+  </ul>
+</li>
+
+<!-- Ruang Publik Menu with Dropdown -->
+<li
+  class="dropdown"
+  @mouseenter="showDropdown('publik')"
+  @mouseleave="hideDropdown('publik')"
+>
+  <router-link to="" class="dropdown-toggle">
+    Ruang Publik
+  </router-link>
+  <ul class="dropdown-menu" v-if="dropdownVisible.publik">
+    <div class="menu-gridd">
+            <li>
+      <router-link to="/ruang-publik/download" class="menu-griddd"><p style="margin: 5px 5px;">Download</p></router-link>
+    </li>
+    <li><router-link to="/ruang-publik/faq" class="menu-griddd"><p style="margin: 5px 5px;">FAQ</p></router-link></li>
+    <li><router-link to="/ruang-publik/buku-tamu" class="menu-griddd"><p style="margin: 5px 5px;">Buku Tamu</p></router-link></li>
+    <li><router-link to="/ruang-publik/ikm" class="menu-griddd"><p style="margin: 5px 5px;">IKM</p></router-link></li>
+    <li><router-link to="/ruang-publik/galeri" class="menu-griddd"><p style="margin: 5px 5px;">Galeri </p></router-link></li>
+
+    </div>
+
+  </ul>
+</li>
+
+
+<li
+  class="dropdown"
+  @mouseenter="showDropdown('berita')"
+  @mouseleave="hideDropdown('berita')"
+>
+  <router-link to="" class="dropdown-toggle">
+    Berita
+  </router-link>
+  <ul class="dropdown-menu" v-if="dropdownVisible.berita">
+    <div class="menu-griddb">
+    <li>
+      <router-link to="/berita/berita-disdukcapil" class="menu-griddd"><p style="margin: 5px 5px;">Berita Disdukcapil</p></router-link>
+    </li>
+    <li>
+      <router-link to="/berita/kamus-adminduk" class="menu-griddd"><p style="margin: 5px 5px;">Kamus Adminduk</p></router-link>
+    </li>
+    </div>
+
+  </ul>
+</li>
+        <li><router-link to="/layanan-online">Layanan Online</router-link></li>
+      </ul>
+    </nav>
+
+    <!-- Bagian Utama (untuk konten dinamis) -->
+    <main class="content">
+      <router-view />
+    </main>
+
+    <!-- Bagian Footer -->
+
+    <footer class="footer">
+      <p>
+        <i class="mdi mdi-facebook social-icon"></i>
+        Disdukcapil Kapubaten Ende
+      </p>
+      <p>
+        <i class="mdi mdi-instagram social-icon"></i>
+        Disdukcapil_Ende
+      </p>
+      <p>
+        <i class="mdi mdi-email social-icon"></i>
+        Pengaduan.dukcapilende@gmail.com
+      </p>
+      <p>
+        <i class="mdi mdi-phone social-icon"></i>
+        0813-1975-003
+      </p>
+      <p>
+        <i class="mdi mdi-phone social-icon"></i>
+        Jl. Eltari Atas, Kel. Onekore, Kec. Ende Tengah, Kab. Ende
+      </p>
+    </footer>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "HomePage",
+  data() {
+    return {
+      images: [
+        require("@/assets/Carrousel.png"),
+        require("@/assets/logo.png"),
+        require("@/assets/LogoDukcapil.png"),
+      ],
+      currentImage: 0,
+      dropdownVisible: {
+        profil: false,
+        layanan: false,
+        penduduk: false,
+        publik: false,
+        berita: false,
+        pencatatan: false,
+      }, // Variabel untuk mengontrol visibilitas dropdown
+    };
+  },
+  methods: {
+    nextImage() {
+      this.currentImage = (this.currentImage + 1) % this.images.length;
+    },
+    prevImage() {
+      this.currentImage =
+        (this.currentImage - 1 + this.images.length) % this.images.length;
+    },
+    showDropdown(menu) {
+      this.dropdownVisible[menu] = true; // Tampilkan dropdown berdasarkan menu
+    },
+    hideDropdown(menu) {
+      this.dropdownVisible[menu] = false; // Sembunyikan dropdown berdasarkan menu
+    },
+  },
+};
+</script>
+
+
+<style scoped>
+/* Gaya untuk layout Home.vue */
+.home {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "Arial", sans-serif; /* Gaya font untuk keseluruhan */
+}
+
+.header {
+  background-color: white; /* Warna latar belakang header */
+  color: black;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 80px; /* Ukuran logo sesuai gambar */
+  margin-right: 15px;
+}
+
+.header-title h1 {
+  font-size: 24px; /* Ukuran font judul */
+  margin: 0;
+}
+
+.header-title h2 {
+  font-size: 16px; /* Ukuran font subjudul */
+  margin: 0;
+}
+
+/* Gaya untuk kontainer pencarian */
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  padding: 10px;
+  border: 2px solid #27394a; /* Border input */
+  border-radius: 20px;
+  margin-right: 10px;
+  background-color: white; /* Sesuaikan dengan latar belakang header */
+  color: black; /* Warna teks di dalam input */
+}
+
+.search-input::placeholder {
+  color: #b0c4de; /* Warna placeholder */
+}
+
+.search-button {
+  padding: 10px;
+  background-color: white; /* Warna tombol */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: #27394a; /* Warna tombol saat hover */
+}
+
+.navbar {
+  background-color: #27394a; /* Warna navbar */
+  padding: 10px 0;
+  display: flex; /* Menggunakan Flexbox untuk distribusi menu */
+  justify-content: space-around; /* Menyebar item navbar secara merata */
+  
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: space-between; /* Mengatur item agar merata */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%; /* Memastikan ul memenuhi lebar navbar */
+}
+
+.navbar ul li {
+  flex: 1; /* Setiap item akan mengambil ruang yang sama */
+  text-align: center; /* Menyelaraskan teks di tengah */
+  position: relative;
+}
+
+.navbar ul li a {
+  display: block; /* Mengubah anchor menjadi block agar memenuhi li */
+  color: white;
+  text-decoration: none;
+  font-size: 18px; /* Ukuran font menu */
+
+  padding: 10px 0; /* Menambah padding vertikal untuk klik yang lebih mudah */
+  transition: color 0.3s; /* Efek transisi saat hover */
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  display: none; /* Sembunyikan menu dropdown secara default */
+  position: absolute;
+  background-color: #727e89;
+  min-width: max-content;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  transition: opacity 0.2s ease;
+  
+}
+
+.dropdown-menu li {
+  width: 100%;
+}
+
+.dropdown-menu li a {
+  padding: 10px;
+  display: block;
+  color: black;
+  margin-left: 10px;
+  text-align: center;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #d9d9d9;
+  color: black;
+}
+
+/* Tampilkan dropdown saat .active ditambahkan */
+.dropdown.active .dropdown-menu {
+  display: block; /* Tampilkan menu dropdown jika kelas active ditambahkan */
+  
+}
+
+/* Tampilkan dropdown saat hover */
+.dropdown:hover .dropdown-menu {
+  display: block; /* Pastikan menu dropdown ditampilkan saat hover */
+}
+
+.navbar ul li a:hover {
+  color: black; /* Warna saat hover */
+  text-decoration: underline;
+}
+
+/* Gaya untuk konten utama */
+.content {
+  flex: 1;
+  padding: 20px;
+  background-color: #f0f0f0; /* Warna latar belakang konten */
+}
+
+/* Gaya untuk gambar */
+.responsive-image {
+  width: 100%; /* Mengatur lebar gambar 100% dari kontainer */
+  height: auto; /* Biarkan tinggi otomatis agar gambar tidak terdistorsi */
+  max-height: 50vh; /* Membatasi tinggi gambar agar tidak lebih dari 50% dari viewport height */
+  object-fit: cover; /* Mengatur gambar agar terjaga proporsinya */
+  margin: 20px 0; /* Memberikan jarak atas dan bawah untuk gambar */
+}
+
+/* Gaya untuk carousel */
+.carousel {
+  position: relative;
+  text-align: center; /* Agar tombol berada di tengah */
+}
+
+/* Gaya untuk tombol panah */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white; /* Warna tombol putih */
+  font-weight: bold; /* Menebalkan teks */
+  font-size: 36px; /* Ukuran font untuk tombol panah */
+  background: none; /* Tanpa latar belakang */
+  border: none; /* Tanpa border */
+  cursor: pointer; /* Mengubah kursor saat hover */
+  z-index: 1; /* Pastikan tombol di atas gambar */
+}
+
+.left-arrow {
+  left: 10px; /* Letak tombol kiri */
+}
+
+.right-arrow {
+  right: 10px; /* Letak tombol kanan */
+}
+
+/* Latest News Styling */
+.latest-news {
+  text-align: left;
+  margin: 20px 0;
+  color: white;
+}
+.news-box {
+  border: 1px solid #ddd;
+  width: 100%;
+  background-color: #27394a;
+}
+
+.menu-gridd {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 2 items per row */
+  gap: 1px;
+  margin-right: 10px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.menu-griddb {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 items per row */
+  gap: 1px;
+  margin-right: 10px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.menu-griddd {
+  border: 2px solid white;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.menu-items {
+  text-align: center;
+  cursor: pointer;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+/* 4 Menu Grid */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 items per row */
+  gap: 20px;
+  margin: 20px 0;
+}
+.menu-item {
+  text-align: center;
+  cursor: pointer;
+  padding: 10px;
+}
+.menu-item img {
+  width: 150px; /* Smaller width */
+  height: 100px; /* Smaller height */
+  object-fit: cover; /* Ensure the image is contained within the box */
+}
+.menu-item p {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 14px; /* Smaller text size */
+}
+
+.footer {
+  background-color: #27394a; /* Warna footer */
+  color: white;
+  text-align: center;
+  padding: 15px;
+  display: flex;
+  justify-content: space-evenly;
+}
+</style>
