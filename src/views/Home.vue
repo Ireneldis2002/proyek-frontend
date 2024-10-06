@@ -42,47 +42,47 @@
         >
       </li>
       <li>
-        <router-link to="/profil/strategi" class="menu-griddd"><p style="margin: 5px 5px;">Strategi dan Kebijakan</p></router-link
+        <router-link to="/profil/profil-strategi" class="menu-griddd"><p style="margin: 5px 5px;">Strategi dan Kebijakan</p></router-link
         >
       </li>
       <li>
-        <router-link to="/profil/visi" class="menu-griddd"><p style="margin: 5px 5px;">Penghargaan</p></router-link
+        <router-link to="/profil/penghargaan" class="menu-griddd"><p style="margin: 5px 5px;">Penghargaan</p></router-link
         >
       </li>
       <li>
-        <router-link to="/profil/visi" class="menu-griddd"><p style="margin: 5px 5px;">Tujuan dan Saran</p></router-link
+        <router-link to="/profil/tujuan-sasaran" class="menu-griddd"><p style="margin: 5px 5px;">Tujuan dan Sasaran</p></router-link
         >
       </li>
       <li>
-        <router-link to="/profil/visi" class="menu-griddd"><p style="margin: 5px 5px;">Ketenagaan</p></router-link
+        <router-link to="/profil/ketenagaan" class="menu-griddd"><p style="margin: 5px 5px;">Ketenagaan</p></router-link
         >
       </li>
       <li>
-        <router-link to="/profil/visi" class="menu-griddd"><p style="margin: 5px 5px;">LHKPN</p></router-link
+        <router-link to="/profil/profil-lhkpn" class="menu-griddd"><p style="margin: 5px 5px;">LHKPN</p></router-link
         >
       </li>
       <li>
-        <router-link to="/profil/visi" class="menu-griddd"><p style="margin: 5px 5px;">Struktur Organisasi</p></router-link
+        <router-link to="/profil/struktur-organisasi" class="menu-griddd"><p style="margin: 5px 5px;">Struktur Organisasi</p></router-link
         >
       </li>
       <li>
-        <router-link to="/profil/visi" class="menu-griddd"><p style="margin: 5px 5px;">Sarana dan Prasarana</p></router-link
+        <router-link to="/profil/sarana-prasarana" class="menu-griddd"><p style="margin: 5px 5px;">Sarana dan Prasarana</p></router-link
         >
       </li>
       <li>
-        <router-link to="/profil/visi" class="menu-griddd"><p style="margin: 5px 5px;">IKM</p></router-link
+        <router-link to="/profil/profil-ikm" class="menu-griddd"><p style="margin: 5px 5px;">IKM</p></router-link
         >
       </li>
       <li>
-        <router-link to="/profil/visi" class="menu-griddd"><p style="margin: 5px 5px;">Tupoksi</p></router-link
+        <router-link to="/profil/tupoksi" class="menu-griddd"><p style="margin: 5px 5px;">Tupoksi</p></router-link
         >
       </li>
       <li>
-        <router-link to="/profil/visi" class="menu-griddd"><p style="margin: 5px 5px;">Maklumat Pelayanan</p></router-link
+        <router-link to="/profil/maklumat-pelayanan" class="menu-griddd"><p style="margin: 5px 5px;">Maklumat Pelayanan</p></router-link
         >
       </li>
       <li>
-        <router-link to="/profil/visi" class="menu-griddd"><p style="margin: 5px 5px;">Inovasi</p></router-link
+        <router-link to="/profil/inovasi" class="menu-griddd"><p style="margin: 5px 5px;">Inovasi</p></router-link
         >
       </li>
     </div>
@@ -112,27 +112,122 @@
   @mouseleave="hideDropdown('pencatatan')"
 >
   <router-link to="" class="dropdown-toggle menu-griddd">
-    <p  style="margin: 5px 5px;">Pencatatan 2</p>
+    <p  style="margin: 5px 5px;">Pencatatan </p>
   </router-link>
   <ul class="dropdown-menu" style="margin-top: 3px;" v-if="dropdownVisible.pencatatan">
     <div class="menu-gridd">
     <li>
-      <router-link to="/standar-pelayanan/pencatatan/kami" class="menu-griddd"><p style="margin: 5px 5px;">Kami</p></router-link>
+      <router-link to="/standar-pelayanan/pencatatan/pencatatan-kelahiran" class="menu-griddd"><p style="margin: 5px 5px;">Pencatatan <br/>Kelahiran</p></router-link>
     </li>
-    
+    <li>
+      <router-link to="/standar-pelayanan/pencatatan/pencatatan-perkawinan" class="menu-griddd"><p style="margin: 5px 5px;">Pencatatan <br/>Perkawinan</p></router-link>
+    </li>
+    <li>
+      <router-link to="/standar-pelayanan/pencatatan/pencatatan-sah-anak" class="menu-griddd"><p style="margin: 5px 5px;">Pencatatan <br/>Pengesahan Anak</p></router-link>
+    </li>
+    <li>
+      <router-link to="/standar-pelayanan/pencatatan/pencatatan-kematian" class="menu-griddd"><p style="margin: 5px 5px;">Pencatatan <br/>Kematian</p></router-link>
+    </li>
+    <li>
+      <router-link to="/standar-pelayanan/pencatatan/pencatatan-perceraian" class="menu-griddd"><p style="margin: 5px 5px;">Pencatatan <br/>Perceraian</p></router-link>
+    </li>
+    <li>
+      <router-link to="/standar-pelayanan/pencatatan/pencatatan-ubah-nama" class="menu-griddd"><p style="margin: 5px 5px;"> Pencatatan Perubahan Nama <br/> (Anak Angkat)</p></router-link>
+    </li>
+    <li>
+      <router-link to="/standar-pelayanan/pencatatan/pencatatan-pembatalan-akta" class="menu-griddd"><p style="margin: 5px 5px;"> Pencatatan <br/>Pembatalan Akta</p></router-link>
+    </li>
+    <li>
+      <router-link to="/standar-pelayanan/pencatatan/pencatatan-pembetulan" class="menu-griddd"><p style="margin: 5px 5px;">Pembetulan <br/>Akta Catatan Sipil</p></router-link>
+    </li>
+    <li>
+      <router-link to="/standar-pelayanan/pencatatan/pendataan-penduduk-rentan" class="menu-griddd"><p style="margin: 5px 5px;">Pendataan Penduduk <br/>Rentan Administrasi Kependudukan</p></router-link>
+    </li>
+    <li>
+      <router-link to="/standar-pelayanan/pencatatan/pencatatan-perubahan-status" class="menu-griddd"><p style="margin: 5px 5px;"> Pencatatan Perubahan <br/>Status Kewarganegaraan</p></router-link>
+    </li>
+    <li>
+      <router-link to="/standar-pelayanan/pencatatan/pencatatan-biodata" class="menu-griddd"><p style="margin: 5px 5px;"> Pencatatan <br/>Biodata Kependudukan</p></router-link>
+    </li>
+    <li>
+      <router-link to="/standar-pelayanan/pencatatan/pencatatan-peristiwa" class="menu-griddd"><p style="margin: 5px 5px;"> Pencatatan Peristiwa <br/>Penting Lainnya</p></router-link>
+    </li>
+    <li>
+      <router-link to="/standar-pelayanan/pencatatan/pencatatan-angkat-anak" class="menu-griddd"><p style="margin: 5px 5px;"> Pencatatan <br/>Pengangkatan Anak</p></router-link>
+    </li>
+    <li>
+      <router-link to="/standar-pelayanan/pencatatan/pencatatan-pengakuan-anak" class="menu-griddd"><p style="margin: 5px 5px;"> Pencatatan <br/>Pengakuan Anak</p></router-link>
+    </li>
     </div>
 
   </ul>
 </li>
 
-    <li>
+    <!---- <li>
       <router-link to="/standar-pelayanan/penerbitan" class="menu-griddd"><p style="margin: 5px 5px;">Penerbitan</p></router-link>
+    
+    </li> -->
+
+    <li
+  class="dropdown"
+  @mouseenter="showDropdown('penerbitan')"
+  @mouseleave="hideDropdown('penerbitan')"
+>
+  <router-link to="" class="dropdown-toggle menu-griddd">
+    <p  style="margin: 5px 5px;">Penerbitan </p>
+  </router-link>
+  <ul class="dropdown-menu" style="margin-top: 3px;" v-if="dropdownVisible.penerbitan">
+    <div class="menu-gridd">
+    <li>
+      <router-link to="/standar-pelayanan/penerbitan/penerbitan-KTP" class="menu-griddd"><p style="margin: 5px 5px;">Penerbitan <br/>KTP Elektronik</p></router-link>
     </li>
     <li>
-      <router-link to="/standar-pelayanan/pembatalan" class="menu-griddd"><p style="margin: 5px 5px;">Pembatalan</p></router-link>
+      <router-link to="/standar-pelayanan/penerbitan/penerbitan-surat-keterangan" class="menu-griddd"><p style="margin: 5px 5px;">Penerbitan Surat <br/>Keterangan Kependudukan</p></router-link>
     </li>
+    <li>
+      <router-link to="/standar-pelayanan/penerbitan/penerbitan-KK" class="menu-griddd"><p style="margin: 5px 5px;">Penerbitan <br/>Kartu Keluarga</p></router-link>
+    </li>
+    <li>
+      <router-link to="/standar-pelayanan/penerbitan/penerbitan-KIA" class="menu-griddd"><p style="margin: 5px 5px;">Penerbitan <br/>Kartu Identitas Anak (KIA)</p></router-link>
+    </li>
+    <li>
+      <router-link to="/standar-pelayanan/penerbitan/penerbitan-kembali-akta" class="menu-griddd"><p style="margin: 5px 5px;">Penerbitan Kembali Register <br/>dan Akta Catatan Sipil</p></router-link>
+    </li>
+   
     </div>
 
+  </ul>
+</li>
+
+<!---
+    <li>
+      <router-link to="/standar-pelayanan/pembatalan" class="menu-griddd"><p style="margin: 5px 5px;">Pembatalan</p></router-link>
+    </li> -->
+
+    <li
+  class="dropdown"
+  @mouseenter="showDropdown('pembatalan')"
+  @mouseleave="hideDropdown('pembatalan')"
+>
+  <router-link to="" class="dropdown-toggle menu-griddd">
+    <p  style="margin: 5px 5px;">Pembatalan </p>
+  </router-link>
+  <ul class="dropdown-menu" style="margin-top: 3px;" v-if="dropdownVisible.pembatalan">
+    <div class="menu-griddb">
+    <li>
+      <router-link to="/standar-pelayanan/pembatalan/pembatalan-perkawinan" class="menu-griddd"><p style="margin: 5px 5px;">Pembatalan Perkawinan</p></router-link>
+    </li>
+    <li>
+      <router-link to="/standar-pelayanan/pembatalan/pembatalan-perceraian" class="menu-griddd"><p style="margin: 5px 5px;">Pembatalan Perceraian</p></router-link>
+    </li>
+   
+   
+    </div>
+
+  </ul>
+</li>
+
+    </div>
   </ul>
 </li>
 
@@ -156,7 +251,7 @@
     </li>
     <li><router-link to="/data-penduduk/disabilitas" class="menu-griddd"><p style="margin: 5px 5px;">Disabilitas</p></router-link></li>
     <li>
-      <router-link to="/data-penduduk/jumlah-kepala" class="menu-griddd"><p style="margin: 5px 5px;">Jumlah Kepala Keluarga</p></router-link
+      <router-link to="/data-penduduk/jumlah-KK" class="menu-griddd"><p style="margin: 5px 5px;">Jumlah Kepala Keluarga</p></router-link
       >
     </li>
     <li>
@@ -164,7 +259,7 @@
     </li>
     <li><router-link to="/data-penduduk/golongan" class="menu-griddd"><p style="margin: 5px 5px;">Golongan Darahs</p></router-link></li>
     <li>
-      <router-link to="/data-penduduk/wajib-ktp" class="menu-griddd"><p style="margin: 5px 5px;">Wajib KTP</p></router-link
+      <router-link to="/data-penduduk/jumlah-wajib-KTP" class="menu-griddd"><p style="margin: 5px 5px;">Wajib KTP</p></router-link
       >
     </li>
     <li>
@@ -172,7 +267,7 @@
     </li>
     <li><router-link to="/data-penduduk/pekerjaan" class="menu-griddd"><p style="margin: 5px 5px;">Pekerjaan</p></router-link></li>
     <li>
-      <router-link to="/data-penduduk/anak-tahun" class="menu-griddd"><p style="margin: 5px 5px;">Anak 0 - 18 Tahun</p></router-link
+      <router-link to="/data-penduduk/jumlah-anak-remaja" class="menu-griddd"><p style="margin: 5px 5px;">Anak 0 - 18 Tahun</p></router-link
       >
     </li>
     <li>
@@ -346,15 +441,19 @@ export default {
 .search-container {
   display: flex;
   align-items: center;
+  position: relative; /* Agar tombol dapat diposisikan relatif terhadap kontainer */
+  width: 300px; /* Lebar kontainer pencarian */
 }
 
 .search-input {
-  padding: 10px;
+  padding: 10px 40px 10px 10px; /* Tambahkan padding di kanan untuk memberi ruang untuk tombol */
   border: 2px solid #27394a; /* Border input */
-  border-radius: 20px;
-  margin-right: 10px;
+  border-radius: 20px; /* Sudut melengkung */
+  margin-right: 0; /* Menghapus margin agar tidak ada jarak antara input dan tombol */
   background-color: white; /* Sesuaikan dengan latar belakang header */
   color: black; /* Warna teks di dalam input */
+  width: 100%; /* Input memenuhi lebar kontainer */
+  box-sizing: border-box; /* Pastikan padding tidak mempengaruhi lebar total */
 }
 
 .search-input::placeholder {
@@ -362,16 +461,20 @@ export default {
 }
 
 .search-button {
-  padding: 10px;
-  background-color: white; /* Warna tombol */
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+  position: absolute; /* Posisi tombol menjadi absolute */
+  right: 10px; /* Jarak dari kanan kontainer */
+  top: 50%; /* Pusatkan secara vertikal */
+  transform: translateY(-50%); /* Menggeser tombol ke tengah secara vertikal */
+  padding: 10px; /* Jarak dalam tombol */
+  background-color: transparent; /* Mengatur latar belakang tombol menjadi transparan */
+  color: #27394a; /* Warna ikon tombol (gunakan warna yang sesuai) */
+  border: none; /* Tanpa border */
+  cursor: pointer; /* Mengubah kursor saat hover */
+  font-size: 16px; /* Ukuran font untuk ikon */
 }
 
 .search-button:hover {
-  background-color: #27394a; /* Warna tombol saat hover */
+  color: #ffcc00; /* Warna tombol saat hover */
 }
 
 .navbar {
@@ -457,7 +560,7 @@ export default {
 .content {
   flex: 1;
   padding: 20px;
-  background-color: #f0f0f0; /* Warna latar belakang konten */
+  background-color: #ffffff; /* Warna latar belakang konten */
 }
 
 /* Gaya untuk gambar */

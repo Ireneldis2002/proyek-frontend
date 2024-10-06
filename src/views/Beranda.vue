@@ -93,7 +93,7 @@ export default {
 .content {
   flex: 1;
   padding: 20px;
-  background-color: #f0f0f0; /* Warna latar belakang konten */
+  background-color: #ffffff; /* Warna latar belakang konten */
 }
 
 /* Gaya untuk gambar */
