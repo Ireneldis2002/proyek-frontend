@@ -44,6 +44,13 @@ import DataJumlahPendudukView from '@/views/DataPenduduk/JumlahPenduduk.vue';
 import DataJumlahKKView from '@/views/DataPenduduk/JumlahKK.vue';
 import DataJumlahWajibKTPView from '@/views/DataPenduduk/JumlahWajibKTP.vue';
 import DataJumlahAnakView from '@/views/DataPenduduk/JumlahAnak.vue';
+import DataJumlahPendidikanView from '@/views/DataPenduduk/JumlahPendidikan.vue';
+import DataJumlahUmurView from '@/views/DataPenduduk/JumlahUmur.vue';
+import DataJumlahPerkawinanView from '@/views/DataPenduduk/JumlahKawin.vue';
+import DataJumlahAgamaView from '@/views/DataPenduduk/JumlahAgama.vue';
+import DataJumlahDisabilitasView from '@/views/DataPenduduk/JumlahDisabilitas.vue';
+import DataJumlahGoldarView from '@/views/DataPenduduk/JumlahGoldar.vue';
+import DataJumlahPekerjaanView from '@/views/DataPenduduk/JumlahPekerjaan.vue';
 
 import LayananOnlineView from '@/views/LayananOnline/LayananOnline.vue';
 
@@ -212,6 +219,34 @@ const routes = [
       {
         path: 'data-penduduk/jumlah-anak-remaja', // Rute untuk 
         component: DataJumlahAnakView, // Komponen  akan dimuat di router-view
+      },
+      {
+        path: 'data-penduduk/jumlah-pendidikan', // Rute untuk 
+        component: DataJumlahPendidikanView, // Komponen  akan dimuat di router-view
+      },
+      {
+        path: 'data-penduduk/jumlah-umur-pendidikan', // Rute untuk 
+        component: DataJumlahUmurView, // Komponen  akan dimuat di router-view
+      },
+      {
+        path: 'data-penduduk/jumlah-perkawinan', // Rute untuk 
+        component: DataJumlahPerkawinanView, // Komponen  akan dimuat di router-view
+      },
+      {
+        path: 'data-penduduk/jumlah-agama', // Rute untuk 
+        component: DataJumlahAgamaView, // Komponen  akan dimuat di router-view
+      },
+      {
+        path: 'data-penduduk/jumlah-disabilitas', // Rute untuk 
+        component: DataJumlahDisabilitasView, // Komponen  akan dimuat di router-view
+      },
+      {
+        path: 'data-penduduk/jumlah-golongan-darah', // Rute untuk 
+        component: DataJumlahGoldarView, // Komponen  akan dimuat di router-view
+      },
+      {
+        path: 'data-penduduk/jumlah-pekerjaan', // Rute untuk 
+        component: DataJumlahPekerjaanView, // Komponen  akan dimuat di router-view
       },
 
       // LAYANAN ONLINE

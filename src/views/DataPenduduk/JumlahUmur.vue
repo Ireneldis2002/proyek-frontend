@@ -1,167 +1,280 @@
 <template>
-    <h1>PENDIDIKAN</h1>
+    <h1>KELOMPOK UMUR</h1>
     <div class="update">
             <p>{{ update }}</p>
           </div>
     <div class="profil-visi-misi">
   
-      <!-- Data Pendidikan Section -->
+      <!-- Data Penduduk Section -->
       <section class="menu-grid">
         <div class="menu-column">
           <div class="menu-item">
             <ol>
-              <p><b> JUMLAH PENDUDUK MENURUT STATUS PENDIDIKAN BERDASARKAN DATA KONSOLIDASI BERSIH (DKB) SEMESTER I</b> </p>
+              <p><b> JUMLAH PENDUDUK MENURUT KELOMPOK UMUR DAN JENIS PENDIDIDKAN BERDASARKAN DATA KONSOLIDASI BERSIH (DKB) SEMESTER I</b> </p>
                 <p><b>(30 Juni 2022)</b></p>
                 <p><b>PER DESA-KELURAHAN TAHUN 2022</b></p>
-
-            <!-- Tabel 1 -->
+             
+              <!-- Tabel 1 -->
             <table border="1" cellpadding="10" cellspacing="0" style="width: 100%; margin-top: 20px; border-collapse: collapse; text-align: left;">
               <thead>
                 <tr>
-                    <th>IDEM</th>
-                    <th>KODE</th>
-                    <th>WILAYAH</th>
-                    <td colspan="2"> TIDAK/BLM SEKOLAH</td>
-                    <td colspan="2"> BELUM TAMAT SD/SEDERAJAT</td>
-                    <td colspan="2"> TAMAT SD/SEDERAJAT</td>
-                    <td colspan="2"> SLTP/SEDERAJAT</td>
-                    <td colspan="2"> SLTA/SEDERAJAT</td>
-                    <td colspan="2"> DIPLOMA I/II</td>
-                    <td colspan="2"> AKADEMI/DIPL.III/S.MUDA </td>
-                    <td colspan="2"> DIPLOMA IV/STRATA I</td>
-                    <td colspan="2"> STRATA II</td>
-                    <td colspan="2"> STRATA III</td>
-                </tr>
-                <tr>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                    <th>L</th>
-                    <th>P</th>
-                    <th>L</th>
-                    <th>P</th>
-                    <th>L</th>
-                    <th>P</th>
-                    <th>L</th>
-                    <th>P</th>
-                    <th>L</th>
-                    <th>P</th>
-                    <th>L</th>
-                    <th>P</th>
-                    <th>L</th>
-                    <th>P</th>
-                    <th>L</th>
-                    <th>P</th>
-                    <th>L</th>
-                    <th>P</th>
-                    <th>L</th>
-                    <th>P</th>
-                    
+                    <th>UMUR</th>
+                    <th>TIDAK/BLM SEKOLAH</th>
+                    <th>BELUM TAMAT SD</th>
+                    <th>TAMAT SD</th>
+                    <th>SLTP</th>
+                    <th>SLTA</th>
+                    <th>DIPLOMA I/II</th>
+                    <th>DIPLOMA III</th>
+                    <th>STRATA I</th>
+                    <th>STRATA II</th>
+                    <th>STRATA III</th>
+                    <th>JUMLAH PENDUDUK</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td><b>2</b></td>
-                  <td><b>5308</b></td>
-                  <td><b>KAB. ENDE</b></td>
-                  <td><b>21835</b></td>
-                  <td><b>20937</b></td>
-                  <td><b>26771</b></td>
-                  <td><b>27577</b></td>
-                  <td><b>29864</b></td>
-                  <td><b>35953</b></td>
-                  <td><b>17094</b></td>
-                  <td><b>16467</b></td>
-                  <td><b>31874</b></td>
-                  <td><b>29303</b></td>
-                  <td><b>608</b></td>
-                  <td><b>1190</b></td>
-                  <td><b>1205</b></td>
-                  <td><b>2602</b></td>
-                  <td><b>6247</b></td>
-                  <td><b>7667</b></td>
-                  <td><b>286</b></td>
-                  <td><b>199</b></td>
-                  <td><b>15</b></td>
-                  <td><b>10</b></td>
+                  <td>00-04</td>
+                  <td>7561</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>7561</td>
                 </tr>
                 <tr>
-                  <td><b>3</b></td>
-                  <td><b>530801</b></td>
-                  <td><b>NANGAPANDA</b></td>
-                  <td><b>1639</b></td>
-                  <td><b>1550</b></td>
-                  <td><b>2509</b></td>
-                  <td><b>2612</b></td>
-                  <td><b>2331</b></td>
-                  <td><b>2895</b></td>
-                  <td><b>1457</b></td>
-                  <td><b>1417</b></td>
-                  <td><b>2701</b></td>
-                  <td><b>2376</b></td>
-                  <td><b>45</b></td>
-                  <td><b>83</b></td>
-                  <td><b>82</b></td>
-                  <td><b>167</b></td>
-                  <td><b>502</b></td>
-                  <td><b>606</b></td>
-                  <td><b>11</b></td>
-                  <td><b>2</b></td>
-                  <td><b>0</b></td>
-                  <td><b>0</b></td>
-                </tr>
-                <tr>
-                  <td>4</td>
-                  <td>5308011001</td>
-                  <td>NDORUREA</td>
-                  <td>161</td>
-                  <td>149</td>
-                  <td>194</td>
-                  <td>190</td>
-                  <td>132</td>
-                  <td>185</td>
-                  <td>115</td>
-                  <td>134</td>
-                  <td>264</td>
-                  <td>245</td>
-                  <td>5</td>
-                  <td>13</td>
-                  <td>8</td>
-                  <td>17</td>
-                  <td>55</td>
-                  <td>68</td>
-                  <td>2</td>
+                  <td>05-09</td>
+                  <td>16116</td>
+                  <td>4872</td>
                   <td>1</td>
                   <td>0</td>
                   <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>20989</td>
                 </tr>
                 <tr>
-                  <td></td>
-                  <td></td>
-                  <td>dst....</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
+                  <td>10-14</td>
+                  <td>12454</td>
+                  <td>14374</td>
+                  <td>2072</td>
+                  <td>27</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>1</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>28928</td>
+                </tr>
+                <tr>
+                  <td>15-19</td>
+                  <td>3198</td>
+                  <td>12027</td>
+                  <td>5900</td>
+                  <td>5476</td>
+                  <td>2283</td>
+                  <td>0</td>
+                  <td>1</td>
+                  <td>2</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>28887</td>
+                </tr>
+                <tr>
+                  <td>20-24</td>
+                  <td>550</td>
+                  <td>5325</td>
+                  <td>4916</td>
+                  <td>4814</td>
+                  <td>10930</td>
+                  <td>20</td>
+                  <td>185</td>
+                  <td>302</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>27044</td>
+                </tr>
+                <tr>
+                  <td>25-29</td>
+                  <td>269</td>
+                  <td>1344</td>
+                  <td>4182</td>
+                  <td>4697</td>
+                  <td>8864</td>
+                  <td>87</td>
+                  <td>769</td>
+                  <td>2145</td>
+                  <td>25</td>
+                  <td>0</td>
+                  <td>22382</td>
+                </tr>
+                <tr>
+                  <td>30-34</td>
+                  <td>234</td>
+                  <td>1495</td>
+                  <td>5323</td>
+                  <td>3025</td>
+                  <td>7188</td>
+                  <td>295</td>
+                  <td>799</td>
+                  <td>2951</td>
+                  <td>70</td>
+                  <td>3</td>
+                  <td>21383</td>
+                </tr>
+                <tr>
+                  <td>35-39</td>
+                  <td>270</td>
+                  <td>1796</td>
+                  <td>6215</td>
+                  <td>3169</td>
+                  <td>5907</td>
+                  <td>523</td>
+                  <td>641</td>
+                  <td>2063</td>
+                  <td>67</td>
+                  <td>0</td>
+                  <td>20651</td>
+                </tr>
+                <tr>
+                  <td>40-44</td>
+                  <td>276</td>
+                  <td>1972</td>
+                  <td>6778</td>
+                  <td>2852</td>
+                  <td>4607</td>
+                  <td>303</td>
+                  <td>343</td>
+                  <td>1469</td>
+                  <td>62</td>
+                  <td>1</td>
+                  <td>18663</td>
+                </tr>
+                <tr>
+                  <td>45-49</td>
+                  <td>288</td>
+                  <td>2091</td>
+                  <td>7021</td>
+                  <td>2818</td>
+                  <td>3780</td>
+                  <td>207</td>
+                  <td>243</td>
+                  <td>962</td>
+                  <td>70</td>
+                  <td>4</td>
+                  <td>17484</td>
+                </tr>
+                <tr>
+                  <td>50-54</td>
+                  <td>368</td>
+                  <td>2257</td>
+                  <td>6064</td>
+                  <td>2182</td>
+                  <td>3569</td>
+                  <td>189</td>
+                  <td>165</td>
+                  <td>845</td>
+                  <td>62</td>
+                  <td>1</td>
+                  <td>15702</td>
+                </tr>
+                <tr>
+                  <td>55-59</td>
+                  <td>468</td>
+                  <td>2573</td>
+                  <td>5975</td>
+                  <td>1409</td>
+                  <td>2455</td>
+                  <td>199</td>
+                  <td>133</td>
+                  <td>593</td>
+                  <td>26</td>
+                  <td>3</td>
+                  <td>13834</td>
+                </tr>
+                <tr>
+                  <td>60-64</td>
+                  <td>558</td>
+                  <td>2691</td>
+                  <td>5465</td>
+                  <td>992</td>
+                  <td>1257</td>
+                  <td>196</td>
+                  <td>124</td>
+                  <td>292</td>
+                  <td>26</td>
+                  <td>3</td>
+                  <td>11604</td>
+                </tr>
+                <tr>
+                  <td>65-69</td>
+                  <td>463</td>
+                  <td>2000</td>
+                  <td>3787</td>
+                  <td>650</td>
+                  <td>641</td>
+                  <td>81</td>
+                  <td>75</td>
+                  <td>106</td>
+                  <td>14</td>
+                  <td>2</td>
+                  <td>7819</td>
+                </tr>
+                <tr>
+                  <td>70-74</td>
+                  <td>524</td>
+                  <td>1720</td>
+                  <td>2725</td>
+                  <td>446</td>
+                  <td>374</td>
+                  <td>69</td>
+                  <td>44</td>
+                  <td>46</td>
+                  <td>3</td>
+                  <td>1</td>
+                  <td>5952</td>
+                </tr>
+                <tr>
+                  <td>>=75</td>
+                  <td>1030</td>
+                  <td>2418</td>
+                  <td>3001</td>
+                  <td>416</td>
+                  <td>507</td>
+                  <td>25</td>
+                  <td>50</td>
+                  <td>18</td>
+                  <td>1</td>
+                  <td>2</td>
+                  <td>7468</td>
+                </tr>
+                <tr>
+                  <td><b>Jumlah</b></td>
+                  <td>44627</td>
+                  <td>58955</td>
+                  <td>69425</td>
+                  <td>32973</td>
+                  <td>52362</td>
+                  <td>2194</td>
+                  <td>3572</td>
+                  <td>11795</td>
+                  <td>427</td>
+                  <td>21</td>
+                  <td>276351</td>
                 </tr>
               </tbody>
             </table>
+
+            
             </ol>
           </div>
 
@@ -232,7 +345,7 @@
   
   <script>
   export default {
-    name: 'DataJumlahPendidikanView',
+    name: 'DataJumlahUmurView',
     data() {
       return {
         update: "Terakhir Update : 2 Oktober 2024",

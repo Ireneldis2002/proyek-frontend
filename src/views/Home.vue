@@ -247,31 +247,31 @@
       >
     </li>
     <li>
-      <router-link to="/data-penduduk/pendidikan" class="menu-griddd"><p style="margin: 5px 5px;">Pendidikan</p></router-link>
+      <router-link to="/data-penduduk/jumlah-pendidikan" class="menu-griddd"><p style="margin: 5px 5px;">Pendidikan</p></router-link>
     </li>
-    <li><router-link to="/data-penduduk/disabilitas" class="menu-griddd"><p style="margin: 5px 5px;">Disabilitas</p></router-link></li>
+    <li><router-link to="/data-penduduk/jumlah-disabilitas" class="menu-griddd"><p style="margin: 5px 5px;">Disabilitas</p></router-link></li>
     <li>
       <router-link to="/data-penduduk/jumlah-KK" class="menu-griddd"><p style="margin: 5px 5px;">Jumlah Kepala Keluarga</p></router-link
       >
     </li>
     <li>
-      <router-link to="/data-penduduk/kelompok" class="menu-griddd"><p style="margin: 5px 5px;">Kelompok Umur</p></router-link>
+      <router-link to="/data-penduduk/jumlah-umur-pendidikan" class="menu-griddd"><p style="margin: 5px 5px;">Kelompok Umur</p></router-link>
     </li>
-    <li><router-link to="/data-penduduk/golongan" class="menu-griddd"><p style="margin: 5px 5px;">Golongan Darahs</p></router-link></li>
+    <li><router-link to="/data-penduduk/jumlah-golongan-darah" class="menu-griddd"><p style="margin: 5px 5px;">Golongan Darah</p></router-link></li>
     <li>
       <router-link to="/data-penduduk/jumlah-wajib-KTP" class="menu-griddd"><p style="margin: 5px 5px;">Wajib KTP</p></router-link
       >
     </li>
     <li>
-      <router-link to="/data-penduduk/status-kawin" class="menu-griddd"><p style="margin: 5px 5px;">Status Kawin</p></router-link>
+      <router-link to="/data-penduduk/jumlah-perkawinan" class="menu-griddd"><p style="margin: 5px 5px;">Status Kawin</p></router-link>
     </li>
-    <li><router-link to="/data-penduduk/pekerjaan" class="menu-griddd"><p style="margin: 5px 5px;">Pekerjaan</p></router-link></li>
+    <li><router-link to="/data-penduduk/jumlah-pekerjaan" class="menu-griddd"><p style="margin: 5px 5px;">Pekerjaan</p></router-link></li>
     <li>
       <router-link to="/data-penduduk/jumlah-anak-remaja" class="menu-griddd"><p style="margin: 5px 5px;">Anak 0 - 18 Tahun</p></router-link
       >
     </li>
     <li>
-      <router-link to="/data-penduduk/agama" class="menu-griddd"><p style="margin: 5px 5px;">Agama</p></router-link>
+      <router-link to="/data-penduduk/jumlah-agama" class="menu-griddd"><p style="margin: 5px 5px;">Agama</p></router-link>
     </li>
     </div>
     

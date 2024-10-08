@@ -1,16 +1,16 @@
 <template>
-    <h1>PENDIDIKAN</h1>
+    <h1>AGAMA</h1>
     <div class="update">
             <p>{{ update }}</p>
           </div>
     <div class="profil-visi-misi">
   
-      <!-- Data Pendidikan Section -->
+      <!-- Data Perkawinan Section -->
       <section class="menu-grid">
         <div class="menu-column">
           <div class="menu-item">
             <ol>
-              <p><b> JUMLAH PENDUDUK MENURUT STATUS PENDIDIKAN BERDASARKAN DATA KONSOLIDASI BERSIH (DKB) SEMESTER I</b> </p>
+              <p><b> JUMLAH PENDUDUK MENURUT AGAMA BERDASARKAN DATA KONSOLIDASI BERSIH (DKB) SEMESTER I</b> </p>
                 <p><b>(30 Juni 2022)</b></p>
                 <p><b>PER DESA-KELURAHAN TAHUN 2022</b></p>
 
@@ -18,128 +18,121 @@
             <table border="1" cellpadding="10" cellspacing="0" style="width: 100%; margin-top: 20px; border-collapse: collapse; text-align: left;">
               <thead>
                 <tr>
-                    <th>IDEM</th>
                     <th>KODE</th>
                     <th>WILAYAH</th>
-                    <td colspan="2"> TIDAK/BLM SEKOLAH</td>
-                    <td colspan="2"> BELUM TAMAT SD/SEDERAJAT</td>
-                    <td colspan="2"> TAMAT SD/SEDERAJAT</td>
-                    <td colspan="2"> SLTP/SEDERAJAT</td>
-                    <td colspan="2"> SLTA/SEDERAJAT</td>
-                    <td colspan="2"> DIPLOMA I/II</td>
-                    <td colspan="2"> AKADEMI/DIPL.III/S.MUDA </td>
-                    <td colspan="2"> DIPLOMA IV/STRATA I</td>
-                    <td colspan="2"> STRATA II</td>
-                    <td colspan="2"> STRATA III</td>
+                    <th colspan="3"> ISLAM</th>
+                    <th colspan="3"> KRISTEN</th>
+                    <th colspan="3"> KATHOLIK</th>
+                    <th colspan="3"> HINDU</th>
+                    <th colspan="3"> BUDHA</th>
+                    <th colspan="3"> KONGHUCU</th>
+                    <th colspan="3"> KEPERCAYAAN</th>
                 </tr>
                 <tr>
                     <th></th>
                     <th></th>
-                    <th></th>
                     <th>L</th>
                     <th>P</th>
+                    <th>JMLH</th>
                     <th>L</th>
                     <th>P</th>
+                    <th>JMLH</th>
                     <th>L</th>
                     <th>P</th>
+                    <th>JMLH</th>
                     <th>L</th>
                     <th>P</th>
+                    <th>JMLH</th> 
                     <th>L</th>
                     <th>P</th>
+                    <th>JMLH</th> 
                     <th>L</th>
                     <th>P</th>
+                    <th>JMLH</th> 
                     <th>L</th>
                     <th>P</th>
-                    <th>L</th>
-                    <th>P</th>
-                    <th>L</th>
-                    <th>P</th>
-                    <th>L</th>
-                    <th>P</th>
-                    
+                    <th>JMLH</th>         
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td><b>2</b></td>
                   <td><b>5308</b></td>
                   <td><b>KAB. ENDE</b></td>
-                  <td><b>21835</b></td>
-                  <td><b>20937</b></td>
-                  <td><b>26771</b></td>
-                  <td><b>27577</b></td>
-                  <td><b>29864</b></td>
-                  <td><b>35953</b></td>
-                  <td><b>17094</b></td>
-                  <td><b>16467</b></td>
-                  <td><b>31874</b></td>
-                  <td><b>29303</b></td>
-                  <td><b>608</b></td>
-                  <td><b>1190</b></td>
-                  <td><b>1205</b></td>
-                  <td><b>2602</b></td>
-                  <td><b>6247</b></td>
-                  <td><b>7667</b></td>
-                  <td><b>286</b></td>
-                  <td><b>199</b></td>
-                  <td><b>15</b></td>
-                  <td><b>10</b></td>
-                </tr>
-                <tr>
-                  <td><b>3</b></td>
-                  <td><b>530801</b></td>
-                  <td><b>NANGAPANDA</b></td>
-                  <td><b>1639</b></td>
-                  <td><b>1550</b></td>
-                  <td><b>2509</b></td>
-                  <td><b>2612</b></td>
-                  <td><b>2331</b></td>
-                  <td><b>2895</b></td>
-                  <td><b>1457</b></td>
-                  <td><b>1417</b></td>
-                  <td><b>2701</b></td>
-                  <td><b>2376</b></td>
-                  <td><b>45</b></td>
-                  <td><b>83</b></td>
-                  <td><b>82</b></td>
-                  <td><b>167</b></td>
-                  <td><b>502</b></td>
-                  <td><b>606</b></td>
-                  <td><b>11</b></td>
+                  <td><b>36548</b></td>
+                  <td><b>38762</b></td>
+                  <td><b>75310</b></td>
+                  <td><b>2841</b></td>
+                  <td><b>2866</b></td>
+                  <td><b>5707</b></td>
+                  <td><b>96303</b></td>
+                  <td><b>100164</b></td>
+                  <td><b>196467</b></td>
+                  <td><b>97</b></td>
+                  <td><b>100</b></td>
+                  <td><b>197</b></td>
+                  <td><b>9</b></td>
+                  <td><b>12</b></td>
+                  <td><b>21</b></td>
+                  <td><b>1</b></td>
+                  <td><b>1</b></td>
                   <td><b>2</b></td>
                   <td><b>0</b></td>
                   <td><b>0</b></td>
+                  <td><b>0</b></td>
                 </tr>
                 <tr>
-                  <td>4</td>
+                  <td><b>530801</b></td>
+                  <td><b>NANGAPANDA</b></td>
+                  <td>4169</td>
+                  <td>4386</td>
+                  <td>8555</td>
+                  <td>28</td>
+                  <td>36</td>
+                  <td>64</td>
+                  <td>7080</td>
+                  <td>7286</td>
+                  <td>14366</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                </tr>
+                <tr>
                   <td>5308011001</td>
                   <td>NDORUREA</td>
-                  <td>161</td>
-                  <td>149</td>
-                  <td>194</td>
-                  <td>190</td>
-                  <td>132</td>
-                  <td>185</td>
-                  <td>115</td>
-                  <td>134</td>
-                  <td>264</td>
-                  <td>245</td>
-                  <td>5</td>
-                  <td>13</td>
-                  <td>8</td>
-                  <td>17</td>
-                  <td>55</td>
-                  <td>68</td>
-                  <td>2</td>
-                  <td>1</td>
+                  <td>724</td>
+                  <td>785</td>
+                  <td>1509</td>
+                  <td>9</td>
+                  <td>11</td>
+                  <td>20</td>
+                  <td>203</td>
+                  <td>206</td>
+                  <td>409</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
                   <td>0</td>
                   <td>0</td>
                 </tr>
                 <tr>
                   <td></td>
-                  <td></td>
-                  <td>dst....</td>
-                  <td></td>
+                  <td>dst......</td>
                   <td></td>
                   <td></td>
                   <td></td>
@@ -159,8 +152,10 @@
                   <td></td>
                   <td></td>
                   <td></td>
-                </tr>
-              </tbody>
+                  <td></td>
+                  <td></td>
+              </tr>
+                </tbody>
             </table>
             </ol>
           </div>
@@ -232,7 +227,7 @@
   
   <script>
   export default {
-    name: 'DataJumlahPendidikanView',
+    name: 'DataJumlahAgamaView',
     data() {
       return {
         update: "Terakhir Update : 2 Oktober 2024",
