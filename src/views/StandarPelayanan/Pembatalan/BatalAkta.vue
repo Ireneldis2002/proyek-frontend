@@ -7,7 +7,7 @@
         <div class="menu-column">
           <div class="menu-item">
             <ol>
-              <p><b>PENCATATAN PEMBATALAN AKTA PENCATATAN SIPIL</b> </p>
+              <p><b>PEMBATALAN AKTA PENCATATAN SIPIL</b> </p>
              
               <!-- Tabel 1 -->
             <table border="1" cellpadding="10" cellspacing="0" style="width: 100%; margin-top: 20px; border-collapse: collapse; text-align: left;">
@@ -163,7 +163,7 @@
   
   <script>
   export default {
-    name: 'PencatatanBatalAktaView',
+    name: 'PembatalanAktaView',
     data() {
       return {
         update: "Terakhir Update : 2 Oktober 2024",

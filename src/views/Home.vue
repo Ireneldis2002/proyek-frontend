@@ -134,9 +134,7 @@
     <li>
       <router-link to="/standar-pelayanan/pencatatan/pencatatan-ubah-nama" class="menu-griddd"><p style="margin: 5px 5px;"> Pencatatan Perubahan Nama <br/> (Anak Angkat)</p></router-link>
     </li>
-    <li>
-      <router-link to="/standar-pelayanan/pencatatan/pencatatan-pembatalan-akta" class="menu-griddd"><p style="margin: 5px 5px;"> Pencatatan <br/>Pembatalan Akta</p></router-link>
-    </li>
+    
     <li>
       <router-link to="/standar-pelayanan/pencatatan/pencatatan-pembetulan" class="menu-griddd"><p style="margin: 5px 5px;">Pembetulan <br/>Akta Catatan Sipil</p></router-link>
     </li>
@@ -219,6 +217,9 @@
     </li>
     <li>
       <router-link to="/standar-pelayanan/pembatalan/pembatalan-perceraian" class="menu-griddd"><p style="margin: 5px 5px;">Pembatalan Perceraian</p></router-link>
+    </li>
+    <li>
+      <router-link to="/standar-pelayanan/pembatalan/pembatalan-akta" class="menu-griddd"><p style="margin: 5px 5px;"> Pembatalan Akta </p></router-link>
     </li>
    
    

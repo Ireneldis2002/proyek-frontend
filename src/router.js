@@ -18,7 +18,6 @@ import BerandaView from '@/views/Beranda.vue';
 
 import PencatatanKelahiranView from '@/views/StandarPelayanan/Pencatatan/CatatLahir.vue';
 import PencatatanKematianView from '@/views/StandarPelayanan/Pencatatan/CatatMati.vue';
-import PencatatanBatalAktaView from '@/views/StandarPelayanan/Pencatatan/CatatBatalAkta.vue';
 import PencatatanUbahStatusView from '@/views/StandarPelayanan/Pencatatan/CatatUbahStatus.vue';
 import PencatatanAngkatAnakView from '@/views/StandarPelayanan/Pencatatan/CatatAngkatAnak.vue';
 import PencatatanPerkawinanView from '@/views/StandarPelayanan/Pencatatan/CatatKawin.vue';
@@ -39,6 +38,7 @@ import PenerbitanKartuKeluargaView from '@/views/StandarPelayanan/Penerbitan/Ter
 
 import PembatalanPerkawinanView from '@/views/StandarPelayanan/Pembatalan/BatalKawin.vue';
 import PembatalanPerceraianView from '@/views/StandarPelayanan/Pembatalan/BatalCerai.vue';
+import PembatalanAktaView from '@/views/StandarPelayanan/Pembatalan/BatalAkta.vue';
 
 import DataJumlahPendudukView from '@/views/DataPenduduk/JumlahPenduduk.vue';
 import DataJumlahKKView from '@/views/DataPenduduk/JumlahKK.vue';
@@ -51,6 +51,13 @@ import DataJumlahAgamaView from '@/views/DataPenduduk/JumlahAgama.vue';
 import DataJumlahDisabilitasView from '@/views/DataPenduduk/JumlahDisabilitas.vue';
 import DataJumlahGoldarView from '@/views/DataPenduduk/JumlahGoldar.vue';
 import DataJumlahPekerjaanView from '@/views/DataPenduduk/JumlahPekerjaan.vue';
+
+import RuangDownloadView from '@/views/RuangPublik/Download.vue'
+import RuangBukuTamuView from '@/views/RuangPublik/BukuTamu.vue'
+import RuangDownloadRegulasiView from '@/views/RuangPublik/DownloadRegulasi.vue'
+import RuangDownloadSPTJMView from '@/views/RuangPublik/DownloadSPTJM.vue'
+import RuangDownloadFormulirView from '@/views/RuangPublik/DownloadFormulir.vue'
+import RuangDownloadPengajuanView from '@/views/RuangPublik/DownloadPengajuan.vue'
 
 import LayananOnlineView from '@/views/LayananOnline/LayananOnline.vue';
 
@@ -121,10 +128,6 @@ const routes = [
       {
         path: 'standar-pelayanan/pencatatan/pencatatan-kematian', // Rute untuk 
         component: PencatatanKematianView, // Komponen  akan dimuat di router-view
-      },
-      {
-        path: 'standar-pelayanan/pencatatan/pencatatan-pembatalan-akta', // Rute untuk 
-        component: PencatatanBatalAktaView, // Komponen  akan dimuat di router-view
       },
       {
         path: 'standar-pelayanan/pencatatan/pencatatan-perubahan-status', // Rute untuk 
@@ -202,6 +205,10 @@ const routes = [
         path: 'standar-pelayanan/pembatalan/pembatalan-perceraian', // Rute untuk 
         component: PembatalanPerceraianView, // Komponen  akan dimuat di router-view
       },
+      {
+        path: 'standar-pelayanan/pembatalan/pembatalan-akta', // Rute untuk 
+        component: PembatalanAktaView, // Komponen  akan dimuat di router-view
+      },
 
       //DATA PENDUDUK
       {
@@ -247,6 +254,39 @@ const routes = [
       {
         path: 'data-penduduk/jumlah-pekerjaan', // Rute untuk 
         component: DataJumlahPekerjaanView, // Komponen  akan dimuat di router-view
+      },
+
+      // RUANG PUBLIK
+      // Ruang Publik - Download
+      {
+        path: 'ruang-publik/download', // Rute untuk 
+        component: RuangDownloadView, // Komponen  akan dimuat di router-view
+      },
+      {
+        path: '/ruang-publik/download-regulasi',
+        name: 'DownloadRegulasi',
+        component: RuangDownloadRegulasiView // Komponen tujuan
+      },
+      {
+        path: '/ruang-publik/download-sptjm',
+        name: 'DownloadSPTJM',
+        component: RuangDownloadSPTJMView // Komponen tujuan
+      },
+      {
+        path: '/ruang-publik/download-formulir-persyaratan',
+        name: 'DownloadFormulir',
+        component: RuangDownloadFormulirView // Komponen tujuan
+      },
+      {
+        path: '/ruang-publik/download-formulir-pengajuan',
+        name: 'DownloadPengajuan',
+        component: RuangDownloadPengajuanView // Komponen tujuan
+      },
+
+      //Ruang Publik-Buku Tamu
+      {
+        path: 'ruang-publik/buku-tamu', // Rute untuk 
+        component: RuangBukuTamuView, // Komponen  akan dimuat di router-view
       },
 
       // LAYANAN ONLINE
