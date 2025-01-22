@@ -10,57 +10,34 @@
     <button class="arrow right-arrow" @click="nextImage">&gt;&gt;</button>
   </div>
 
-  <div style="display: flex">
-    <!-- 4 Menu Items Section -->
-    <section class="menu-grid">
+  <section class="container">
+    <div class="menu-grid">
       <div class="menu-item" @click="navigateTo('/persyaratan')">
-        <img src="@/assets/Menu1.png" alt="Persyaratan Administrasi" />
+        <img src="@/assets/Beranda1.png" alt="Persyaratan Administrasi" />
       </div>
       <div class="menu-item" @click="navigateTo('/kartu-anak')">
-        <img src="@/assets/Menu3.png" alt="Kartu Indonesia Anak" />
+        <img src="@/assets/Beranda2.png" alt="Kartu Indonesia Anak" />
       </div>
       <div class="menu-item" @click="navigateTo('/form-administrasi')">
-        <img src="@/assets/Menu2.png" alt="Form Administrasi" />
+        <img src="@/assets/Beranda3.png" alt="Form Administrasi" />
       </div>
       <div class="menu-item" @click="navigateTo('/layanan-pengaduan')">
-        <img src="@/assets/Menu4.png" alt="Layanan Pengaduan Online" />
+        <img src="@/assets/Beranda4.png" alt="Layanan Pengaduan Online" />
       </div>
-    </section>
+    </div>
 
-    <!-- Latest News Section -->
-    <section class="latest-news" style="margin-left: auto">
+    <div class="latest-news">
       <div class="news-box">
-        <div style="margin-left: 15px; margin-right: 15px">
-          <h2>Berita Terbaru</h2>
-          <hr />
-          <p>
-            Isi berita terbaru akan tampil di sini...Isi berita terbaru akan
-            tampil di sini...
-          </p>
-          <p>
-            Isi berita terbaru akan tampil di sini...Isi berita terbaru akan
-            tampil di sini...
-          </p>
-          <p>
-            Isi berita terbaru akan tampil di sini...Isi berita terbaru akan
-            tampil di sini...
-          </p>
-          <p>
-            Isi berita terbaru akan tampil di sini...Isi berita terbaru akan
-            tampil di sini...
-          </p>
-          <p>
-            Isi berita terbaru akan tampil di sini...Isi berita terbaru akan
-            tampil di sini...
-          </p>
-          <p>
-            Isi berita terbaru akan tampil di sini...Isi berita terbaru akan
-            tampil di sini...
-          </p>
-        </div>
+        <h3>Berita Terbaru</h3>
+        <ul>
+          <li>Sidak ke Kantor Dukcapil Bupati Ende Tepati Janji Evaluasi Kinerja Kadis</li>
+          <li>Disdukcapil Kabupaten Ende Terjun Langsung ke Masyarakat Untuk Pembuatan KTP-El</li>
+          <li>Disdukcapil Ende Gandeng Dinas Pendidikan dan Kebudayaan Sosialisasi Program KIA</li>
+          <li>Strategi Lambertus Sigasare Kadis Dukcapil Ende Percepat Kepemilikan Adminduk</li>
+        </ul>
       </div>
-    </section>
-  </div>
+    </div>
+  </section>
 </template>
 
 <script>
@@ -88,7 +65,20 @@ export default {
 };
 </script>
 
-<style>
+<style >
+/* Reset default margin dan padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
 /* Gaya untuk konten utama */
 .content {
   flex: 1;
@@ -109,7 +99,6 @@ export default {
 .carousel {
   position: relative;
   text-align: center; /* Agar tombol berada di tengah */
-
 }
 
 /* Gaya untuk tombol panah */
@@ -134,41 +123,97 @@ export default {
   right: 10px; /* Letak tombol kanan */
 }
 
-/* Latest News Styling */
+/* Styling untuk berita */
 .latest-news {
   text-align: left;
   margin: 20px 0;
   color: white;
 }
+
 .news-box {
+  background-color: #8BBBD7;
   border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  font-family: 'Lato', sans-serif;
+  color: #000;
   width: 100%;
-  background-color: #27394a;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* 4 Menu Grid */
-.menu-grid {
+.latest-news {
+  text-align: left;
+  margin: 20px 0;
+  color: white;
+}
+
+/* Mengatur kotak berita agar proporsional */
+.news-box {
+  background-color: #8BBBD7;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  font-family: 'Lato', sans-serif;
+  color: #000;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Mengatur elemen berita di dalam kotak */
+.news-box h3 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.news-box ul {
+  list-style-type: none;
+  padding: 0;
+  font-size: 20px;
+}
+
+.news-box li {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.news-box li:last-child {
+  border-bottom: none;
+}
+
+/* Mengatur layout konten utama agar rapi */
+.content-wrapper {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Adjust number of columns as needed */
-  /* Set gap between items to 20px */
-  align-items: center;
-  margin-top: 30px;
-  margin-bottom: 50px;
+  grid-template-columns: 2fr 1fr; /* 1 kolom berita dan 1 kolom menu */
+  gap: 20px;
+  width: 100%; /* Pastikan lebar kontainer sesuai */
+}
+
+.container {
+  display: flex; /* Menggunakan Flexbox untuk menyusun elemen secara horizontal */
+  justify-content: space-between; /* Memberikan ruang antara menu-item dan latest-news */
+  align-items: flex-start; /* Menyelaraskan elemen ke atas */
+  gap: 20px; /* Jarak antar elemen */
+}
+
+.menu-grid {
+  display: flex; /* Membuat menu-item berada dalam satu baris */
+  gap: 20px; /* Jarak antar gambar */
+  flex-wrap: wrap; /* Agar item-menu bisa berpindah baris jika ruang tidak cukup */
+  width: 70%; /* Mengatur lebar menu-grid */
 }
 
 .menu-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100px; /* Reduced height for smaller images */
-  overflow: hidden; /* Hide overflow if the image is larger */
+  display: flex; /* Menjadikan menu-item sebagai flex container */
+  justify-content: center; /* Menyelaraskan gambar di tengah */
+  align-items: center; /* Menyelaraskan gambar secara vertikal */
+  width: 23%; /* Lebar item agar sesuai dengan empat gambar di satu baris */
+  cursor: pointer;
 }
 
 .menu-item img {
-  max-width: 80%; /* Limit width to 70% of the parent */
-  max-height: 80%; /* Limit height to 70% of the parent */
-  object-fit: contain; /* Maintain aspect ratio and fit within the container */
-  margin-top: 10px;
+  width: 100%; /* Menyesuaikan gambar dengan lebar kontainer */
+  height: auto; /* Menjaga rasio gambar tetap proporsional */
+  object-fit: cover; /* Menjaga gambar tetap terpotong dengan proporsional */
 }
-
 </style>

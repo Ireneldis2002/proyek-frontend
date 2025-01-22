@@ -1,16 +1,17 @@
 <template>
+  <div class="profil-visi-misi">
     <h1>Sarana dan Prasarana</h1>
-    <div class="profil-visi-misi">
-  
-      <!-- Sarana Prasarana Section -->
-      <section class="menu-grid">
-        <div class="menu-column">
-          <div class="menu-item">
-            <ol>
-              <p><b> Sarana, Prasarana dan Aset</b> </p>
-              <p>Sarana dan prasarana pendukung pelaksanaan kegiatan Dinas Kependudukan dan Pencatatan Sipil Kabupaten Ende adalah sebagai berikut :</p>
-  
-            <!-- Tabel 3 -->
+    <div class="content-container">
+      <!-- Bagian Teks -->
+      <div class="content-section">
+        <div class="content-item">
+          <p><b>Sarana, Prasarana dan Aset</b></p>
+          <br>
+          <p>Sarana dan prasarana pendukung pelaksanaan kegiatan Dinas Kependudukan dan 
+            Pencatatan Sipil Kabupaten Ende adalah sebagai berikut :
+            </p>
+            <br>
+            <!-- Tabel 1 -->
             <table border="1" cellpadding="10" cellspacing="0" style="width: 100%; margin-top: 20px; border-collapse: collapse; text-align: center;">
               <caption style="caption-side: top; font-weight: bold; padding: 10px;">Tabel 1. Sarana, Prasarana dan Aset</caption>
               <thead>
@@ -439,225 +440,126 @@
               </tbody>
             </table>
 
-            </ol>
-          </div>
-  
-          <div class="update">
-            <p>{{ update }}</p>
-          </div>
         </div>
-      </section>
-  
-      <!-- Profil Pimpinan Section -->
-      <div>
-        <section class="profil-pimpinan">
-          <h4 style="margin: 10px 0;">KEPALA DINAS</h4>
-  
-          <div class="pimpinan-content">
-            <img src="@/assets/pimpinan.png" alt="Foto Pimpinan" class="pimpinan-photo" />
-            <h3>{{ pimpinan.nama }}</h3>
-            <p class="pimpinan-title">Mulai Menjabat</p>
-            <p class="pimpinan-date">{{ pimpinan.tanggalMenjabat }}</p>
-          </div>
-        </section>
-  
-        <section class="profil-pimpinan1">
-          <div class="pimpinan-content">
-            <p><b>Informasi Pribadi</b></p>
-          </div>
-        </section>
-  
-        <section class="profil-pimpinan2">
-          <div class="pimpinan-content">
-            <table>
-              <tr>
-                <td>Lahir</td>
-                <td>: 29 Januari 1953</td>
-              </tr>
-              <tr>
-                <td>Suami/Istri</td>
-                <td>: Mastuti</td>
-              </tr>
-              <tr>
-                <td>Anak</td>
-                <td>: Sigasare</td>
-              </tr>
-            </table>
-            <tr>
-              <td>Riwayat Pendidikan</td>
-            </tr>
-            <td>
-              <ul>
-                <li>Sekolah Dasar</li>
-                <li>Sekolah Menengah Pertama</li>
-                <li>Sekolah Menengah Atas</li>
-              </ul>
-            </td>
-          </div>
-        </section>
+       
+      </div>
+      
+      <!-- Foto di Sebelah Kanan -->
+      <div class="image-container">
+        <img src="@/assets/ProfilPimpinan.png" alt="Gambar Profil" />
       </div>
     </div>
-  </template>
-  
-  <script>
-  export default {
-    name: 'SaranaPrasaranaView',
-    data() {
-      return {
-        pimpinan: {
-          nama: "Lambertus Sigasare, ST. M.Eng",
-          tanggalMenjabat: "7 Agustus 2022"
-        },
-        update: "Terakhir Update : 2 Oktober 2024",
-      };
-    }
-  };
-  </script>
-  
-  <style scoped>
-  /* Bagian Profil */
-  .profil-visi-misi {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 40px; /* Memberikan jarak antara profil dan visi misi */
-    padding: 10px;
+    <p class="update">Terakhir Update: 2 Oktober 2024</p>
+  </div>
+</template>
+
+
+<script>
+export default {
+  name: "VisiMisiView",
+};
+</script>
+
+<style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+.profil-visi-misi {
+  max-width: 1200px;
+  margin: 0 auto; /* Pusatkan kontainer secara horizontal */
+  padding: 10px;
+  font-family: 'Open Sans', Arial, sans-serif;
+}
+
+h1 {
+  font-size: 32px;
+  text-align: left;
+  color: #65A5CA;
+  margin-bottom: 30px;
+}
+
+.content-container {
+  display: flex;
+  gap: 20px; /* Jarak antara teks dan gambar */
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.content-section {
+  flex-basis: 40%; /* Teks mendapatkan ruang lebih besar */
+  display: flex;
+  flex-direction: column;
+  gap: 60px; /* Jarak antar bagian teks */
+  margin-left: -100px;
+}
+
+.image-container {
+  flex-basis: 50%; /* Foto mendapatkan ruang lebih kecil */
+  display: flex;
+  justify-content: flex-end; /* Geser gambar lebih ke kanan */
+  align-items: right;
+  margin-right: -100px;
+}
+
+.image-container img {
+  max-width: 100%; /* Agar gambar tidak melebihi ruang yang disediakan */
+  height: auto; /* Menjaga proporsi gambar */
+  border-radius: 10px; /* Opsional: tambahkan border radius */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Opsional: efek bayangan */
+  margin-right: 0px;
+}
+
+.content-item {
+  position: relative;
+  padding-left: 20px; /* Memberikan indentasi kecil untuk teks */
+  margin-left: -100px; /* Geser konten lebih ke kiri */
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: black;
+  margin: 0 0 10px 0;
+}
+
+.line {
+  width: 5px;
+  height: 100%;
+  background-color: #8BBBD7;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 3px;
+}
+
+p {
+  font-size: 22px;
+  color: #333;
+  margin: 0;
+}
+
+ol {
+    padding-left: 40px; /* Memberikan indentasi pada daftar */
   }
-  
-  .profil-pimpinan {
-    background-color: #727e89;
-    text-align: center; /* Agar elemen-elemen berada di tengah */
-    border: 2px solid #000000;
-  }
-  
-  .profil-pimpinan1 {
-    background-color: #d9d9d9;
-    text-align: center; /* Agar elemen-elemen berada di tengah */
-    border: 1px solid #000000;
-  }
-  
-  .profil-pimpinan2 {
-    background-color: #727e89;
-    text-align: left; /* Agar elemen-elemen berada di tengah */
-    padding: 1px;
-    border: 2px solid #000000;
-  }
-  
-  .pimpinan-content {
-    align-items: center; /* Menjaga elemen tetap berada di tengah */
-  }
-  
-  .pimpinan-photo {
-    width: 200px; /* Sesuaikan ukuran foto */
-    height: auto;
-    border-radius: 50%; /* Membuat gambar berbentuk lingkaran */
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-  
-  h2, h3, h4 {
-    margin: 0; /* Menghilangkan margin default */
-  }
-  
-  h2 {
-    font-size: 22px;
-    font-weight: bold;
-    color: #333;
-  }
-  
-  h3 {
-    font-size: 18px;
-    font-weight: normal;
-    color: #000000;
-  }
-  
-  h4 {
-    font-size: 25px;
-    font-weight: bold;
-    color: #000000;
-  }
-  
-  .pimpinan-title {
-    font-size: 18px;
-    font-weight: bold;
-    color: #000000;
-  }
-  
-  .pimpinan-date {
-    font-size: 16px;
-    color: #000000;
-  }
-  
-  .informasi {
-    text-align: left;
-    color: #000000;
-    border: 1px solid #000000;
-    /* width: 100%; Mengurangi lebar sesuai dengan padding dari profil pimpinan */
-    background-color: #d9d9d9;
-    padding: 20px 10px; /* Tambahkan padding untuk estetika */
-  }
-  
-  /* Bagian Kiri */
-  .tujuan {
-    text-align: left;
-    color: #000000;
-    font-size: normal;
-  }
-  
-  ul {
-    list-style-type: disc;
-    padding-left: 20px;
-  }
-  
-  /* 4 Menu Grid */
-  .menu-grid {
-    display: flex;
-    flex-direction: column; /* Mengatur item secara vertikal */
-    margin-top: 30px;
-    margin-bottom: 50px;
-  }
-  
-  .menu-column {
-    display: flex;
-    flex-direction: column; /* Mengatur item secara vertikal */
-    gap: 20px; /* Menambahkan jarak antara menu item dan update */
-  }
-  
-  .menu-item {
-    height: auto; /* Sesuaikan tinggi otomatis */
-    width: 100%; /* Mengisi lebar penuh */
-    overflow: hidden;
-    border: 1px solid #000000;
-    border-radius: 0px;
-    padding: 5px;
-    background-color: #ffffff;
-    text-align: left;
-    word-wrap: break-word;
-    white-space: normal;
-  }
-  
-  .keterangan {
-    margin-top: 20px; /* Memberikan jarak antara gambar dan keterangan */
-    text-align: left;
-    font-size: 18px;
-    color: #000000;
-  }
-  
-  .update {
-    margin-top: 10px; /* Jarak antara keterangan dan update */
-    text-align: left; /* Pastikan teks rata kiri */
-    font-size: small;
-    font-style: italic;
-    width: 100%; /* Pastikan elemen mengambil lebar penuh */
-    position: relative; /* Pastikan elemen ditempatkan relatif di dalam container */
-    padding-left: 10px; /* Beri sedikit padding kiri untuk jarak tambahan */
-  }
-  
-  .struktur-image {
-    width: 30px; /* Ukuran yang lebih kecil untuk gambar di tengah kalimat */
-    height: auto;
-    margin: 0 5px; /* Menambahkan jarak antara gambar dan teks */
-    vertical-align: middle; /* Untuk menyejajarkan gambar dengan teks */
-  }
-  </style>
-  
+
+ul {
+    padding-left: 40px; /* Memberikan indentasi */
+    list-style-type: disc; /* Menggunakan bullet default */
+ }
+
+
+li {
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.update {
+  margin-top: 40px;
+  font-size: 14px;
+  color: #666;
+  font-style: italic;
+  text-align: left;
+}
+
+
+</style>

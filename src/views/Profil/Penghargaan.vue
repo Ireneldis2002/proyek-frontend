@@ -1,250 +1,142 @@
 <template>
+  <div class="profil-visi-misi">
     <h1>Penghargaan</h1>
-
-    <p><bold>PIAGAM PENGHARGAAN DARI BUPATI ENDE SEBAGAI UNIT PELAYANAN PUBLIK DENGAN PERIDIKAT BAIK TAHUN (78,74) TAHUN 2021</bold></p>
-   <div class="profil-visi-misi">
- 
-     <!-- Penghargaan Section -->
-     <section class="menu-grid">
-      
-       <div class="menu-item">
+    <div class="content-container">
+      <!-- Bagian Teks -->
+      <div class="content-section">
+        <div class="content-item">
+          <p><b>Piagam Penghargaan dari Bupati Ende</b></p>
+          <p><b>Sebagai Unit Pelayanan Publik dengan Predikat Baik (78,74) Tahun 2021</b></p>
+        
+          <br>
+          <div class="content-item-image">
                 <img src="@/assets/Penghargaan1.jpg" alt="Gambar1" class="struktur-image" />
        </div>
-       <div class="menu-item">
+       <div class="content-item-image">
                 <img src="@/assets/Penghargaan2.jpeg" alt="Gambar2" class="struktur-image" />
        </div>
-       <div class="menu-item">
+       <div class="content-item-image">
                 <img src="@/assets/Penghargaan3.png" alt="Gambar3" class="struktur-image" />
        </div>
-       <div class="menu-item">
+       <div class="content-item-image">
                 <img src="@/assets/Penghargaan4.png" alt="Gambar4" class="struktur-image" />
        </div>
-
-
-       <div class="update">
-         <p>{{  update  }}</p>
        </div>
-     </section>
- 
- <!-- Profil Pimpinan Section -->
- 
- <div>
-   <section class="profil-pimpinan">
-     <h4 style="margin: 10px 0;">KEPALA DINAS</h4>
-   
-   <div class="pimpinan-content">
-     <img src="@/assets/pimpinan.png" alt="Foto Pimpinan" class="pimpinan-photo" />
-    
-     <h3>{{ pimpinan.nama }}</h3>
-     <p class="pimpinan-title">Mulai Menjabat</p>
-     <p class="pimpinan-date">{{ pimpinan.tanggalMenjabat }}</p>
-   </div>
- 
- </section>
- 
- <section class="profil-pimpinan1">
-   <div class="pimpinan-content">
-     <p><b>Informasi Pribadi</b> </p>
-     </div>
-     
- </section>
- 
- <section class="profil-pimpinan2">
-   <div class="pimpinan-content">
-     <table>
-   <tr>
-     <td>Lahir</td>
-     <td>:29 Januari 1953</td>
-   </tr>
-   <tr>
-     <td>Suami/Istri</td>
-     <td>:Mastuti</td>
-   </tr>
-   <tr>
-     <td>Anak</td>
-     <td>:Sigasare</td>
-   </tr>
-   
- </table>
- <tr>
-     <td>Riwayat Pendidikan</td>
-   </tr>
-     <td>
-       <ul>
-         <li>Sekolah Dasar</li>
-         <li>Sekolah Menengah Pertama</li>
-         <li>Sekolah Menengah Atas</li>
-       </ul>
-     </td>
- 
-     </div>
-     
- </section>
- </div>
- 
-   </div>
- </template>
- 
- <script>
- export default {
-   name: 'PenghargaanView',
-   data() {
-     return {
-       pimpinan: {
-         nama: "Lambertus Sigasare, ST. M.Eng",
-         tanggalMenjabat: "7 Agustus 2022"
-       },
-       update: "Terakhir Update : 2 Oktober 2024",
       
-     };
-   }
- };
- </script>
- 
- <style scoped>
-
- /* Bagian Profil */
- 
- .profil-visi-misi {
-   display: flex;
-   justify-content: space-between;
-   align-items: flex-start;
-   gap: 40px; /* Memberikan jarak antara profil dan visi misi */
-   padding: 10px;
- }
- 
- .profil-pimpinan {
-   background-color: #727e89;
- 
-   text-align: center; /* Agar elemen-elemen berada di tengah */
-   border: 2px solid #000000;
- }
- 
- .profil-pimpinan1 {
-   background-color: #d9d9d9;
- 
-   text-align: center; /* Agar elemen-elemen berada di tengah */
-   border: 1px solid #000000;
- }
- 
- .profil-pimpinan2 {
-   background-color: #727e89;
- 
-   text-align: left; /* Agar elemen-elemen berada di tengah */
-   padding: 1px;
-   border: 2px solid #000000;
- }
- 
- .pimpinan-content {
-   align-items: center; /* Menjaga elemen tetap berada di tengah */
- 
- }
- 
- .pimpinan-photo {
-   width: 200px; /* Sesuaikan ukuran foto */
-   height: auto;
-   border-radius: 50%; /* Membuat gambar berbentuk lingkaran */
-   margin-left: 20px;
-   margin-right: 20px;
- }
- 
- h2, h3, h4 {
-   margin: 0; /* Menghilangkan margin default */
- }
- 
- h2 {
-   font-size: 22px;
-   font-weight: bold;
-   color: #333;
- }
- 
- h3 {
-   font-size: 18px;
-   font-weight: normal;
-   color: #000000;
- }
- 
- h4 {
-   font-size: 25px;
-   font-weight: bold;
-   color: #000000;
- }
- 
- .pimpinan-title {
-   font-size: 18px;
-   font-weight: bold;
-   color: #000000;
- }
- 
- .pimpinan-date {
-   font-size: 16px;
-   color: #000000;
- }
- 
- .informasi {
-   text-align: left;
-   color: #000000;
-   border: 1px solid #000000;
-   /* width: 100%; Mengurangi lebar sesuai dengan padding dari profil pimpinan */
-   background-color: #d9d9d9;
-   padding: 20px 10px; /* Tambahkan padding untuk estetika */
- }
- 
- 
- /* Bagian Kiri */
- 
+      <!-- Foto di Sebelah Kanan -->
+      <div class="image-container">
+        <img src="@/assets/ProfilPimpinan.png" alt="Gambar Profil" />
+      </div>
+      </div>
+    </div>
+    <p class="update">Terakhir Update: 2 Oktober 2024</p>
+  </div>
+</template>
 
 
- .tujuan{
-   text-align: left;
-   color: #000000;
-   font-size: normal;
- }
- 
- ul {
-   list-style-type: disc;
-   padding-left: 20px;
- }
- 
- /* 4 Menu Grid */
- .menu-grid {
-    display: flex;
-  flex-direction: column; /* Mengatur item secara vertikal */
-  margin-top: 30px;
-  margin-bottom: 50px;
- }
- 
- 
+<script>
+export default {
+  name: "VisiMisiView",
+};
+</script>
 
-.keterangan {
-  margin-top: 20px; /* Memberikan jarak antara gambar dan keterangan */
+<style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+.profil-visi-misi {
+  max-width: 1200px;
+  margin: 0 auto; /* Pusatkan kontainer secara horizontal */
+  padding: 10px;
+  font-family: 'Open Sans', Arial, sans-serif;
+}
+
+h1 {
+  font-size: 32px;
   text-align: left;
-  font-size: 18px;
-  color: #000000;
+  color: #65A5CA;
+  margin-bottom: 30px;
+}
+
+.content-container {
+  display: flex;
+  gap: 20px; /* Jarak antara teks dan gambar */
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.content-section {
+  flex-basis: 40%; /* Teks mendapatkan ruang lebih besar */
+  display: flex;
+  flex-direction: column;
+  gap: 60px; /* Jarak antar bagian teks */
+  margin-left: -100px;
+}
+
+.image-container {
+  flex-basis: 50%; /* Foto mendapatkan ruang lebih kecil */
+  display: flex;
+  justify-content: flex-end; /* Geser gambar lebih ke kanan */
+  align-items: right;
+  margin-right: -100px;
+}
+
+.image-container img {
+  max-width: 100%; /* Agar gambar tidak melebihi ruang yang disediakan */
+  height: auto; /* Menjaga proporsi gambar */
+  border-radius: 10px; /* Opsional: tambahkan border radius */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Opsional: efek bayangan */
+  margin-right: 0px;
+}
+
+.content-item {
+  position: relative;
+  padding-left: 20px; /* Memberikan indentasi kecil untuk teks */
+  margin-left: -100px; /* Geser konten lebih ke kiri */
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: black;
+  margin: 0 0 10px 0;
+}
+
+.line {
+  width: 5px;
+  height: 100%;
+  background-color: #8BBBD7;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 3px;
+}
+
+p {
+  font-size: 22px;
+  color: #333;
+  margin: 0;
+}
+
+ol {
+    padding-left: 40px; /* Memberikan indentasi pada daftar */
+  }
+
+li {
+  font-size: 22px;
+  color: #333;
+  margin: 0;
 }
 
 .update {
-  margin-top: 10px; /* Jarak antara keterangan dan update */
-  text-align: left; /* Pastikan teks rata kiri */
-  font-size: small;
+  margin-top: 40px;
+  font-size: 14px;
+  color: #666;
   font-style: italic;
-  width: 100%; /* Pastikan elemen mengambil lebar penuh */
-  position: relative; /* Pastikan elemen ditempatkan relatif di dalam container */
-  padding-left: 10px; /* Beri sedikit padding kiri untuk jarak tambahan */
+  text-align: left;
 }
 
- 
-.struktur-image {
-    display: block;               /* Mengatur gambar sebagai elemen blok */
-    width: 100%;                  /* Gambar akan mengisi lebar penuh kontainer */
-    /*max-width: 300px;            /* Batasi lebar maksimum gambar (ubah sesuai kebutuhan) */
-    height: auto;                 /* Tinggi otomatis untuk menjaga proporsi */
-    margin-top: 10px;
-
-}
-
-.menu-item {
-    display: block;               /* Mengatur item sebagai blok */
+.content-item-image{
+  display: block;               /* Mengatur item sebagai blok */
     text-align: center;           /* Menjaga gambar berada di tengah secara horizontal */
     padding: 20px;               /* Padding untuk memberi ruang di dalam kontainer */
     width: 125%;                  /* Kontainer mengambil lebar penuh */
@@ -255,9 +147,4 @@
     margin: 10px auto;           /* Mengatur margin otomatis untuk pusat */
 }
 
-
-
-
-
- </style>
- 
+</style>

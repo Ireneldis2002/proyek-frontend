@@ -1,6 +1,6 @@
 <template>
 <div>
-    <h1>Data Jumlah Anak Usia 0-18 Tahun</h1>
+    <h1>BUKU TAMU</h1>
     <table class="box-bordered-table">
       <thead>
         <tr>

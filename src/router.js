@@ -14,6 +14,7 @@ import ProfilLhkpnView from './views/Profil/ProfilLhkpn.vue';
 import ProfilIkmView from './views/Profil/ProfilIkm.vue';
 import ProfilInovasiView from './views/Profil/Inovasi.vue';
 
+//import testBerandaView from '@/views/testBeranda.vue';
 import BerandaView from '@/views/Beranda.vue';
 
 import PencatatanKelahiranView from '@/views/StandarPelayanan/Pencatatan/CatatLahir.vue';
@@ -58,6 +59,15 @@ import RuangDownloadRegulasiView from '@/views/RuangPublik/DownloadRegulasi.vue'
 import RuangDownloadSPTJMView from '@/views/RuangPublik/DownloadSPTJM.vue'
 import RuangDownloadFormulirView from '@/views/RuangPublik/DownloadFormulir.vue'
 import RuangDownloadPengajuanView from '@/views/RuangPublik/DownloadPengajuan.vue'
+import RuangFAQView from '@/views/RuangPublik/FAQ.vue'
+import RuangJawabFAQSatuView from '@/views/RuangPublik/FAQPertama.vue'
+import RuangJawabFAQDuaView from '@/views/RuangPublik/FAQkedua.vue'
+import RuangJawabFAQTigaView from '@/views/RuangPublik/FAQketiga.vue'
+import RuangJawabFAQEmpatView from '@/views/RuangPublik/FAQkeempat.vue'
+import RuangJawabFAQLimaView from '@/views/RuangPublik/FAQkelima.vue'
+import RuangJawabFAQEnamView from '@/views/RuangPublik/FAQkeenam.vue'
+import RuangJawabFAQTujuhView from '@/views/RuangPublik/FAQketujuh.vue'
+import RuangIKMView from '@/views/RuangPublik/IKM.vue'
 
 import LayananOnlineView from '@/views/LayananOnline/LayananOnline.vue';
 
@@ -66,9 +76,13 @@ const routes = [
     path: '/',
     component: HomePage,
     children: [
+     // {
+       // path: '/',
+       //component: testBerandaView,
+      //},
       {
-        path: '/', // Rute untuk profil
-        component: BerandaView, // Komponen ProfilView akan dimuat di router-view
+      path: '/', // Rute untuk profil
+      component: BerandaView, // Komponen ProfilView akan dimuat di router-view
       },
       //PROFIL
       {
@@ -283,10 +297,57 @@ const routes = [
         component: RuangDownloadPengajuanView // Komponen tujuan
       },
 
-      //Ruang Publik-Buku Tamu
+      //Ruang Publik - Buku Tamu
       {
         path: 'ruang-publik/buku-tamu', // Rute untuk 
         component: RuangBukuTamuView, // Komponen  akan dimuat di router-view
+      },
+
+      //Ruang Publik - FAQ
+      {
+        path: 'ruang-publik/frequently-asked-question', // Rute untuk 
+        component: RuangFAQView, // Komponen  akan dimuat di router-view
+      },
+      {
+        path: '/ruang-publik/jawaban-frequently-asked-question-1',
+        name: 'FAQPertama',
+        component: RuangJawabFAQSatuView // Komponen tujuan
+      },
+      {
+        path: '/ruang-publik/jawaban-frequently-asked-question-2',
+        name: 'FAQkedua',
+        component: RuangJawabFAQDuaView // Komponen tujuan
+      },
+      {
+        path: '/ruang-publik/jawaban-frequently-asked-question-3',
+        name: 'FAQketiga',
+        component: RuangJawabFAQTigaView // Komponen tujuan
+      },
+      {
+        path: '/ruang-publik/jawaban-frequently-asked-question-4',
+        name: 'FAQkeempat',
+        component: RuangJawabFAQEmpatView // Komponen tujuan
+      },
+      {
+        path: '/ruang-publik/jawaban-frequently-asked-question-5',
+        name: 'FAQkelima',
+        component: RuangJawabFAQLimaView // Komponen tujuan
+      },
+      {
+        path: '/ruang-publik/jawaban-frequently-asked-question-6',
+        name: 'FAQkeenam',
+        component: RuangJawabFAQEnamView // Komponen tujuan
+      },
+      {
+        path: '/ruang-publik/jawaban-frequently-asked-question-7',
+        name: 'FAQketujuh',
+        component: RuangJawabFAQTujuhView // Komponen tujuan
+      },
+
+      //Ruang Publik - IKM
+      {
+        path: 'ruang-publik/indeks-kepuasan-masyarakat', // Rute untuk 
+        component: RuangIKMView, // Komponen  akan dimuat di router-view
       },
 
       // LAYANAN ONLINE

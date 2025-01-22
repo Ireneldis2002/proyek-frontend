@@ -1,4 +1,7 @@
 <template>
+    <div>
+    <!-- Tombol Kembali -->
+    <button @click="goBack" class="btn-back">⬅ Kembali</button>
     <h1>SURAT PERNYATAAN TANGGUNG JAWAB MUTLAK</h1>
     
         <div class="profil-visi-misi">
@@ -98,15 +101,19 @@
             </section>
           </div>
         </div>
-        
+        </div>
     
       </template>
     
     <script>
     
-      export default {
+    export default {
         name: 'RuangDownloadSPTJMView',
-    
+        methods: {
+            goBack() {
+                this.$router.go(-1); // Untuk kembali ke halaman sebelumnya
+                }
+            }
       };
     </script>
     
@@ -215,4 +222,15 @@
         margin: 20px;
         background-color: white;
       }
+
+      /* Gaya untuk tombol Kembali */
+.btn-back {
+
+color: #596C7E;
+padding: 10px 20px;
+border-radius: 5px;
+cursor: pointer;
+font-size: 18px;
+margin-bottom: 10px; /* Jarak antara tombol dan judul */
+}
     </style>

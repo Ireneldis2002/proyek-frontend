@@ -3,18 +3,18 @@
     <!-- Bagian Header -->
     <header class="header">
       <div class="logo-container">
-        <router-link to="/">
+
           <img
             src="@/assets/LogoDukcapil.png"
             alt="Logo Disdukcapil Kabupaten Ende"
             class="logo"
           />
-        </router-link>
-        <div class="header-title">
-          <h1 style="font-size: xx-large">
-            Dinas Pendudukan dan Pencatatan Sipil Kabupaten Ende
+
+
+          <h1>
+            Dinas Pendudukan dan Pencatatan Sipil <br> Kabupaten Ende
           </h1>
-        </div>
+
       </div>
       <!-- Bagian Pencarian -->
       <div class="search-container">
@@ -27,13 +27,18 @@
     <!-- Bagian Navigasi -->
     <nav class="navbar">
       <ul>
+        <li>
+          <router-link to="/">
+            <i class="mdi mdi-home social-icon"></i>
+        </router-link>
+        </li>
         <li
   class="dropdown"
   @mouseenter="showDropdown('profil')"
   @mouseleave="hideDropdown('profil')"
 >
   <router-link to="" class="dropdown-toggle">
-    Profil
+    <h2>Profil</h2>
   </router-link>
   <ul class="dropdown-menu" v-if="dropdownVisible.profil">
     <div class="menu-gridd">
@@ -69,10 +74,7 @@
         <router-link to="/profil/sarana-prasarana" class="menu-griddd"><p style="margin: 5px 5px;">Sarana dan Prasarana</p></router-link
         >
       </li>
-      <li>
-        <router-link to="/profil/profil-ikm" class="menu-griddd"><p style="margin: 5px 5px;">IKM</p></router-link
-        >
-      </li>
+      
       <li>
         <router-link to="/profil/tupoksi" class="menu-griddd"><p style="margin: 5px 5px;">Tupoksi</p></router-link
         >
@@ -98,7 +100,7 @@
   @mouseleave="hideDropdown('layanan')"
 >
   <router-link to="" class="dropdown-toggle">
-    Standar Pelayanan
+    <h2>Standar Pelayanan</h2>
   </router-link>
   <ul class="dropdown-menu" v-if="dropdownVisible.layanan">
     <div class="menu-gridd">
@@ -239,7 +241,7 @@
   @mouseleave="hideDropdown('penduduk')"
 >
   <router-link to="" class="dropdown-toggle">
-    Data Penduduk
+    <h2>Data Penduduk</h2>
   </router-link>
   <ul class="dropdown-menu" v-if="dropdownVisible.penduduk">
     <div class="menu-gridd">
@@ -286,17 +288,18 @@
   @mouseleave="hideDropdown('publik')"
 >
   <router-link to="" class="dropdown-toggle">
-    Ruang Publik
+    <h2>Ruang Publik</h2>
   </router-link>
   <ul class="dropdown-menu" v-if="dropdownVisible.publik">
     <div class="menu-gridd">
             <li>
       <router-link to="/ruang-publik/download" class="menu-griddd"><p style="margin: 5px 5px;">Download</p></router-link>
     </li>
-    <li><router-link to="/ruang-publik/faq" class="menu-griddd"><p style="margin: 5px 5px;">FAQ</p></router-link></li>
     <li><router-link to="/ruang-publik/buku-tamu" class="menu-griddd"><p style="margin: 5px 5px;">Buku Tamu</p></router-link></li>
-    <li><router-link to="/ruang-publik/ikm" class="menu-griddd"><p style="margin: 5px 5px;">IKM</p></router-link></li>
     <li><router-link to="/ruang-publik/galeri" class="menu-griddd"><p style="margin: 5px 5px;">Galeri </p></router-link></li>
+    <li><router-link to="/ruang-publik/frequently-asked-question" class="menu-griddd"><p style="margin: 5px 5px;">FAQ</p></router-link></li>
+    <li><router-link to="/ruang-publik/indeks-kepuasan-masyarakat" class="menu-griddd"><p style="margin: 5px 5px;">IKM</p></router-link></li>
+
 
     </div>
 
@@ -310,7 +313,7 @@
   @mouseleave="hideDropdown('berita')"
 >
   <router-link to="" class="dropdown-toggle">
-    Berita
+    <h2>Berita</h2>
   </router-link>
   <ul class="dropdown-menu" v-if="dropdownVisible.berita">
     <div class="menu-griddb">
@@ -324,7 +327,7 @@
 
   </ul>
 </li>
-        <li><router-link to="/layanan-online">Layanan Online</router-link></li>
+        <li><router-link to="/layanan-online"><h2>Layanan Online</h2></router-link></li>
       </ul>
     </nav>
 
@@ -336,24 +339,24 @@
     <!-- Bagian Footer -->
 
     <footer class="footer">
-      <p>
+      <p class="footer-text">
         <i class="mdi mdi-facebook social-icon"></i>
         Disdukcapil Kapubaten Ende
       </p>
-      <p>
+      <p class="footer-text">
         <i class="mdi mdi-instagram social-icon"></i>
         Disdukcapil_Ende
       </p>
-      <p>
+      <p class="footer-text">
         <i class="mdi mdi-email social-icon"></i>
         Pengaduan.dukcapilende@gmail.com
       </p>
-      <p>
+      <p class="footer-text">
         <i class="mdi mdi-phone social-icon"></i>
         0813-1975-003
       </p>
-      <p>
-        <i class="mdi mdi-phone social-icon"></i>
+      <p class="footer-text">
+        <i class="mdi mdi-map-marker-radius social-icon"></i>
         Jl. Eltari Atas, Kel. Onekore, Kec. Ende Tengah, Kab. Ende
       </p>
     </footer>
@@ -402,6 +405,11 @@ export default {
 
 <style scoped>
 /* Gaya untuk layout Home.vue */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@400;700&family=Oswald:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+
 .home {
   display: flex;
   flex-direction: column;
@@ -410,8 +418,8 @@ export default {
 }
 
 .header {
-  background-color: white; /* Warna latar belakang header */
-  color: black;
+  background-color: #65A5CA; /* Warna latar belakang header */
+  color: white;
   padding: 20px;
   display: flex;
   align-items: center;
@@ -424,18 +432,30 @@ export default {
 }
 
 .logo {
-  height: 80px; /* Ukuran logo sesuai gambar */
+  height: 100px; /* Ukuran logo sesuai gambar */
   margin-right: 15px;
 }
 
-.header-title h1 {
-  font-size: 24px; /* Ukuran font judul */
-  margin: 0;
+
+
+h1 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 50px;
 }
 
-.header-title h2 {
-  font-size: 16px; /* Ukuran font subjudul */
-  margin: 0;
+h2 {
+  font-family: 'Open Sans', sans-serif ;
+  font-weight: 300px;
+  font-stretch: condensed;
+  font-size: 28px;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.secondary-text {
+  font-family: 'Lato', sans-serif;
 }
 
 /* Gaya untuk kontainer pencarian */
@@ -448,7 +468,7 @@ export default {
 
 .search-input {
   padding: 10px 40px 10px 10px; /* Tambahkan padding di kanan untuk memberi ruang untuk tombol */
-  border: 2px solid #27394a; /* Border input */
+  border: 2px solid white; /* Border input */
   border-radius: 20px; /* Sudut melengkung */
   margin-right: 0; /* Menghapus margin agar tidak ada jarak antara input dan tombol */
   background-color: white; /* Sesuaikan dengan latar belakang header */
@@ -458,7 +478,7 @@ export default {
 }
 
 .search-input::placeholder {
-  color: #b0c4de; /* Warna placeholder */
+  color: black; /* Warna placeholder */
 }
 
 .search-button {
@@ -468,10 +488,10 @@ export default {
   transform: translateY(-50%); /* Menggeser tombol ke tengah secara vertikal */
   padding: 10px; /* Jarak dalam tombol */
   background-color: transparent; /* Mengatur latar belakang tombol menjadi transparan */
-  color: #27394a; /* Warna ikon tombol (gunakan warna yang sesuai) */
+  color: #B04848; /* Warna ikon tombol (gunakan warna yang sesuai) */
   border: none; /* Tanpa border */
   cursor: pointer; /* Mengubah kursor saat hover */
-  font-size: 16px; /* Ukuran font untuk ikon */
+  font-size: 18px; /* Ukuran font untuk ikon */
 }
 
 .search-button:hover {
@@ -479,7 +499,7 @@ export default {
 }
 
 .navbar {
-  background-color: #27394a; /* Warna navbar */
+  background-color: #8BBBD7; /* Warna navbar */
   padding: 10px 0;
   display: flex; /* Menggunakan Flexbox untuk distribusi menu */
   justify-content: space-around; /* Menyebar item navbar secara merata */
@@ -505,17 +525,18 @@ export default {
   display: block; /* Mengubah anchor menjadi block agar memenuhi li */
   color: white;
   text-decoration: none;
-  font-size: 18px; /* Ukuran font menu */
-
+  font-size: 26px; /* Perbesar ukuran font */
+  line-height: 1.5; /* Menyesuaikan tinggi baris agar teks di tengah vertikal */
   padding: 10px 0; /* Menambah padding vertikal untuk klik yang lebih mudah */
   transition: color 0.3s; /* Efek transisi saat hover */
 }
+
 
 /* Dropdown Menu */
 .dropdown-menu {
   display: none; /* Sembunyikan menu dropdown secara default */
   position: absolute;
-  background-color: #727e89;
+  background-color: white;
   min-width: max-content;
   top: 100%;
   left: 0;
@@ -528,18 +549,23 @@ export default {
   width: 100%;
 }
 
+/* Mengatur warna teks menjadi hitam untuk link di dropdown */
+/* Mengatur warna teks menjadi hitam untuk link di dropdown */
 .dropdown-menu li a {
   padding: 10px;
   display: block;
-  color: black;
+  color: black !important; /* Mengubah warna teks menjadi hitam dengan prioritas tinggi */
   margin-left: 10px;
   text-align: center;
 }
 
+/* Efek hover tetap mempertahankan teks hitam */
 .dropdown-menu li a:hover {
-  background-color: #d9d9d9;
-  color: black;
+  background-color: rgba(139, 187, 215, 0.5); /* Mengatur warna latar belakang dengan opacity */
+  color: black !important; /* Pastikan teks tetap hitam saat hover */
 }
+
+
 
 /* Tampilkan dropdown saat .active ditambahkan */
 .dropdown.active .dropdown-menu {
@@ -611,6 +637,7 @@ export default {
   border: 1px solid #ddd;
   width: 100%;
   background-color: #27394a;
+  /*font-size: 20px*/
 }
 
 .menu-gridd {
@@ -648,10 +675,11 @@ export default {
 /* 4 Menu Grid */
 .menu-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 items per row */
+  grid-template-columns: repeat(4, 1fr); /* 4 items per row */
   gap: 20px;
   margin: 20px 0;
 }
+
 .menu-item {
   text-align: center;
   cursor: pointer;
@@ -669,11 +697,27 @@ export default {
 }
 
 .footer {
-  background-color: #27394a; /* Warna footer */
-  color: white;
+  background-color: #8BBBD7; /* Warna footer */
   text-align: center;
   padding: 15px;
   display: flex;
   justify-content: space-evenly;
 }
+
+.footer-text {
+    color: white; /* Warna teks */
+    font-size: 20px; /* Ukuran font teks */
+}
+
+/* CSS untuk ikon di navbar */
+.navbar .social-icon {
+  font-size: 40px; /* Ukuran untuk ikon di navbar */
+}
+
+/* CSS untuk ikon di footer */
+.footer .social-icon {
+  font-size: 30px; /* Ukuran yang lebih besar untuk ikon di footer */
+}
+
+
 </style>
