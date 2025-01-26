@@ -74,19 +74,19 @@ h1 {
 }
 
 .content-section {
-  flex-basis: 40%; /* Teks mendapatkan ruang lebih besar */
+  flex-basis: 50%; /* Teks mendapatkan ruang lebih besar */
   display: flex;
   flex-direction: column;
-  gap: 60px; /* Jarak antar bagian teks */
-  margin-left: -100px;
+  gap: 40px; /* Jarak antar bagian teks */
+  margin-left: -50px; /* Geser lebih ke kiri */
 }
 
 .image-container {
   flex-basis: 50%; /* Foto mendapatkan ruang lebih kecil */
   display: flex;
-  justify-content: flex-end; /* Geser gambar lebih ke kanan */
-  align-items: right;
-  margin-right: -100px;
+  justify-content: flex-end; /* Geser gambar ke kanan */
+  align-items: flex-start;
+  margin-right: -50px; /* Geser lebih ke kanan */
 }
 
 .image-container img {
@@ -94,13 +94,12 @@ h1 {
   height: auto; /* Menjaga proporsi gambar */
   border-radius: 10px; /* Opsional: tambahkan border radius */
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Opsional: efek bayangan */
-  margin-right: 0px;
 }
 
 .content-item {
   position: relative;
-  padding-left: 20px; /* Memberikan indentasi kecil untuk teks */
-  margin-left: -100px; /* Geser konten lebih ke kiri */
+  padding-left: 20px; /* Indentasi kecil untuk teks */
+  margin-left: -20px; /* Geser konten lebih ke kiri */
 }
 
 h2 {
@@ -127,14 +126,13 @@ p {
 }
 
 ol {
-    padding-left: 40px; /* Memberikan indentasi pada daftar */
-  }
+  padding-left: 40px; /* Memberikan indentasi pada daftar */
+}
 
 ul {
-    padding-left: 40px; /* Memberikan indentasi */
-    list-style-type: disc; /* Menggunakan bullet default */
- }
-
+  padding-left: 40px; /* Memberikan indentasi */
+  list-style-type: disc; /* Menggunakan bullet default */
+}
 
 li {
   font-size: 22px;
@@ -149,6 +147,5 @@ li {
   font-style: italic;
   text-align: left;
 }
-
 
 </style>

@@ -197,23 +197,22 @@ body {
 }
 
 .menu-grid {
-  display: flex; /* Membuat menu-item berada dalam satu baris */
-  gap: 20px; /* Jarak antar gambar */
-  flex-wrap: wrap; /* Agar item-menu bisa berpindah baris jika ruang tidak cukup */
-  width: 70%; /* Mengatur lebar menu-grid */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Menyusun 4 kolom secara otomatis */
+  gap: 20px; /* Memberikan jarak antar item */
+  width: 100%; /* Pastikan menu-grid memenuhi lebar kontainer */
 }
 
 .menu-item {
-  display: flex; /* Menjadikan menu-item sebagai flex container */
-  justify-content: center; /* Menyelaraskan gambar di tengah */
-  align-items: center; /* Menyelaraskan gambar secara vertikal */
-  width: 23%; /* Lebar item agar sesuai dengan empat gambar di satu baris */
-  cursor: pointer;
+  width: 500px; /* Lebar kontainer */
+  height: 500px; /* Tinggi kontainer */
 }
 
 .menu-item img {
-  width: 100%; /* Menyesuaikan gambar dengan lebar kontainer */
-  height: auto; /* Menjaga rasio gambar tetap proporsional */
-  object-fit: cover; /* Menjaga gambar tetap terpotong dengan proporsional */
+  width: 200%;
+  height: 200%;
+  object-fit: cover;
 }
+
+
 </style>

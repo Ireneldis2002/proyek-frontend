@@ -1,12 +1,12 @@
 <template>
   <div class="profil-visi-misi">
-    <h1>Akta Kematian</h1>
+    <h1>Akta Catatan Sipil</h1>
     <div class="content-container">
       <!-- Bagian Teks -->
       <div class="content-section">
         <div class="menu-item">
             <ol>
-              <p><b>PEMBETULAN AKTA CATATAN SIPIL</b> </p>
+              <p><b>Pembetulan Akta Catatan Sipil</b> </p>
              
               <!-- Tabel 1 -->
             <table border="1" cellpadding="10" cellspacing="0" style="width: 100%; margin-top: 20px; border-collapse: collapse; text-align: left;">
@@ -78,7 +78,7 @@
       
       <!-- Foto di Sebelah Kanan -->
       <div class="image-container">
-        <img src="@/assets/sidebar.png" alt="Gambar Profil" />
+        <img src="@/assets/SidebarStandar.png" alt="Gambar Profil" />
       </div>
     </div>
     <p class="update">Terakhir Update: 2 Oktober 2024</p>

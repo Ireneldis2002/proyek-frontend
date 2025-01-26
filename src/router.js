@@ -60,13 +60,7 @@ import RuangDownloadSPTJMView from '@/views/RuangPublik/DownloadSPTJM.vue'
 import RuangDownloadFormulirView from '@/views/RuangPublik/DownloadFormulir.vue'
 import RuangDownloadPengajuanView from '@/views/RuangPublik/DownloadPengajuan.vue'
 import RuangFAQView from '@/views/RuangPublik/FAQ.vue'
-import RuangJawabFAQSatuView from '@/views/RuangPublik/FAQPertama.vue'
-import RuangJawabFAQDuaView from '@/views/RuangPublik/FAQkedua.vue'
-import RuangJawabFAQTigaView from '@/views/RuangPublik/FAQketiga.vue'
-import RuangJawabFAQEmpatView from '@/views/RuangPublik/FAQkeempat.vue'
-import RuangJawabFAQLimaView from '@/views/RuangPublik/FAQkelima.vue'
-import RuangJawabFAQEnamView from '@/views/RuangPublik/FAQkeenam.vue'
-import RuangJawabFAQTujuhView from '@/views/RuangPublik/FAQketujuh.vue'
+
 import RuangIKMView from '@/views/RuangPublik/IKM.vue'
 
 import LayananOnlineView from '@/views/LayananOnline/LayananOnline.vue';
@@ -307,41 +301,6 @@ const routes = [
       {
         path: 'ruang-publik/frequently-asked-question', // Rute untuk 
         component: RuangFAQView, // Komponen  akan dimuat di router-view
-      },
-      {
-        path: '/ruang-publik/jawaban-frequently-asked-question-1',
-        name: 'FAQPertama',
-        component: RuangJawabFAQSatuView // Komponen tujuan
-      },
-      {
-        path: '/ruang-publik/jawaban-frequently-asked-question-2',
-        name: 'FAQkedua',
-        component: RuangJawabFAQDuaView // Komponen tujuan
-      },
-      {
-        path: '/ruang-publik/jawaban-frequently-asked-question-3',
-        name: 'FAQketiga',
-        component: RuangJawabFAQTigaView // Komponen tujuan
-      },
-      {
-        path: '/ruang-publik/jawaban-frequently-asked-question-4',
-        name: 'FAQkeempat',
-        component: RuangJawabFAQEmpatView // Komponen tujuan
-      },
-      {
-        path: '/ruang-publik/jawaban-frequently-asked-question-5',
-        name: 'FAQkelima',
-        component: RuangJawabFAQLimaView // Komponen tujuan
-      },
-      {
-        path: '/ruang-publik/jawaban-frequently-asked-question-6',
-        name: 'FAQkeenam',
-        component: RuangJawabFAQEnamView // Komponen tujuan
-      },
-      {
-        path: '/ruang-publik/jawaban-frequently-asked-question-7',
-        name: 'FAQketujuh',
-        component: RuangJawabFAQTujuhView // Komponen tujuan
       },
 
       //Ruang Publik - IKM

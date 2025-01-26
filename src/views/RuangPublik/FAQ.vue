@@ -1,274 +1,234 @@
 <template>
-    <h1>FREQUENTLY ASKED QUESTIONN (FAQ)</h1>
-    <p>FAQ (Frequently Asked Question) merupakan daftar pertanyaan-pertanyaan yang sering 
+  <div class="ruang-download">
+
+    <header>
+      <h1>FAQ</h1>
+      <p>
+        FAQ (Frequently Asked Question) merupakan daftar pertanyaan-pertanyaan yang sering 
         diajukan oleh masyarakat.
         <br> FAQ pada Layanan Dukcapil juga disertakan dengan jawaban, 
         sehingga memudahkan bagi masyarakat jika ada pertanyaan atau kendala yang sering dialami. 
-        <br> Berikut langkah untuk mengakses FAQ adalah dengan memilih link dibawah ini.</p>
+        <br> Berikut langkah untuk mengakses FAQ adalah dengan memilih pertanyaan di bawah ini.
+        <br>
+        <br>
+      </p>
+    </header>
 
-
-  
-    <div class="profil-visi-misi">
-      <!-- Ruang Publik Section -->
-      <section class="menu-grid">
-        <div class="menu-column">
-          <div class="menu-item">
-            <table class="box-bordered-table">
-              <tbody>
-                <tr>
-                  <td><i class="fas fa-comment"></i></td>
-                  <td><router-link :to="{ name: 'FAQPertama' }">Apakah saya bisa mengubah data dalam akta kelahiran?</router-link></td>
-                </tr>
-                <tr>
-                <td><i class="fas fa-comment"></i></td>
-                  <td><router-link :to="{ name: 'FAQkedua' }">Bagaimana cara mengetahui keaslian kartu keluarga?</router-link></td>
-                </tr>
-                <tr>
-                    <td><i class="fas fa-comment"></i></td>
-                  <td><router-link :to="{ name: 'FAQketiga' }">Bagaimana jika akta lelahiran saya hilang?</router-link></td>
-                </tr>
-                <tr>
-                    <td><i class="fas fa-comment"></i></td>
-                  <td><router-link :to="{ name: 'FAQkeempat' }">Saya baru pindah domisili. Apakah perlu membuat KTP-EL baru?</router-link></td>
-                </tr>
-                <tr>
-                    <td><i class="fas fa-comment"></i></td>
-                  <td><router-link :to="{ name: 'FAQkelima' }">Bagaimana cara mengetahui keaslian akta kelahiran?</router-link></td>
-                </tr>
-                <tr>
-                    <td><i class="fas fa-comment"></i></td>
-                  <td><router-link :to="{ name: 'FAQkeenam' }">Apakah Kartu Keluarga memiliki masa berlaku?</router-link></td>
-                </tr>
-                <tr>
-                    <td><i class="fas fa-comment"></i></td>
-                  <td><router-link :to="{ name: 'FAQketujuh' }">Apa yang hrus saya lakukan jika data dalam kartu keluarga saya ada yang salah??</router-link></td>
-                </tr>
-                <!-- Tambahkan baris lainnya sesuai kebutuhan -->
-              </tbody>
-            </table>
+    <div class="content-container">
+      <!-- Bagian FAQ -->
+      <section class="faq-list">
+        <div
+          class="faq-item"
+          v-for="(faq, index) in faqs"
+          :key="index"
+        >
+          <div
+            class="faq-question"
+            @click="toggleAnswer(index)"
+          >
+            <i class="fas fa-comment"></i> {{ faq.question }}
           </div>
-  
+          <div
+            class="faq-answer"
+            v-if="activeIndex === index"
+          >
+            {{ faq.answer }}
           </div>
+        </div>
       </section>
-  
-      <!-- Profil Pimpinan Section -->
-      <div>
-        <section class="profil-pimpinan">
-          <div class="pimpinan-content">
-            <img src="@/assets/Disdukcapil.png" alt="Foto Pimpinan" class="pimpinan-photo" />
-            <div class="sidebar-section">
-              <div class="judul-sidebar">
-                <p>MOTTO</p>
-              </div>
-              <div class="isi-sidebar">
-                <p>"PELAYANAN RAMAH, MUDAH, CEPAT DAN AKUNTABEL"</p>
-              </div>
-            </div>
-            <div class="sidebar-section">
-              <div class="judul-sidebar">
-                <p>KOMITMEN</p>
-              </div>
-              <div class="isi-sidebar">
-                <ol>
-                  <li>Berjanji dan sanggup untuk melaksanakan Pelayanan yang transparan sesuai dengan Standar Pelayanan yang ditetapkan</li>
-                  <li>Berjanji akan memberikan Pelayanan sesuai dengan hak dan kewajiban serta melakukan perbaikan secara terus menerus</li>
-                  <li>Siap menerima sanksi dari Pimpinan apabila pelayanan yang kami berikan tidak sesuai dengan Standar Pelayanan yang ada</li>
-                </ol>
-              </div>
-            </div>
-            <div class="sidebar-section">
-              <div class="judul-sidebar">
-                <p>MAKLUMAT PELAYANAN</p>
-              </div>
-              <div class="isi-sidebar">
-                <ol>
-                  <li>Berjanji dan memiliki kesanggupan untuk melaksanakan pelayanan publik sesuai dengan Standar Pelayanan Publik yang telah ditetapkan</li>
-                  <li>Memberikan pelayanan publik sesuai dengan kewajiban dan akan melakukan perbaikan secara terus-menerus</li>
-                  <li>Bersedia untuk menerima sanksi dan/atau memberikan kompensasi sesuai dengan ketentuan peraturan perundang-undangan apabila pelayanan publik yang diberikan tidak sesuai dengan standar yang ditetapkan</li>
-                </ol>
-              </div>
-              <div class="sign">
-                <p>KEPALA DINAS<br/>KEPENDUDUKAN DAN PENCATATAN SIPIL<br/>KABUPATEN ENDE</p>
-                <p>(Lambertus Sigasare, ST.M.Eng)<br/>Pembina Tk. I<br/>197510232002121006</p>
-              </div>
-            </div>
-          </div>
-        </section>
+      <aside class="sidebar">
+        <div class="image-container">
+        <img src="@/assets/SidebarStandar.png" alt="Gambar Profil" />
       </div>
+      </aside>
+      
     </div>
-  </template>
-  
-  <script>
-  
-  export default {
-    name: 'RuangFAQView',
-    data() {
-      return {
-        
-      };
+  </div>
+</template>
+
+
+<script>
+export default {
+  name: "RuangFAQView",
+  data() {
+    return {
+      activeIndex: null, // Indeks pertanyaan yang aktif (jawaban sedang terlihat)
+      faqs: [
+        {
+          question: "Apakah saya bisa mengubah data dalam akta kelahiran?",
+          answer: "Ya, Anda dapat mengubah data dalam Akta Kelahiran jika terdapat kesalahan. Proses perubahan dilakukan melalui Dinas Dukcapil.",
+        },
+        {
+          question: "Bagaimana cara mengetahui keaslian kartu keluarga?",
+          answer: "Anda dapat memeriksa keaslian Kartu Keluarga melalui barcode yang tertera di dokumen atau mengunjungi Dinas Dukcapil.",
+        },
+        {
+          question: "Bagaimana jika akta kelahiran saya hilang?",
+          answer: "Jika akta kelahiran Anda hilang, Anda dapat mengajukan permohonan cetak ulang di Dinas Dukcapil dengan melampirkan dokumen pendukung.",
+        },
+        {
+          question: "Saya baru pindah domisili. Apakah perlu membuat KTP-EL baru?",
+          answer: "Ya, Anda perlu memperbarui KTP-EL Anda dengan data alamat baru. Proses ini dapat dilakukan di Dinas Dukcapil setempat.",
+        },
+        {
+          question: "Bagaimana cara mengetahui keaslian akta kelahiran?",
+          answer: "Keaslian akta kelahiran dapat dicek melalui tanda tangan elektronik (barcode) atau mengonfirmasinya di Dinas Dukcapil.",
+        },
+        {
+          question: "Apakah Kartu Keluarga memiliki masa berlaku?",
+          answer: "Tidak, Kartu Keluarga tidak memiliki masa berlaku, namun harus diperbarui jika ada perubahan data.",
+        },
+        {
+          question: "Apa yang harus saya lakukan jika data dalam kartu keluarga saya ada yang salah?",
+          answer: "Jika ada kesalahan data dalam Kartu Keluarga, Anda harus segera mengajukan pembetulan ke Dinas Dukcapil dengan membawa dokumen pendukung.",
+        },
+      ],
+    };
+  },
+  methods: {
+    toggleAnswer(index) {
+      this.activeIndex = this.activeIndex === index ? null : index;
     },
-  };
-  </script>
-  
-  <style scoped>
-  .profil-visi-misi {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 40px;
-    padding: 10px;
-  }
-  
-  .profil-pimpinan {
-    background-color: #727e89;
-    text-align: center;
-    border: 2px solid #000;
-    width: 300px;
-  }
-  
-  .pimpinan-content {
-    align-items: center;
-  }
-  
-  .pimpinan-photo {
-    width: 150px;
-    height: auto;
-    margin: 10px;
-  }
-  
-  .judul-sidebar {
-    font-size: 20px;
-    font-weight: bold;
-    color: #000;
-    text-align: left;
-    margin-bottom: 20px;
-  }
-  
-  .isi-sidebar {
-    font-size: 16px;
-    color: #0b0b0b;
-    text-align: left;
-    margin-top: 20px;
-  }
-  
-  .sign {
-    font-size: 16px;
-    color: #0b0b0b;
-    text-align: center;
-    margin-top: 20px;
-  }
-  
-  .menu-grid {
-    display: flex;
-    flex-direction: column;
-    margin: 30px 0 50px 0;
-  }
-  
-  .menu-column {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-  
-  .menu-item {
-    width:  170%;
-    height: 100%;
-    overflow: hidden;
-    border: 1px solid #000;
-    padding: 5px;
-    background-color: #fff;
-    text-align: left;
-  }
-  
-  
-  
-  table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  
-  th, td {
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    padding: 8px;
-    text-align: left;
-  }
-  
-  /* Tambahkan garis luar di sisi kiri, kanan, atas, dan bawah tabel */
-  .box-bordered-table {
-    border: 1px solid black;
-  }
-  
-  .box-bordered-table th, .box-bordered-table td {
-    border-left: none;
-    border-right: none;
-  }
-  
-  td i {
-    font-size: 2.0em; /* Ukuran ikon */
-  }
-  
-  /* Styling untuk sidebar section */
-  .sidebar-section {
-    border: 1px solid white;
-    margin: 20px;
-    background-color: white;
-  }
+  },
+};
+</script>
 
-  /* Styling untuk button pencarian */
-  .header-container {
-    display: flex;
-    justify-content: space-between; /* Menempatkan elemen di ujung kiri dan kanan */
-    align-items: center; /* Vertikal tengah */
-    gap: 10px;
+
+<style scoped>
+.ruang-download {
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Open Sans', sans-serif;
 }
 
-  .download-title {
-    display: inline-block;
-    
-    margin-top: 10px;
+header h1 {
+  font-size: 28px;
+  color: #65A5CA;
+  margin-bottom: 20px;
 }
 
-  .search-container {
+.content-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.menu {
+  flex: 2;
+}
+
+.menu-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.menu-table td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  font-size: 16px;
+  color: #333;
+}
+
+.menu-table td i {
+  font-size: 24px;
+  color: #65A5CA;
+}
+
+.sidebar {
+  flex: 1;
+  background-color: #f8f9fa;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-content {
+  text-align: center;
+}
+
+.profile-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.info-section h2 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.info-section p, .info-section ul {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+}
+
+.pagination {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.pagination nav button {
+  background-color: #65A5CA;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin: 0 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pagination nav button:hover {
+  background-color: #5093b8;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.faq-item {
+  background-color: #ffffff; /* Warna putih seperti tabel sebelumnya */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Tambahkan sedikit bayangan */
+}
+
+.faq-question {
+  font-size: 16px; /* Ukuran huruf sama seperti tabel */
+  font-weight: normal; /* Font tidak tebal */
+  color: #333; /* Warna teks default */
   display: flex;
   align-items: center;
-  position: relative; /* Agar tombol dapat diposisikan relatif terhadap kontainer */
-  width: 200px; /* Lebar kontainer pencarian */
-  margin-right: 375px;
-  margin-top: 100px;
-  
+  gap: 10px;
 }
 
-.search-input {
-  padding: 10px 40px 10px 10px; /* Tambahkan padding di kanan untuk memberi ruang untuk tombol */
-  border: 2px solid #27394a; /* Border input */
-  border-radius: 10px; /* Sudut melengkung */
-  margin-right: 5px; /* Menghapus margin agar tidak ada jarak antara input dan tombol */
-  background-color: white; /* Sesuaikan dengan latar belakang header */
-  color: black; /* Warna teks di dalam input */
-  width: 100%; /* Input memenuhi lebar kontainer */
-  box-sizing: border-box; /* Pastikan padding tidak mempengaruhi lebar total */
+.faq-question i {
+  font-size: 24px; /* Ukuran ikon */
+  color: #65A5CA; /* Warna biru seperti gambar */
 }
 
-.search-input::placeholder {
-  color: #b0c4de; /* Warna placeholder */
+.faq-answer {
+  font-size: 14px; /* Ukuran huruf jawaban lebih kecil */
+  color: #666; /* Warna teks jawaban lebih gelap */
+  margin-top: 10px;
+  padding: 5px 0;
+  border-top: 1px solid #ddd; /* Tambahkan garis pemisah */
 }
 
-.search-button {
-  position: absolute; /* Posisi tombol menjadi absolute */
-  right: 10px; /* Jarak dari kanan kontainer */
-  top: 50%; /* Pusatkan secara vertikal */
-  transform: translateY(-50%); /* Menggeser tombol ke tengah secara vertikal */
-  padding: 10px; /* Jarak dalam tombol */
-  background-color: transparent; /* Mengatur latar belakang tombol menjadi transparan */
-  color: #27394a; /* Warna ikon tombol (gunakan warna yang sesuai) */
-  border: none; /* Tanpa border */
-  cursor: pointer; /* Mengubah kursor saat hover */
-  font-size: 16px; /* Ukuran font untuk ikon */
+.faq-item:hover {
+  background-color: #f0f9ff; /* Warna latar belakang saat hover (biru muda) */
 }
 
-.search-button:hover {
-  color: #ffcc00; /* Warna tombol saat hover */
+.faq-question:hover i {
+  color: #5093b8; /* Warna ikon lebih gelap saat hover */
 }
-  </style>
-  
+
+
+</style>

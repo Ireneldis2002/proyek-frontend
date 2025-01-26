@@ -171,7 +171,7 @@
       
       <!-- Foto di Sebelah Kanan -->
       <div class="image-container">
-        <img src="@/assets/sidebar.png" alt="Gambar Profil" />
+        <img src="@/assets/SidebarStandar.png" alt="Gambar Profil" />
       </div>
     </div>
     <p class="update">Terakhir Update: 2 Oktober 2024</p>
