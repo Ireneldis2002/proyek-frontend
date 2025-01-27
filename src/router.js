@@ -53,15 +53,31 @@ import DataJumlahDisabilitasView from '@/views/DataPenduduk/JumlahDisabilitas.vu
 import DataJumlahGoldarView from '@/views/DataPenduduk/JumlahGoldar.vue';
 import DataJumlahPekerjaanView from '@/views/DataPenduduk/JumlahPekerjaan.vue';
 
-import RuangDownloadView from '@/views/RuangPublik/Download.vue'
-import RuangBukuTamuView from '@/views/RuangPublik/BukuTamu.vue'
-import RuangDownloadRegulasiView from '@/views/RuangPublik/DownloadRegulasi.vue'
-import RuangDownloadSPTJMView from '@/views/RuangPublik/DownloadSPTJM.vue'
-import RuangDownloadFormulirView from '@/views/RuangPublik/DownloadFormulir.vue'
-import RuangDownloadPengajuanView from '@/views/RuangPublik/DownloadPengajuan.vue'
-import RuangFAQView from '@/views/RuangPublik/FAQ.vue'
+import RuangDownloadView from '@/views/RuangPublik/Download.vue';
+import RuangBukuTamuView from '@/views/RuangPublik/BukuTamu.vue';
+import IsiBukuView from '@/views/RuangPublik/IsiBukuTamu.vue';
+import RuangDownloadRegulasiView from '@/views/RuangPublik/DownloadRegulasi.vue';
+import RuangDownloadSPTJMView from '@/views/RuangPublik/DownloadSPTJM.vue';
+import RuangDownloadFormulirView from '@/views/RuangPublik/DownloadFormulir.vue';
+import RuangDownloadPengajuanView from '@/views/RuangPublik/DownloadPengajuan.vue';
+import RuangFAQView from '@/views/RuangPublik/FAQ.vue';
+import RuangIKMView from '@/views/RuangPublik/IKM.vue';
+import IKMPertamaView from '@/views/RuangPublik/IKMSatu.vue';
+import IKMKeduaView from '@/views/RuangPublik/IKMDua.vue';
+import IKMKetigaView from '@/views/RuangPublik/IKMTiga.vue';
+import RuangGaleriView from '@/views/RuangPublik/Galeri.vue';
+import GaleriSatuView from '@/views/RuangPublik/GaleriAlbumSatu.vue';
+import GaleriDuaView from '@/views/RuangPublik/GaleriAlbumDua.vue';
+import GaleriTigaView from '@/views/RuangPublik/GaleriAlbumTiga.vue';
+import GaleriEmpatView from '@/views/RuangPublik/GaleriAlbumEmpat.vue';
 
-import RuangIKMView from '@/views/RuangPublik/IKM.vue'
+import BeritaBeritaView from '@/views/Berita/BeritaDukcapil.vue';
+import BacaIsiBeritaView from '@/views/Berita/BacaBerita.vue';
+import BeritaKamusView from '@/views/Berita/KamusAdminduk.vue';
+import ArtiKamusAdmindukView from '@/views/Berita/ArtiKamus.vue';
+import ArtiKamusSatuView from '@/views/Berita/ArtiKamus1.vue';
+import ArtiKamusDuaView from '@/views/Berita/ArtiKamus2.vue';
+import ArtiKamusTigaView from '@/views/Berita/ArtiKamus3.vue';
 
 import LayananOnlineView from '@/views/LayananOnline/LayananOnline.vue';
 
@@ -296,6 +312,11 @@ const routes = [
         path: 'ruang-publik/buku-tamu', // Rute untuk 
         component: RuangBukuTamuView, // Komponen  akan dimuat di router-view
       },
+      {
+        path: '/ruang-publik/isi-buku-tamu',
+        name: 'IsiBukuTamu',
+        component: IsiBukuView,
+      },
 
       //Ruang Publik - FAQ
       {
@@ -307,6 +328,84 @@ const routes = [
       {
         path: 'ruang-publik/indeks-kepuasan-masyarakat', // Rute untuk 
         component: RuangIKMView, // Komponen  akan dimuat di router-view
+      },
+      {
+        path: '/ruang-publik/indeks-kepuasan-masyarakat-Semester-I-Tahun-2024',
+        name: 'IKMPertama',
+        component: IKMPertamaView,
+      },
+      {
+        path: '/ruang-publik/indeks-kepuasan-masyarakat-Semester-III-Tahun-2023',
+        name: 'IKMKedua',
+        component: IKMKeduaView,
+      },
+      {
+        path: '/ruang-publik/indeks-kepuasan-masyarakat-Semester-I-Tahun-2023',
+        name: 'IKMKetiga',
+        component: IKMKetigaView,
+      },
+
+      //Ruang Publik - Galeri
+      {
+        path: 'ruang-publik/galeri', // Rute untuk 
+        component: RuangGaleriView, // Komponen  akan dimuat di router-view
+      },
+      {
+        path: '/ruang-publik/album-foto-dan-video-sosialisai-KIA',
+        name: 'GaleriAlbumSatu',
+        component: GaleriSatuView,
+      },
+      {
+        path: '/ruang-publik/album-foto-dan-video-Ombusmen',
+        name: 'GaleriAlbumDua',
+        component: GaleriDuaView,
+      },
+      {
+        path: '/ruang-publik/album-foto-dan-video-jemput-bola-kotabaru',
+        name: 'GaleriAlbumTiga',
+        component: GaleriTigaView,
+      },
+      {
+        path: '/ruang-publik/album-foto-dan-video-persiapan-jemput-bola',
+        name: 'GaleriAlbumEmpat',
+        component: GaleriEmpatView,
+      },
+
+      //BERITA
+      //Berita - Berita Disdukcapil
+      {
+        path: 'berita/berita-disdukcapil', // Rute untuk 
+        component: BeritaBeritaView, // Komponen  akan dimuat di router-view
+      },
+      {
+        path: '/berita/baca-berita',
+        name: 'BacaBerita',
+        component: BacaIsiBeritaView,
+      },
+      //Berita - Kamus Adminduk
+      {
+        path: 'berita/kamus-adminduk', // Rute untuk 
+        component: BeritaKamusView, // Komponen  akan dimuat di router-view
+      },
+      {
+        path: '/berita/baca-penjelasan-arti-penerbitan-data-kependudukan',
+        name: 'ArtiKamus',
+        component: ArtiKamusAdmindukView,
+      },
+      {
+        path: '/berita/baca-penjelasan-arti-alur-status-perekaman',
+        name: 'ArtiKamus1',
+        component: ArtiKamusSatuView,
+      },
+      {
+        path: '/berita/baca-penjelasan-arti-pengertian-PIAK-dan-PD',
+        name: 'ArtiKamus2',
+        component: ArtiKamusDuaView,
+      },
+      {
+        path: '/berita/baca-penjelasan-arti-ktp-berlaku-seumur-hidup',
+        name: 'ArtiKamus3',
+        component: ArtiKamusTigaView,
       },
 
       // LAYANAN ONLINE
