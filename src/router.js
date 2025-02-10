@@ -80,6 +80,15 @@ import ArtiKamusDuaView from '@/views/Berita/ArtiKamus2.vue';
 import ArtiKamusTigaView from '@/views/Berita/ArtiKamus3.vue';
 
 import LayananOnlineView from '@/views/LayananOnline/LayananOnline.vue';
+import LayananAktaView from '@/views/LayananOnline/LayananAkta.vue';
+import LayananAktaDuaView from '@/views/LayananOnline/LayananAkta2.vue';
+import LayananAktaTigaView from '@/views/LayananOnline/LayananAkta3.vue';
+import LayananAktaEmpatView from '@/views/LayananOnline/LayananAkta4.vue';
+import LayananAktaLimaView from '@/views/LayananOnline/LayananAkta5.vue';
+import LayananAktaEnamView from '@/views/LayananOnline/LayananAkta6.vue';
+import LayananKKView from '@/views/LayananOnline/LayananKK.vue';
+import LayananKIAView from '@/views/LayananOnline/LayananKIA.vue';
+import LayananKonsolidasiView from '@/views/LayananOnline/LayananKonsolidasi.vue';
 
 const routes = [
   {
@@ -412,6 +421,51 @@ const routes = [
       {
         path: 'layanan-online', // Rute untuk profil
         component: LayananOnlineView, // Komponen ProfilView akan dimuat di router-view
+      },
+      {
+        path: '/layanan-online/layanan-akta-kelahiran',
+        name: 'LayananAkta',
+        component: LayananAktaView,
+      },
+      {
+        path: '/layanan-online/layanan-akta-kelahiran-2',
+        name: 'LayananAktaDua',
+        component: LayananAktaDuaView,
+      },
+      {
+        path: '/layanan-online/layanan-akta-kelahiran-3',
+        name: 'LayananAktaTiga',
+        component: LayananAktaTigaView,
+      },
+      {
+        path: '/layanan-online/layanan-akta-kelahiran-4',
+        name: 'LayananAktaEmpat',
+        component: LayananAktaEmpatView,
+      },
+      {
+        path: '/layanan-online/layanan-akta-kelahiran-5',
+        name: 'LayananAktaLima',
+        component: LayananAktaLimaView,
+      },
+      {
+        path: '/layanan-online/layanan-akta-kelahiran-kirim',
+        name: 'LayananAktaEnam',
+        component: LayananAktaEnamView,
+      },
+      {
+        path: '/layanan-online/layanan-kartu-keluarga',
+        name: 'LayananKK',
+        component: LayananKKView,
+      },
+      {
+        path: '/layanan-online/layanan-kartu-identitas-anak',
+        name: 'LayananKIA',
+        component: LayananKIAView,
+      },
+      {
+        path: '/layanan-online/konsolidasi-database',
+        name: 'LayananKonsolidasi',
+        component: LayananKonsolidasiView,
       },
 
     ]

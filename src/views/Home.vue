@@ -410,6 +410,10 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
 
+/* Gaya untuk layout Home.vue */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@400;700&family=Oswald:wght@400;700&display=swap');
+
 .home {
   display: flex;
   flex-direction: column;
@@ -420,7 +424,7 @@ export default {
 .header {
   background-color: #65A5CA; /* Warna latar belakang header */
   color: white;
-  padding: 20px;
+  padding: 15px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -432,109 +436,107 @@ export default {
 }
 
 .logo {
-  height: 100px; /* Ukuran logo sesuai gambar */
-  margin-right: 15px;
+  height: 70px; /* Mengecilkan ukuran logo dari 100px ke 70px */
+  width: auto; /* Pastikan proporsi tetap */
+  margin-right: 10px;
 }
-
-
 
 h1 {
   font-family: 'Oswald', sans-serif;
-  font-size: 50px;
+  font-size: 36px; /* Ukuran font lebih kecil dari 50px ke 36px */
 }
 
 h2 {
-  font-family: 'Open Sans', sans-serif ;
-  font-weight: 300px;
-  font-stretch: condensed;
-  font-size: 28px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 22px; /* Ukuran font lebih kecil dari 28px ke 22px */
 }
 
 p {
   font-family: 'Open Sans', sans-serif;
+  font-size: 14px; /* Ukuran font lebih kecil */
 }
 
 .secondary-text {
   font-family: 'Lato', sans-serif;
+  font-size: 14px;
 }
 
 /* Gaya untuk kontainer pencarian */
 .search-container {
   display: flex;
   align-items: center;
-  position: relative; /* Agar tombol dapat diposisikan relatif terhadap kontainer */
-  width: 300px; /* Lebar kontainer pencarian */
+  position: relative;
+  width: 250px; /* Mengecilkan lebar kontainer pencarian */
 }
 
 .search-input {
-  padding: 10px 40px 10px 10px; /* Tambahkan padding di kanan untuk memberi ruang untuk tombol */
-  border: 2px solid white; /* Border input */
-  border-radius: 20px; /* Sudut melengkung */
-  margin-right: 0; /* Menghapus margin agar tidak ada jarak antara input dan tombol */
-  background-color: white; /* Sesuaikan dengan latar belakang header */
-  color: black; /* Warna teks di dalam input */
-  width: 100%; /* Input memenuhi lebar kontainer */
-  box-sizing: border-box; /* Pastikan padding tidak mempengaruhi lebar total */
+  padding: 8px 35px 8px 8px;
+  border: 2px solid white;
+  border-radius: 15px;
+  background-color: white;
+  color: black;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .search-input::placeholder {
-  color: black; /* Warna placeholder */
+  color: black;
 }
 
 .search-button {
-  position: absolute; /* Posisi tombol menjadi absolute */
-  right: 10px; /* Jarak dari kanan kontainer */
-  top: 50%; /* Pusatkan secara vertikal */
-  transform: translateY(-50%); /* Menggeser tombol ke tengah secara vertikal */
-  padding: 10px; /* Jarak dalam tombol */
-  background-color: transparent; /* Mengatur latar belakang tombol menjadi transparan */
-  color: #B04848; /* Warna ikon tombol (gunakan warna yang sesuai) */
-  border: none; /* Tanpa border */
-  cursor: pointer; /* Mengubah kursor saat hover */
-  font-size: 18px; /* Ukuran font untuk ikon */
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 8px;
+  background-color: transparent;
+  color: #B04848;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
 }
 
 .search-button:hover {
-  color: #ffcc00; /* Warna tombol saat hover */
+  color: #ffcc00;
 }
 
+/* Navbar */
 .navbar {
-  background-color: #8BBBD7; /* Warna navbar */
-  padding: 10px 0;
-  display: flex; /* Menggunakan Flexbox untuk distribusi menu */
-  justify-content: space-around; /* Menyebar item navbar secara merata */
-  
+  background-color: #8BBBD7;
+  padding: 8px 0;
+  display: flex;
+  justify-content: space-around;
 }
 
 .navbar ul {
   display: flex;
-  justify-content: space-between; /* Mengatur item agar merata */
+  justify-content: space-between;
   list-style: none;
   margin: 0;
   padding: 0;
-  width: 100%; /* Memastikan ul memenuhi lebar navbar */
+  width: 100%;
 }
 
 .navbar ul li {
-  flex: 1; /* Setiap item akan mengambil ruang yang sama */
-  text-align: center; /* Menyelaraskan teks di tengah */
+  flex: 1;
+  text-align: center;
   position: relative;
 }
 
 .navbar ul li a {
-  display: block; /* Mengubah anchor menjadi block agar memenuhi li */
+  display: block;
   color: white;
   text-decoration: none;
-  font-size: 26px; /* Perbesar ukuran font */
-  line-height: 1.5; /* Menyesuaikan tinggi baris agar teks di tengah vertikal */
-  padding: 10px 0; /* Menambah padding vertikal untuk klik yang lebih mudah */
-  transition: color 0.3s; /* Efek transisi saat hover */
+  font-size: 20px; /* Mengecilkan font dari 26px ke 20px */
+  line-height: 1.5;
+  padding: 8px 0;
+  transition: color 0.3s;
 }
-
 
 /* Dropdown Menu */
 .dropdown-menu {
-  display: none; /* Sembunyikan menu dropdown secara default */
+  display: none;
   position: absolute;
   background-color: white;
   min-width: max-content;
@@ -542,182 +544,143 @@ p {
   left: 0;
   z-index: 1000;
   transition: opacity 0.2s ease;
-  
 }
 
-.dropdown-menu li {
-  width: 100%;
-}
-
-/* Mengatur warna teks menjadi hitam untuk link di dropdown */
-/* Mengatur warna teks menjadi hitam untuk link di dropdown */
 .dropdown-menu li a {
-  padding: 10px;
+  padding: 8px;
   display: block;
-  color: black !important; /* Mengubah warna teks menjadi hitam dengan prioritas tinggi */
+  color: black !important;
   margin-left: 10px;
   text-align: center;
 }
 
-/* Efek hover tetap mempertahankan teks hitam */
 .dropdown-menu li a:hover {
-  background-color: rgba(139, 187, 215, 0.5); /* Mengatur warna latar belakang dengan opacity */
-  color: black !important; /* Pastikan teks tetap hitam saat hover */
+  background-color: rgba(139, 187, 215, 0.5);
+  color: black !important;
 }
 
-
-
-/* Tampilkan dropdown saat .active ditambahkan */
 .dropdown.active .dropdown-menu {
-  display: block; /* Tampilkan menu dropdown jika kelas active ditambahkan */
-  
+  display: block;
 }
 
-/* Tampilkan dropdown saat hover */
 .dropdown:hover .dropdown-menu {
-  display: block; /* Pastikan menu dropdown ditampilkan saat hover */
+  display: block;
 }
 
 .navbar ul li a:hover {
-  color: black; /* Warna saat hover */
+  color: black;
   text-decoration: underline;
 }
 
-/* Gaya untuk konten utama */
+/* Konten utama */
 .content {
   flex: 1;
-  padding: 20px;
-  background-color: #ffffff; /* Warna latar belakang konten */
+  padding: 15px;
+  background-color: #ffffff;
 }
 
-/* Gaya untuk gambar */
+/* Gambar */
 .responsive-image {
-  width: 100%; /* Mengatur lebar gambar 100% dari kontainer */
-  height: auto; /* Biarkan tinggi otomatis agar gambar tidak terdistorsi */
-  max-height: 50vh; /* Membatasi tinggi gambar agar tidak lebih dari 50% dari viewport height */
-  object-fit: cover; /* Mengatur gambar agar terjaga proporsinya */
-  margin: 20px 0; /* Memberikan jarak atas dan bawah untuk gambar */
+  width: 100%;
+  height: auto;
+  max-height: 40vh; /* Lebih kecil dari sebelumnya */
+  object-fit: cover;
+  margin: 15px 0;
 }
 
-/* Gaya untuk carousel */
+/* Carousel */
 .carousel {
   position: relative;
-  text-align: center; /* Agar tombol berada di tengah */
+  text-align: center;
 }
 
-/* Gaya untuk tombol panah */
+/* Tombol panah */
 .arrow {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  color: white; /* Warna tombol putih */
-  font-weight: bold; /* Menebalkan teks */
-  font-size: 36px; /* Ukuran font untuk tombol panah */
-  background: none; /* Tanpa latar belakang */
-  border: none; /* Tanpa border */
-  cursor: pointer; /* Mengubah kursor saat hover */
-  z-index: 1; /* Pastikan tombol di atas gambar */
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
 }
 
 .left-arrow {
-  left: 10px; /* Letak tombol kiri */
+  left: 10px;
 }
 
 .right-arrow {
-  right: 10px; /* Letak tombol kanan */
+  right: 10px;
 }
 
-/* Latest News Styling */
+/* Latest News */
 .latest-news {
   text-align: left;
-  margin: 20px 0;
+  margin: 15px 0;
   color: white;
 }
+
 .news-box {
   border: 1px solid #ddd;
   width: 100%;
   background-color: #27394a;
-  /*font-size: 20px*/
 }
 
+/* Menu Grid */
 .menu-gridd {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 2 items per row */
+  grid-template-columns: repeat(3, 1fr);
   gap: 1px;
-  margin-right: 10px;
-  margin-top: 10px;
+  margin-right: 8px;
+  margin-top: 8px;
   text-align: center;
-}
-
-.menu-griddb {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 items per row */
-  gap: 1px;
-  margin-right: 10px;
-  margin-top: 10px;
-  text-align: center;
-}
-
-.menu-griddd {
-  border: 2px solid white;
-  border-radius: 5px;
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-.menu-items {
-  text-align: center;
-  cursor: pointer;
-  padding: 10px;
-  border: 1px solid black;
-}
-
-/* 4 Menu Grid */
-.menu-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 items per row */
-  gap: 20px;
-  margin: 20px 0;
 }
 
 .menu-item {
   text-align: center;
   cursor: pointer;
-  padding: 10px;
-}
-.menu-item img {
-  width: 150px; /* Smaller width */
-  height: 100px; /* Smaller height */
-  object-fit: cover; /* Ensure the image is contained within the box */
-}
-.menu-item p {
-  margin-top: 10px;
-  font-weight: bold;
-  font-size: 14px; /* Smaller text size */
+  padding: 8px;
 }
 
+.menu-item img {
+  width: 120px; /* Ukuran lebih kecil */
+  height: 80px;
+  object-fit: cover;
+}
+
+.menu-item p {
+  margin-top: 8px;
+  font-weight: bold;
+  font-size: 12px; /* Ukuran teks lebih kecil */
+}
+
+/* Footer */
 .footer {
-  background-color: #8BBBD7; /* Warna footer */
+  background-color: #8BBBD7;
   text-align: center;
-  padding: 15px;
+  padding: 12px;
   display: flex;
   justify-content: space-evenly;
 }
 
 .footer-text {
-    color: white; /* Warna teks */
-    font-size: 20px; /* Ukuran font teks */
+  color: white;
+  font-size: 16px; /* Mengecilkan dari 20px ke 16px */
 }
 
-/* CSS untuk ikon di navbar */
+/* Ikon di navbar */
 .navbar .social-icon {
-  font-size: 40px; /* Ukuran untuk ikon di navbar */
+  font-size: 30px; /* Mengecilkan dari 40px ke 30px */
 }
 
-/* CSS untuk ikon di footer */
+/* Ikon di footer */
 .footer .social-icon {
-  font-size: 30px; /* Ukuran yang lebih besar untuk ikon di footer */
+  font-size: 25px; /* Mengecilkan dari 30px ke 25px */
 }
+
 
 
 </style>

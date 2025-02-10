@@ -198,9 +198,9 @@ body {
 
 .menu-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Menyusun 4 kolom secara otomatis */
-  gap: 20px; /* Memberikan jarak antar item */
-  width: 100%; /* Pastikan menu-grid memenuhi lebar kontainer */
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  flex: 1;
 }
 
 .menu-item {
