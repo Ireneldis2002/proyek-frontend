@@ -26,7 +26,7 @@
                 <small>*Tanggal Perkawinan (bisa dilihat pada akta perkawinan)</small>
               </div>
               <div class="input-container">
-                <select v-model="form.jenisKelamin" required>
+                <select v-model="form.kewarganegaraan" required>
                   <option disabled value="">Kewarganegaraan Ibu Kandung</option>
                   <option>Warga Negara Indonesia (WNI)</option>
                   <option>Warga Negara Asing (WNA)</option>
@@ -56,7 +56,7 @@
                 <input type="text" placeholder="Nama Lengkap Saksi Kelahiran" v-model="form.nama" required />
               </div>
               <div class="input-container">
-                <input type="text" placeholder="Umur Saksi Kelahiran" v-model="form.nama" required />
+                <input type="text" placeholder="Umur Saksi Kelahiran" v-model="form.umur" required />
                 <small>*Format : "__ Tahun" (Tanpa tanda kutip)</small>
               </div>   
             </div>
@@ -86,7 +86,9 @@ export default {
         form: {
           nik: "",
           nama: "",
+          umur: "",
           jenisKelamin: "",
+          kewarganegaraan: "",
           tempatDilahirkan: "",
           kabupaten: "",
           tanggalLahir: "",
@@ -199,5 +201,9 @@ h2 {
   font-size: 14px;
   font-weight: bold;
   cursor: pointer;
+}
+
+.btn-submit:hover {
+  background-color: #A0B6D6;
 }
 </style>

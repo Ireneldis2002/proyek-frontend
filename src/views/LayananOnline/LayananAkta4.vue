@@ -230,7 +230,6 @@ h2 {
 }
 
 
-
 /* Tombol Submit */
 .btn-submit {
   padding: 10px 25px;
@@ -241,5 +240,9 @@ h2 {
   font-size: 14px;
   font-weight: bold;
   cursor: pointer;
+}
+
+.btn-submit:hover {
+  background-color: #A0B6D6;
 }
 </style>

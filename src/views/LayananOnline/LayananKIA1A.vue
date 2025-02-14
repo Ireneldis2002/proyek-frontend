@@ -8,37 +8,40 @@
         <div class="form-container">
           <h2>FORMULIR PENDAFTARAN</h2>
           <form>
-            <h3 class="section-title">• Identitas Pengisi Formulir</h3>
+            <h3 class="section-title">• Umur Anak 0 s/d 5 Tahun</h3>
             <div class="form-grid">
               <div class="input-container">
-                <input type="email" placeholder="Alamat email" v-model="form.email" required />
+                <input type="text" placeholder="Nama Lengkap Anak" v-model="form.nama" required />
+                <small>*Catatan : Isi nama sesuai dengan nama di dalam Kartu Keluarga</small>
               </div>
               <div class="input-container">
-                <input type="text" placeholder="Alamat Lengkap" v-model="form.alamat" required />
+                <input type="text" placeholder="NIK Anak" v-model="form.nik" required />
+                <small>*Catatan : Isi dengan NIK 16 digit angka sesuai dengan nama di dalam Kartu Keluarga</small>
               </div>
-              <div class="input-container full-width">
-                <input type="text" placeholder="Nama Lengkap" v-model="form.nama" required />
+              <div class="input-container">
+                <input type="text" placeholder="Umur Anak" v-model="form.umur" required />
+                <small>*Catatan : Isi umur anak saat ini dengan angka</small>
               </div>
-              <div class="input-container full-width">
-                <input type="text" placeholder="NIK" v-model="form.nik" required />
+              <div class="input-container">
+                
               </div>
-              <div class="input-container full-width">
-                <input type="text" placeholder="Nomor Hp/Wa" v-model="form.noHp" required />
+              <div class="input-container">
+                
               </div>
+          
             </div>
             
             <!-- Kontainer untuk tombol agar posisinya ke kanan -->
             <div class="button-container">
-              <button type="submit" class="btn-submit" @click="keHalamanKKDua" >BERIKUTNYA</button>
+              <button type="submit" class="btn-submit" @click="keHalamanAktaTiga">BERIKUTNYA</button>
             </div>
-
           </form>
         </div>
 
-        <!-- Sidebar (Tidak Diubah) -->
+        <!-- Sidebar (Ditambahkan) -->
         <aside class="sidebar">
           <div class="image-container">
-            <img src="@/assets/SidebarLayananKK.png" alt="Sidebar Informasi" />
+            <img src="@/assets/SidebarLayananKIA.png" alt="Sidebar Informasi" />
           </div>
         </aside>
       </div>
@@ -47,15 +50,13 @@
 
 <script>
 export default {
-    name: "LayananKKView",
+    name: "LayananKIASatuAView",
     data() {
       return {
         form: {
-          email: "",
-          alamat: "",
           nama: "",
           nik: "",
-          noHp: "",
+          umur: "",
         },
       };
     },
@@ -63,8 +64,8 @@ export default {
       goBack() {
         this.$router.go(-1);
       },
-      keHalamanKKDua() {
-      this.$router.push('/layanan-online/layanan-kartu-keluarga-2');
+      keHalamanAktaTiga() {
+      this.$router.push('/layanan-online/layanan-kartu-identitas-anak-0-sd-5-tahun-2');
     },
     },
 };
@@ -109,27 +110,33 @@ h2 {
   margin-bottom: 15px;
 }
 
-/* Grid Form dengan lebih banyak jarak antar input */
+/* Grid Form */
 .form-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 55px; /* Lebih banyak jarak antar input */
+  gap: 20px;
   margin-bottom: 20px;
 }
 
 /* Input Styling */
 .input-container {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   width: 100%;
 }
 
-.input-container input {
+.input-container input,
+.input-container select {
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 14px;
   width: 100%;
+}
+
+.input-container small {
+  font-size: 12px;
+  color: #666;
 }
 
 /* Agar beberapa input full-width */
@@ -144,14 +151,16 @@ h2 {
   margin-top: 10px;
 }
 
-/* Tombol Submit lebih kecil dan di kanan */
+
+
+/* Tombol Submit */
 .btn-submit {
-  padding: 8px 20px; /* Ukuran lebih kecil */
+  padding: 10px 25px;
   background-color: #65A5CA;
   color: white;
   border: none;
   border-radius: 5px;
-  font-size: 14px; /* Ukuran teks lebih kecil */
+  font-size: 14px;
   font-weight: bold;
   cursor: pointer;
 }

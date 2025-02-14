@@ -62,7 +62,7 @@
                 <h3 class="modal-title">TERIMAKASIH TELAH MENGISI FORMULIR</h3>
                 <br>
                 <br>
-                <p>Proses Pembuatan/Perubahan Data dalam kartu keluarga akan kami proses dengan kurun waktu maksimal 3 hari.</p>
+                <p>Proses Pembuatan/Perubahan Data dalam Akta Kelahiran akan kami proses dengan kurun waktu maksimal 3 hari.</p>
                 <p>Silakan cek email yang telah diisi untuk menerima informasi lebih lanjut.</p>
                 <p>Untuk proses pengaduan, silakan hubungi: <strong>0813-1975-0033</strong></p>
                 <br>

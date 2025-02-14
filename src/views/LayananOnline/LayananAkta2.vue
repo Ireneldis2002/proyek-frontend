@@ -192,4 +192,8 @@ h2 {
   font-weight: bold;
   cursor: pointer;
 }
+
+.btn-submit:hover {
+  background-color: #A0B6D6;
+}
 </style>

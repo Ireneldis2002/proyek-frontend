@@ -87,8 +87,19 @@ import LayananAktaEmpatView from '@/views/LayananOnline/LayananAkta4.vue';
 import LayananAktaLimaView from '@/views/LayananOnline/LayananAkta5.vue';
 import LayananAktaEnamView from '@/views/LayananOnline/LayananAkta6.vue';
 import LayananKKView from '@/views/LayananOnline/LayananKK.vue';
+import LayananKKDuaView from '@/views/LayananOnline/LayananKK2.vue';
+import LayananKKTigaView from '@/views/LayananOnline/LayananKK3.vue';
+import LayananKKEmpatView from '@/views/LayananOnline/LayananKK4.vue';
+import LayananKKLimaView from '@/views/LayananOnline/LayananKK5.vue';
 import LayananKIAView from '@/views/LayananOnline/LayananKIA.vue';
+import LayananKIASatuAView from '@/views/LayananOnline/LayananKIA1A.vue';
+import LayananKIADuaAView from '@/views/LayananOnline/LayananKIA2A.vue';
+import LayananKIAAKirimView from '@/views/LayananOnline/LayananKIA3A.vue';
+import LayananKIASatuBView from '@/views/LayananOnline/LayananKIA1B.vue';
+import LayananKIADuaBView from '@/views/LayananOnline/LayananKIA2B.vue';
+import LayananKIABKirimView from '@/views/LayananOnline/LayananKIA3B.vue';
 import LayananKonsolidasiView from '@/views/LayananOnline/LayananKonsolidasi.vue';
+import LayananKonsolidasiDuaView from '@/views/LayananOnline/LayananKonsolidasi2.vue';
 
 const routes = [
   {
@@ -458,14 +469,69 @@ const routes = [
         component: LayananKKView,
       },
       {
+        path: '/layanan-online/layanan-kartu-keluarga-2',
+        name: 'LayananKKDua',
+        component: LayananKKDuaView,
+      },
+      {
+        path: '/layanan-online/layanan-kartu-keluarga-3',
+        name: 'LayananKKTiga',
+        component: LayananKKTigaView,
+      },
+      {
+        path: '/layanan-online/layanan-kartu-keluarga-4',
+        name: 'LayananKKEmpat',
+        component: LayananKKEmpatView,
+      },
+      {
+        path: '/layanan-online/layanan-kartu-keluarga-kirim',
+        name: 'LayananKKLima',
+        component: LayananKKLimaView,
+      },
+      {
         path: '/layanan-online/layanan-kartu-identitas-anak',
         name: 'LayananKIA',
         component: LayananKIAView,
       },
       {
+        path: '/layanan-online/layanan-kartu-identitas-anak-0-sd-5-tahun',
+        name: 'LayananKIA1A',
+        component: LayananKIASatuAView,
+      },
+      {
+        path: '/layanan-online/layanan-kartu-identitas-anak-0-sd-5-tahun-2',
+        name: 'LayananKIA2A',
+        component: LayananKIADuaAView,
+      },
+      {
+        path: '/layanan-online/layanan-kartu-identitas-anak-0-sd-5-tahun-kirim',
+        name: 'LayananKIA3A',
+        component: LayananKIAAKirimView,
+      },
+      {
+        path: '/layanan-online/layanan-kartu-identitas-anak-5-sd-17-tahun',
+        name: 'LayananKIA1B',
+        component: LayananKIASatuBView,
+      },
+      {
+        path: '/layanan-online/layanan-kartu-identitas-anak-5-sd-17-tahun-2',
+        name: 'LayananKIA2B',
+        component: LayananKIADuaBView,
+      },
+      {
+        path: '/layanan-online/layanan-kartu-identitas-anak-5-sd-17-tahun-kirim',
+        name: 'LayananKIA3B',
+        component: LayananKIABKirimView,
+      },
+      {
         path: '/layanan-online/konsolidasi-database',
         name: 'LayananKonsolidasi',
         component: LayananKonsolidasiView,
+      },
+      {
+        path: '/layanan-online/konsolidasi-database-kirim',
+        name: 'LayananKonsolidasi2',
+        component: LayananKonsolidasiDuaView,
       },
 
     ]

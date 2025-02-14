@@ -78,8 +78,22 @@
   
             <!-- Tombol Kirim -->
             <div class="button-container">
-              <button type="submit" class="btn-submit" @click="keHalamanKirim">KIRIM</button>
+              <button type="submit" class="btn-submit" >KIRIM</button>
             </div>
+
+            <!-- MODAL VALIDASI -->
+        <div :style="{ display: showModal ? 'flex' : 'none' }" class="modal-overlay">
+            <div class="modal">
+                <h3 class="modal-title">TERIMAKASIH TELAH MENGISI FORMULIR</h3>
+                <br>
+                <br>
+                <p>Proses Pembuatan/Perubahan Data dalam Formulir Konsolidasi Database akan kami proses dengan kurun waktu maksimal 3 hari.</p>
+                <p>Silakan cek email yang telah diisi untuk menerima informasi lebih lanjut.</p>
+                <p>Untuk proses pengaduan, silakan hubungi: <strong>0813-1975-0033</strong></p>
+                <br>
+                <button @click="closeModal" class="btn-modal" >Kembali ke Menu Layanan Online</button>
+            </div>
+        </div>
           </form>
         </div>
   
@@ -95,7 +109,7 @@
   
   <script>
   export default {
-    name: "LayananKonsolidasiView",
+    name: "LayananKonsolidasiDuaView",
     data() {
       return {
         form: {
@@ -110,14 +124,18 @@
         uploadedFiles: {
             fileKartuKeluarga: null,
         },
+        showModal: false, // Menyembunyikan modal di awal
       };
     },
+    mounted() {
+    this.showModal = true; // Modal langsung muncul setelah halaman dimuat
+  },
     methods: {
       goBack() {
         this.$router.go(-1);
       },
-      keHalamanKirim() {
-      this.$router.push('/layanan-online/konsolidasi-database-kirim');
+      closeModal() {
+        this.$router.push('/layanan-online');
     },
     },
   };
@@ -222,5 +240,59 @@
     font-weight: bold;
     cursor: pointer;
   }
+
+  /* Modal Overlay */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Pastikan di atas elemen lain */
+}
+
+/* Modal Box */
+.modal {
+    background: #d2e3f3;
+    padding: 4%;
+    border-radius: 8px;
+    width: 50%;
+    max-width: 600px; /* Batas maksimum agar tidak terlalu besar */
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Judul Modal */
+.modal-title {
+    font-size: 2rem; /* Ukuran lebih proporsional */
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Paragraf dalam Modal */
+.modal p {
+    font-size: 1.2rem; /* Tidak terlalu besar */
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+/* Tombol Modal */
+.btn-modal {
+    background-color: #65A5CA;
+    color: white;
+    padding: 12px 18px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
   </style>
   

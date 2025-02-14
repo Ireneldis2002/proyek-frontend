@@ -9,66 +9,80 @@
           <h2>FORMULIR PENDAFTARAN</h2>
           <br>
           <form>
-            <h3 class="section-title">• Data Pendukung Lainnya</h3>
+            <h3 class="section-title">• Data Berkas Persyaratan</h3>
             <div class="form-grid">
                 
                 <div class="input-container">
-                <label>Berkas Data Pendukung</label>
-                 <div class="upload-box" @click="triggerFileInput('fileDataPendukung')">
+                <label>Akta Kelahiran</label>
+                 <div class="upload-box" @click="triggerFileInput('fileAktaKelahiran')">
                 </div>
-                 <input type="file" ref="fileDataPendukung" class="hidden-file-input" @change="handleFileUpload($event, 'fileDataPendukung')" />
-                 <p v-if="uploadedFiles.fileDataPendukung" class="file-name">{{ uploadedFiles.fileDataPendukung.name }}</p>
-                 <p class="help-text">*Catatan : Isi Jika terdapat perbedaan data diri yang dimohonkan, contoh yang bisa dijadikan pendukung antara lain : IJazah, Buku/Akta Nikah, Raport, dsb. JIka tidak ada abaikan (Anda bisa Upload lebih dari satu dokumen)</p>
+                 <input type="file" ref="fileAktaKelahiran" class="hidden-file-input" @change="handleFileUpload($event, 'fileAktaKelahiran')" />
+                 <p v-if="uploadedFiles.fileAktaKelahiran" class="file-name">{{ uploadedFiles.fileAktaKelahiran.name }}</p>
                 </div>
 
-                
                 <div class="input-container">
-                
+                <label>KTP El-Ayah Kandung</label>
+                 <div class="upload-box" @click="triggerFileInput('fileKTPAyah')">
+                </div>
+                 <input type="file" ref="fileKTPAyah" class="hidden-file-input" @change="handleFileUpload($event, 'fileKTPAyah')" />
+                 <p v-if="uploadedFiles.fileKTPAyah" class="file-name">{{ uploadedFiles.fileKTPAyah.name }}</p>
                 </div>
 
-                <div class="info-box">
+                <div class="input-container">
+                <label>Kartu Keluarga</label>
+                 <div class="upload-box" @click="triggerFileInput('fileKartuKeluarga')">
+                </div>
+                 <input type="file" ref="fileKartuKeluarga" class="hidden-file-input" @change="handleFileUpload($event, 'fileKartuKeluarga')" />
+                 <p v-if="uploadedFiles.fileKartuKeluarga" class="file-name">{{ uploadedFiles.fileKartuKeluarga.name }}</p>
+                </div>
+
+                <div class="input-container">
+                <label>KTP El-Ibu Kandung</label>
+                 <div class="upload-box" @click="triggerFileInput('fileKTPIbu')">
+                </div>
+                 <input type="file" ref="fileKTPIbu" class="hidden-file-input" @change="handleFileUpload($event, 'fileKTPIbu')" />
+                 <p v-if="uploadedFiles.fileKTPIbu" class="file-name">{{ uploadedFiles.fileKTPIbu.name }}</p>
+                </div>
+
+                
+
+                
+                <div class="info-box full-width">
                 <p>
-                Sebelum anda menyetujui, mohon perhatiannya: Kami akan meng-verifikasi dan meng-validasi formulir elektronik yang anda isi beserta berkas persyaratan yang anda upload. Jika ternyata ditemukan tidak lengkap atau ada perbedaan nama, maka kami akan menghubungi via nomor WhatsApp yang anda daftar. 
-                 Untuk pengambilan dokumen Akta Kelahiran yang sudah jadi pada kantor Dukcapil, silakan membawa serta berkas persyaratan yang asli. Jika kami merasa formulir elektronik yang anda kirim dan berkas persyaratan yang anda kirim ternyata lengkap maka kami akan mengirim softcopy file Akta Kelahiran ke email atau nomor WhatsApp yang terdaftar. 
-                Silakan anda print sendiri menggunakan kertas putih A4 / 80 gram dokumen softcopy itu, karena sudah dilengkapi Barcode. Untuk mengecek keaslian data bisa scan menggunakan aplikasi android QR Code atau ScanMe yang bisa diunduh secara gratis di Play Store.
+                    Permohonan ini saya ajukan dengan sebenar-benarnya dan apabila dikemudian hari ditemukan pemalsuan data maka SAYA BERSEDIA DIPROSES SECARA HUKUM 
+                    sesuai dengan peraturan perundang-undangan yang berlaku, dan dokumen yang diterbitkan menjadi tidak sah.
                 </p>
-                </div>
-
-                <div class="input-container">
-                
-            </div>
-
-
-
-                <!-- Checkbox Persetujuan -->
+                 <!-- Checkbox Persetujuan -->
             <div class="terms-container">
               <input type="checkbox" v-model="form.persetujuan" />
               <label>Saya menyetujui syarat dan ketentuan di atas.</label>
             </div>
 
-            <div class="input-container">
-                
-            </div>
+                </div>
+
+
+               
+   
 
                  <!-- Tombol Kirim -->
             <div class="button-container">
-              <button type="submit" class="btn-submit">KIRIM</button>
+              <button type="submit" class="btn-submit" @click="keHalamanKKLima">KIRIM</button>
             </div>
 
-    
             <!-- MODAL VALIDASI -->
         <div :style="{ display: showModal ? 'flex' : 'none' }" class="modal-overlay">
             <div class="modal">
                 <h3 class="modal-title">TERIMAKASIH TELAH MENGISI FORMULIR</h3>
                 <br>
                 <br>
-                <p>Proses Pembuatan/Perubahan Data dalam Kartu Keluarga akan kami proses dengan kurun waktu maksimal 3 hari.</p>
+                <p>Proses Pembuatan Kartu Identitas Anak Berusia 0 s/d 5 Tahun akan kami proses dengan kurun waktu maksimal 3 hari.</p>
                 <p>Silakan cek email yang telah diisi untuk menerima informasi lebih lanjut.</p>
                 <p>Untuk proses pengaduan, silakan hubungi: <strong>0813-1975-0033</strong></p>
                 <br>
                 <button @click="closeModal" class="btn-modal" >Kembali ke Menu Layanan Online</button>
             </div>
         </div>
+ 
             </div>
           </form>
         </div>
@@ -76,41 +90,40 @@
         <!-- Sidebar (Ditambahkan) -->
         <aside class="sidebar">
           <div class="image-container">
-            <img src="@/assets/SidebarLayananAkta.png" alt="Sidebar Informasi" />
+            <img src="@/assets/SidebarLayananKIA.png" alt="Sidebar Informasi" />
           </div>
         </aside>
       </div>
     </div>
-
 </template>
 
 <script>
 export default {
-    name: "LayananKKLimaView",
+    name: "LayananKIAAKirimView",
     data() {
       return {
         form: {
           persetujuan: false,
         },
         uploadedFiles: {
-            fileDataPendukung: null,
-    },
+            fileAktaKelahiran: null,
+            fileKTPAyah: null,
+            fileKartuKeluarga: null,
+            fileKTPIbu: null,
+        },
     showModal: false, // Menyembunyikan modal di awal
       };
     },
     mounted() {
     this.showModal = true; // Modal langsung muncul setelah halaman dimuat
-  },
-  methods: {
-    closeModal() {
+    },
+    methods: {
+        closeModal() {
         this.$router.push('/layanan-online');
     },
-}
-    
 
-
+    },
 };
-
 </script>
 
 <style scoped>
@@ -131,15 +144,13 @@ export default {
   margin: 20px;
 }
 
-/* Kontainer Formulir */
+/* Formulir */
 .form-container {
-  flex: 1;
+  flex: 2;
   background: white;
   padding: 30px;
-  border-radius: 10px; /* Lebih melengkung agar mirip */
-  border: 2px solid #999; /* Warna border lebih lembut */
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1); /* Efek bayangan */
-  position: relative;
+  border-radius: 8px;
+  border: 2px solid #000;
 }
 
 h2 {
@@ -147,8 +158,6 @@ h2 {
   font-size: 22px;
   font-weight: bold;
 }
-
-
 
 .section-title {
   color: #0073b7;
@@ -159,8 +168,8 @@ h2 {
 /* Grid Form */
 .form-grid {
   display: grid;
-  grid-template-columns: 1fr 0fr;
-  gap: 30px;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
   margin-bottom: 20px;
 }
 
@@ -170,6 +179,10 @@ h2 {
   flex-direction: column;
   width: 100%;
 }
+
+.full-width {
+    grid-column: span 2;
+  }
 
 .input-container input,
 .input-container select {
@@ -190,14 +203,6 @@ h2 {
   grid-column: span 2;
 }
 
-/* Container untuk tombol agar di kanan */
-.button-container {
-  display: flex;
-  justify-content: flex-end;
-  margin-top: 10px;
-}
-
-/* Kotak Informasi */
 .info-box {
   background-color: #fff;
   border: 2px solid #ccc; /* Border lebih tegas */
@@ -209,14 +214,13 @@ h2 {
   text-align: justify;
 }
 
-/* Checkbox Persetujuan */
-.terms-container {
-  border: 2px solid #ccc;
-  padding: 10px;
-  border-radius: 5px;
-  background-color: #ffffff;
-  font-size: 14px;
+/* Container untuk tombol agar di kanan */
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
 }
+
 
 
 
@@ -232,7 +236,10 @@ h2 {
   cursor: pointer;
 }
 
-/* Modal Overlay */
+.btn-submit:hover {
+  background-color: #A0B6D6;
+}
+
 .modal-overlay {
     position: fixed;
     top: 0;
@@ -285,6 +292,5 @@ h2 {
     cursor: pointer;
     margin-top: 15px;
 }
-
 
 </style>
