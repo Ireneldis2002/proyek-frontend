@@ -12,28 +12,46 @@
 
   <section class="container">
     <div class="menu-grid">
-      <div class="menu-item" @click="navigateTo('/persyaratan')">
-        <img src="@/assets/Beranda1.png" alt="Persyaratan Administrasi" />
-      </div>
-      <div class="menu-item" @click="navigateTo('/kartu-anak')">
-        <img src="@/assets/Beranda2.png" alt="Kartu Indonesia Anak" />
-      </div>
-      <div class="menu-item" @click="navigateTo('/form-administrasi')">
-        <img src="@/assets/Beranda3.png" alt="Form Administrasi" />
-      </div>
-      <div class="menu-item" @click="navigateTo('/layanan-pengaduan')">
-        <img src="@/assets/Beranda4.png" alt="Layanan Pengaduan Online" />
-      </div>
+      <router-link to="/standar-pelayanan/penerbitan/penerbitan-KTP" class="menu-item">
+        <img src="@/assets/Beranda1.png" alt="Persyaratan Administrasi KTP" />
+      </router-link>
+      <router-link to="/standar-pelayanan/penerbitan/penerbitan-KK" class="menu-item">
+        <img src="@/assets/Beranda2.png" alt="Persyaratan Administrasi KK" />
+      </router-link>
+      <router-link to="/layanan-online/layanan-akta-kelahiran" class="menu-item">
+        <img src="@/assets/Beranda3.png" alt="Layanan Akta Kelahiran" />
+      </router-link>
+      <router-link to="/data-penduduk/jumlah-penduduk" class="menu-item">
+        <img src="@/assets/Beranda4.png" alt="Informasi Penduduk" />
+      </router-link>
+
+      
     </div>
 
     <div class="latest-news">
       <div class="news-box">
         <h3>Berita Terbaru</h3>
         <ul>
-          <li>Sidak ke Kantor Dukcapil Bupati Ende Tepati Janji Evaluasi Kinerja Kadis</li>
-          <li>Disdukcapil Kabupaten Ende Terjun Langsung ke Masyarakat Untuk Pembuatan KTP-El</li>
-          <li>Disdukcapil Ende Gandeng Dinas Pendidikan dan Kebudayaan Sosialisasi Program KIA</li>
-          <li>Strategi Lambertus Sigasare Kadis Dukcapil Ende Percepat Kepemilikan Adminduk</li>
+          <li>
+            <router-link to="/berita/baca-berita-1">
+              Sidak ke Kantor Dukcapil Bupati Ende Tepati Janji Evaluasi Kinerja Kadis
+            </router-link>
+          </li>
+          <li>
+            <router-link to="/berita/baca-berita-2">
+              Pelayanan Jemput Bola Dukcapil Ende Diapresiasi Masyarakat
+            </router-link>
+          </li>
+          <li>
+            <router-link to="/berita/baca-berita-3">
+            Tingkat Kualitas Layanan, Disdukcapil Ende, Kembali Turun ke Desa Kelisamba
+            </router-link>
+          </li>
+          <li>
+            <router-link to="/berita/baca-berita-4">
+            Disdukcapil Kabupaten Ende Terjun Langsung Ke Masyarakat Untuk Pembuatan KTP-El
+            </router-link>
+          </li>
         </ul>
       </div>
     </div>
@@ -60,6 +78,9 @@ export default {
     prevImage() {
       this.currentImage =
         (this.currentImage - 1 + this.images.length) % this.images.length;
+    },
+    navigateTo(path) {
+      this.$router.push(path);
     },
   },
 };

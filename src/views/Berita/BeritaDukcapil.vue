@@ -5,11 +5,28 @@
         <!-- Berita Section -->
         <div class="berita">
           <h2>Berita</h2>
-  
+
           <!-- Card 1 -->
           <div class="card">
             <div class="card-image">
-              <img src="@/assets/FotoKIA1.jpg" alt="Gambar Berita 1" />
+              <img src="@/assets/Berita1.jpeg" alt="Gambar Berita 1" />
+            </div>
+            <div class="card-content">
+              <h3>Sidak Ke Kantor Dukcapil, Bupati Ende Tepati Janji Evaluasi Kinerja Kadis</h3>
+              <p class="date">19/11/2020</p>
+              <p>
+                Bupati Ende Djafar Ahmad menepati janjinya mengevaluasi kinerja Kepala 
+                Dinas Kependudukan dan Pencatatan Sipil (Dukcapil), Lambertus Sigasare.
+              </p>
+              <button class="btn" @click="keHalamanBacaBeritaSatu">Baca Selengkapnya...</button>
+            </div>
+          </div>
+   
+  
+          <!-- Card 2 -->
+          <div class="card">
+            <div class="card-image">
+              <img src="@/assets/Berita2.jpg" alt="Gambar Berita 2" />
             </div>
             <div class="card-content">
               <h3>Pelayanan Jemput Bola Dukcapil Ende Diapresiasi Masyarakat</h3>
@@ -19,14 +36,15 @@
                 (Disdukcapil) Kabupaten Ende sejak pertengahan tahun ini sudah
                 merombak sistem pelayanan dokumen kependudukan...
               </p>
-              <button class="btn" @click="keHalamanBacaBerita">Baca Selengkapnya...</button>
+              <button class="btn" @click="keHalamanBacaBeritaDua">Baca Selengkapnya...</button>
             </div>
           </div>
+
   
-          <!-- Card 2 -->
+          <!-- Card 3 -->
           <div class="card">
             <div class="card-image">
-              <img src="@/assets/FotoKIA2.jpg" alt="Gambar Berita 2" />
+              <img src="@/assets/Berita3.jpg" alt="Gambar Berita 3" />
             </div>
             <div class="card-content">
               <h3>Tingkat Kualitas Layanan, Disdukcapil Ende, Kembali Turun ke Desa Kelisamba</h3>
@@ -35,10 +53,31 @@
                 ENDE, Spektrum-ntt.com ||Untuk menyukseskan program Kartu Tanda
                 Penduduk Elektronik (KTP-e) dan Kartu Identitas Anak (KIA)...
               </p>
-              <button class="btn" @click="keHalamanBacaBerita">Baca Selengkapnya...</button>
+              <button class="btn" @click="keHalamanBacaBeritaTiga">Baca Selengkapnya...</button>
             </div>
           </div>
-        </div>
+
+          <!-- Card 4 -->
+          <div class="card">
+            <div class="card-image">
+              <img src="@/assets/Berita4.jpg" alt="Gambar Berita 4" />
+            </div>
+            <div class="card-content">
+              <h3>Disdukcapil Kabupaten Ende Terjun Langsung Ke Masyarakat Untuk Pembuatan KTP-El</h3>
+              <p class="date">22/09/2020</p>
+              <p>
+                ENDE . Spektrum-ntt.com ||Dinas Kependudukan dan Catatan Sipil 
+                (Disdukcapil) kabupaten Ende melakukan perekaman Kartu Tanda 
+                Penduduk Elektronik (KTP-el)
+              </p>
+              <button class="btn" @click="keHalamanBacaBeritaEmpat">Baca Selengkapnya...</button>
+            </div>
+          </div>
+
+
+          </div>
+
+  
   
         <!-- Sidebar -->
         <aside class="sidebar">
@@ -54,8 +93,17 @@
   export default {
     name: "BeritaBeritaView",
     methods: {
-    keHalamanBacaBerita() {
-      this.$router.push('/berita/baca-berita');
+    keHalamanBacaBeritaSatu() {
+      this.$router.push('/berita/baca-berita-1');
+    },
+    keHalamanBacaBeritaDua() {
+      this.$router.push('/berita/baca-berita-2');
+    },
+    keHalamanBacaBeritaTiga() {
+      this.$router.push('/berita/baca-berita-3');
+    },
+    keHalamanBacaBeritaEmpat() {
+      this.$router.push('/berita/baca-berita-4');
     }
   }
   };

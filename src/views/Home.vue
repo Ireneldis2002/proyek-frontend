@@ -443,23 +443,23 @@ export default {
 
 h1 {
   font-family: 'Oswald', sans-serif;
-  font-size: 36px; /* Ukuran font lebih kecil dari 50px ke 36px */
+  font-size: 40px; /* Ukuran font lebih kecil dari 50px ke 36px */
 }
 
 h2 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
-  font-size: 22px; /* Ukuran font lebih kecil dari 28px ke 22px */
+  font-size: 26px; /* Ukuran font lebih kecil dari 28px ke 22px */
 }
 
 p {
   font-family: 'Open Sans', sans-serif;
-  font-size: 14px; /* Ukuran font lebih kecil */
+  font-size: 20px; /* Ukuran font lebih kecil */
 }
 
 .secondary-text {
   font-family: 'Lato', sans-serif;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 /* Gaya untuk kontainer pencarian */
@@ -528,7 +528,7 @@ p {
   display: block;
   color: white;
   text-decoration: none;
-  font-size: 20px; /* Mengecilkan font dari 26px ke 20px */
+  font-size: 26px;
   line-height: 1.5;
   padding: 8px 0;
   transition: color 0.3s;

@@ -72,7 +72,10 @@ import GaleriTigaView from '@/views/RuangPublik/GaleriAlbumTiga.vue';
 import GaleriEmpatView from '@/views/RuangPublik/GaleriAlbumEmpat.vue';
 
 import BeritaBeritaView from '@/views/Berita/BeritaDukcapil.vue';
-import BacaIsiBeritaView from '@/views/Berita/BacaBerita.vue';
+import BacaIsiBeritaSatuView from '@/views/Berita/BacaBerita1.vue';
+import BacaIsiBeritaDuaView from '@/views/Berita/BacaBerita2.vue';
+import BacaIsiBeritaTigaView from '@/views/Berita/BacaBerita3.vue';
+import BacaIsiBeritaEmpatView from '@/views/Berita/BacaBerita4.vue';
 import BeritaKamusView from '@/views/Berita/KamusAdminduk.vue';
 import ArtiKamusAdmindukView from '@/views/Berita/ArtiKamus.vue';
 import ArtiKamusSatuView from '@/views/Berita/ArtiKamus1.vue';
@@ -398,9 +401,24 @@ const routes = [
         component: BeritaBeritaView, // Komponen  akan dimuat di router-view
       },
       {
-        path: '/berita/baca-berita',
-        name: 'BacaBerita',
-        component: BacaIsiBeritaView,
+        path: '/berita/baca-berita-1',
+        name: 'BacaBerita1',
+        component: BacaIsiBeritaSatuView,
+      },
+      {
+        path: '/berita/baca-berita-2',
+        name: 'BacaBerita2',
+        component: BacaIsiBeritaDuaView,
+      },
+      {
+        path: '/berita/baca-berita-3',
+        name: 'BacaBerita3',
+        component: BacaIsiBeritaTigaView,
+      },
+      {
+        path: '/berita/baca-berita-4',
+        name: 'BacaBerita4',
+        component: BacaIsiBeritaEmpatView,
       },
       //Berita - Kamus Adminduk
       {

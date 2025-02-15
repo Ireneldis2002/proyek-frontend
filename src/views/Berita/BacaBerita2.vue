@@ -21,18 +21,40 @@
             
           </div>
           <div class="berita-image">
-            <img src="@/assets/FotoKIA1.jpg" alt="Gambar Berita" />
+            <img src="@/assets/Berita2.jpg" alt="Gambar Berita" />
           </div>
           <div class="berita-content">
             <p>
-              Ende, Florespos.net—Dinas Kependudukan dan Pencatatan Sipil (Disdukcapil)
-              Kabupaten Ende sejak pertengahan tahun ini sudah merombak sistem pelayanan
-              dokumen kependudukan...
+                Ende, Florespos.net—Dinas Kependudukan dan Pencatatan Sipil (Disdukcapil) 
+                Kabupaten Ende sejak pertengahan tahun ini sudah merombak sistem pelayanan 
+                dokumen kependudukan. Disdukcapil Ende turun ke desa melayani perekaman 
+                E- KTP, kartu keluarga dan dokumen kependudukan lainnya serta Kartu Identitas 
+                Anak ( KIA). Model pelayanan ini mendapatkan apresiasi dari warga karena warga 
+                dari desa tidak lagi mendatangi kantor Disdukcapil Ende.
             </p>
             <p>
-              Kepala Dinas Kependudukan dan Pencatatan Sipil Kabupaten Ende mengatakan,
-              kegiatan jemput bola ke kecamatan dan desa-desa yang dilakukan oleh Disdukcapil
-              dalam rangka meningkatkan pelayanan.
+                Yunita Avinta Lori dari Desa Kelisamba, Kecamatan Ndori, mengapresiai 
+                pelayanan dari Disdukcapil Ende saat pelayanan dokumen kependudukan warga di 
+                desa itu, Sabtu (10/10/2020).
+            </p>
+            <p>
+                Yunita mengatakan, pada hakekatnya warga di desa merasa terbantu dengan model 
+                pelayanan seperti itu karena warga tidak ke kota dan mengantre di kantor 
+                Disdukcapil Ende. Yunita mengharapkan model pelayanan seperti ini tetap 
+                dipertahankan untuk pendekatan pelayanan. Selain melayani dokumen kependudukan 
+                umum, Ia juga berharap Disdukcapil juga menggunakan kesempatan itu untuk 
+                memberikan pelayanan Kartu Identitas Anak (KIA).
+            </p>
+            <p>
+                .........................................................
+            </p>
+            <p>
+                Sementara itu sekretaris Disdukcapil Kabupaten Ende, Syarul Yahya saat pelayanan 
+                di Desa Kelisamba, Kecamatan Ndori, Sabtu (10/10/2020) tim Disdukcapil Ende 
+                melayani 52 warga yang mengurus perekaman E- KTP di desa itu. Pihaknya juga 
+                membantu warga yang memiliki data ganda dan masih memiliki KTP luar Kabupaten 
+                Ende. Selain itu saat pelayanan di desa Kelisamba, tim Disdukcapil Ende juga 
+                melakukan sosialiasi tentang Kartu Identitas Anak ( KIA). *
             </p>
           </div>
         </div>
@@ -49,7 +71,7 @@
   
   <script>
   export default {
-    name: "BacaIsiBeritaView",
+    name: "BacaIsiBeritaDuaView",
     methods: {
         goBack() {
             this.$router.go(-1);
