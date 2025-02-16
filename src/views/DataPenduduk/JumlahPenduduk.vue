@@ -9,11 +9,11 @@
       <div class="content-section">
         <div class="menu-column">
         <div class="menu-item">
-            <ol>
-              <p><b> Jumlah Penduduk Berdasarkan Data Konsolidasi Bersih (DKB) Semester I</b> </p>
+          <p><b> Jumlah Penduduk Berdasarkan Data Konsolidasi Bersih (DKB) Semester I</b> </p>
                 <p><b>(30 Juni 2022)</b></p>
                 <p><b>Per Desa-Kelurahan Tahun 2022</b></p>
-             
+                <br>
+          <ol>
               <!-- Tabel 1 -->
             <table border="1" cellpadding="10" cellspacing="0" style="width: 100%; margin-top: 20px; border-collapse: collapse; text-align: left;">
               <thead>
@@ -565,10 +565,8 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
 
 .profil-visi-misi {
-  max-width: 1200px;
-  margin: 0 auto; /* Pusatkan kontainer secara horizontal */
-  padding: 10px;
-  font-family: 'Open Sans', Arial, sans-serif;
+  max-width: 100%;
+  padding: 20px 50px;
 }
 
 h1 {
@@ -580,46 +578,57 @@ h1 {
 
 .content-container {
   display: flex;
-  gap: 20px; /* Jarak antara teks dan gambar */
+  gap: 20px;
   align-items: flex-start;
   justify-content: space-between;
 }
 
 .content-section {
-  flex-basis: 40%; /* Teks mendapatkan ruang lebih besar */
+  flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 60px; /* Jarak antar bagian teks */
-  margin-left: -100px;
+  gap: 40px;
+  padding-left: 20px;
 }
 
+.menu-item {
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    border: 1px solid #000000;
+    border-radius: 0px;
+    padding: 10px; /* Memberikan ruang di dalam kotak */
+    background-color: #ffffff;
+    text-align: left;
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+.menu-item p {
+    margin: 5px 0; /* Jarak antar teks */
+    padding-left: 10px; /* Membuat teks tetap dalam kotak dan tidak terlalu mepet ke kiri */
+    text-align: left;
+}
+
+
 .image-container {
-  flex-basis: 50%; /* Foto mendapatkan ruang lebih kecil */
+  flex: 1;
   display: flex;
-  justify-content: flex-end; /* Geser gambar lebih ke kanan */
-  align-items: right;
-  margin-right: -100px;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding-right: 20px;
 }
 
 .image-container img {
-  max-width: 100%; /* Agar gambar tidak melebihi ruang yang disediakan */
-  height: auto; /* Menjaga proporsi gambar */
-  border-radius: 10px; /* Opsional: tambahkan border radius */
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Opsional: efek bayangan */
-  margin-right: 0px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .content-item {
   position: relative;
-  padding-left: 20px; /* Memberikan indentasi kecil untuk teks */
-  margin-left: -100px; /* Geser konten lebih ke kiri */
-}
-
-h2 {
-  font-size: 28px;
-  font-weight: bold;
-  color: black;
-  margin: 0 0 10px 0;
+  padding-left: 25px;
 }
 
 .line {
@@ -632,27 +641,38 @@ h2 {
   border-radius: 3px;
 }
 
+h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: black;
+  margin: 0 0 10px 0;
+}
+
 p {
   font-size: 22px;
   color: #333;
   margin: 0;
 }
 
-ol {
-    padding-left: 40px; /* Memberikan indentasi pada daftar */
-  }
-
-ul {
-    padding-left: 40px; /* Memberikan indentasi */
-    list-style-type: disc; /* Menggunakan bullet default */
- }
-
+ol, ul {
+    padding-left: 40px; /* Indentasi yang cukup */
+}
 
 li {
-  font-size: 22px;
-  color: #333;
-  margin-bottom: 10px;
-  padding-left: 40px;
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.content-section ol {
+    list-style-position: outside;
+    padding-left: 40px;
+    font-size: 22px;
+}
+
+.content-section li {
+    margin-left: 0;
+    font-size: 22px;
 }
 
 .update {
@@ -661,47 +681,30 @@ li {
   color: #666;
   font-style: italic;
   text-align: left;
+  display: block;
+  clear: both;
 }
 
-.konten-box {
-  display: block;                 /* Menggunakan Flexbox */
-  justify-content: center;      /* Mengatur konten secara horizontal di tengah */
-  align-items: center;          /* Mengatur konten secara vertikal di tengah */
-  height: 50px;                /* Sesuaikan tinggi sesuai kebutuhan */
-  padding: 5px;               /* Memberikan padding dalam box */
+/* Styling Tabel */
+.table-container {
   margin-top: 30px;
-  margin-bottom: 75px;
 }
 
-.teks-janji {
-    font-weight: bold;
-    color: red;                  /* Mengubah warna teks menjadi merah */
-    text-align: center;          /* Mengatur teks agar rata tengah */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
 }
 
-.teks-janji2 {
-    font-weight: bold;
-    color: rgb(0, 0, 0);                  /* Mengubah warna teks menjadi merah */
-    text-align: center;          /* Mengatur teks agar rata tengah */
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
 }
 
-.menu-column {
-    display: flex;
-    flex-direction: column; /* Mengatur item secara vertikal */
-    gap: 20px; /* Menambahkan jarak antara menu item dan update */
-  }
-  
-  .menu-item {
-    height: auto; /* Sesuaikan tinggi otomatis */
-    width: 100%; /* Mengisi lebar penuh */
-    overflow: hidden;
-    border: 1px solid #000000;
-    border-radius: 0px;
-    padding: 5px;
-    background-color: #ffffff;
-    text-align: left;
-    word-wrap: break-word;
-    white-space: normal;
-  }
-
+th {
+  background-color: #8BBBD7;
+  color: white;
+  font-weight: bold;
+}
 </style>

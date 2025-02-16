@@ -53,10 +53,8 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
 
 .profil-visi-misi {
-  max-width: 1200px;
-  margin: 0 auto; /* Pusatkan kontainer secara horizontal */
-  padding: 10px;
-  font-family: 'Open Sans', Arial, sans-serif;
+  max-width: 100%;
+  padding: 20px 50px; /* Tambahkan padding untuk memberi ruang */
 }
 
 h1 {
@@ -74,19 +72,20 @@ h1 {
 }
 
 .content-section {
-  flex-basis: 50%; /* Teks mendapatkan ruang lebih besar */
+  flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 40px; /* Jarak antar bagian teks */
-  margin-left: -50px; /* Geser lebih ke kiri */
+  gap: 40px; /* Sesuaikan jarak antar elemen */
+  padding-left: 20px; /* Pastikan tidak terlalu mepet ke kiri */
 }
 
+
 .image-container {
-  flex-basis: 50%; /* Foto mendapatkan ruang lebih kecil */
+  flex: 1;
   display: flex;
-  justify-content: flex-end; /* Geser gambar ke kanan */
+  justify-content: flex-end;
   align-items: flex-start;
-  margin-right: -50px; /* Geser lebih ke kanan */
+  padding-right: 20px; /* Pastikan tidak terlalu ke kanan */
 }
 
 .image-container img {
@@ -94,13 +93,13 @@ h1 {
   height: auto; /* Menjaga proporsi gambar */
   border-radius: 10px; /* Opsional: tambahkan border radius */
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Opsional: efek bayangan */
+  margin-right: 0px;
 }
 
 .content-item {
-  position: relative;
-  padding-left: 20px; /* Indentasi kecil untuk teks */
-  margin-left: -20px; /* Geser konten lebih ke kiri */
+  padding-left: 15px; /* Hilangkan margin negatif */
 }
+
 
 h2 {
   font-size: 28px;
@@ -126,18 +125,20 @@ p {
 }
 
 ol {
-  padding-left: 40px; /* Memberikan indentasi pada daftar */
-}
+    padding-left: 40px; /* Memberikan indentasi pada daftar */
+  }
 
 ul {
-  padding-left: 40px; /* Memberikan indentasi */
-  list-style-type: disc; /* Menggunakan bullet default */
-}
+    padding-left: 40px; /* Memberikan indentasi */
+    list-style-type: disc; /* Menggunakan bullet default */
+ }
+
 
 li {
   font-size: 22px;
   color: #333;
   margin-bottom: 10px;
+  padding-left: 40px;
 }
 
 .update {
@@ -146,6 +147,8 @@ li {
   color: #666;
   font-style: italic;
   text-align: left;
+  display: block; /* Pastikan tampil sebagai blok */
+  clear: both; /* Hindari terhalang oleh elemen sebelumnya */
 }
 
 </style>

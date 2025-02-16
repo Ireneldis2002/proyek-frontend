@@ -46,10 +46,8 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
 
 .profil-visi-misi {
-  max-width: 1200px;
-  margin: 0 auto; /* Pusatkan kontainer secara horizontal */
-  padding: 10px;
-  font-family: 'Open Sans', Arial, sans-serif;
+  max-width: 100%;
+  padding: 20px 50px; /* Tambahkan padding untuk memberi ruang */
 }
 
 h1 {
@@ -67,19 +65,19 @@ h1 {
 }
 
 .content-section {
-  flex-basis: 40%; /* Teks mendapatkan ruang lebih besar */
+  flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 60px; /* Jarak antar bagian teks */
-  margin-left: -100px;
+  gap: 40px; /* Sesuaikan jarak antar elemen */
+  padding-left: 20px; /* Pastikan tidak terlalu mepet ke kiri */
 }
 
 .image-container {
-  flex-basis: 50%; /* Foto mendapatkan ruang lebih kecil */
+  flex: 1;
   display: flex;
-  justify-content: flex-end; /* Geser gambar lebih ke kanan */
-  align-items: right;
-  margin-right: -100px;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding-right: 20px; /* Pastikan tidak terlalu ke kanan */
 }
 
 .image-container img {
@@ -91,9 +89,18 @@ h1 {
 }
 
 .content-item {
-  position: relative;
-  padding-left: 20px; /* Memberikan indentasi kecil untuk teks */
-  margin-left: -100px; /* Geser konten lebih ke kiri */
+  position: relative; /* Pastikan ini ada agar .line bisa absolute terhadapnya */
+  padding-left: 25px; /* Beri ruang untuk garis */
+}
+
+.line {
+  width: 5px;
+  height: 60px; /* Atur tinggi agar garis terlihat jelas */
+  background-color: #8BBBD7;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 3px;
 }
 
 h2 {
@@ -125,7 +132,10 @@ p {
   color: #666;
   font-style: italic;
   text-align: left;
+  display: block; /* Pastikan tampil sebagai blok */
+  clear: both; /* Hindari terhalang oleh elemen sebelumnya */
 }
+
 
 
 </style>

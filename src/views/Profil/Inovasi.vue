@@ -17,10 +17,12 @@
     <li>Guna memudahkan masyarakat mengakses dan memperoleh informasi terkait dengan Adminduk seperti persyaratan, standar pelayanan, konsultasi, pengaduam, dan lain2 maka disdukcapil Membangun Website dengan alamat http://disdukcapil.endekab.go.id dan Layanan Pengaduan Masyarakat berbasis web, sms dan whatsapp termasuk layanan indeks kepuasan masyarakat yang menggunakan layanan yang disediakan oleh disdukcapil.</li>
     <li>Menyediakan Mobil Layanan Keliling Jemput Bola MORO’SI KEPO Mobil OpeRasiOnal SIap Keliling jEmPut bOla.</li>
   </ol>
+  <br>
+  <br>
 
   <!-- Kelas kedua -->
-  <p class="judul-inovasi">
-    INOVASI YANG AKAN DILAKUKAN DI TAHUN 2021
+  <p>
+    <b>INOVASI YANG AKAN DILAKUKAN DI TAHUN 2021</b>
   </p>
 
   <ol class="inovasi-2021">
@@ -66,10 +68,8 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
 
 .profil-visi-misi {
-  max-width: 1200px;
-  margin: 0 auto; /* Pusatkan kontainer secara horizontal */
-  padding: 10px;
-  font-family: 'Open Sans', Arial, sans-serif;
+  max-width: 100%;
+  padding: 20px 50px; /* Tambahkan padding untuk memberi ruang */
 }
 
 h1 {
@@ -87,19 +87,20 @@ h1 {
 }
 
 .content-section {
-  flex-basis: 40%; /* Teks mendapatkan ruang lebih besar */
+  flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 60px; /* Jarak antar bagian teks */
-  margin-left: -100px;
+  gap: 40px; /* Sesuaikan jarak antar elemen */
+  padding-left: 20px; /* Pastikan tidak terlalu mepet ke kiri */
 }
 
+
 .image-container {
-  flex-basis: 50%; /* Foto mendapatkan ruang lebih kecil */
+  flex: 1;
   display: flex;
-  justify-content: flex-end; /* Geser gambar lebih ke kanan */
-  align-items: right;
-  margin-right: -100px;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding-right: 20px; /* Pastikan tidak terlalu ke kanan */
 }
 
 .image-container img {
@@ -111,10 +112,9 @@ h1 {
 }
 
 .content-item {
-  position: relative;
-  padding-left: 20px; /* Memberikan indentasi kecil untuk teks */
-  margin-left: -100px; /* Geser konten lebih ke kiri */
+  padding-left: 15px; /* Hilangkan margin negatif */
 }
+
 
 h2 {
   font-size: 28px;
@@ -162,6 +162,8 @@ li {
   color: #666;
   font-style: italic;
   text-align: left;
+  display: block; /* Pastikan tampil sebagai blok */
+  clear: both; /* Hindari terhalang oleh elemen sebelumnya */
 }
 
 .konten-box {

@@ -189,10 +189,8 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
 
 .profil-visi-misi {
-  max-width: 1200px;
-  margin: 0 auto; /* Pusatkan kontainer secara horizontal */
-  padding: 10px;
-  font-family: 'Open Sans', Arial, sans-serif;
+  max-width: 100%;
+  padding: 20px 50px;
 }
 
 h1 {
@@ -204,86 +202,17 @@ h1 {
 
 .content-container {
   display: flex;
-  gap: 20px; /* Jarak antara teks dan gambar */
+  gap: 20px;
   align-items: flex-start;
   justify-content: space-between;
 }
 
 .content-section {
-  flex-basis: 40%; /* Teks mendapatkan ruang lebih besar */
+  flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 60px; /* Jarak antar bagian teks */
-  margin-left: -100px;
-}
-
-.image-container {
-  flex-basis: 50%; /* Foto mendapatkan ruang lebih kecil */
-  display: flex;
-  justify-content: flex-end; /* Geser gambar lebih ke kanan */
-  align-items: right;
-  margin-right: -100px;
-}
-
-.image-container img {
-  max-width: 100%; /* Agar gambar tidak melebihi ruang yang disediakan */
-  height: auto; /* Menjaga proporsi gambar */
-  border-radius: 10px; /* Opsional: tambahkan border radius */
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Opsional: efek bayangan */
-  margin-right: 0px;
-}
-
-.content-item {
-  position: relative;
-  padding-left: 20px; /* Memberikan indentasi kecil untuk teks */
-  margin-left: -100px; /* Geser konten lebih ke kiri */
-}
-
-h2 {
-  font-size: 28px;
-  font-weight: bold;
-  color: black;
-  margin: 0 0 10px 0;
-}
-
-.line {
-  width: 5px;
-  height: 100%;
-  background-color: #8BBBD7;
-  position: absolute;
-  left: 0;
-  top: 0;
-  border-radius: 3px;
-}
-
-p {
-  font-size: 22px;
-  color: #333;
-  margin: 0;
-}
-
-ol {
-    padding-left: 40px; /* Memberikan indentasi pada daftar */
-  }
-
-ul {
-    padding-left: 40px; /* Memberikan indentasi */
-    list-style-type: disc; /* Menggunakan bullet default */
- }
-
-
-li {
-  font-size: 22px;
-  color: #333;
-  margin-bottom: 10px;
-}
-
-.update {
-  margin-top: 40px;
-  font-size: 14px;
-  color: #666;
-  font-style: italic;
-  text-align: left;
+  gap: 40px;
+  padding-left: 20px;
 }
 
 .menu-item {
@@ -300,5 +229,101 @@ li {
   }
 
 
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding-right: 20px;
+}
 
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.content-item {
+  position: relative;
+  padding-left: 25px;
+}
+
+.line {
+  width: 5px;
+  height: 100%;
+  background-color: #8BBBD7;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 3px;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: black;
+  margin: 0 0 10px 0;
+}
+
+p {
+  font-size: 22px;
+  color: #333;
+  margin: 0;
+}
+
+ol, ul {
+    padding-left: 40px; /* Indentasi yang cukup */
+}
+
+li {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.content-section ol {
+    list-style-position: outside;
+    padding-left: 40px;
+    font-size: 22px;
+}
+
+.content-section li {
+    margin-left: 0;
+    font-size: 22px;
+}
+
+.update {
+  margin-top: 40px;
+  font-size: 14px;
+  color: #666;
+  font-style: italic;
+  text-align: left;
+  display: block;
+  clear: both;
+}
+
+/* Styling Tabel */
+.table-container {
+  margin-top: 30px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #8BBBD7;
+  color: white;
+  font-weight: bold;
+}
 </style>
+

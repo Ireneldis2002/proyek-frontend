@@ -2,37 +2,31 @@
   <div class="profil-visi-misi">
     <h1>Penghargaan</h1>
     <div class="content-container">
-      <!-- Bagian Teks -->
-      <div class="content-section">
-        <div class="content-item">
-          <p><b>Piagam Penghargaan dari Bupati Ende</b></p>
-          <p><b>Sebagai Unit Pelayanan Publik dengan Predikat Baik (78,74) Tahun 2021</b></p>
-        
-          <br>
-          <div class="content-item-image">
-                <img src="@/assets/Penghargaan1.jpg" alt="Gambar1" class="struktur-image" />
-       </div>
-       <div class="content-item-image">
-                <img src="@/assets/Penghargaan2.jpeg" alt="Gambar2" class="struktur-image" />
-       </div>
-       <div class="content-item-image">
-                <img src="@/assets/Penghargaan3.png" alt="Gambar3" class="struktur-image" />
-       </div>
-       <div class="content-item-image">
-                <img src="@/assets/Penghargaan4.png" alt="Gambar4" class="struktur-image" />
-       </div>
-       </div>
-      
-      <!-- Foto di Sebelah Kanan -->
-      <div class="image-container">
-        <img src="@/assets/ProfilPimpinan.png" alt="Gambar Profil" />
+      <!-- Bagian Kiri: Gambar Penghargaan -->
+      <div class="penghargaan-container">
+        <!-- Bagian Teks -->
+      <div class="text-section">
+        <p class="penghargaan-title"><b>PIAGAM PENGHARGAAN DARI BUPATI ENDE</b></p>
+        <p class="penghargaan-subtitle">
+          SEBAGAI UNIT PELAYANAN PUBLIK DENGAN PREDIKAT <span class="highlight">BAIK</span> TAHUN (78,74) 2021
+        </p>
       </div>
+        <div class="images-wrapper">
+          <img src="@/assets/Penghargaan1.jpg" alt="Gambar1" class="penghargaan-image" />
+          <img src="@/assets/Penghargaan2.jpeg" alt="Gambar2" class="penghargaan-image" />
+          <img src="@/assets/Penghargaan3.png" alt="Gambar3" class="penghargaan-image" />
+          <img src="@/assets/Penghargaan4.png" alt="Gambar4" class="penghargaan-image" />
+        </div>
+      </div>
+
+      <!-- Bagian Kanan: Sidebar (Profil Pimpinan) -->
+      <div class="sidebar-container">
+        <img src="@/assets/ProfilPimpinan.png" alt="Gambar Profil" class="sidebar-image" />
       </div>
     </div>
     <p class="update">Terakhir Update: 2 Oktober 2024</p>
   </div>
 </template>
-
 
 <script>
 export default {
@@ -44,10 +38,8 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
 
 .profil-visi-misi {
-  max-width: 1200px;
-  margin: 0 auto; /* Pusatkan kontainer secara horizontal */
-  padding: 10px;
-  font-family: 'Open Sans', Arial, sans-serif;
+  max-width: 100%;
+  padding: 20px 50px;
 }
 
 h1 {
@@ -57,76 +49,77 @@ h1 {
   margin-bottom: 30px;
 }
 
+/* Container utama: Flexbox untuk pembagian kiri dan kanan */
 .content-container {
   display: flex;
-  gap: 20px; /* Jarak antara teks dan gambar */
+  gap: 40px; /* Jarak antara kiri (penghargaan) dan kanan (sidebar) */
   align-items: flex-start;
-  justify-content: space-between;
 }
 
-.content-section {
-  flex-basis: 40%; /* Teks mendapatkan ruang lebih besar */
+/* Bagian kiri: Container Penghargaan */
+.penghargaan-container {
+  flex: 2; /* Lebih besar dibanding sidebar */
   display: flex;
   flex-direction: column;
-  gap: 60px; /* Jarak antar bagian teks */
-  margin-left: -100px;
 }
 
-.image-container {
-  flex-basis: 50%; /* Foto mendapatkan ruang lebih kecil */
-  display: flex;
-  justify-content: flex-end; /* Geser gambar lebih ke kanan */
-  align-items: right;
-  margin-right: -100px;
-}
-
-.image-container img {
-  max-width: 100%; /* Agar gambar tidak melebihi ruang yang disediakan */
-  height: auto; /* Menjaga proporsi gambar */
-  border-radius: 10px; /* Opsional: tambahkan border radius */
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Opsional: efek bayangan */
-  margin-right: 0px;
-}
-
+/* Gaya untuk teks penghargaan */
 .content-item {
-  position: relative;
-  padding-left: 20px; /* Memberikan indentasi kecil untuk teks */
-  margin-left: -100px; /* Geser konten lebih ke kiri */
+  padding-bottom: 20px;
 }
 
-h2 {
-  font-size: 28px;
+/* Bagian kiri: Gambar-gambar Penghargaan */
+.images-wrapper {
+  display: flex;
+  flex-wrap: wrap; /* Agar gambar tersusun dalam dua baris */
+  gap: 15px;
+}
+
+.penghargaan-image {
+  width: 48%; /* Agar dua gambar dalam satu baris */
+  border-radius: 5px;
+  border: 1px solid #000;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Bagian teks penghargaan */
+.text-section {
+  margin-bottom: 20px;
+}
+
+.penghargaan-title {
+  font-size: 24px;
   font-weight: bold;
   color: black;
-  margin: 0 0 10px 0;
+  margin-bottom: 5px;
 }
 
-.line {
-  width: 5px;
-  height: 100%;
-  background-color: #8BBBD7;
-  position: absolute;
-  left: 0;
-  top: 0;
-  border-radius: 3px;
+.penghargaan-subtitle {
+  font-size: 20px;
+  color: black;
 }
 
-p {
-  font-size: 22px;
-  color: #333;
-  margin: 0;
+.highlight {
+  color: green;
+  font-weight: bold;
 }
 
-ol {
-    padding-left: 40px; /* Memberikan indentasi pada daftar */
-  }
 
-li {
-  font-size: 22px;
-  color: #333;
-  margin: 0;
+/* Bagian kanan: Sidebar */
+.sidebar-container {
+  flex: 1; /* Sidebar lebih kecil */
+  display: flex;
+  justify-content: flex-end;
 }
 
+.sidebar-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Gaya untuk teks terakhir update */
 .update {
   margin-top: 40px;
   font-size: 14px;
@@ -134,17 +127,4 @@ li {
   font-style: italic;
   text-align: left;
 }
-
-.content-item-image{
-  display: block;               /* Mengatur item sebagai blok */
-    text-align: center;           /* Menjaga gambar berada di tengah secara horizontal */
-    padding: 20px;               /* Padding untuk memberi ruang di dalam kontainer */
-    width: 125%;                  /* Kontainer mengambil lebar penuh */
-    min-height: 500px;           /* Meningkatkan tinggi minimum untuk kotak */
-    background-color: #ffffff;   /* Contoh latar belakang untuk kontainer */
-    border: 1px solid #000000;      /* Menambahkan border untuk membedakan kontainer */
-    border-radius: 5px;          /* Menambahkan sudut melengkung pada kontainer */
-    margin: 10px auto;           /* Mengatur margin otomatis untuk pusat */
-}
-
 </style>

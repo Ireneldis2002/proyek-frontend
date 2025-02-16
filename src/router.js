@@ -11,7 +11,6 @@ import SaranaPrasaranaView from './views/Profil/Sarana.vue';
 import MaklumatPelayananView from './views/Profil/Maklumat.vue';
 import PenghargaanView from './views/Profil/Penghargaan.vue';
 import ProfilLhkpnView from './views/Profil/ProfilLhkpn.vue';
-import ProfilIkmView from './views/Profil/ProfilIkm.vue';
 import ProfilInovasiView from './views/Profil/Inovasi.vue';
 
 //import testBerandaView from '@/views/testBeranda.vue';
@@ -158,10 +157,7 @@ const routes = [
         path: 'profil/profil-lhkpn', // Rute untuk profil
         component: ProfilLhkpnView, // Komponen ProfilView akan dimuat di router-view
       },
-      {
-        path: 'profil/profil-ikm', // Rute untuk profil
-        component: ProfilIkmView, // Komponen ProfilView akan dimuat di router-view
-      },
+
       {
         path: 'profil/inovasi', // Rute untuk profil
         component: ProfilInovasiView, // Komponen ProfilView akan dimuat di router-view
