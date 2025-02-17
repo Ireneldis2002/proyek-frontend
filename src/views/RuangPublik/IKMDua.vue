@@ -21,7 +21,7 @@
   
         <!-- Sidebar dengan Info dan Pencarian -->
         <aside class="sidebar">
-          <div class="image-container">
+          <div class="image-container1">
           <img src="@/assets/SidebarStandar.png" alt="Gambar Profil" />
         </div>
         </aside>
@@ -45,141 +45,81 @@
   </script>
   
   <style scoped>
-  .header-container {
-    display: flex;
-    justify-content: space-between; /* Menempatkan elemen di ujung kiri dan kanan */
-    align-items: center; /* Vertikal tengah */
-    gap: 10px;
-  }
-  
-  .search-container {
-    display: flex;
-    align-items: center;
-    position: relative; /* Agar tombol dapat diposisikan relatif terhadap kontainer */
-    width: 300px; /* Lebar kontainer pencarian */
-  }
-  
-  .search-input {
-    padding: 10px 40px 10px 10px; /* Tambahkan padding di kanan untuk memberi ruang untuk tombol */
-    border: 2px solid #27394a; /* Border input */
-    border-radius: 10px; /* Sudut melengkung */
-    background-color: white; /* Latar belakang input */
-    color: black; /* Warna teks di dalam input */
-    width: 100%; /* Input memenuhi lebar kontainer */
-    box-sizing: border-box; /* Pastikan padding tidak mempengaruhi lebar total */
-  }
-  
-  .search-input::placeholder {
-    color: #b0c4de; /* Warna placeholder */
-  }
-  
-  .search-button {
-    position: absolute; /* Posisi tombol menjadi absolute */
-    right: 10px; /* Jarak dari kanan kontainer */
-    top: 50%; /* Pusatkan secara vertikal */
-    transform: translateY(-50%); /* Menggeser tombol ke tengah secara vertikal */
-    padding: 10px; /* Jarak dalam tombol */
-    background-color: transparent; /* Latar belakang transparan */
-    color: #27394a; /* Warna ikon */
-    border: none; /* Tanpa border */
-    cursor: pointer; /* Ubah kursor saat hover */
-    font-size: 16px; /* Ukuran font */
-  }
-  
-  .search-button:hover {
-    color: #ffcc00; /* Warna saat hover */
-  }
-  
-  .ruang-download {
-    max-width: 1200px;
-    margin: 0 auto;
-    font-family: 'Open Sans', sans-serif;
-  }
-  
-  header h1 {
-    font-size: 28px;
-    color: #65A5CA;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  
-  .content-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-  }
-  
-  .menu {
-    flex: 2;
-  }
-  
-  .menu-table {
-    width: 100%;
-    border-collapse: collapse;
-    background-color: white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .menu-table td {
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
-    font-size: 16px;
-    color: #333;
-  }
-  
-  .menu-table td i {
-    font-size: 24px;
-    color: #65A5CA;
-  }
-  
-  .sidebar {
-    flex: 1;
-    background-color: #ffffff;
-    padding: 20px;
-  
-  }
-  
-  .sidebar-content {
-    text-align: center;
-  }
-  
-  .profile-image {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 20px;
-  }
-  
-  .info-section h2 {
-    font-size: 18px;
-    color: #333;
-    margin-bottom: 10px;
-  }
-  
-  .info-section p, .info-section ul {
-    font-size: 14px;
-    color: #666;
-    line-height: 1.6;
-  }
-  
-  .pagination {
-    margin-top: 20px;
-    text-align: center;
-  }
-  
-  .pagination nav button {
-    background-color: #65A5CA;
-    color: white;
-    border: none;
-    padding: 8px 12px;
-    margin: 0 5px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .pagination nav button:hover {
-    background-color: #5093b8;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+
+.ruang-download {
+  max-width: 100%;
+  padding: 20px 50px;
+}
+
+header h1 {
+  font-size: 32px;
+  text-align: center;
+  color: #65A5CA;
+  margin-bottom: 100px;
+  margin-top: 20px;
+  margin-right: 300px;
+}
+
+.content-container {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.menu {
+  flex: 2;
+}
+
+.menu-table {
+  width: 90%;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.menu-table td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  font-size: 20px;
+  color: #333;
+}
+
+.menu-table td i {
+  font-size: 24px;
+  color: #65A5CA;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center; /* Center secara horizontal */
+  align-items: center; /* Center secara vertikal */
+  height: 100%; 
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.image-container1 {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding-right: 20px;
+}
+
+.image-container1 img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
   
   .btn-back {
   
@@ -194,4 +134,5 @@
   }
   
   </style>
+  
   

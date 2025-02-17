@@ -21,7 +21,7 @@
   
         <!-- Sidebar dengan Info dan Pencarian -->
         <aside class="sidebar">
-          <div class="image-container">
+          <div class="image-container1">
           <img src="@/assets/SidebarStandar.png" alt="Gambar Profil" />
         </div>
         </aside>
@@ -45,26 +45,31 @@
   </script>
   
   <style scoped>
-  .ruang-download {
-    max-width: 1200px;
-    margin: 0 auto;
-    font-family: 'Open Sans', sans-serif;
-  }
-  
-  header h1 {
-    font-size: 28px;
-    color: #65A5CA;
-    margin-bottom: 20px;
-    text-align: center; /* Teks di tengah */
-  }
-  
-  .content-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-  }
-  
-  .menu {
+   @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+.ruang-download {
+  max-width: 100%;
+padding: 20px 50px;
+}
+
+header h1 {
+  font-size: 32px;
+text-align: center;
+color: #65A5CA;
+margin-bottom: 50px;
+margin-top: 20px;
+margin-right: 500px;
+}
+
+.content-container {
+display: flex;
+gap: 20px;
+align-items: flex-start;
+justify-content: space-between;
+}
+
+
+.menu {
     flex: 2;
     display: grid;
     grid-template-columns: repeat(1, 1fr); /* Membuat 4 kolom */
@@ -72,18 +77,35 @@
   }
   
   .image-container img {
-    width: 100%; /* Gambar responsive */
+    width: 80%; /* Gambar responsive */
     height: auto;
     border-radius: 10px; /* Opsional: Sudut melengkung */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Opsional: Menambahkan bayangan */
   }
-  
-  .sidebar {
-    flex: 1;
-    background-color: #f8f9fa;
-    padding: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
+
+.sidebar {
+  flex: 1;
+  background-color: #f8f9fa;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.image-container1 {
+flex: 1;
+display: flex;
+justify-content: flex-end;
+align-items: flex-start;
+padding-right: 20px;
+
+}
+
+.image-container1 img {
+max-width: 100%;
+height: auto;
+border-radius: 10px;
+box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+
+}
 
   .btn-back {
   

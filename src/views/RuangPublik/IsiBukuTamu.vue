@@ -32,7 +32,10 @@
                         <textarea id="pesan" v-model="form.pesan" placeholder="Keperluan/Kritik/Saran/Pesan/Kesan" required></textarea>
                     </div>
 
-                    <button type="submit" class="btn-submit">Simpan</button>
+                    <div class="button-container">
+                        <button type="submit" class="btn-submit" @click="keHalamanBukuTamu">Simpan</button>
+                    </div>
+                    
                 </form>
             </div>
 
@@ -61,41 +64,50 @@ export default {
     methods: {
         goBack() {
             this.$router.go(-1);
+        },
+        keHalamanBukuTamu() {
+            this.$router.push('/ruang-publik/buku-tamu');
         }
+
     }
 };
 </script>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
 .ruang-buku-tamu {
-    max-width: 1200px;
-    margin: 0 auto;
-    font-family: 'Open Sans', sans-serif;
+    max-width: 100%;
+    padding: 20px 50px;
 }
 
 header h1 {
-    font-size: 28px;
-    color: #65A5CA;
-    text-align: center;
-    margin-bottom: 20px;
+    font-size: 32px;
+  text-align: center;
+  color: #65A5CA;
+  margin-bottom: 30px;
+  margin-top: 50px;
+  margin-right: 250px;
 }
 
-/* Tombol Kembali */
 .btn-back {
-    color: white;
-    background-color: #8bbbd7;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 18px;
-    margin-bottom: 10px;
+
+color: white;
+background-color: #8bbbd7;
+padding: 10px 20px;
+border-color: white;
+border-radius: 5px;
+cursor: pointer;
+font-size: 18px;
+margin-bottom: 10px; /* Jarak antara tombol dan judul */
 }
 
 /* Kontainer Utama */
 .content-container {
     display: flex;
-    gap: 20px;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 
 /* Form Buku Tamu */
@@ -158,27 +170,43 @@ textarea {
     resize: none;
 }
 
-/* Tombol Simpan */
-.btn-submit {
-    width: 100%;
-    padding: 10px;
-    background-color: #65A5CA;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 18px;
-    cursor: pointer;
+/* Container untuk tombol agar di kanan */
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
 }
 
-/* Sidebar */
-.sidebar {
-    flex: 1;
-    background-color: #f8f9fa;
-    padding: 20px;
+/* Tombol Submit */
+.btn-submit {
+  padding: 10px 25px;
+  background-color: #65A5CA;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-submit:hover {
+  background-color: #A0B6D6;
+}
+
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding-right: 20px;
+
 }
 
 .image-container img {
-    width: 100%;
-    border-radius: 10px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  
 }
 </style>

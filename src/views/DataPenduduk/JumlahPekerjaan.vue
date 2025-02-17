@@ -228,15 +228,7 @@ h1 {
   padding-left: 25px;
 }
 
-.line {
-  width: 5px;
-  height: 100%;
-  background-color: #8BBBD7;
-  position: absolute;
-  left: 0;
-  top: 0;
-  border-radius: 3px;
-}
+
 
 h2 {
   font-size: 28px;

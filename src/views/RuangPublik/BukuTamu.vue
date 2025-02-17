@@ -2,7 +2,12 @@
   <div class="ruang-buku-tamu">
     <header>
       <h1>Buku Tamu</h1>
-      <button class="isi-buku-tamu" @click="keHalamanIsiBukuTamu">Isi Buku Tamu</button>
+      <div class="header-container">
+      <div class="isi-container">
+        <button class="isi-buku-tamu" @click="keHalamanIsiBukuTamu">Isi Buku Tamu</button>
+      </div>
+    </div>
+     
 
     </header>
 
@@ -27,14 +32,19 @@
       </aside>
     </div>
 
-    <!-- Pagination -->
-    <nav class="pagination">
-      <button>&laquo;&laquo;</button>
-      <button>1</button>
-      <button>2</button>
-      <button>3</button>
-      <button>&raquo;&raquo;</button>
-    </nav>
+    <!-- PAGINATION -->
+    <footer class="pagination">
+      <div class="pagination-container">
+      <nav>
+        <button>&laquo;</button>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>&raquo;</button>
+      </nav>
+    </div>
+    </footer>
+
   </div>
 </template>
 
@@ -59,22 +69,66 @@ export default {
 </script>
 
 <style scoped>
-.ruang-buku-tamu {
-  max-width: 1200px;
-  margin: 0 auto;
-  font-family: 'Open Sans', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+.profil-visi-misi {
+  max-width: 100%;
+  padding: 20px 50px;
 }
 
-header {
+h1 {
+  font-size: 32px;
+  text-align: left;
+  color: #65A5CA;
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+
+.content-container {
   display: flex;
+  gap: 20px;
+  align-items: flex-start;
   justify-content: space-between;
+}
+
+.content-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding-left: 20px;
+}
+
+.menu-item {
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    background-color: #ffffff;
+    text-align: left;
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+.menu-item p {
+    margin: 5px 0; /* Jarak antar teks */
+    padding-left: 10px; /* Membuat teks tetap dalam kotak dan tidak terlalu mepet ke kiri */
+    text-align: left;
+}
+
+/* Pindahkan search ke atas kanan tabel */
+.header-container {
+  display: flex;
+  justify-content: flex-end;
   align-items: center;
   margin-bottom: 20px;
 }
 
-header h1 {
-  font-size: 28px;
-  color: #65A5CA;
+.isi-container {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 310px; /* Jarak dari atas */
+  right: 370px; /* Jarak dari kanan */
 }
 
 .isi-buku-tamu {
@@ -86,21 +140,21 @@ header h1 {
   border-radius: 5px;
 }
 
-.content-container {
-  display: flex;
-  gap: 20px;
-}
-
 .buku-tamu-container {
   flex: 2;
+
+  background: #f8f8f8; /* Warna background agar mirip dengan desain */
+  border-radius: 10px;
 }
 
+
 .buku-tamu-entry {
-  border: 1px solid #ddd;
+  border: 1px solid #ccc;
   padding: 15px;
-  border-radius: 8px;
+  border-radius: 10px;
   margin-bottom: 15px;
   background: white;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); /* Efek bayangan agar lebih menarik */
 }
 
 .entry-header {
@@ -108,7 +162,9 @@ header h1 {
   justify-content: space-between;
   font-size: 16px;
   font-weight: bold;
+  color: #333;
 }
+
 
 .entry-message {
   margin: 10px 0;
@@ -119,30 +175,151 @@ header h1 {
   color: gray;
 }
 
-.sidebar {
+.image-container {
   flex: 1;
-  background-color: #f8f9fa;
-  padding: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding-right: 20px;
 }
 
 .image-container img {
-  width: 100%;
+  max-width: 100%;
+  height: auto;
   border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+.content-item {
+  position: relative;
+  padding-left: 25px;
+}
+
+
+
+h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: black;
+  margin: 0 0 10px 0;
+}
+
+p {
+  font-size: 22px;
+  color: #333;
+  margin: 0;
+}
+
+ol, ul {
+    padding-left: 40px; /* Indentasi yang cukup */
+}
+
+li {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.content-section ol {
+    list-style-position: outside;
+    padding-left: 40px;
+    font-size: 22px;
+}
+
+.content-section li {
+    margin-left: 0;
+    font-size: 22px;
+}
+
+.update {
+  margin-top: 40px;
+  font-size: 14px;
+  color: #666;
+  font-style: italic;
+  text-align: left;
+  display: block;
+  clear: both;
+}
+
+/* Styling Tabel */
+.table-container {
+  width: 98%; /* Dari 95% menjadi lebih besar */
+  max-width: 100%;
+  margin: auto;
+}
+
+table {
+  width: 100%; /* Full width untuk tabel */
+  table-layout: fixed; /* Mengatur lebar kolom secara otomatis */
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+  word-wrap: break-word; /* Pastikan teks bisa turun jika panjang */
+}
+
+
+th {
+  background-color: #8BBBD7;
+  color: white;
+  font-weight: bold;
+}
+
+/* Lebar kolom gambar folder */
+th:nth-child(1), td:nth-child(1) {
+  width: 10%; /* Membuat kolom gambar folder lebih sempit */
+  text-align: center; /* Agar ikon folder rata tengah */
+}
+
+/* Lebar kolom nama file */
+th:nth-child(2), td:nth-child(2) {
+  width: 60%; /* Membuat kolom nama file lebih lebar */
+}
+
+th {
+  background-color: #8BBBD7;
+  color: white;
+  font-weight: bold;
+}
+
+/* Lebar kolom jumlah file */
+th:nth-child(3), td:nth-child(3) {
+  width: 30%; /* Kolom jumlah file lebih kecil */
+}
+
+/* Pagination lebih dekat ke tabel */
 .pagination {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 5px; /* Diperpendek agar pagination lebih dekat ke tabel */
+}
+
+.pagination-container {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 800px; /* Jarak dari atas */
+  right: 1350px; /* Jarak dari kanan */
 }
 
 .pagination button {
-  background: #65A5CA;
-  color: white;
-  border: none;
   padding: 8px 12px;
-  margin: 0 5px;
+  margin: 2px;
+  border: 1px solid #ccc;
+  background-color: white;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 4px;
+}
+
+.pagination button.active {
+  background-color: #8BBBD7;
+  color: white;
+}
+
+.pagination button:hover {
+  background-color: #65A5CA;
+  color: white;
 }
 </style>

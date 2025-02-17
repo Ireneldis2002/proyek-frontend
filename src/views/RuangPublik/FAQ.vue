@@ -5,10 +5,9 @@
       <h1>FAQ</h1>
       <p>
         FAQ (Frequently Asked Question) merupakan daftar pertanyaan-pertanyaan yang sering 
-        diajukan oleh masyarakat.
-        <br> FAQ pada Layanan Dukcapil juga disertakan dengan jawaban, 
-        sehingga memudahkan bagi masyarakat jika ada pertanyaan atau kendala yang sering dialami. 
-        <br> Berikut langkah untuk mengakses FAQ adalah dengan memilih pertanyaan di bawah ini.
+        diajukan oleh masyarakat. FAQ pada Layanan Dukcapil juga disertakan dengan jawaban, 
+        sehingga memudahkan bagi masyarakat jika ada pertanyaan 
+        <br>atau kendala yang sering dialami. Berikut langkah untuk mengakses FAQ adalah dengan memilih pertanyaan di bawah ini.
         <br>
         <br>
       </p>
@@ -95,22 +94,26 @@ export default {
 
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
 .ruang-download {
-  max-width: 1200px;
-  margin: 0 auto;
-  font-family: 'Open Sans', sans-serif;
+  max-width: 100%;
+  padding: 20px 50px;
 }
 
 header h1 {
-  font-size: 28px;
+  font-size: 32px;
+  text-align: left;
   color: #65A5CA;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  margin-top: 20px;
 }
 
 .content-container {
   display: flex;
-  justify-content: space-between;
   gap: 20px;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 
 .menu {
@@ -127,7 +130,7 @@ header h1 {
 .menu-table td {
   padding: 10px;
   border-bottom: 1px solid #ddd;
-  font-size: 16px;
+  font-size: 18px;
   color: #333;
 }
 
@@ -136,15 +139,19 @@ header h1 {
   color: #65A5CA;
 }
 
-.sidebar {
+.image-container {
   flex: 1;
-  background-color: #f8f9fa;
-  padding: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding-right: 20px;
 }
 
-.sidebar-content {
-  text-align: center;
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .profile-image {
@@ -201,7 +208,7 @@ header h1 {
 }
 
 .faq-question {
-  font-size: 16px; /* Ukuran huruf sama seperti tabel */
+  font-size: 20px; /* Ukuran huruf sama seperti tabel */
   font-weight: normal; /* Font tidak tebal */
   color: #333; /* Warna teks default */
   display: flex;
@@ -215,7 +222,7 @@ header h1 {
 }
 
 .faq-answer {
-  font-size: 14px; /* Ukuran huruf jawaban lebih kecil */
+  font-size: 18px; /* Ukuran huruf jawaban lebih kecil */
   color: #666; /* Warna teks jawaban lebih gelap */
   margin-top: 10px;
   padding: 5px 0;
@@ -228,6 +235,12 @@ header h1 {
 
 .faq-question:hover i {
   color: #5093b8; /* Warna ikon lebih gelap saat hover */
+}
+
+p {
+  font-size: 18px; /* Ubah ukuran font, misalnya dari default 14px ke 18px */
+  color: #333; /* Warna teks agar lebih jelas */
+  line-height: 1.8; /* Menambah jarak antar baris agar lebih nyaman dibaca */
 }
 
 

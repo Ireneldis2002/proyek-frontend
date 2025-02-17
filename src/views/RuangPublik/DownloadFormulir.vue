@@ -1,12 +1,14 @@
 <template>
-  <div class="ruang-download">
+  <div class="profil-visi-misi">
 
     <button @click="goBack" class="btn-back">⬅ </button>
-
-    <header>
-      <h1> Formulir Persyaratan Pelayanan Adminduk</h1>
-    </header>
-
+    <br>
+    <br>
+    <h1>Formulir Persyaratan Adminduk</h1>
+    <br>
+    <br>
+    <div class="content-container">
+      <!-- PENCARIAN -->
     <div class="header-container">
       <div class="search-container">
         <input
@@ -20,11 +22,21 @@
       </div>
     </div>
 
-    <div class="content-container">
-      <!-- Bagian Menu -->
-      <section class="menu">
-        <table class="menu-table">
-          <tbody>
+      <!-- Bagian Teks -->
+      <div class="content-section">
+        <div class="menu-column">
+          <div class="menu-item">
+            <ol>
+            <!-- Tabel 1 -->
+            <table border="1" cellpadding="10" cellspacing="0" style="width: 100%; margin-top: 20px; border-collapse: collapse; text-align: left;">
+              <thead>
+                <tr>
+                    <th></th>
+                    <th>Nama File</th>
+                    <th>Download</th>
+                </tr>
+              </thead>
+              <tbody>
                     <tr>
                       <td><i class="fas fa-file-pdf"></i></td>
                       <td><b>F-1.04 Surat Pernyataan Tidak Memiliki Dokumen Kependudukan </b></td>
@@ -84,30 +96,23 @@
                     <!-- Tambahkan baris lainnya sesuai kebutuhan -->
                   </tbody>
 
-        </table>
-      </section>
-
-      <!-- Sidebar dengan Info dan Pencarian -->
-      <aside class="sidebar">
-        <div class="image-container">
+            </table>
+            </ol>
+          </div>
+          </div>
+      </div>
+      
+      <!-- Foto di Sebelah Kanan -->
+      <div class="image-container">
         <img src="@/assets/SidebarStandar.png" alt="Gambar Profil" />
       </div>
-      </aside>
     </div>
 
-    <!-- Pagination -->
-    <footer class="pagination">
-      <nav>
-        <button>&laquo;</button>
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button>&raquo;</button>
-      </nav>
-    </footer>
+    
 
   </div>
 </template>
+
 
 <script>
 export default {
@@ -121,139 +126,218 @@ export default {
 </script>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+.profil-visi-misi {
+  max-width: 100%;
+  padding: 20px 50px;
+}
+
+h1 {
+  font-size: 32px;
+  text-align: left;
+  color: #65A5CA;
+  margin-bottom: 30px;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+.content-container {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.content-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding-left: 20px;
+}
+
+.menu-item {
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    background-color: #ffffff;
+    text-align: left;
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+.menu-item p {
+    margin: 5px 0; /* Jarak antar teks */
+    padding-left: 10px; /* Membuat teks tetap dalam kotak dan tidak terlalu mepet ke kiri */
+    text-align: left;
+}
+
+/* Pindahkan search ke atas kanan tabel */
 .header-container {
   display: flex;
-  justify-content: space-between; /* Menempatkan elemen di ujung kiri dan kanan */
-  align-items: center; /* Vertikal tengah */
-  gap: 10px;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 .search-container {
   display: flex;
   align-items: center;
-  position: relative; /* Agar tombol dapat diposisikan relatif terhadap kontainer */
-  width: 300px; /* Lebar kontainer pencarian */
+  position: absolute;
+  top: 400px; /* Jarak dari atas */
+  right: 1300px; /* Jarak dari kanan */
 }
 
 .search-input {
-  padding: 10px 40px 10px 10px; /* Tambahkan padding di kanan untuk memberi ruang untuk tombol */
-  border: 2px solid #27394a; /* Border input */
-  border-radius: 10px; /* Sudut melengkung */
-  background-color: white; /* Latar belakang input */
-  color: black; /* Warna teks di dalam input */
-  width: 100%; /* Input memenuhi lebar kontainer */
-  box-sizing: border-box; /* Pastikan padding tidak mempengaruhi lebar total */
-}
-
-.search-input::placeholder {
-  color: #b0c4de; /* Warna placeholder */
+  width: 200px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 14px;
+  outline: none;
 }
 
 .search-button {
-  position: absolute; /* Posisi tombol menjadi absolute */
-  right: 10px; /* Jarak dari kanan kontainer */
-  top: 50%; /* Pusatkan secara vertikal */
-  transform: translateY(-50%); /* Menggeser tombol ke tengah secara vertikal */
-  padding: 10px; /* Jarak dalam tombol */
-  background-color: transparent; /* Latar belakang transparan */
-  color: #27394a; /* Warna ikon */
-  border: none; /* Tanpa border */
-  cursor: pointer; /* Ubah kursor saat hover */
-  font-size: 16px; /* Ukuran font */
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
 }
 
-.search-button:hover {
-  color: #ffcc00; /* Warna saat hover */
-}
-
-.ruang-download {
-  max-width: 1200px;
-  margin: 0 auto;
-  font-family: 'Open Sans', sans-serif;
-}
-
-header h1 {
-  font-size: 28px;
-  color: #65A5CA;
-  margin-bottom: 20px;
-}
-
-.content-container {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-}
-
-.menu {
-  flex: 2;
-}
-
-.menu-table {
-  width: 100%;
-  border-collapse: collapse;
-  background-color: white;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.menu-table td {
-  padding: 10px;
-  border-bottom: 1px solid #ddd;
+.search-button i {
   font-size: 16px;
-  color: #333;
+  color: #555;
 }
 
-.menu-table td i {
-  font-size: 24px;
-  color: #65A5CA;
-}
 
-.sidebar {
+.image-container {
   flex: 1;
-  background-color: #ffffff;
-  padding: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding-right: 20px;
 
 }
 
-.sidebar-content {
-  text-align: center;
-}
-
-.profile-image {
+.image-container img {
   max-width: 100%;
   height: auto;
   border-radius: 10px;
-  margin-bottom: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  
 }
 
-.info-section h2 {
-  font-size: 18px;
+.content-item {
+  position: relative;
+  padding-left: 25px;
+}
+
+
+
+h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: black;
+  margin: 0 0 10px 0;
+}
+
+p {
+  font-size: 22px;
   color: #333;
-  margin-bottom: 10px;
+  margin: 0;
 }
 
-.info-section p, .info-section ul {
+ol, ul {
+    padding-left: 40px; /* Indentasi yang cukup */
+}
+
+li {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.content-section ol {
+    list-style-position: outside;
+    padding-left: 40px;
+    font-size: 22px;
+}
+
+.content-section li {
+    margin-left: 0;
+    font-size: 22px;
+}
+
+.update {
+  margin-top: 40px;
   font-size: 14px;
   color: #666;
-  line-height: 1.6;
+  font-style: italic;
+  text-align: left;
+  display: block;
+  clear: both;
 }
 
-.pagination {
-  margin-top: 20px;
-  text-align: center;
+/* Styling Tabel */
+.table-container {
+  width: 98%; /* Dari 95% menjadi lebih besar */
+  max-width: 100%;
+  margin: auto;
 }
 
-.pagination nav button {
-  background-color: #65A5CA;
+table {
+  width: 100%; /* Full width untuk tabel */
+  table-layout: fixed; /* Mengatur lebar kolom secara otomatis */
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+  word-wrap: break-word; /* Pastikan teks bisa turun jika panjang */
+}
+
+
+th {
+  background-color: #8BBBD7;
   color: white;
-  border: none;
-  padding: 8px 12px;
-  margin: 0 5px;
-  border-radius: 5px;
-  cursor: pointer;
+  font-weight: bold;
 }
 
-.pagination nav button:hover {
-  background-color: #5093b8;
+/* Lebar kolom gambar folder */
+th:nth-child(1), td:nth-child(1) {
+  width: 10%; 
+  text-align: center; /* Agar ikon folder rata tengah */
+}
+
+/* Lebar kolom nama file */
+th:nth-child(2), td:nth-child(2) {
+  width: 60%; /* Membuat kolom nama file lebih lebar */
+}
+
+/* Lebar kolom gambar folder */
+th:nth-child(3), td:nth-child(3) {
+  width: 10%; 
+  text-align: center; /* Agar ikon folder rata tengah */
+}
+
+th {
+  background-color: #8BBBD7;
+  color: white;
+  font-weight: bold;
+}
+
+/* Lebar kolom jumlah file */
+th:nth-child(3), td:nth-child(3) {
+  width: 30%; /* Kolom jumlah file lebih kecil */
+}
+
+.fa-download{
+  color: #78A3BD;
+}
+
+.fa-file-pdf{
+  color: #78A3BD;
 }
 
 .btn-back {
@@ -267,5 +351,4 @@ cursor: pointer;
 font-size: 18px;
 margin-bottom: 10px; /* Jarak antara tombol dan judul */
 }
-
 </style>

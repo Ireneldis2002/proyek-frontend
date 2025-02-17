@@ -328,7 +328,7 @@ const routes = [
 
       //Ruang Publik - Buku Tamu
       {
-        path: 'ruang-publik/buku-tamu', // Rute untuk 
+        path: '/ruang-publik/buku-tamu', // Rute untuk 
         component: RuangBukuTamuView, // Komponen  akan dimuat di router-view
       },
       {
