@@ -49,6 +49,8 @@ h1 {
   margin-bottom: 30px;
 }
 
+
+
 /* Container utama: Flexbox untuk pembagian kiri dan kanan */
 .content-container {
   display: flex;

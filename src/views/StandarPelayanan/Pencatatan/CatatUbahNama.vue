@@ -118,7 +118,7 @@ h1 {
 }
 
 .content-section {
-  flex: 1;
+  flex: 3;
   display: flex;
   flex-direction: column;
   gap: 40px;

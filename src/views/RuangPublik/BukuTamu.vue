@@ -71,7 +71,7 @@ export default {
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
 
-.profil-visi-misi {
+.ruang-buku-tamu {
   max-width: 100%;
   padding: 20px 50px;
 }
@@ -81,7 +81,6 @@ h1 {
   text-align: left;
   color: #65A5CA;
   margin-bottom: 30px;
-  margin-top: 50px;
 }
 
 .content-container {
@@ -100,13 +99,10 @@ h1 {
 }
 
 .menu-item {
-    height: auto;
-    width: 100%;
-    overflow: hidden;
-    background-color: #ffffff;
-    text-align: left;
-    word-wrap: break-word;
-    white-space: normal;
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .menu-item p {
@@ -127,8 +123,8 @@ h1 {
   display: flex;
   align-items: center;
   position: absolute;
-  top: 310px; /* Jarak dari atas */
-  right: 370px; /* Jarak dari kanan */
+  top: 280px; /* Jarak dari atas */
+  right: 420px; /* Jarak dari kanan */
 }
 
 .isi-buku-tamu {

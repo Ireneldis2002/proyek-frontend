@@ -28,20 +28,11 @@
                     <td colspan="2"> SLTA/SEDERAJAT</td>
                     <td colspan="2"> DIPLOMA I/II</td>
                     <td colspan="2"> AKADEMI/DIPL.III/S.MUDA </td>
-                    <td colspan="2"> DIPLOMA IV/STRATA I</td>
-                    <td colspan="2"> STRATA II</td>
-                    <td colspan="2"> STRATA III</td>
                 </tr>
                 <tr>
                     <th></th>
                     <th></th>
                     <th></th>
-                    <th>L</th>
-                    <th>P</th>
-                    <th>L</th>
-                    <th>P</th>
-                    <th>L</th>
-                    <th>P</th>
                     <th>L</th>
                     <th>P</th>
                     <th>L</th>
@@ -78,12 +69,7 @@
                   <td><b>1190</b></td>
                   <td><b>1205</b></td>
                   <td><b>2602</b></td>
-                  <td><b>6247</b></td>
-                  <td><b>7667</b></td>
-                  <td><b>286</b></td>
-                  <td><b>199</b></td>
-                  <td><b>15</b></td>
-                  <td><b>10</b></td>
+
                 </tr>
                 <tr>
                   <td><b>3</b></td>
@@ -103,12 +89,7 @@
                   <td><b>83</b></td>
                   <td><b>82</b></td>
                   <td><b>167</b></td>
-                  <td><b>502</b></td>
-                  <td><b>606</b></td>
-                  <td><b>11</b></td>
-                  <td><b>2</b></td>
-                  <td><b>0</b></td>
-                  <td><b>0</b></td>
+
                 </tr>
                 <tr>
                   <td>4</td>
@@ -128,12 +109,7 @@
                   <td>13</td>
                   <td>8</td>
                   <td>17</td>
-                  <td>55</td>
-                  <td>68</td>
-                  <td>2</td>
-                  <td>1</td>
-                  <td>0</td>
-                  <td>0</td>
+
                 </tr>
                 <tr>
                   <td></td>
@@ -153,12 +129,7 @@
                   <td></td>
                   <td></td>
                   <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
+
                 </tr>
               </tbody>
             </table>
@@ -206,7 +177,7 @@ h1 {
 }
 
 .content-section {
-  flex: 1;
+  flex: 3;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -234,7 +205,7 @@ h1 {
 
 
 .image-container {
-  flex: 1;
+  flex: 2;
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;

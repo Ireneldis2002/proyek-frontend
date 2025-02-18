@@ -128,7 +128,7 @@ h1 {
 }
 
 .content-section {
-  flex: 1;
+  flex: 6;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -164,7 +164,7 @@ h1 {
   align-items: center;
   position: absolute;
   top: 400px; /* Jarak dari atas */
-  right: 1300px; /* Jarak dari kanan */
+  right: 900px; /* Jarak dari kanan */
 }
 
 .search-input {
@@ -190,7 +190,7 @@ h1 {
 
 
 .image-container {
-  flex: 1;
+  flex: 3;
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
