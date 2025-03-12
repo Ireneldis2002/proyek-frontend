@@ -8,8 +8,7 @@
             src="@/assets/LogoDukcapil.png"
             alt="Logo Disdukcapil Kabupaten Ende"
             class="logo"
-          />
-
+          >
 
           <h1>
             Dinas Pendudukan dan Pencatatan Sipil <br> Kabupaten Ende
@@ -424,7 +423,7 @@ export default {
 .header {
   background-color: #65A5CA; /* Warna latar belakang header */
   color: white;
-  padding: 15px;
+  padding: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -438,12 +437,15 @@ export default {
 .logo {
   height: 70px; /* Mengecilkan ukuran logo dari 100px ke 70px */
   width: auto; /* Pastikan proporsi tetap */
-  margin-right: 10px;
+  margin-right: 50px;
+  margin-left: 20px;
 }
 
 h1 {
   font-family: 'Oswald', sans-serif;
   font-size: 40px; /* Ukuran font lebih kecil dari 50px ke 36px */
+  color: white;
+  text-align: left;
 }
 
 h2 {
@@ -468,6 +470,7 @@ p {
   align-items: center;
   position: relative;
   width: 250px; /* Mengecilkan lebar kontainer pencarian */
+  margin-right: 20px;
 }
 
 .search-input {

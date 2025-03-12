@@ -13,16 +13,20 @@
             <br>
             <br>
             <div class="info-header">
-              <p><span class="icon">📅</span> 10/10/2020</p>
-              <p><span class="icon">👤</span> Penulis Berita :</p>
-              <p><span class="icon">👤</span> Editor Berita :</p>
-              <p><span class="icon">👁</span> 175</p>
+              <p><b><span class="icon">📅</span> 10/10/2020</b></p>
+              <p><b><span class="icon">👤</span> Penulis Berita :</b></p>
+              <p><b><span class="icon">👤</span> Editor Berita :</b></p>
+              <p><b><span class="icon">👁</span> 175</b></p>
             </div>
+            <br>
+            <br>
             
           </div>
           <div class="berita-image">
             <img src="@/assets/Berita3.jpg" alt="Gambar Berita" />
           </div>
+          <br>
+          <br>
           <div class="berita-content">
             <p>
                 ENDE. Spektrum-ntt.com ||Untuk menyukseskan program Kartu Tanda Penduduk Elektronik (KTP-e) dan Kartu Indentitas Anak 
@@ -71,10 +75,11 @@
   </script>
   
   <style scoped>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
   .ruang-download {
-    max-width: 1200px;
-    margin: 0 auto;
-    font-family: 'Open Sans', sans-serif;
+    max-width: 100%;
+    padding: 20px 50px;
   }
   
   .content-container {
@@ -97,20 +102,22 @@
   
   .berita-header h2 {
     font-size: 24px;
+    color: #65A5CA;
     text-align: center;
-    color: black;
+    margin-bottom: 50px;
+    margin-top: 20px;
   }
   
   .info-header {
     display: flex;
     justify-content: space-between;
-    font-size: 14px;
+    font-size: 18px;
     color: gray;
   }
   
   .berita-image img {
-  width: 80%; /* Ukuran gambar dibuat lebih kecil */
-  max-width: 300px; /* Maksimal lebar gambar */
+  width: 100%; /* Ukuran gambar dibuat lebih kecil */
+  max-width: 800px; /* Maksimal lebar gambar */
   border-radius: 8px;
   margin: 20px auto; /* Gambar dipusatkan secara horizontal */
   display: block; /* Untuk memastikan gambar menjadi elemen blok */
@@ -118,24 +125,38 @@
 
 .image-container img {
   width: 100%;
+  height: 100%;
   border-radius: 10px;
 }
   
   .berita-content p {
-    font-size: 16px;
+    font-size: 20px;
     line-height: 1.6;
     margin-bottom: 10px;
+    text-align:justify;
   }
-  
-  .sidebar {
-    flex: 1;
-    background-color: #f8f9fa;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
 
+  .icon{
+    width: 80px;
+    height: 80px;
+  }
+  
+  .image-container {
+flex: 1;
+display: flex;
+justify-content: flex-end;
+align-items: flex-start;
+padding-right: 20px;
+
+}
+
+.image-container img {
+max-width: 100%;
+height: auto;
+border-radius: 10px;
+box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+
+}
 
   .btn-back {
     color: white;

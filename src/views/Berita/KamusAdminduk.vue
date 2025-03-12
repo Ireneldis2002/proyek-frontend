@@ -1,29 +1,28 @@
 <template>
     <div class="ruang-download">
-      <header>
         <h1>Kamus Adminduk</h1>
-      </header>
+
   
       <!-- Main Content -->
       <div class="content-container">
         <!-- Grid for Kamus Adminduk -->
         <div class="grid-container">
           <!-- Kartu "Penerbitan Data Kependudukan" -->
-          <router-link class="card" to="/berita/baca-penjelasan-arti-penerbitan-data-kependudukan">
+          <router-link class="card" to="/berita/kamus-adminduk/baca-penjelasan-arti-penerbitan-data-kependudukan">
             Penerbitan Data Kependudukan
           </router-link>
   
           <!-- Kartu "Alur Status Perekaman KTP-el" -->
-          <router-link class="card" to="/berita/baca-penjelasan-arti-alur-status-perekaman">
+          <router-link class="card" to="/berita/kamus-adminduk/baca-penjelasan-arti-alur-status-perekaman">
             Alur Status Perekaman KTP-el
           </router-link>
   
           <!-- Kartu lainnya -->
-          <router-link class="card" to="/berita/baca-penjelasan-arti-pengertian-PIAK-dan-PD">
+          <router-link class="card" to="/berita/kamus-adminduk/baca-penjelasan-arti-pengertian-PIAK-dan-PD">
             Pengertian PIAK dan PD
           </router-link>
 
-          <router-link class="card" to="/berita/baca-penjelasan-arti-ktp-berlaku-seumur-hidup">
+          <router-link class="card" to="/berita/kamus-adminduk/baca-penjelasan-arti-ktp-berlaku-seumur-hidup">
             KTP Berlaku Seumur Hidup
           </router-link>
 
@@ -61,14 +60,18 @@
         </aside>
       </div>
   
-      <!-- Pagination -->
-      <nav class="pagination">
-        <button>&laquo;&laquo;</button>
+      <!-- PAGINATION -->
+     <footer class="pagination">
+      <div class="pagination-container">
+      <nav>
+        <button>&laquo;</button>
         <button>1</button>
         <button>2</button>
         <button>3</button>
-        <button>&raquo;&raquo;</button>
+        <button>&raquo;</button>
       </nav>
+    </div>
+    </footer>
     </div>
   </template>
   
@@ -79,25 +82,37 @@
   </script>
   
   <style scoped>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
   .ruang-download {
-    max-width: 1200px;
-    margin: 0 auto;
-    font-family: 'Open Sans', sans-serif;
+    max-width: 100%;
+    padding: 20px 50px;
+  }
+
+  h1{
+    font-size: 32px;
+  text-align: left;
+  color: #65A5CA;
+  margin-bottom: 30px;
   }
   
   .content-container {
     display: flex;
     gap: 20px;
     align-items: flex-start;
+    margin-top: 20px;
+    margin-bottom: 50px;
   }
   
   /* Grid Layout */
   .grid-container {
-    flex: 3; /* Ukuran grid lebih besar */
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 kolom */
-    gap: 20px;
-  }
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 kolom */
+  gap: 20px; /* Jarak antar semua elemen (horizontal & vertikal) */
+  column-gap: 5px; /* Mengurangi hanya jarak kiri-kanan */
+}
+
   
   /* Styling Card */
   .card {
@@ -109,7 +124,12 @@
     font-weight: bold;
     cursor: pointer;
     transition: transform 0.2s;
-    font-size: 16px; /* Ukuran font sama */
+    font-size: 20px; /* Ukuran font sama */
+    width: 250px; /* Lebar card */
+  height: 250px; /* Tinggi card, harus sama dengan lebar agar jadi persegi */
+  display: flex; /* Untuk memastikan teks tetap terpusat */
+  align-items: center;
+  justify-content: center;
   }
   
   .card:hover {
@@ -117,37 +137,55 @@
   }
   
   /* Sidebar Section */
-  .sidebar {
-    flex: 1; /* Ukuran sidebar lebih kecil */
-    background-color: #f8f9fa;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .image-container img {
-    width: 100%; /* Gambar menyesuaikan lebar kontainer */
-    max-width: 200px; /* Batas maksimal lebar gambar */
-    border-radius: 10px;
-    margin: 0 auto;
-    display: block; /* Menjadikan gambar terpusat */
-  }
+  .image-container {
+flex: 1;
+display: flex;
+justify-content: flex-end;
+align-items: flex-start;
+padding-right: 20px;
+
+}
+
+.image-container img {
+max-width: 100%;
+height: auto;
+border-radius: 10px;
+box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+
+}
   
   /* Pagination */
   .pagination {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-  }
-  
-  .pagination button {
-    background: #65A5CA;
-    color: white;
-    border: none;
-    padding: 8px 12px;
-    margin: 0 5px;
-    cursor: pointer;
-    border-radius: 5px;
-  }
+  display: flex;
+  justify-content: center;
+  margin-top: 5px; /* Diperpendek agar pagination lebih dekat ke tabel */
+}
+
+.pagination-container {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 1150px; /* Jarak dari atas */
+  right: 1450px; /* Jarak dari kanan */
+}
+
+.pagination button {
+  padding: 8px 12px;
+  margin: 2px;
+  border: 1px solid #ccc;
+  background-color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.pagination button.active {
+  background-color: #8BBBD7;
+  color: white;
+}
+
+.pagination button:hover {
+  background-color: #65A5CA;
+  color: white;
+}
   </style>
   

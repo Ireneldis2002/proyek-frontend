@@ -18,7 +18,7 @@
   
   <script>
   export default {
-    name: "ArtiKamusDuaView",
+    name: "ArtiKamusEmpatView",
     methods: {
         goBack() {
             this.$router.go(-1);

@@ -53,7 +53,7 @@ padding: 20px 50px;
 }
 
 header h1 {
- font-size: 32px;
+font-size: 32px;
 text-align: center;
 color: #65A5CA;
 margin-bottom: 50px;
@@ -72,7 +72,7 @@ justify-content: space-between;
 .menu {
    flex: 2;
    display: grid;
-   grid-template-columns: repeat(1, 1fr); /* Membuat 4 kolom */
+   grid-template-columns: repeat(1, 1fr); /* Membuat  kolom */
    gap: 20px; /* Jarak antar gambar */
  }
  

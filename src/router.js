@@ -76,10 +76,10 @@ import BacaIsiBeritaDuaView from '@/views/Berita/BacaBerita2.vue';
 import BacaIsiBeritaTigaView from '@/views/Berita/BacaBerita3.vue';
 import BacaIsiBeritaEmpatView from '@/views/Berita/BacaBerita4.vue';
 import BeritaKamusView from '@/views/Berita/KamusAdminduk.vue';
-import ArtiKamusAdmindukView from '@/views/Berita/ArtiKamus.vue';
 import ArtiKamusSatuView from '@/views/Berita/ArtiKamus1.vue';
 import ArtiKamusDuaView from '@/views/Berita/ArtiKamus2.vue';
 import ArtiKamusTigaView from '@/views/Berita/ArtiKamus3.vue';
+import ArtiKamusEmpatView from '@/views/Berita/ArtiKamus4.vue';
 
 import LayananOnlineView from '@/views/LayananOnline/LayananOnline.vue';
 import LayananAktaView from '@/views/LayananOnline/LayananAkta.vue';
@@ -166,6 +166,7 @@ const routes = [
       //STANDAR PELAYANAN-PENCATATAN
       {
         path: 'standar-pelayanan/pencatatan/pencatatan-kelahiran', // Rute untuk 
+        name: 'CatatLahir',
         component: PencatatanKelahiranView, // Komponen  akan dimuat di router-view
       },
       {
@@ -224,6 +225,7 @@ const routes = [
       },
       {
         path: 'standar-pelayanan/penerbitan/penerbitan-KIA', // Rute untuk 
+        name: 'TerbitKIA',
         component: PenerbitanKIAView, // Komponen  akan dimuat di router-view
       },
       {
@@ -235,7 +237,8 @@ const routes = [
         component: PenerbitanKembaliView, // Komponen  akan dimuat di router-view
       },
       {
-        path: 'standar-pelayanan/penerbitan/penerbitan-KK', // Rute untuk 
+        path: 'standar-pelayanan/penerbitan/penerbitan-KK', // Rute untuk
+        name: 'TerbitKK', 
         component: PenerbitanKartuKeluargaView, // Komponen  akan dimuat di router-view
       },
 
@@ -422,24 +425,24 @@ const routes = [
         component: BeritaKamusView, // Komponen  akan dimuat di router-view
       },
       {
-        path: '/berita/baca-penjelasan-arti-penerbitan-data-kependudukan',
-        name: 'ArtiKamus',
-        component: ArtiKamusAdmindukView,
-      },
-      {
-        path: '/berita/baca-penjelasan-arti-alur-status-perekaman',
+        path: '/berita/kamus-adminduk/baca-penjelasan-arti-penerbitan-data-kependudukan',
         name: 'ArtiKamus1',
         component: ArtiKamusSatuView,
       },
       {
-        path: '/berita/baca-penjelasan-arti-pengertian-PIAK-dan-PD',
+        path: '/berita/kamus-adminduk/baca-penjelasan-arti-alur-status-perekaman',
         name: 'ArtiKamus2',
         component: ArtiKamusDuaView,
       },
       {
-        path: '/berita/baca-penjelasan-arti-ktp-berlaku-seumur-hidup',
+        path: '/berita/kamus-adminduk/baca-penjelasan-arti-pengertian-PIAK-dan-PD',
         name: 'ArtiKamus3',
         component: ArtiKamusTigaView,
+      },
+      {
+        path: '/berita/kamus-adminduk/baca-penjelasan-arti-ktp-berlaku-seumur-hidup',
+        name: 'ArtiKamus4',
+        component: ArtiKamusEmpatView,
       },
 
       // LAYANAN ONLINE

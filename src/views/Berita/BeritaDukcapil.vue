@@ -1,10 +1,11 @@
 <template>
     <div class="ruang-download">
+        <h1>Berita</h1>
+
       <!-- Main Content -->
       <div class="content-container">
         <!-- Berita Section -->
         <div class="berita">
-          <h2>Berita</h2>
 
           <!-- Card 1 -->
           <div class="card">
@@ -110,11 +111,19 @@
   </script>
   
   <style scoped>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
   .ruang-download {
-    max-width: 1200px;
-    margin: 0 auto;
-    font-family: 'Open Sans', sans-serif;
+ max-width: 100%;
+padding: 20px 50px;
   }
+
+ h1 {
+    font-size: 32px;
+  text-align: left;
+  color: #65A5CA;
+  margin-bottom: 30px;
+}
   
   .content-container {
     display: flex; /* Mengatur layout flex */
@@ -143,8 +152,8 @@
   }
   
   .card-image img {
-    width: 150px;
-    height: 100px;
+    width: 200px;
+    height: 150px;
     object-fit: cover;
     margin-right: 10px;
   }
@@ -154,18 +163,18 @@
   }
   
   .card-content h3 {
-    font-size: 18px;
+    font-size: 22px;
     margin: 0;
     color: #333;
   }
   
   .card-content .date {
-    font-size: 14px;
+    font-size: 18px;
     color: #777;
   }
   
   .card-content p {
-    font-size: 14px;
+    font-size: 20px;
     color: #555;
     margin: 10px 0;
   }
@@ -177,23 +186,24 @@
     padding: 5px 10px;
     border-radius: 4px;
     cursor: pointer;
+    font-size: 16px;
   }
   
-  /* Sidebar Section */
-  .sidebar {
-    flex: 1; /* Ukuran sidebar lebih kecil */
-    background-color: #f8f9fa;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .image-container img {
-    width: 100%; /* Gambar menyesuaikan lebar kontainer */
-    max-width: 200px; /* Batas maksimal lebar gambar */
-    border-radius: 10px;
-    margin: 0 auto;
-    display: block; /* Menjadikan gambar terpusat */
-  }
+  .image-container {
+flex: 1;
+display: flex;
+justify-content: flex-end;
+align-items: flex-start;
+padding-right: 20px;
+
+}
+
+.image-container img {
+max-width: 100%;
+height: auto;
+border-radius: 10px;
+box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+
+}
   </style>
   

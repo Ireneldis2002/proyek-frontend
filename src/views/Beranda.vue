@@ -64,7 +64,7 @@ export default {
   data() {
     return {
       images: [
-        require("@/assets/Carrousel.png"), // Ganti dengan path gambar yang sesuai
+        require("@/assets/Carrousel.png"),
         require("@/assets/logo.png"),
         require("@/assets/LogoDukcapil.png"),
       ],
@@ -87,7 +87,7 @@ export default {
 </script>
 
 <style >
-/* Reset default margin dan padding */
+
 * {
   margin: 0;
   padding: 0;
@@ -100,51 +100,51 @@ body {
   color: #333;
 }
 
-/* Gaya untuk konten utama */
+
 .content {
   flex: 1;
   padding: 20px;
-  background-color: #ffffff; /* Warna latar belakang konten */
+  background-color: #ffffff;
 }
 
-/* Gaya untuk gambar */
+/* gambar */
 .responsive-image {
-  width: 100%; /* Mengatur lebar gambar 100% dari kontainer */
-  height: auto; /* Biarkan tinggi otomatis agar gambar tidak terdistorsi */
-  max-height: 50vh; /* Membatasi tinggi gambar agar tidak lebih dari 50% dari viewport height */
-  object-fit: cover; /* Mengatur gambar agar terjaga proporsinya */
-  margin: 10px 0; /* Memberikan jarak atas dan bawah untuk gambar */
+  width: 100%; 
+  height: auto; 
+  max-height: 50vh; 
+  object-fit: cover; 
+  margin: 10px 0;
 }
 
-/* Gaya untuk carousel */
+/* carousel */
 .carousel {
   position: relative;
   text-align: center; /* Agar tombol berada di tengah */
 }
 
-/* Gaya untuk tombol panah */
+/* tombol panah */
 .arrow {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  color: white; /* Warna tombol putih */
-  font-weight: bold; /* Menebalkan teks */
-  font-size: 36px; /* Ukuran font untuk tombol panah */
-  background: none; /* Tanpa latar belakang */
-  border: none; /* Tanpa border */
-  cursor: pointer; /* Mengubah kursor saat hover */
-  z-index: 1; /* Pastikan tombol di atas gambar */
+  color: white; 
+  font-weight: bold; 
+  font-size: 36px; 
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
 }
 
 .left-arrow {
-  left: 10px; /* Letak tombol kiri */
+  left: 10px; 
 }
 
 .right-arrow {
-  right: 10px; /* Letak tombol kanan */
+  right: 10px; 
 }
 
-/* Styling untuk berita */
+/* Berita */
 .latest-news {
   text-align: left;
   margin: 20px 0;
@@ -162,25 +162,6 @@ body {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.latest-news {
-  text-align: left;
-  margin: 20px 0;
-  color: white;
-}
-
-/* Mengatur kotak berita agar proporsional */
-.news-box {
-  background-color: #8BBBD7;
-  border: 1px solid #ddd;
-  padding: 20px;
-  border-radius: 8px;
-  font-family: 'Lato', sans-serif;
-  color: #000;
-  width: 100%;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-/* Mengatur elemen berita di dalam kotak */
 .news-box h3 {
   font-size: 30px;
   margin-bottom: 15px;
@@ -202,19 +183,12 @@ body {
   border-bottom: none;
 }
 
-/* Mengatur layout konten utama agar rapi */
-.content-wrapper {
-  display: grid;
-  grid-template-columns: 2fr 1fr; /* 1 kolom berita dan 1 kolom menu */
-  gap: 20px;
-  width: 100%; /* Pastikan lebar kontainer sesuai */
-}
 
 .container {
-  display: flex; /* Menggunakan Flexbox untuk menyusun elemen secara horizontal */
-  justify-content: space-between; /* Memberikan ruang antara menu-item dan latest-news */
-  align-items: flex-start; /* Menyelaraskan elemen ke atas */
-  gap: 20px; /* Jarak antar elemen */
+  display: flex;
+  justify-content: space-between; 
+  align-items: flex-start; 
+  gap: 20px; 
 }
 
 .menu-grid {
@@ -225,8 +199,8 @@ body {
 }
 
 .menu-item {
-  width: 500px; /* Lebar kontainer */
-  height: 500px; /* Tinggi kontainer */
+  width: 500px; 
+  height: 500px; 
 }
 
 .menu-item img {
@@ -234,6 +208,5 @@ body {
   height: 200%;
   object-fit: cover;
 }
-
 
 </style>

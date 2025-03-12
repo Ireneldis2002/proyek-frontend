@@ -304,8 +304,8 @@ th:nth-child(3), td:nth-child(3) {
   display: flex;
   align-items: center;
   position: absolute;
-  top: 700px; /* Jarak dari atas */
-  right: 1300px; /* Jarak dari kanan */
+  top: 800px; /* Jarak dari atas */
+  right: 1400px; /* Jarak dari kanan */
 }
 
 .pagination button {
