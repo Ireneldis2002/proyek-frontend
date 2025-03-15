@@ -2,26 +2,49 @@
   <div class="profil-visi-misi">
     <h1>Penghargaan</h1>
     <div class="content-container">
-      <!-- Bagian Kiri: Gambar Penghargaan -->
+
       <div class="penghargaan-container">
         <!-- Bagian Teks -->
-      <div class="text-section">
-        <p class="penghargaan-title"><b>PIAGAM PENGHARGAAN DARI BUPATI ENDE</b></p>
-        <p class="penghargaan-subtitle">
-          SEBAGAI UNIT PELAYANAN PUBLIK DENGAN PREDIKAT <span class="highlight">BAIK</span> TAHUN (78,74) 2021
-        </p>
-      </div>
+        <div class="text-section">
+          <p class="penghargaan-title">
+            <b>PIAGAM PENGHARGAAN DARI BUPATI ENDE</b>
+          </p>
+          <p class="penghargaan-subtitle">
+            SEBAGAI UNIT PELAYANAN PUBLIK DENGAN PREDIKAT
+            <span class="highlight">BAIK</span> TAHUN (78,74) 2021
+          </p>
+        </div>
         <div class="images-wrapper">
-          <img src="@/assets/Penghargaan1.jpg" alt="Gambar1" class="penghargaan-image" />
-          <img src="@/assets/Penghargaan2.jpeg" alt="Gambar2" class="penghargaan-image" />
-          <img src="@/assets/Penghargaan3.png" alt="Gambar3" class="penghargaan-image" />
-          <img src="@/assets/Penghargaan4.png" alt="Gambar4" class="penghargaan-image" />
+          <img
+            src="@/assets/Penghargaan1.jpg"
+            alt="Gambar1"
+            class="penghargaan-image"
+          />
+          <img
+            src="@/assets/Penghargaan2.jpeg"
+            alt="Gambar2"
+            class="penghargaan-image"
+          />
+          <img
+            src="@/assets/Penghargaan3.png"
+            alt="Gambar3"
+            class="penghargaan-image"
+          />
+          <img
+            src="@/assets/Penghargaan4.png"
+            alt="Gambar4"
+            class="penghargaan-image"
+          />
         </div>
       </div>
 
       <!-- Bagian Kanan: Sidebar (Profil Pimpinan) -->
       <div class="sidebar-container">
-        <img src="@/assets/ProfilPimpinan.png" alt="Gambar Profil" class="sidebar-image" />
+        <img
+          src="@/assets/ProfilPimpinan.png"
+          alt="Gambar Profil"
+          class="sidebar-image"
+        />
       </div>
     </div>
     <p class="update">Terakhir Update: 2 Oktober 2024</p>
@@ -35,7 +58,7 @@ export default {
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
 
 .profil-visi-misi {
   max-width: 100%;
@@ -45,11 +68,9 @@ export default {
 h1 {
   font-size: 32px;
   text-align: left;
-  color: #65A5CA;
+  color: #65a5ca;
   margin-bottom: 30px;
 }
-
-
 
 /* Container utama: Flexbox untuk pembagian kiri dan kanan */
 .content-container {
@@ -73,12 +94,12 @@ h1 {
 /* Bagian kiri: Gambar-gambar Penghargaan */
 .images-wrapper {
   display: flex;
-  flex-wrap: wrap; /* Agar gambar tersusun dalam dua baris */
-  gap: 15px;
+  flex-wrap: wrap;
+  gap: 50px;
 }
 
 .penghargaan-image {
-  width: 48%; /* Agar dua gambar dalam satu baris */
+  width: 48%; 
   border-radius: 5px;
   border: 1px solid #000;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
@@ -105,7 +126,6 @@ h1 {
   color: green;
   font-weight: bold;
 }
-
 
 /* Bagian kanan: Sidebar */
 .sidebar-container {

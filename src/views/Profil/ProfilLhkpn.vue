@@ -5,73 +5,84 @@
       <!-- Bagian Teks -->
       <div class="content-section">
         <div class="content-item">
-          <p><b>LAPORAN HARTA KEKAYAAN PENYELENGGARAAN PEMERINTAH TAHUN 2021</b></p>
+          <p>
+            <b>LAPORAN HARTA KEKAYAAN PENYELENGGARAAN PEMERINTAH TAHUN 2021</b>
+          </p>
 
-            <br>
-            <!-- Tabel 1 -->
-            <table border="1" cellpadding="10" cellspacing="0" style="width: 100%; margin-top: 20px; border-collapse: collapse; text-align: center;">
-
-              <thead>
-                <tr>
-                    <th><b>No</b></th>
-                    <th>Nama</th>
-                    <th>NIP</th>
-                    <th>Jabatan</th>
-                    <th>Download</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>1.</td>
-                  <td>LAMBERTUS SIGASARE, ST. M.Eng</td>
-                  <td>19751023 200212 1 006</td>
-                  <td>KEPALA DINAS</td>
-                  <td>LHKPN</td>
-                </tr>
-                <tr>
-                  <td>2.</td>
-                  <td>SYAHRUL YAHYA, S.Pi</td>
-                  <td>19681227 199903 1 005</td>
-                  <td>SEKRETARIS</td>
-                  <td>LHKPN</td>
-                </tr>
-                <tr>
-                  <td>3.</td>
-                  <td>THERESIA CISILIA BUNGA, SH</td>
-                  <td>19700621 199303 2 010</td>
-                  <td>KABID DAFDUK</td>
-                  <td>LHKPN</td>
-                </tr>
-                <tr>
-                  <td>4.</td>
-                  <td>EMILIANA ERNAS DHALE, SH</td>
-                  <td>19720424 199403 2 007</td>
-                  <td>KABID CAPIL</td>
-                  <td>LHKPN</td>
-                </tr>
-                <tr>
-                  <td>5.</td>
-                  <td>HONORIUS BHINABODHE, A.Md</td>
-                  <td>19710923 199803 1 008</td>
-                  <td>KABID PIAK</td>
-                  <td>LHKPN</td>
-                </tr>
-                <tr>
-                  <td>6.</td>
-                  <td>JOHANES WEE RENGGI, SH</td>
-                  <td>19721125 200012 1 001</td>
-                  <td>KABID PDIP</td>
-                  <td>LHKPN</td>
-                </tr>
-               
-              </tbody>
-            </table>
-
-
+          <br />
+          <!-- Tabel 1 -->
+          <table
+            border="1"
+            cellpadding="10"
+            cellspacing="0"
+            style="
+              width: 100%;
+              margin-top: 20px;
+              border-collapse: collapse;
+              text-align: center;
+            "
+          >
+            <thead>
+              <tr>
+                <th><b>No</b></th>
+                <th>Nama</th>
+                <th>NIP</th>
+                <th>Jabatan</th>
+                <th>Download</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1.</td>
+                <td>LAMBERTUS SIGASARE, ST. M.Eng</td>
+                <td>19751023 200212 1 006</td>
+                <td>KEPALA DINAS</td>
+                <td><a href="/assets/Tanda_Terima_LHKPN_22-February-2022_lambertus.pdf" download>
+                      <i>LHKPN</i>
+                    </a></td>
+              </tr>
+              <tr>
+                <td>2.</td>
+                <td>SYAHRUL YAHYA, S.Pi</td>
+                <td>19681227 199903 1 005</td>
+                <td>SEKRETARIS</td>
+                <td>LHKPN</td>
+              </tr>
+              <tr>
+                <td>3.</td>
+                <td>THERESIA CISILIA BUNGA, SH</td>
+                <td>19700621 199303 2 010</td>
+                <td>KABID DAFDUK</td>
+                <td>LHKPN</td>
+              </tr>
+              <tr>
+                <td>4.</td>
+                <td>EMILIANA ERNAS DHALE, SH</td>
+                <td>19720424 199403 2 007</td>
+                <td>KABID CAPIL</td>
+                <td>LHKPN</td>
+              </tr>
+              <tr>
+                <td>5.</td>
+                <td>HONORIUS BHINABODHE, A.Md</td>
+                <td>19710923 199803 1 008</td>
+                <td>KABID PIAK</td>
+                <td><a href="/assets/Tanda_Terima_LHKPN_23-February-2022-HONOR.pdf" download>
+                      <i>LHKPN</i>
+                    </a></td>
+              </tr>
+              <tr>
+                <td>6.</td>
+                <td>JOHANES WEE RENGGI, SH</td>
+                <td>19721125 200012 1 001</td>
+                <td>KABID PDIP</td>
+                <td>LHKPN</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-       
       </div>
-      
+
       <!-- Foto di Sebelah Kanan -->
       <div class="image-container">
         <img src="@/assets/ProfilPimpinan.png" alt="Gambar Profil" />
@@ -81,7 +92,6 @@
   </div>
 </template>
 
-
 <script>
 export default {
   name: "VisiMisiView",
@@ -89,7 +99,7 @@ export default {
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
 
 .profil-visi-misi {
   max-width: 100%;
@@ -99,7 +109,7 @@ export default {
 h1 {
   font-size: 32px;
   text-align: left;
-  color: #65A5CA;
+  color: #65a5ca;
   margin-bottom: 30px;
 }
 
@@ -141,7 +151,7 @@ h1 {
 .line {
   width: 5px;
   height: 100%;
-  background-color: #8BBBD7;
+  background-color: #8bbbd7;
   position: absolute;
   left: 0;
   top: 0;
@@ -194,16 +204,16 @@ table {
   margin-top: 10px;
 }
 
-th, td {
+th,
+td {
   border: 1px solid #ccc;
   padding: 10px;
   text-align: center;
 }
 
 th {
-  background-color: #8BBBD7;
+  background-color: #8bbbd7;
   color: white;
   font-weight: bold;
 }
 </style>
-

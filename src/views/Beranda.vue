@@ -12,20 +12,27 @@
 
   <section class="container">
     <div class="menu-grid">
-      <router-link to="/standar-pelayanan/penerbitan/penerbitan-KTP" class="menu-item">
+      <router-link
+        to="/standar-pelayanan/penerbitan/penerbitan-KTP"
+        class="menu-item"
+      >
         <img src="@/assets/Beranda1.png" alt="Persyaratan Administrasi KTP" />
       </router-link>
-      <router-link to="/standar-pelayanan/penerbitan/penerbitan-KK" class="menu-item">
+      <router-link
+        to="/standar-pelayanan/penerbitan/penerbitan-KK"
+        class="menu-item"
+      >
         <img src="@/assets/Beranda2.png" alt="Persyaratan Administrasi KK" />
       </router-link>
-      <router-link to="/layanan-online/layanan-akta-kelahiran" class="menu-item">
+      <router-link
+        to="/layanan-online/layanan-akta-kelahiran"
+        class="menu-item"
+      >
         <img src="@/assets/Beranda3.png" alt="Layanan Akta Kelahiran" />
       </router-link>
       <router-link to="/data-penduduk/jumlah-penduduk" class="menu-item">
         <img src="@/assets/Beranda4.png" alt="Informasi Penduduk" />
       </router-link>
-
-      
     </div>
 
     <div class="latest-news">
@@ -34,7 +41,8 @@
         <ul>
           <li>
             <router-link to="/berita/baca-berita-1">
-              Sidak ke Kantor Dukcapil Bupati Ende Tepati Janji Evaluasi Kinerja Kadis
+              Sidak ke Kantor Dukcapil Bupati Ende Tepati Janji Evaluasi Kinerja
+              Kadis
             </router-link>
           </li>
           <li>
@@ -44,12 +52,14 @@
           </li>
           <li>
             <router-link to="/berita/baca-berita-3">
-            Tingkat Kualitas Layanan, Disdukcapil Ende, Kembali Turun ke Desa Kelisamba
+              Tingkat Kualitas Layanan, Disdukcapil Ende, Kembali Turun ke Desa
+              Kelisamba
             </router-link>
           </li>
           <li>
             <router-link to="/berita/baca-berita-4">
-            Disdukcapil Kabupaten Ende Terjun Langsung Ke Masyarakat Untuk Pembuatan KTP-El
+              Disdukcapil Kabupaten Ende Terjun Langsung Ke Masyarakat Untuk
+              Pembuatan KTP-El
             </router-link>
           </li>
         </ul>
@@ -86,8 +96,7 @@ export default {
 };
 </script>
 
-<style >
-
+<style>
 * {
   margin: 0;
   padding: 0;
@@ -95,11 +104,10 @@ export default {
 }
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   background-color: #f5f5f5;
   color: #333;
 }
-
 
 .content {
   flex: 1;
@@ -109,17 +117,17 @@ body {
 
 /* gambar */
 .responsive-image {
-  width: 100%; 
-  height: auto; 
-  max-height: 50vh; 
-  object-fit: cover; 
+  width: 100%;
+  height: auto;
+  max-height: 50vh;
+  object-fit: cover;
   margin: 10px 0;
 }
 
 /* carousel */
 .carousel {
   position: relative;
-  text-align: center; /* Agar tombol berada di tengah */
+  text-align: center; 
 }
 
 /* tombol panah */
@@ -127,9 +135,9 @@ body {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  color: white; 
-  font-weight: bold; 
-  font-size: 36px; 
+  color: white;
+  font-weight: bold;
+  font-size: 36px;
   background: none;
   border: none;
   cursor: pointer;
@@ -137,11 +145,11 @@ body {
 }
 
 .left-arrow {
-  left: 10px; 
+  left: 10px;
 }
 
 .right-arrow {
-  right: 10px; 
+  right: 10px;
 }
 
 /* Berita */
@@ -152,11 +160,11 @@ body {
 }
 
 .news-box {
-  background-color: #8BBBD7;
+  background-color: #8bbbd7;
   border: 1px solid #ddd;
   padding: 20px;
   border-radius: 8px;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   color: #000;
   width: 100%;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -183,12 +191,11 @@ body {
   border-bottom: none;
 }
 
-
 .container {
   display: flex;
-  justify-content: space-between; 
-  align-items: flex-start; 
-  gap: 20px; 
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
 }
 
 .menu-grid {
@@ -199,8 +206,8 @@ body {
 }
 
 .menu-item {
-  width: 500px; 
-  height: 500px; 
+  width: 500px;
+  height: 500px;
 }
 
 .menu-item img {
@@ -208,5 +215,4 @@ body {
   height: 200%;
   object-fit: cover;
 }
-
 </style>

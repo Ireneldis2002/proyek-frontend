@@ -5,46 +5,56 @@
       <!-- Bagian Teks -->
       <div class="content-section">
         <div class="content-item-image">
-          <img src="@/assets/StrukturOrganisasi.png" alt="Struktur Organisasi" />
-         </div>
+          <img
+            src="@/assets/StrukturOrganisasi.png"
+            alt="Struktur Organisasi"
+          />
+        </div>
         <div class="struktur-text">
-  <p>Susunan organisasi Dinas Kependudukan dan Pencatatan Sipil sesuai dengan Peraturan Pemerintah Nomor 18 Tahun 2016 tentang Perangkat Daerah, yang telah ditindaklanjuti dengan Peraturan Daerah Nomor 17 Tahun 2016 tentang Pembentukan dan Susunan Perangkat Daerah terdiri dari:</p>
-  <p>1. Kepala Dinas</p>
-  <p>2. Sekretariat, membawahi:</p>
-  <ul>
-    <li>Sub Bagian Umum dan Kepegawaian</li>
-    <li>Sub Bagian Keuangan</li>
-    <li>Sub Bagian Perencanaan</li>
-  </ul>
-  <p>3. Bidang Pelayanan Pendaftaran:</p>
-  <ul>
-    <li>Seksi Identitas Penduduk</li>
-    <li>Seksi Pindah Datang</li>
-    <li>Seksi Pendaftaran Penduduk</li>
-  </ul>
-  <p>4. Bidang Pelayanan Pencatatan Sipil:</p>
-  <ul>
-    <li>Seksi Kelahiran</li>
-    <li>Seksi Perkawinan dan Perceraian</li>
-    <li>Seksi Perubahan Status Anak, Kewarganegaraan, dan Kematian</li>
-  </ul>
-  <p>5. Bidang Pengelolaan Informasi Administrasi Kependudukan:</p>
-  <ul>
-    <li>Seksi Sistem Informasi Administrasi Kependudukan</li>
-    <li>Seksi Pengelolaan dan Penyajian Data Kependudukan</li>
-    <li>Seksi Tata Kelola dan Sumber Daya Manusia Teknologi Informasi dan Komunikasi</li>
-  </ul>
-  <p>6. Bidang Pemanfaatan dan Inovasi Pelayanan:</p>
-  <ul>
-    <li>Seksi Kerjasama</li>
-    <li>Seksi Pemanfaatan Data dan Dokumen Kependudukan</li>
-    <li>Seksi Inovasi Pelayanan</li>
-  </ul>
-</div>
+          <p>
+            Susunan organisasi Dinas Kependudukan dan Pencatatan Sipil sesuai
+            dengan Peraturan Pemerintah Nomor 18 Tahun 2016 tentang Perangkat
+            Daerah, yang telah ditindaklanjuti dengan Peraturan Daerah Nomor 17
+            Tahun 2016 tentang Pembentukan dan Susunan Perangkat Daerah terdiri
+            dari:
+          </p>
+          <p>1. Kepala Dinas</p>
+          <p>2. Sekretariat, membawahi:</p>
+          <ul>
+            <li>Sub Bagian Umum dan Kepegawaian</li>
+            <li>Sub Bagian Keuangan</li>
+            <li>Sub Bagian Perencanaan</li>
+          </ul>
+          <p>3. Bidang Pelayanan Pendaftaran:</p>
+          <ul>
+            <li>Seksi Identitas Penduduk</li>
+            <li>Seksi Pindah Datang</li>
+            <li>Seksi Pendaftaran Penduduk</li>
+          </ul>
+          <p>4. Bidang Pelayanan Pencatatan Sipil:</p>
+          <ul>
+            <li>Seksi Kelahiran</li>
+            <li>Seksi Perkawinan dan Perceraian</li>
+            <li>Seksi Perubahan Status Anak, Kewarganegaraan, dan Kematian</li>
+          </ul>
+          <p>5. Bidang Pengelolaan Informasi Administrasi Kependudukan:</p>
+          <ul>
+            <li>Seksi Sistem Informasi Administrasi Kependudukan</li>
+            <li>Seksi Pengelolaan dan Penyajian Data Kependudukan</li>
+            <li>
+              Seksi Tata Kelola dan Sumber Daya Manusia Teknologi Informasi dan
+              Komunikasi
+            </li>
+          </ul>
+          <p>6. Bidang Pemanfaatan dan Inovasi Pelayanan:</p>
+          <ul>
+            <li>Seksi Kerjasama</li>
+            <li>Seksi Pemanfaatan Data dan Dokumen Kependudukan</li>
+            <li>Seksi Inovasi Pelayanan</li>
+          </ul>
+        </div>
       </div>
 
-     
-      
       <!-- Foto di Sebelah Kanan -->
       <div class="image-container">
         <img src="@/assets/ProfilPimpinan.png" alt="Gambar Profil" />
@@ -54,7 +64,6 @@
   </div>
 </template>
 
-
 <script>
 export default {
   name: "VisiMisiView",
@@ -62,7 +71,7 @@ export default {
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
 
 .profil-visi-misi {
   max-width: 100%;
@@ -72,7 +81,7 @@ export default {
 h1 {
   font-size: 32px;
   text-align: left;
-  color: #65A5CA;
+  color: #65a5ca;
   margin-bottom: 30px;
 }
 
@@ -112,17 +121,17 @@ h1 {
 }
 
 .content-item-image img {
-  width: 100%; /* Membuat gambar mengikuti lebar parent */
-  max-width: 800px; /* Atur ukuran maksimal gambar */
-  height: auto; /* Menjaga proporsi gambar */
-  display: block; /* Hindari ruang kosong ekstra */
-  margin: 0 auto; /* Pusatkan gambar jika lebih kecil dari parent */
+  width: 100%; 
+  max-width: 800px;
+  height: auto; 
+  display: block; 
+  margin: 0 auto; 
 }
 
 .line {
   width: 5px;
   height: 100%;
-  background-color: #8BBBD7;
+  background-color: #8bbbd7;
   position: absolute;
   left: 0;
   top: 0;
@@ -165,19 +174,17 @@ p {
 }
 
 .struktur-text {
-  font-size: 22px; /* Ukuran font sesuai permintaan */
-  color: #333; /* Warna teks agar lebih jelas */
-  line-height: 1.6; /* Jarak antar baris agar nyaman dibaca */
-  margin-top: 20px; /* Jarak dari tabel di atasnya */
+  font-size: 22px;
+  color: #333; 
+  line-height: 1.6; 
+  margin-top: 20px; 
 }
 
 .struktur-text ul {
-  padding-left: 30px; /* Beri padding agar list terlihat rapi */
+  padding-left: 30px; 
 }
 
 .struktur-text li {
-  margin-bottom: 5px; /* Beri jarak antar item list */
+  margin-bottom: 5px; 
 }
-
-
 </style>

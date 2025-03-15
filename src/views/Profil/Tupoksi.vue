@@ -5,34 +5,67 @@
       <!-- Bagian Teks -->
       <div class="content-section">
         <div class="content-item">
-          <p>Berdasarkan Peraturan Daerah Kabupaten Ende Nomor 11 Tahun 2016 tentang Pembentukan dan 
-            Susunan Perangkat Daerah Kabupaten Endeserta Peraturan Bupati Ende Nomor 35 Tahun 2016 
-            tentang Kedudukan, Susunan Organisasi, Tugas dan Fungsi serta Tata Kerja Dinas Daerah 
-            Kabupaten Ende, Tugas, Fungsi dan Struktur Organisasi Dinas Kependudukan dan Pencatatan 
-            Sipil Kabupaten Ende adalah:
-            </p>
-            <br>
-            <ul>
-              <li>Meningkatnya kualitas pelayanan administrasi kependudukan dan pencatatan sipil</li>
-              <li>Meningkatnya kualitas pendataan dan pemanfaatan teknologi informasi dalam administrasi kependudukan dan pencatatan sipil</li>
-            </ul>
-            <br>
-            <ol>
-              <li>Pengkoordinasian Program dan Pengelolaan Anggaran</li>
-              <li>Pengkoordinasian Pengelolaan Perlengkapan, Urusan Tata Usaha Rumah Tangga dan Barang Milik Negara dan Daerah,</li>
-              <li>Pengkoordinasian pengelolaan urusan Aparatur Sipil Negara,</li>
-              <li>Pengkoordinasian Penyusunan Perencanaan di Bidang Pendaftaran Penduduk, Pencatatan Sipil, Pengelolaan Informasi Administrasi Kependudukan, Kerjasama Administrasi Kependudukan, Pemanfaatan Data Dokumen KependudukanIn,</li>
-              <li>Pengkordinasian kegiatan pelayanan pendaftaran penduduk, kegiatan pelayanan pencatatan sipil, pelaksanaan pengelolaan administrasi kependudukan,</li>
-              <li>Pengkoordinasian Pelaksanaan Kerjasama Administrasi Kependudukan,</li>
-              <li>Pengkoordinasian pelaksanaan pemanfaatan data dan data dokumen kependudukan,</li>
-              <li>Pengkoordinasian pelaksanaan inovasi pelayanan administrasi kependudukan,</li>
-              <li>Membina, mengkoordinasi pengendalian bidang administrasi kependudukan,</li>
-              <li>Pengkoordinasian pelaksanaan kegiatan penatausahaan Dinas Kependudukan dan Pencatatan Sipil</li>
-            </ol>
+          <p>
+            Berdasarkan Peraturan Daerah Kabupaten Ende Nomor 11 Tahun 2016
+            tentang Pembentukan dan Susunan Perangkat Daerah Kabupaten Endeserta
+            Peraturan Bupati Ende Nomor 35 Tahun 2016 tentang Kedudukan, Susunan
+            Organisasi, Tugas dan Fungsi serta Tata Kerja Dinas Daerah Kabupaten
+            Ende, Tugas, Fungsi dan Struktur Organisasi Dinas Kependudukan dan
+            Pencatatan Sipil Kabupaten Ende adalah:
+          </p>
+          <br />
+          <ul>
+            <li>
+              Meningkatnya kualitas pelayanan administrasi kependudukan dan
+              pencatatan sipil
+            </li>
+            <li>
+              Meningkatnya kualitas pendataan dan pemanfaatan teknologi
+              informasi dalam administrasi kependudukan dan pencatatan sipil
+            </li>
+          </ul>
+          <br />
+          <ol>
+            <li>Pengkoordinasian Program dan Pengelolaan Anggaran</li>
+            <li>
+              Pengkoordinasian Pengelolaan Perlengkapan, Urusan Tata Usaha Rumah
+              Tangga dan Barang Milik Negara dan Daerah,
+            </li>
+            <li>Pengkoordinasian pengelolaan urusan Aparatur Sipil Negara,</li>
+            <li>
+              Pengkoordinasian Penyusunan Perencanaan di Bidang Pendaftaran
+              Penduduk, Pencatatan Sipil, Pengelolaan Informasi Administrasi
+              Kependudukan, Kerjasama Administrasi Kependudukan, Pemanfaatan
+              Data Dokumen KependudukanIn,
+            </li>
+            <li>
+              Pengkordinasian kegiatan pelayanan pendaftaran penduduk, kegiatan
+              pelayanan pencatatan sipil, pelaksanaan pengelolaan administrasi
+              kependudukan,
+            </li>
+            <li>
+              Pengkoordinasian Pelaksanaan Kerjasama Administrasi Kependudukan,
+            </li>
+            <li>
+              Pengkoordinasian pelaksanaan pemanfaatan data dan data dokumen
+              kependudukan,
+            </li>
+            <li>
+              Pengkoordinasian pelaksanaan inovasi pelayanan administrasi
+              kependudukan,
+            </li>
+            <li>
+              Membina, mengkoordinasi pengendalian bidang administrasi
+              kependudukan,
+            </li>
+            <li>
+              Pengkoordinasian pelaksanaan kegiatan penatausahaan Dinas
+              Kependudukan dan Pencatatan Sipil
+            </li>
+          </ol>
         </div>
-       
       </div>
-      
+
       <!-- Foto di Sebelah Kanan -->
       <div class="image-container">
         <img src="@/assets/ProfilPimpinan.png" alt="Gambar Profil" />
@@ -42,7 +75,6 @@
   </div>
 </template>
 
-
 <script>
 export default {
   name: "VisiMisiView",
@@ -50,7 +82,7 @@ export default {
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
 
 .profil-visi-misi {
   max-width: 100%;
@@ -60,7 +92,7 @@ export default {
 h1 {
   font-size: 32px;
   text-align: left;
-  color: #65A5CA;
+  color: #65a5ca;
   margin-bottom: 30px;
 }
 
@@ -78,7 +110,6 @@ h1 {
   gap: 40px; /* Sesuaikan jarak antar elemen */
   padding-left: 20px; /* Pastikan tidak terlalu mepet ke kiri */
 }
-
 
 .image-container {
   flex: 1;
@@ -100,7 +131,6 @@ h1 {
   padding-left: 15px; /* Hilangkan margin negatif */
 }
 
-
 h2 {
   font-size: 28px;
   font-weight: bold;
@@ -111,7 +141,7 @@ h2 {
 .line {
   width: 5px;
   height: 100%;
-  background-color: #8BBBD7;
+  background-color: #8bbbd7;
   position: absolute;
   left: 0;
   top: 0;
@@ -125,14 +155,13 @@ p {
 }
 
 ol {
-    padding-left: 40px; /* Memberikan indentasi pada daftar */
-  }
+  padding-left: 40px; /* Memberikan indentasi pada daftar */
+}
 
 ul {
-    padding-left: 40px; /* Memberikan indentasi */
-    list-style-type: disc; /* Menggunakan bullet default */
- }
-
+  padding-left: 40px; /* Memberikan indentasi */
+  list-style-type: disc; /* Menggunakan bullet default */
+}
 
 li {
   font-size: 22px;
@@ -150,5 +179,4 @@ li {
   display: block; /* Pastikan tampil sebagai blok */
   clear: both; /* Hindari terhalang oleh elemen sebelumnya */
 }
-
 </style>

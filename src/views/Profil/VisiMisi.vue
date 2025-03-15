@@ -7,12 +7,20 @@
         <div class="content-item">
           <h2>Visi</h2>
           <div class="line"></div>
-          <p>"Mewujudkan karakteristik Kabupaten Ende dengan membangun dari desa dan kelurahan menuju masyarakat yang Mandiri, Sejahtera, dan berkeadilan"</p>
+          <p>
+            "Mewujudkan karakteristik Kabupaten Ende dengan membangun dari desa
+            dan kelurahan menuju masyarakat yang Mandiri, Sejahtera, dan
+            berkeadilan"
+          </p>
         </div>
         <div class="content-item">
           <h2>Misi ke - 5</h2>
           <div class="line"></div>
-          <p>Menciptakan Pemerintah yang Bersih Transparan dan Berkualitas serta rasa Aman, Tertib dan Nyaman bagi Pengembangan Usaha dan Kehidupan Masyarakat</p>
+          <p>
+            Menciptakan Pemerintah yang Bersih Transparan dan Berkualitas serta
+            rasa Aman, Tertib dan Nyaman bagi Pengembangan Usaha dan Kehidupan
+            Masyarakat
+          </p>
         </div>
         <div class="content-item">
           <h2>Program</h2>
@@ -25,8 +33,8 @@
           <p>Terwujudnya Tata Kelola Pemerintah yang Baik (Good Governance)</p>
         </div>
       </div>
-      
-      <!-- Foto di Sebelah Kanan -->
+
+      <!-- Sidebar -->
       <div class="image-container">
         <img src="@/assets/ProfilPimpinan.png" alt="Gambar Profil" />
       </div>
@@ -35,7 +43,6 @@
   </div>
 </template>
 
-
 <script>
 export default {
   name: "VisiMisiView",
@@ -43,7 +50,7 @@ export default {
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
 
 .profil-visi-misi {
   max-width: 100%;
@@ -53,13 +60,13 @@ export default {
 h1 {
   font-size: 32px;
   text-align: left;
-  color: #65A5CA;
+  color: #65a5ca;
   margin-bottom: 30px;
 }
 
 .content-container {
   display: flex;
-  gap: 20px; /* Jarak antara teks dan gambar */
+  gap: 20px;
   align-items: flex-start;
   justify-content: space-between;
 }
@@ -77,14 +84,14 @@ h1 {
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
-  padding-right: 20px; /* Pastikan tidak terlalu ke kanan */
+  padding-right: 20px;
 }
 
 .image-container img {
-  max-width: 100%; /* Agar gambar tidak melebihi ruang yang disediakan */
-  height: auto; /* Menjaga proporsi gambar */
-  border-radius: 10px; /* Opsional: tambahkan border radius */
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Opsional: efek bayangan */
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   margin-right: 0px;
 }
 
@@ -96,7 +103,7 @@ h1 {
 .line {
   width: 5px;
   height: 60px; /* Atur tinggi agar garis terlihat jelas */
-  background-color: #8BBBD7;
+  background-color: #8bbbd7;
   position: absolute;
   left: 0;
   top: 0;
@@ -113,7 +120,7 @@ h2 {
 .line {
   width: 5px;
   height: 100%;
-  background-color: #8BBBD7;
+  background-color: #8bbbd7;
   position: absolute;
   left: 0;
   top: 0;
@@ -132,10 +139,7 @@ p {
   color: #666;
   font-style: italic;
   text-align: left;
-  display: block; /* Pastikan tampil sebagai blok */
-  clear: both; /* Hindari terhalang oleh elemen sebelumnya */
+  display: block;
+  clear: both;
 }
-
-
-
 </style>
