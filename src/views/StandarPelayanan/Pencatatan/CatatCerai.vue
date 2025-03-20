@@ -5,17 +5,27 @@
       <!-- Bagian Teks -->
       <div class="content-section">
         <div class="menu-item">
-            <ol>
-              <p><b> PENCATATAN PERCERAIAN</b> </p>
-             
-              <!-- Tabel 1 -->
-            <table border="1" cellpadding="10" cellspacing="0" style="width: 100%; margin-top: 20px; border-collapse: collapse; text-align: left;">
+          <ol>
+            <p><b> PENCATATAN PERCERAIAN</b></p>
+
+            <!-- Tabel 1 -->
+            <table
+              border="1"
+              cellpadding="10"
+              cellspacing="0"
+              style="
+                width: 100%;
+                margin-top: 20px;
+                border-collapse: collapse;
+                text-align: left;
+              "
+            >
               <thead>
                 <tr>
-                    <th>No</th>
-                    <th>Komponen</th>
-                    <th>Uraian</th>
-                    <th>Keterangan</th>
+                  <th>No</th>
+                  <th>Komponen</th>
+                  <th>Uraian</th>
+                  <th>Keterangan</th>
                 </tr>
               </thead>
               <tbody>
@@ -23,24 +33,47 @@
                   <td>1.</td>
                   <td>Persyaratan Pelayanan</td>
                   <td>
-                    <p><b>Perceraian di wilayah NKRI dengan memenuhi persyaratan:</b></p>
+                    <p>
+                      <b
+                        >Perceraian di wilayah NKRI dengan memenuhi
+                        persyaratan:</b
+                      >
+                    </p>
                     <ol>
-                        <li>Formulir Pelaporan Perceraian (F-2-19)</li>
-                        <li>Foto copy Salinan Putusan Perceraian dari PN yang berkekuatan hukum tetap</li>
-                        <li>Kutipan Akta Perkawinan Asli</li>
-                        <li>Kartu Keluarga Asli</li>
-                        <li>Foto copy KTP Elektronik Pasangan Suami Istri</li>
-                        <li>Dalam hal Pemohon tidak dapat menyerahkan Kutipan Akta Perkawinan, Pemohon membuat Surat Pernytaan 
-                          yang menyatakan Kutipan Akta Perkawinan tidak dimiliki dengan alasan sesuai dengan Ketentuan Peraturan Perundang-undangan</li>
+                      <li>Formulir Pelaporan Perceraian (F-2-19)</li>
+                      <li>
+                        Foto copy Salinan Putusan Perceraian dari PN yang
+                        berkekuatan hukum tetap
+                      </li>
+                      <li>Kutipan Akta Perkawinan Asli</li>
+                      <li>Kartu Keluarga Asli</li>
+                      <li>Foto copy KTP Elektronik Pasangan Suami Istri</li>
+                      <li>
+                        Dalam hal Pemohon tidak dapat menyerahkan Kutipan Akta
+                        Perkawinan, Pemohon membuat Surat Pernytaan yang
+                        menyatakan Kutipan Akta Perkawinan tidak dimiliki dengan
+                        alasan sesuai dengan Ketentuan Peraturan
+                        Perundang-undangan
+                      </li>
                     </ol>
-                    <br/>
-                    <p><b>Perceraian   di luar   wilayah   NKRI dengan   memenuhi   persyaratan   :</b></p>
+                    <br />
+                    <p>
+                      <b
+                        >Perceraian di luar wilayah NKRI dengan memenuhi
+                        persyaratan :</b
+                      >
+                    </p>
                     <ol>
-                        <li>Kutipan akta perceraian/bukti pencatatan perceraian dari negara setempat;</li>
-                        <li>Dokumen perjalanan RI</li>
-                        <li>Surat keterangan yang menunjukkan domisili atau       surat keterangan pindah luar negeri.</li>
+                      <li>
+                        Kutipan akta perceraian/bukti pencatatan perceraian dari
+                        negara setempat;
+                      </li>
+                      <li>Dokumen perjalanan RI</li>
+                      <li>
+                        Surat keterangan yang menunjukkan domisili atau surat
+                        keterangan pindah luar negeri.
+                      </li>
                     </ol>
-                    
                   </td>
                   <td></td>
                 </tr>
@@ -49,14 +82,22 @@
                   <td>Prosedur</td>
                   <td>
                     <ol>
-                        <li>Pemohon Melengkapi Persyaratan</li>
-                        <li>Petugas Pelayanan Melakukan Verifikasi dan Validasi 
-                            terhadap Formulir Pelaporan dan Persyaratan, jika belum 
-                            lengkap dikembalikan ke Pemohon</li>
-                        <li>Petugas Melakukan Perekaman Data ke dalam Database Kependudukan</li>
-                        <li>Kepala Seksi Mengajukan Ke Kepala bidang utk Memverifikasi</li>
-                        <li>Kepala Dinas menandatangani Kutipan Akta</li>
-                        <li>Kutipan Akta Kelahiran disampaikan kepada Pemohon</li>
+                      <li>Pemohon Melengkapi Persyaratan</li>
+                      <li>
+                        Petugas Pelayanan Melakukan Verifikasi dan Validasi
+                        terhadap Formulir Pelaporan dan Persyaratan, jika belum
+                        lengkap dikembalikan ke Pemohon
+                      </li>
+                      <li>
+                        Petugas Melakukan Perekaman Data ke dalam Database
+                        Kependudukan
+                      </li>
+                      <li>
+                        Kepala Seksi Mengajukan Ke Kepala bidang utk
+                        Memverifikasi
+                      </li>
+                      <li>Kepala Dinas menandatangani Kutipan Akta</li>
+                      <li>Kutipan Akta Kelahiran disampaikan kepada Pemohon</li>
                     </ol>
                   </td>
                   <td></td>
@@ -84,14 +125,13 @@
                   <td>Pengelolaan Pengaduan</td>
                   <td></td>
                   <td></td>
-
                 </tr>
               </tbody>
             </table>
-            </ol>
-          </div>
-          </div>
-      
+          </ol>
+        </div>
+      </div>
+
       <!-- Foto di Sebelah Kanan -->
       <div class="image-container">
         <img src="@/assets/SidebarStandar.png" alt="Gambar Profil" />
@@ -101,15 +141,14 @@
   </div>
 </template>
 
-
 <script>
 export default {
-  name: 'PencatatanPerceraianView',
+  name: "PencatatanPerceraianView",
 };
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
 
 .profil-visi-misi {
   max-width: 100%;
@@ -119,7 +158,7 @@ export default {
 h1 {
   font-size: 32px;
   text-align: left;
-  color: #65A5CA;
+  color: #65a5ca;
   margin-bottom: 30px;
 }
 
@@ -139,18 +178,17 @@ h1 {
 }
 
 .menu-item {
-    height: auto; /* Sesuaikan tinggi otomatis */
-    width: 100%; /* Mengisi lebar penuh */
-    overflow: hidden;
-    border: 1px solid #000000;
-    border-radius: 0px;
-    padding: 5px;
-    background-color: #ffffff;
-    text-align: left;
-    word-wrap: break-word;
-    white-space: normal;
-  }
-
+  height: auto; /* Sesuaikan tinggi otomatis */
+  width: 100%; /* Mengisi lebar penuh */
+  overflow: hidden;
+  border: 1px solid #000000;
+  border-radius: 0px;
+  padding: 5px;
+  background-color: #ffffff;
+  text-align: left;
+  word-wrap: break-word;
+  white-space: normal;
+}
 
 .image-container {
   flex: 1;
@@ -175,7 +213,7 @@ h1 {
 .line {
   width: 5px;
   height: 100%;
-  background-color: #8BBBD7;
+  background-color: #8bbbd7;
   position: absolute;
   left: 0;
   top: 0;
@@ -195,25 +233,26 @@ p {
   margin: 0;
 }
 
-ol, ul {
-    padding-left: 40px; /* Indentasi yang cukup */
+ol,
+ul {
+  padding-left: 40px; /* Indentasi yang cukup */
 }
 
 li {
-    font-size: 22px;
-    color: #333;
-    margin-bottom: 10px;
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 10px;
 }
 
 .content-section ol {
-    list-style-position: outside;
-    padding-left: 40px;
-    font-size: 22px;
+  list-style-position: outside;
+  padding-left: 40px;
+  font-size: 22px;
 }
 
 .content-section li {
-    margin-left: 0;
-    font-size: 22px;
+  margin-left: 0;
+  font-size: 22px;
 }
 
 .update {
@@ -237,14 +276,15 @@ table {
   margin-top: 10px;
 }
 
-th, td {
+th,
+td {
   border: 1px solid #ccc;
   padding: 10px;
   text-align: left;
 }
 
 th {
-  background-color: #8BBBD7;
+  background-color: #8bbbd7;
   color: white;
   font-weight: bold;
 }

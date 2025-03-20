@@ -1,21 +1,31 @@
 <template>
-  <div class="profil-visi-misi">
+  <div class="standar-pelayanan">
     <h1>Akta Kelahiran</h1>
     <div class="content-container">
       <!-- Bagian Teks -->
       <div class="content-section">
         <div class="menu-item">
-            <ol>
-              <p><b> Pencatatan Kelahiran</b> </p>
-             
-              <!-- Tabel 1 -->
-            <table border="1" cellpadding="10" cellspacing="0" style="width: 100%; margin-top: 20px; border-collapse: collapse; text-align: left;">
+          <ol>
+            <p><b> Pencatatan Kelahiran</b></p>
+
+            <!-- Tabel 1 -->
+            <table
+              border="1"
+              cellpadding="10"
+              cellspacing="0"
+              style="
+                width: 100%;
+                margin-top: 20px;
+                border-collapse: collapse;
+                text-align: left;
+              "
+            >
               <thead>
                 <tr>
-                    <th>No</th>
-                    <th>Komponen</th>
-                    <th>Uraian</th>
-                    <th>Keterangan</th>
+                  <th>No</th>
+                  <th>Komponen</th>
+                  <th>Uraian</th>
+                  <th>Keterangan</th>
                 </tr>
               </thead>
               <tbody>
@@ -25,23 +35,38 @@
                   <td>
                     <p><b>Pencatatan Kelahiran WNI :</b></p>
                     <ol>
-                        <li>Mengisi Formulir Pelaporan Kelahiran (F2-2.05)</li>
-                        <li>Foto copy Surat Keterangan Kelahiran dari Rumah Sakit/Puskesmas/Bidan/Penolong Kelahiran</li>
-                        <li>Foto copy Akta Perkawinan/Buku Nikah orang tua</li>
-                        <li>Foto copy Kartu Keluarga dan KTP el Orang tua</li>
-                        <li>Jika tidak memiliki persyaratan pada point 2, wajib mengisi Formulir STPJM (F-2.03) 
-                            Kebenaran data Kelahiran yaitu pernyataan yang dbuat oleh orang tua Kandung/Wali/Pemohon dengan 
-                            tanggung jawab penuh atas kebenaran data kelahiran seseorang dengan diketahui oleh dua orang saksi</li>
-                        <li>Bagi salah satu / kedua pasangan suami istri meninggal, maka wajib mengisi Formulir F2-2.04 (SPTJM) 
-                            Surat Keterangan Tanggung Jawab Mutlak Kebenaran Sebagai Pasangan Suami Istri dengan melampirkan surat nikah.</li>
+                      <li>Mengisi Formulir Pelaporan Kelahiran (F2-2.05)</li>
+                      <li>
+                        Foto copy Surat Keterangan Kelahiran dari Rumah
+                        Sakit/Puskesmas/Bidan/Penolong Kelahiran
+                      </li>
+                      <li>Foto copy Akta Perkawinan/Buku Nikah orang tua</li>
+                      <li>Foto copy Kartu Keluarga dan KTP el Orang tua</li>
+                      <li>
+                        Jika tidak memiliki persyaratan pada point 2, wajib
+                        mengisi Formulir STPJM (F-2.03) Kebenaran data Kelahiran
+                        yaitu pernyataan yang dbuat oleh orang tua
+                        Kandung/Wali/Pemohon dengan tanggung jawab penuh atas
+                        kebenaran data kelahiran seseorang dengan diketahui oleh
+                        dua orang saksi
+                      </li>
+                      <li>
+                        Bagi salah satu / kedua pasangan suami istri meninggal,
+                        maka wajib mengisi Formulir F2-2.04 (SPTJM) Surat
+                        Keterangan Tanggung Jawab Mutlak Kebenaran Sebagai
+                        Pasangan Suami Istri dengan melampirkan surat nikah.
+                      </li>
                     </ol>
-                    <br/>
+                    <br />
                     <p><b>Pencatatan Kelahiran WNA</b></p>
                     <ol>
-                        <li>Surat Keterangan Kelahiran</li>
-                        <li>Dokumen Perjalanan</li>
-                        <li>KK, dan</li>
-                        <li>KTP-el atau kartu izin tinggal tetap atau kartu izin tinggal terbatas atau visa kunjungan.</li>
+                      <li>Surat Keterangan Kelahiran</li>
+                      <li>Dokumen Perjalanan</li>
+                      <li>KK, dan</li>
+                      <li>
+                        KTP-el atau kartu izin tinggal tetap atau kartu izin
+                        tinggal terbatas atau visa kunjungan.
+                      </li>
                     </ol>
                   </td>
                   <td></td>
@@ -51,14 +76,22 @@
                   <td>Prosedur</td>
                   <td>
                     <ol>
-                        <li>Pemohon Melengkapi Persyaratan</li>
-                        <li>Petugas Pelayanan Melakukan Verifikasi dan Validasi 
-                            terhadap Formulir Pelaporan dan Persyaratan, jika belum 
-                            lengkap dikembalikan ke Pemohon</li>
-                        <li>Petugas Melakukan Perekaman Data ke dalam Database Kependudukan</li>
-                        <li>Kepala Seksi Mengajukan Ke Kepala bidang utk Memverifikasi</li>
-                        <li>Kepala Dinas menandatangani Kutipan Akta</li>
-                        <li>Kutipan Akta Kelahiran disampaikan kepada Pemohon</li>
+                      <li>Pemohon Melengkapi Persyaratan</li>
+                      <li>
+                        Petugas Pelayanan Melakukan Verifikasi dan Validasi
+                        terhadap Formulir Pelaporan dan Persyaratan, jika belum
+                        lengkap dikembalikan ke Pemohon
+                      </li>
+                      <li>
+                        Petugas Melakukan Perekaman Data ke dalam Database
+                        Kependudukan
+                      </li>
+                      <li>
+                        Kepala Seksi Mengajukan Ke Kepala bidang utk
+                        Memverifikasi
+                      </li>
+                      <li>Kepala Dinas menandatangani Kutipan Akta</li>
+                      <li>Kutipan Akta Kelahiran disampaikan kepada Pemohon</li>
                     </ol>
                   </td>
                   <td></td>
@@ -86,25 +119,34 @@
                   <td>Pengelolaan Pengaduan</td>
                   <td></td>
                   <td></td>
-
                 </tr>
               </tbody>
             </table>
-            </ol>
-          </div>
+          </ol>
+        </div>
 
-          <div class="menu-item">
-            <ol>
-              <p><b> Pencatatan Lahir Mati</b> </p>
-             
-              <!-- Tabel 1 -->
-            <table border="1" cellpadding="10" cellspacing="0" style="width: 100%; margin-top: 20px; border-collapse: collapse; text-align: left;">
+        <div class="menu-item">
+          <ol>
+            <p><b> Pencatatan Lahir Mati</b></p>
+
+            <!-- Tabel 1 -->
+            <table
+              border="1"
+              cellpadding="10"
+              cellspacing="0"
+              style="
+                width: 100%;
+                margin-top: 20px;
+                border-collapse: collapse;
+                text-align: left;
+              "
+            >
               <thead>
                 <tr>
-                    <th>No</th>
-                    <th>Komponen</th>
-                    <th>Uraian</th>
-                    <th>Keterangan</th>
+                  <th>No</th>
+                  <th>Komponen</th>
+                  <th>Uraian</th>
+                  <th>Keterangan</th>
                 </tr>
               </thead>
               <tbody>
@@ -113,8 +155,11 @@
                   <td>Persyaratan Pelayanan</td>
                   <td>
                     <ol>
-                        <li>Surat keterangan lahir mati; atau</li>
-                        <li>Pernyataan dari orang tua kandung atau memiliki surat keterangan lahir mati</li>
+                      <li>Surat keterangan lahir mati; atau</li>
+                      <li>
+                        Pernyataan dari orang tua kandung atau memiliki surat
+                        keterangan lahir mati
+                      </li>
                     </ol>
                   </td>
                   <td></td>
@@ -124,16 +169,31 @@
                   <td>Prosedur</td>
                   <td>
                     <ol>
-                        <li>Pemohon mengisi dan menandatagani serta menyerahkan persyaratan; formulir laporan</li>
-                        <li>Petugas registrasi dan petugas pelayanan melakukan
-                            verifikasi dan validasi terhadap formulir pelaporan dan persyaratan.
-                        </li>
-                        <li>Petugas registrasi untuk penduduk WNI meneruskan formulir
-                            pelaporan kepada Dinas Dukcapil untuk diterbitkan keterangan lahir mati
-                        </li>
-                        <li>Petugas pada Dinas Dukcapil melakukan perekaman data dalam basis data kependudukan</li>
-                        <li>Penjabat Pencatatan Sipil menerbitkan surat keterangan lahir mati; dan</li>
-                        <li>Surat keterangan lahir mati disampaikan kepada Pemohon</li>
+                      <li>
+                        Pemohon mengisi dan menandatagani serta menyerahkan
+                        persyaratan; formulir laporan
+                      </li>
+                      <li>
+                        Petugas registrasi dan petugas pelayanan melakukan
+                        verifikasi dan validasi terhadap formulir pelaporan dan
+                        persyaratan.
+                      </li>
+                      <li>
+                        Petugas registrasi untuk penduduk WNI meneruskan
+                        formulir pelaporan kepada Dinas Dukcapil untuk
+                        diterbitkan keterangan lahir mati
+                      </li>
+                      <li>
+                        Petugas pada Dinas Dukcapil melakukan perekaman data
+                        dalam basis data kependudukan
+                      </li>
+                      <li>
+                        Penjabat Pencatatan Sipil menerbitkan surat keterangan
+                        lahir mati; dan
+                      </li>
+                      <li>
+                        Surat keterangan lahir mati disampaikan kepada Pemohon
+                      </li>
                     </ol>
                   </td>
                   <td></td>
@@ -161,15 +221,14 @@
                   <td>Pengelolaan Pengaduan</td>
                   <td></td>
                   <td></td>
-
                 </tr>
               </tbody>
             </table>
-            </ol>
-          </div>
+          </ol>
+        </div>
       </div>
-      
-      <!-- Foto di Sebelah Kanan -->
+
+      <!-- Sidebar -->
       <div class="image-container">
         <img src="@/assets/SidebarStandar.png" alt="Gambar Profil" />
       </div>
@@ -178,17 +237,16 @@
   </div>
 </template>
 
-
 <script>
 export default {
-  name: 'PencatatanKelahiranView',
+  name: "PencatatanKelahiranView",
 };
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
 
-.profil-visi-misi {
+.standar-pelayanan{
   max-width: 100%;
   padding: 20px 50px;
 }
@@ -196,7 +254,7 @@ export default {
 h1 {
   font-size: 32px;
   text-align: left;
-  color: #65A5CA;
+  color: #65a5ca;
   margin-bottom: 30px;
 }
 
@@ -216,18 +274,17 @@ h1 {
 }
 
 .menu-item {
-    height: auto; /* Sesuaikan tinggi otomatis */
-    width: 100%; /* Mengisi lebar penuh */
-    overflow: hidden;
-    border: 1px solid #000000;
-    border-radius: 0px;
-    padding: 5px;
-    background-color: #ffffff;
-    text-align: left;
-    word-wrap: break-word;
-    white-space: normal;
-  }
-
+  height: auto; 
+  width: 100%; 
+  overflow: hidden;
+  border: 1px solid #000000;
+  border-radius: 0px;
+  padding: 5px;
+  background-color: #ffffff;
+  text-align: left;
+  word-wrap: break-word;
+  white-space: normal;
+}
 
 .image-container {
   flex: 1;
@@ -249,16 +306,6 @@ h1 {
   padding-left: 25px;
 }
 
-.line {
-  width: 5px;
-  height: 100%;
-  background-color: #8BBBD7;
-  position: absolute;
-  left: 0;
-  top: 0;
-  border-radius: 3px;
-}
-
 h2 {
   font-size: 28px;
   font-weight: bold;
@@ -272,25 +319,26 @@ p {
   margin: 0;
 }
 
-ol, ul {
-    padding-left: 40px; /* Indentasi yang cukup */
+ol,
+ul {
+  padding-left: 40px; 
 }
 
 li {
-    font-size: 22px;
-    color: #333;
-    margin-bottom: 10px;
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 10px;
 }
 
 .content-section ol {
-    list-style-position: outside;
-    padding-left: 40px;
-    font-size: 22px;
+  list-style-position: outside;
+  padding-left: 40px;
+  font-size: 22px;
 }
 
 .content-section li {
-    margin-left: 0;
-    font-size: 22px;
+  margin-left: 0;
+  font-size: 22px;
 }
 
 .update {
@@ -314,16 +362,16 @@ table {
   margin-top: 10px;
 }
 
-th, td {
+th,
+td {
   border: 1px solid #ccc;
   padding: 10px;
   text-align: left;
 }
 
 th {
-  background-color: #8BBBD7;
+  background-color: #8bbbd7;
   color: white;
   font-weight: bold;
 }
 </style>
-

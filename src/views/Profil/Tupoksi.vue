@@ -155,12 +155,12 @@ p {
 }
 
 ol {
-  padding-left: 40px; /* Memberikan indentasi pada daftar */
+  padding-left: 40px; 
 }
 
 ul {
-  padding-left: 40px; /* Memberikan indentasi */
-  list-style-type: disc; /* Menggunakan bullet default */
+  padding-left: 40px;
+  list-style-type: disc; 
 }
 
 li {
@@ -176,7 +176,7 @@ li {
   color: #666;
   font-style: italic;
   text-align: left;
-  display: block; /* Pastikan tampil sebagai blok */
-  clear: both; /* Hindari terhalang oleh elemen sebelumnya */
+  display: block; 
+  clear: both; 
 }
 </style>

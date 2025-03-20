@@ -1,23 +1,38 @@
 <template>
-  <div class="profil-visi-misi">
+  <div class="data-penduduk">
     <h1>Disabilitas</h1>
     <p class="update">Terakhir Update: 2 Oktober 2024</p>
-    <br>
-    <br>
+    <br />
+    <br />
     <div class="content-container">
       <!-- Bagian Teks -->
       <div class="content-section">
         <div class="menu-column">
           <div class="menu-item">
-            <p><b> Jumlah Penduduk Disabilitas Berdasarkan Data Konsolidasi Bersih (DKB) Semester I</b> </p>
-                <p><b>(30 Juni 2022)</b></p>
-                <p><b>Per Desa-Kelurahan Tahun 2022</b></p>
-                <br>
+            <p>
+              <b>
+                Jumlah Penduduk Disabilitas Berdasarkan Data Konsolidasi Bersih
+                (DKB) Semester I</b
+              >
+            </p>
+            <p><b>(30 Juni 2022)</b></p>
+            <p><b>Per Desa-Kelurahan Tahun 2022</b></p>
+            <br />
             <ol>
-            <!-- Tabel 1 -->
-            <table border="1" cellpadding="10" cellspacing="0" style="width: 100%; margin-top: 20px; border-collapse: collapse; text-align: left;">
-              <thead>
-                <tr>
+              <!-- Tabel 1 -->
+              <table
+                border="1"
+                cellpadding="10"
+                cellspacing="0"
+                style="
+                  width: 100%;
+                  margin-top: 20px;
+                  border-collapse: collapse;
+                  text-align: left;
+                "
+              >
+                <thead>
+                  <tr>
                     <th>NAMA DESA/KELURAHAN</th>
                     <th>CACAT FISIK</th>
                     <th>CACAT NETRA BUTA</th>
@@ -26,126 +41,126 @@
                     <th>CACAT FISIK DAN MENTAL</th>
                     <th>CACAT LAINNYA</th>
                     <th>JUMLAH PENDUDUK</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>NDORUREA</td>
-                  <td>4</td>
-                  <td>0</td>
-                  <td>2</td>
-                  <td>3</td>
-                  <td>1</td>
-                  <td>0</td>
-                  <td>10</td>
-                </tr>
-                <tr>
-                  <td>ONDOREA</td>
-                  <td>1</td>
-                  <td>2</td>
-                  <td>1</td>
-                  <td>0</td>
-                  <td>0</td>
-                  <td>0</td>
-                  <td>4</td>
-                </tr>
-                <tr>
-                  <td>WATUMITE</td>
-                  <td>0</td>
-                  <td>0</td>
-                  <td>1</td>
-                  <td>0</td>
-                  <td>0</td>
-                  <td>0</td>
-                  <td>1</td>
-                </tr>
-                <tr>
-                  <td>TENDAREA</td>
-                  <td>1</td>
-                  <td>0</td>
-                  <td>3</td>
-                  <td>0</td>
-                  <td>1</td>
-                  <td>0</td>
-                  <td>5</td>
-                </tr>
-                <tr>
-                  <td>KERIREA</td>
-                  <td>1</td>
-                  <td>1</td>
-                  <td>0</td>
-                  <td>0</td>
-                  <td>0</td>
-                  <td>0</td>
-                  <td>2</td>
-                </tr>
-                <tr>
-                  <td>TENDAMBEPA</td>
-                  <td>1</td>
-                  <td>0</td>
-                  <td>0</td>
-                  <td>0</td>
-                  <td>2</td>
-                  <td>0</td>
-                  <td>3</td>
-                </tr>
-                <tr>
-                  <td>ZOZOZEA</td>
-                  <td>0</td>
-                  <td>0</td>
-                  <td>2</td>
-                  <td>0</td>
-                  <td>0</td>
-                  <td>0</td>
-                  <td>2</td>
-                </tr>
-                <tr>
-                  <td>RAPOWAWO</td>
-                  <td>1</td>
-                  <td>0</td>
-                  <td>0</td>
-                  <td>0</td>
-                  <td>0</td>
-                  <td>0</td>
-                  <td>1</td>
-                </tr>
-                <tr>
-                  <td>NGGOREA</td>
-                  <td>2</td>
-                  <td>2</td>
-                  <td>1</td>
-                  <td>0</td>
-                  <td>0</td>
-                  <td>0</td>
-                  <td>5</td>
-                </tr>
-                <tr>
-                  <td>RAPORENDU</td>
-                  <td>0</td>
-                  <td>1</td>
-                  <td>1</td>
-                  <td>0</td>
-                  <td>1</td>
-                  <td>3</td>
-                  <td>6</td>
-                </tr>
-                <tr>
-                  <td>dst....</td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>NDORUREA</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>10</td>
+                  </tr>
+                  <tr>
+                    <td>ONDOREA</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>4</td>
+                  </tr>
+                  <tr>
+                    <td>WATUMITE</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>TENDAREA</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>5</td>
+                  </tr>
+                  <tr>
+                    <td>KERIREA</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>2</td>
+                  </tr>
+                  <tr>
+                    <td>TENDAMBEPA</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>3</td>
+                  </tr>
+                  <tr>
+                    <td>ZOZOZEA</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>2</td>
+                  </tr>
+                  <tr>
+                    <td>RAPOWAWO</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>NGGOREA</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>5</td>
+                  </tr>
+                  <tr>
+                    <td>RAPORENDU</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>3</td>
+                    <td>6</td>
+                  </tr>
+                  <tr>
+                    <td>dst....</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
                 </tbody>
-            </table>
+              </table>
             </ol>
           </div>
-          </div>
+        </div>
       </div>
-      
+
       <!-- Foto di Sebelah Kanan -->
       <div class="image-container">
         <img src="@/assets/SidebarStandar.png" alt="Gambar Profil" />
@@ -155,7 +170,6 @@
   </div>
 </template>
 
-
 <script>
 export default {
   name: "DataJumlahDisabilitasView",
@@ -163,9 +177,9 @@ export default {
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
 
-.profil-visi-misi {
+.data-penduduk {
   max-width: 100%;
   padding: 20px 50px;
 }
@@ -173,7 +187,7 @@ export default {
 h1 {
   font-size: 32px;
   text-align: left;
-  color: #65A5CA;
+  color: #65a5ca;
   margin-bottom: 30px;
 }
 
@@ -193,24 +207,23 @@ h1 {
 }
 
 .menu-item {
-    height: auto;
-    width: 100%;
-    overflow: hidden;
-    border: 1px solid #000000;
-    border-radius: 0px;
-    padding: 10px; /* Memberikan ruang di dalam kotak */
-    background-color: #ffffff;
-    text-align: left;
-    word-wrap: break-word;
-    white-space: normal;
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid #000000;
+  border-radius: 0px;
+  padding: 10px;
+  background-color: #ffffff;
+  text-align: left;
+  word-wrap: break-word;
+  white-space: normal;
 }
 
 .menu-item p {
-    margin: 5px 0; /* Jarak antar teks */
-    padding-left: 10px; /* Membuat teks tetap dalam kotak dan tidak terlalu mepet ke kiri */
-    text-align: left;
+  margin: 5px 0;
+  padding-left: 10px;
+  text-align: left;
 }
-
 
 .image-container {
   flex: 1;
@@ -235,7 +248,7 @@ h1 {
 .line {
   width: 5px;
   height: 100%;
-  background-color: #8BBBD7;
+  background-color: #8bbbd7;
   position: absolute;
   left: 0;
   top: 0;
@@ -255,25 +268,26 @@ p {
   margin: 0;
 }
 
-ol, ul {
-    padding-left: 40px; /* Indentasi yang cukup */
+ol,
+ul {
+  padding-left: 40px;
 }
 
 li {
-    font-size: 22px;
-    color: #333;
-    margin-bottom: 10px;
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 10px;
 }
 
 .content-section ol {
-    list-style-position: outside;
-    padding-left: 40px;
-    font-size: 22px;
+  list-style-position: outside;
+  padding-left: 40px;
+  font-size: 22px;
 }
 
 .content-section li {
-    margin-left: 0;
-    font-size: 22px;
+  margin-left: 0;
+  font-size: 22px;
 }
 
 .update {
@@ -297,14 +311,15 @@ table {
   margin-top: 10px;
 }
 
-th, td {
+th,
+td {
   border: 1px solid #ccc;
   padding: 10px;
   text-align: left;
 }
 
 th {
-  background-color: #8BBBD7;
+  background-color: #8bbbd7;
   color: white;
   font-weight: bold;
 }

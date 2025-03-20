@@ -5,17 +5,27 @@
       <!-- Bagian Teks -->
       <div class="content-section">
         <div class="menu-item">
-            <ol>
-              <p><b>Penerbitan Kartu Keluarga Baru</b> </p>
-             
-              <!-- Tabel 1 -->
-            <table border="1" cellpadding="10" cellspacing="0" style="width: 100%; margin-top: 20px; border-collapse: collapse; text-align: left;">
+          <ol>
+            <p><b>Penerbitan Kartu Keluarga Baru</b></p>
+
+            <!-- Tabel 1 -->
+            <table
+              border="1"
+              cellpadding="10"
+              cellspacing="0"
+              style="
+                width: 100%;
+                margin-top: 20px;
+                border-collapse: collapse;
+                text-align: left;
+              "
+            >
               <thead>
                 <tr>
-                    <th>No</th>
-                    <th>Komponen</th>
-                    <th>Uraian</th>
-                    <th>Keterangan</th>
+                  <th>No</th>
+                  <th>Komponen</th>
+                  <th>Uraian</th>
+                  <th>Keterangan</th>
                 </tr>
               </thead>
               <tbody>
@@ -24,63 +34,116 @@
                   <td>Persyaratan Pelayanan</td>
                   <td>
                     <ol>
-                        <li>Mengisi Formulir Isian Biodata Penduduk F1.01</li>
-                        <li>Izin tinggal tetap bagi WNA;</li>
-                        <li>Surat pernyataan (Ka.Keluarga) 
-                            tidak terdata didaerah lain;
-                        </li>
-                        <li>Buku Nikah/kutipan akta perkawinan atau kutipan akta perceraian;</li>
-                        <li>Surat keterangan pindah surat keterangan pindah datang 
-                            bagi Penduduk yang pindah dalam wilayah NKRI;</li>
-                        <li>Surat keterangan pindah luar negeri yang diterbitkan oleh 
-                            Dinas Dukcapil bagi WM yang datang dari luar wilayah NKRI;</li>
-                        <li>Surat keterangan pengganti tanda identitas bagi Penduduk rentan Administrasi Kependudukan;</li>
-                        <li>Petikan Keputusan Presiden tentang ppewarganegaraan dan berita acara pengucapan sumpah atau pernyataan jani
-                            bagi penduduk WNI yang semula berkewarganegaraan asing atau Petikan Keputusan Menteri yang menyelenggarakan
-                            urusan pemerintahan di bidang hukum tentang perubahan status kewarganegaraan;
-                        </li>
+                      <li>Mengisi Formulir Isian Biodata Penduduk F1.01</li>
+                      <li>Izin tinggal tetap bagi WNA;</li>
+                      <li>
+                        Surat pernyataan (Ka.Keluarga) tidak terdata didaerah
+                        lain;
+                      </li>
+                      <li>
+                        Buku Nikah/kutipan akta perkawinan atau kutipan akta
+                        perceraian;
+                      </li>
+                      <li>
+                        Surat keterangan pindah surat keterangan pindah datang
+                        bagi Penduduk yang pindah dalam wilayah NKRI;
+                      </li>
+                      <li>
+                        Surat keterangan pindah luar negeri yang diterbitkan
+                        oleh Dinas Dukcapil bagi WM yang datang dari luar
+                        wilayah NKRI;
+                      </li>
+                      <li>
+                        Surat keterangan pengganti tanda identitas bagi Penduduk
+                        rentan Administrasi Kependudukan;
+                      </li>
+                      <li>
+                        Petikan Keputusan Presiden tentang ppewarganegaraan dan
+                        berita acara pengucapan sumpah atau pernyataan jani bagi
+                        penduduk WNI yang semula berkewarganegaraan asing atau
+                        Petikan Keputusan Menteri yang menyelenggarakan urusan
+                        pemerintahan di bidang hukum tentang perubahan status
+                        kewarganegaraan;
+                      </li>
                     </ol>
-                    <br/>
-                    <p><b>Penerbitan KK Baru untuk Penduduk WNI terbagi atas : </b></p>
+                    <br />
+                    <p>
+                      <b
+                        >Penerbitan KK Baru untuk Penduduk WNI terbagi atas :
+                      </b>
+                    </p>
                     <ol>
-                        <li>Membentuk keluarga baru, dengan : </li>
-                        <ol type="a">
-                            <li>Memenuhi persyaratan sebagaimana dimaksud diatas; dan</li>
-                            <li>Mmengisi surat pernyataan tanggung jawab mutlak 
-                                perkawinan/perceraian belum tercatat</li>
-                        </ol>
-                        <li>Penggantian kepala keluarga, dengan :</li>
-                        <ol type="a">
-                            <li>Memenuhi persyaratan sebagaimana dimaksud diatas; dan</li>
-                            <li>Kutipan akta kematian/keterangan kematian</li>
-                        </ol>
-                        <li>Pisah KK, dengan :</li>
-                        <ol type="a">
-                            <li>Memenuhi persyaratan sebagaimana dimaksud diatas;</li>
-                            <li>Fotocopy KK lama; dan</li>
-                            <li>Berumur 17 (tujuh belas) tahun atau sudah kawin atau 
-                                pernah kawin yang dibuktikan dengan kepemilikan KTP-El.</li>
-                        </ol>
-                        <li>Pindah datang Penduduk tidak diikuti dengan kepala keluarga, 
-                            dengan memenuhi persyaratan sebagaimana dimaksud diatas;</li>
-                        <li>WNI yang datang dari luar wilayah negara RI karena pindah, dengan :</li>
-                        <ol type="a">
-                            <li>Memenuhi persyaratan sebagaimana dimaksud diatas;</li>
-                            <li>SKP dari Perwakilan Republik Indonesia</li>
-                        </ol>
-                        <li>Rentan administrasi kependudukan dengan dengan memenuhi persyaratan sebagaimana dimaksud diatas;</li>
-                        <li>Penerbitan KK Baru bagi Orang Asing yang memperoleh kewarganegaraan 
-                            Indonesia dan bagi WNI yang semula berkewarganegaraan asing, dengan 
-                            memenuhi persyaratan sebagaimana dimaksud diatas;</li>
-                        <li>Penerbitan KK Baru bagi Penduduk Orang Asing yang memiliki Izin Tinggal Tetap dengan :</li>
-                        <ol type="a">
-                            <li>Memenuhi persyaratan sebagaimana dimaksud diatas;</li>
-                            <li>Dokumen perjalanan; dan</li>
-                            <li>Surat pernyataan tanggung jawab mutlak perkawinan/perceraian belum tercatat</li>
-                        </ol>
+                      <li>Membentuk keluarga baru, dengan :</li>
+                      <ol type="a">
+                        <li>
+                          Memenuhi persyaratan sebagaimana dimaksud diatas; dan
+                        </li>
+                        <li>
+                          Mmengisi surat pernyataan tanggung jawab mutlak
+                          perkawinan/perceraian belum tercatat
+                        </li>
+                      </ol>
+                      <li>Penggantian kepala keluarga, dengan :</li>
+                      <ol type="a">
+                        <li>
+                          Memenuhi persyaratan sebagaimana dimaksud diatas; dan
+                        </li>
+                        <li>Kutipan akta kematian/keterangan kematian</li>
+                      </ol>
+                      <li>Pisah KK, dengan :</li>
+                      <ol type="a">
+                        <li>
+                          Memenuhi persyaratan sebagaimana dimaksud diatas;
+                        </li>
+                        <li>Fotocopy KK lama; dan</li>
+                        <li>
+                          Berumur 17 (tujuh belas) tahun atau sudah kawin atau
+                          pernah kawin yang dibuktikan dengan kepemilikan
+                          KTP-El.
+                        </li>
+                      </ol>
+                      <li>
+                        Pindah datang Penduduk tidak diikuti dengan kepala
+                        keluarga, dengan memenuhi persyaratan sebagaimana
+                        dimaksud diatas;
+                      </li>
+                      <li>
+                        WNI yang datang dari luar wilayah negara RI karena
+                        pindah, dengan :
+                      </li>
+                      <ol type="a">
+                        <li>
+                          Memenuhi persyaratan sebagaimana dimaksud diatas;
+                        </li>
+                        <li>SKP dari Perwakilan Republik Indonesia</li>
+                      </ol>
+                      <li>
+                        Rentan administrasi kependudukan dengan dengan memenuhi
+                        persyaratan sebagaimana dimaksud diatas;
+                      </li>
+                      <li>
+                        Penerbitan KK Baru bagi Orang Asing yang memperoleh
+                        kewarganegaraan Indonesia dan bagi WNI yang semula
+                        berkewarganegaraan asing, dengan memenuhi persyaratan
+                        sebagaimana dimaksud diatas;
+                      </li>
+                      <li>
+                        Penerbitan KK Baru bagi Penduduk Orang Asing yang
+                        memiliki Izin Tinggal Tetap dengan :
+                      </li>
+                      <ol type="a">
+                        <li>
+                          Memenuhi persyaratan sebagaimana dimaksud diatas;
+                        </li>
+                        <li>Dokumen perjalanan; dan</li>
+                        <li>
+                          Surat pernyataan tanggung jawab mutlak
+                          perkawinan/perceraian belum tercatat
+                        </li>
+                      </ol>
                     </ol>
                   </td>
-                  
+
                   <td></td>
                 </tr>
                 <tr>
@@ -88,12 +151,28 @@
                   <td>Prosedur</td>
                   <td>
                     <ol>
-                        <li>Penduduk mengisi dan menandatangani formulir FI-01 serta menyerahkan persyaratan sesuai ketentuan perundang-undangan;</li>
-                        <li>Petugas pelayanan melakukan verifikasi dan validasi terhadap formulir biodata penduduk dan 
-                            persyaratan sesuai ketentuan perundang-undangan;</li>
-                        <li>Petugas pada Dinas Dukcapil melakukan perekaman data dalam basis data kependudukan;</li>
-                        <li>Kepala Dinas menerbitkan dan menandatangani Kartu Keluarga; dan</li>
-                        <li>Kartu Keluarga yang telah diterbitkan dan ditandatangani diserahkan kepada Penduduk</li>
+                      <li>
+                        Penduduk mengisi dan menandatangani formulir FI-01 serta
+                        menyerahkan persyaratan sesuai ketentuan
+                        perundang-undangan;
+                      </li>
+                      <li>
+                        Petugas pelayanan melakukan verifikasi dan validasi
+                        terhadap formulir biodata penduduk dan persyaratan
+                        sesuai ketentuan perundang-undangan;
+                      </li>
+                      <li>
+                        Petugas pada Dinas Dukcapil melakukan perekaman data
+                        dalam basis data kependudukan;
+                      </li>
+                      <li>
+                        Kepala Dinas menerbitkan dan menandatangani Kartu
+                        Keluarga; dan
+                      </li>
+                      <li>
+                        Kartu Keluarga yang telah diterbitkan dan ditandatangani
+                        diserahkan kepada Penduduk
+                      </li>
                     </ol>
                   </td>
                   <td></td>
@@ -121,25 +200,34 @@
                   <td>Pengelolaan Pengaduan</td>
                   <td></td>
                   <td></td>
-
                 </tr>
               </tbody>
             </table>
-            </ol>
-          </div>
+          </ol>
+        </div>
 
-          <div class="menu-item">
-            <ol>
-              <p><b>Penerbitan Kartu Keluarga Karena Perubahan Data</b> </p>
-             
-              <!-- Tabel 1 -->
-            <table border="1" cellpadding="10" cellspacing="0" style="width: 100%; margin-top: 20px; border-collapse: collapse; text-align: left;">
+        <div class="menu-item">
+          <ol>
+            <p><b>Penerbitan Kartu Keluarga Karena Perubahan Data</b></p>
+
+            <!-- Tabel 1 -->
+            <table
+              border="1"
+              cellpadding="10"
+              cellspacing="0"
+              style="
+                width: 100%;
+                margin-top: 20px;
+                border-collapse: collapse;
+                text-align: left;
+              "
+            >
               <thead>
                 <tr>
-                    <th>No</th>
-                    <th>Komponen</th>
-                    <th>Uraian</th>
-                    <th>Keterangan</th>
+                  <th>No</th>
+                  <th>Komponen</th>
+                  <th>Uraian</th>
+                  <th>Keterangan</th>
                 </tr>
               </thead>
               <tbody>
@@ -148,8 +236,11 @@
                   <td>Persyaratan Pelayanan</td>
                   <td>
                     <ol>
-                        <li>Kartu Keluarga lama;</li>
-                        <li>surat keterangan/bukti perubahan Peristiwa Kependudukan dan Peristiwa Penting</li>
+                      <li>Kartu Keluarga lama;</li>
+                      <li>
+                        surat keterangan/bukti perubahan Peristiwa Kependudukan
+                        dan Peristiwa Penting
+                      </li>
                     </ol>
                   </td>
                   <td></td>
@@ -159,17 +250,28 @@
                   <td>Prosedur</td>
                   <td>
                     <ol>
-                        <li>Penduduk mengajukan permohonan dengan melampirkan KK 
-                            lama dan Surat keterangan/bukti perubahan Peristiwa 
-                            Kependudukan dan Peristiwa Penting;</li>
-                        <li>Petugas Pelayanan Melakukan Verifikasi dan Validasi 
-                            terhadap Formulir biodata penduduk dan Persyaratan sesuai ketentuan perundang-undangan</li>
-                        <li>Petugas pada Dinas Dukcapil melakukan perekaman data dalam basis data kependudukan;</li>
-                        <li>Kepala Dinas menerbitkan danmenandatanggani Kartu Keluarga; dan
-                        </li>
-                        <li>Kartu Keluarga yang telah diterbitkan dan ditandatangani
-                            diserahkan kepada Penduduk
-                        </li>
+                      <li>
+                        Penduduk mengajukan permohonan dengan melampirkan KK
+                        lama dan Surat keterangan/bukti perubahan Peristiwa
+                        Kependudukan dan Peristiwa Penting;
+                      </li>
+                      <li>
+                        Petugas Pelayanan Melakukan Verifikasi dan Validasi
+                        terhadap Formulir biodata penduduk dan Persyaratan
+                        sesuai ketentuan perundang-undangan
+                      </li>
+                      <li>
+                        Petugas pada Dinas Dukcapil melakukan perekaman data
+                        dalam basis data kependudukan;
+                      </li>
+                      <li>
+                        Kepala Dinas menerbitkan danmenandatanggani Kartu
+                        Keluarga; dan
+                      </li>
+                      <li>
+                        Kartu Keluarga yang telah diterbitkan dan ditandatangani
+                        diserahkan kepada Penduduk
+                      </li>
                     </ol>
                   </td>
                   <td></td>
@@ -189,7 +291,10 @@
                 <tr>
                   <td>5.</td>
                   <td>Produk Layanan</td>
-                  <td>Kutipan Akta Pencatatan Sipil Yag Telah Diberikan Catatan Pinggir</td>
+                  <td>
+                    Kutipan Akta Pencatatan Sipil Yag Telah Diberikan Catatan
+                    Pinggir
+                  </td>
                   <td></td>
                 </tr>
                 <tr>
@@ -197,25 +302,34 @@
                   <td>Kartu Keluarga</td>
                   <td></td>
                   <td></td>
-
                 </tr>
               </tbody>
             </table>
-            </ol>
-          </div>
+          </ol>
+        </div>
 
-          <div class="menu-item">
-            <ol>
-              <p><b>Penerbitan Kartu Keluarga Karena Hilang</b> </p>
-             
-              <!-- Tabel 1 -->
-            <table border="1" cellpadding="10" cellspacing="0" style="width: 100%; margin-top: 20px; border-collapse: collapse; text-align: left;">
+        <div class="menu-item">
+          <ol>
+            <p><b>Penerbitan Kartu Keluarga Karena Hilang</b></p>
+
+            <!-- Tabel 1 -->
+            <table
+              border="1"
+              cellpadding="10"
+              cellspacing="0"
+              style="
+                width: 100%;
+                margin-top: 20px;
+                border-collapse: collapse;
+                text-align: left;
+              "
+            >
               <thead>
                 <tr>
-                    <th>No</th>
-                    <th>Komponen</th>
-                    <th>Uraian</th>
-                    <th>Keterangan</th>
+                  <th>No</th>
+                  <th>Komponen</th>
+                  <th>Uraian</th>
+                  <th>Keterangan</th>
                 </tr>
               </thead>
               <tbody>
@@ -224,9 +338,12 @@
                   <td>Persyaratan Pelayanan</td>
                   <td>
                     <ol>
-                        <li>Surat keterangan hilang dari kepolisian atau KK yang rusak;</li>
-                        <li>Kartu izin tinggal tetap bagi WNA; dan</li>
-                        <li>KTP-El</li>
+                      <li>
+                        Surat keterangan hilang dari kepolisian atau KK yang
+                        rusak;
+                      </li>
+                      <li>Kartu izin tinggal tetap bagi WNA; dan</li>
+                      <li>KTP-El</li>
                     </ol>
                   </td>
                   <td></td>
@@ -236,16 +353,25 @@
                   <td>Prosedur</td>
                   <td>
                     <ol>
-                        <li>Penduduk mengajukan permohonan dengan melampirkan 
-                            keterangan bilang dari kepolisian atau KK yang rusak dan KTP-el;</li>
-                        <li>Petugas pelayanan melakukan verifikasi dan validasi 
-                            terhadap formulir biodata penduduk dan persyaratan 
-                            sesuai ketentuan  perundang- undangan;</li>
-                        <li>Petugas pada Dinas Dukcapil melakukan perekaman data dalam. basis data kependudukan;</li>
-                        <li>Kepala Dinas menerbitkan dan menandatangani Kartu Keluarga; 
-                            dan Kartu Keluarga yang telah diterbitkan dan ditandatangani 
-                            diserahkan kepada Penduduk
-                        </li>
+                      <li>
+                        Penduduk mengajukan permohonan dengan melampirkan
+                        keterangan bilang dari kepolisian atau KK yang rusak dan
+                        KTP-el;
+                      </li>
+                      <li>
+                        Petugas pelayanan melakukan verifikasi dan validasi
+                        terhadap formulir biodata penduduk dan persyaratan
+                        sesuai ketentuan perundang- undangan;
+                      </li>
+                      <li>
+                        Petugas pada Dinas Dukcapil melakukan perekaman data
+                        dalam. basis data kependudukan;
+                      </li>
+                      <li>
+                        Kepala Dinas menerbitkan dan menandatangani Kartu
+                        Keluarga; dan Kartu Keluarga yang telah diterbitkan dan
+                        ditandatangani diserahkan kepada Penduduk
+                      </li>
                     </ol>
                   </td>
                   <td></td>
@@ -273,14 +399,13 @@
                   <td>Pengelolaan Pengaduan</td>
                   <td></td>
                   <td></td>
-
                 </tr>
               </tbody>
             </table>
-            </ol>
-          </div>
+          </ol>
+        </div>
       </div>
-      
+
       <!-- Foto di Sebelah Kanan -->
       <div class="image-container">
         <img src="@/assets/SidebarStandar.png" alt="Gambar Profil" />
@@ -290,15 +415,14 @@
   </div>
 </template>
 
-
 <script>
 export default {
-  name: 'PenerbitanKartuKeluargaView',
+  name: "PenerbitanKartuKeluargaView",
 };
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
 
 .profil-visi-misi {
   max-width: 100%;
@@ -308,7 +432,7 @@ export default {
 h1 {
   font-size: 32px;
   text-align: left;
-  color: #65A5CA;
+  color: #65a5ca;
   margin-bottom: 30px;
 }
 
@@ -328,18 +452,17 @@ h1 {
 }
 
 .menu-item {
-    height: auto; /* Sesuaikan tinggi otomatis */
-    width: 100%; /* Mengisi lebar penuh */
-    overflow: hidden;
-    border: 1px solid #000000;
-    border-radius: 0px;
-    padding: 5px;
-    background-color: #ffffff;
-    text-align: left;
-    word-wrap: break-word;
-    white-space: normal;
-  }
-
+  height: auto; 
+  width: 100%; 
+  overflow: hidden;
+  border: 1px solid #000000;
+  border-radius: 0px;
+  padding: 5px;
+  background-color: #ffffff;
+  text-align: left;
+  word-wrap: break-word;
+  white-space: normal;
+}
 
 .image-container {
   flex: 1;
@@ -364,7 +487,7 @@ h1 {
 .line {
   width: 5px;
   height: 100%;
-  background-color: #8BBBD7;
+  background-color: #8bbbd7;
   position: absolute;
   left: 0;
   top: 0;
@@ -384,25 +507,26 @@ p {
   margin: 0;
 }
 
-ol, ul {
-    padding-left: 40px; /* Indentasi yang cukup */
+ol,
+ul {
+  padding-left: 40px; /* Indentasi yang cukup */
 }
 
 li {
-    font-size: 22px;
-    color: #333;
-    margin-bottom: 10px;
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 10px;
 }
 
 .content-section ol {
-    list-style-position: outside;
-    padding-left: 40px;
-    font-size: 22px;
+  list-style-position: outside;
+  padding-left: 40px;
+  font-size: 22px;
 }
 
 .content-section li {
-    margin-left: 0;
-    font-size: 22px;
+  margin-left: 0;
+  font-size: 22px;
 }
 
 .update {
@@ -426,14 +550,15 @@ table {
   margin-top: 10px;
 }
 
-th, td {
+th,
+td {
   border: 1px solid #ccc;
   padding: 10px;
   text-align: left;
 }
 
 th {
-  background-color: #8BBBD7;
+  background-color: #8bbbd7;
   color: white;
   font-weight: bold;
 }
