@@ -1,89 +1,108 @@
 <template>
-  <div class="profil-visi-misi">
+  <div class="ruang-publik">
     <h1>Download</h1>
-    <br>
-    <br>
-    <br>
+    <br />
+    <br />
+    <br />
     <div class="content-container">
-      <!-- PENCARIAN -->
-    <div class="header-container">
-      <div class="search-container">
-        <input
-          type="text"
-          class="search-input"
-          placeholder="Cari file..."
-        />
-        <button class="search-button">
-          <i class="fas fa-search"></i>
-        </button>
+      <!--Tombol search-->
+      <div class="header-container">
+        <div class="search-container">
+          <input type="text" class="search-input" placeholder="Cari file..." />
+          <button class="search-button">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
       </div>
-    </div>
 
       <!-- Bagian Teks -->
       <div class="content-section">
         <div class="menu-column">
           <div class="menu-item">
             <ol>
-            <!-- Tabel 1 -->
-            <table border="1" cellpadding="10" cellspacing="0" style="width: 100%; margin-top: 20px; border-collapse: collapse; text-align: left;">
-              <thead>
-                <tr>
+              <!-- Tabel 1 -->
+              <table
+                border="1"
+                cellpadding="10"
+                cellspacing="0"
+                style="
+                  width: 100%;
+                  margin-top: 20px;
+                  border-collapse: collapse;
+                  text-align: left;
+                "
+              >
+                <thead>
+                  <tr>
                     <th></th>
-                    <th>Nama File</th>
+                    <th>Nama Folder</th>
                     <th>Jumlah File</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-          <td><i class="fas fa-folder"></i></td>
-          <td><router-link :to="{ name: 'DownloadRegulasi' }">Regulasi</router-link></td>
-          <td>File : 4</td>
-        </tr>
-        <tr>
-          <td><i class="fas fa-folder"></i></td>
-          <td><router-link :to="{ name: 'DownloadSPTJM' }">SPTJM</router-link></td>
-          <td>File : 4</td>
-        </tr>
-        <tr>
-          <td><i class="fas fa-folder"></i></td>
-          <td><router-link :to="{ name: 'DownloadFormulir' }">Formulir Persyaratan Pelayanan Adminduk</router-link></td>
-          <td>File : 6</td>
-        </tr>
-        <tr>
-          <td><i class="fas fa-folder"></i></td>
-          <td><router-link :to="{ name: 'DownloadPengajuan' }">Pengajuan Pelayanan Adminduk</router-link></td>
-          <td>FIle : 7</td>
-        </tr>
-
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><i class="fas fa-folder"></i></td>
+                    <td>
+                      <router-link :to="{ name: 'DownloadRegulasi' }"
+                        >Regulasi</router-link
+                      >
+                    </td>
+                    <td>File : 4</td>
+                  </tr>
+                  <tr>
+                    <td><i class="fas fa-folder"></i></td>
+                    <td>
+                      <router-link :to="{ name: 'DownloadSPTJM' }"
+                        >SPTJM</router-link
+                      >
+                    </td>
+                    <td>File : 4</td>
+                  </tr>
+                  <tr>
+                    <td><i class="fas fa-folder"></i></td>
+                    <td>
+                      <router-link :to="{ name: 'DownloadFormulir' }"
+                        >Formulir Persyaratan Pelayanan Adminduk</router-link
+                      >
+                    </td>
+                    <td>File : 6</td>
+                  </tr>
+                  <tr>
+                    <td><i class="fas fa-folder"></i></td>
+                    <td>
+                      <router-link :to="{ name: 'DownloadPengajuan' }"
+                        >Pengajuan Pelayanan Adminduk</router-link
+                      >
+                    </td>
+                    <td>FIle : 7</td>
+                  </tr>
                 </tbody>
-            </table>
+              </table>
             </ol>
           </div>
-          </div>
+        </div>
       </div>
-      
-      <!-- Foto di Sebelah Kanan -->
+
+      <!-- Sidebar -->
       <div class="image-container">
         <img src="@/assets/SidebarStandar.png" alt="Gambar Profil" />
       </div>
     </div>
 
-     <!-- PAGINATION -->
-     <footer class="pagination">
+    <!-- Pagination -->
+    <footer class="pagination">
       <div class="pagination-container">
-      <nav>
-        <button>&laquo;</button>
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button>&raquo;</button>
-      </nav>
-    </div>
+        <nav>
+          <button>&laquo;</button>
+          <button>1</button>
+          <button>2</button>
+          <button>3</button>
+          <button>&raquo;</button>
+        </nav>
+      </div>
     </footer>
-
   </div>
 </template>
-
 
 <script>
 export default {
@@ -92,9 +111,9 @@ export default {
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
 
-.profil-visi-misi {
+.ruang-publik {
   max-width: 100%;
   padding: 20px 50px;
 }
@@ -102,7 +121,7 @@ export default {
 h1 {
   font-size: 32px;
   text-align: left;
-  color: #65A5CA;
+  color: #65a5ca;
   margin-bottom: 30px;
 }
 
@@ -137,11 +156,9 @@ h1 {
 
 .menu-item td i {
   font-size: 24px;
-  color: #65A5CA;
+  color: #65a5ca;
 }
 
-
-/* Pindahkan search ke atas kanan tabel */
 .header-container {
   display: flex;
   justify-content: flex-end;
@@ -153,8 +170,8 @@ h1 {
   display: flex;
   align-items: center;
   position: absolute;
-  top: 300px; /* Jarak dari atas */
-  right: 600px; /* Jarak dari kanan */
+  top: 380px;
+  right: 600px;
 }
 
 .search-input {
@@ -178,7 +195,6 @@ h1 {
   color: #555;
 }
 
-
 .image-container {
   flex: 1;
   display: flex;
@@ -199,8 +215,6 @@ h1 {
   padding-left: 25px;
 }
 
-
-
 h2 {
   font-size: 28px;
   font-weight: bold;
@@ -214,25 +228,31 @@ p {
   margin: 0;
 }
 
-ol, ul {
-    padding-left: 40px; /* Indentasi yang cukup */
+ol,
+ul {
+  padding-left: 40px;
 }
 
 li {
-    font-size: 22px;
-    color: #333;
-    margin-bottom: 10px;
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 10px;
 }
 
 .content-section ol {
-    list-style-position: outside;
-    padding-left: 40px;
-    font-size: 22px;
+  list-style-position: outside;
+  padding-left: 40px;
+  font-size: 22px;
 }
 
 .content-section li {
-    margin-left: 0;
-    font-size: 22px;
+  margin-left: 0;
+  font-size: 22px;
+}
+
+td a, 
+td:last-child { 
+  font-size: 22px; 
 }
 
 .update {
@@ -247,65 +267,68 @@ li {
 
 /* Styling Tabel */
 .table-container {
-  width: 98%; /* Dari 95% menjadi lebih besar */
+  width: 98%;
   max-width: 100%;
   margin: auto;
 }
 
 table {
-  width: 100%; /* Full width untuk tabel */
-  table-layout: fixed; /* Mengatur lebar kolom secara otomatis */
+  width: 100%;
+  table-layout: fixed;
 }
 
-th, td {
+th,
+td {
   border: 1px solid #ccc;
   padding: 10px;
   text-align: left;
-  word-wrap: break-word; /* Pastikan teks bisa turun jika panjang */
+  word-wrap: break-word;
 }
 
-
 th {
-  background-color: #8BBBD7;
+  background-color: #8bbbd7;
   color: white;
   font-weight: bold;
 }
 
 /* Lebar kolom gambar folder */
-th:nth-child(1), td:nth-child(1) {
-  width: 10%; /* Membuat kolom gambar folder lebih sempit */
-  text-align: center; /* Agar ikon folder rata tengah */
+th:nth-child(1),
+td:nth-child(1) {
+  width: 10%;
+  text-align: center;
 }
 
 /* Lebar kolom nama file */
-th:nth-child(2), td:nth-child(2) {
-  width: 60%; /* Membuat kolom nama file lebih lebar */
+th:nth-child(2),
+td:nth-child(2) {
+  width: 60%;
 }
 
 th {
-  background-color: #8BBBD7;
+  background-color: #8bbbd7;
   color: white;
   font-weight: bold;
 }
 
 /* Lebar kolom jumlah file */
-th:nth-child(3), td:nth-child(3) {
-  width: 30%; /* Kolom jumlah file lebih kecil */
+th:nth-child(3),
+td:nth-child(3) {
+  width: 30%;
 }
 
-/* Pagination lebih dekat ke tabel */
+/* Pagination */
 .pagination {
   display: flex;
   justify-content: center;
-  margin-top: 5px; /* Diperpendek agar pagination lebih dekat ke tabel */
+  margin-top: 5px;
 }
 
 .pagination-container {
   display: flex;
   align-items: center;
   position: absolute;
-  top: 800px; /* Jarak dari atas */
-  right: 1400px; /* Jarak dari kanan */
+  top: 800px;
+  right: 1400px;
 }
 
 .pagination button {
@@ -318,12 +341,12 @@ th:nth-child(3), td:nth-child(3) {
 }
 
 .pagination button.active {
-  background-color: #8BBBD7;
+  background-color: #8bbbd7;
   color: white;
 }
 
 .pagination button:hover {
-  background-color: #65A5CA;
+  background-color: #65a5ca;
   color: white;
 }
 </style>

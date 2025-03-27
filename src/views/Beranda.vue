@@ -12,27 +12,66 @@
 
   <section class="container">
     <div class="menu-grid">
-      <router-link
-        to="/standar-pelayanan/penerbitan/penerbitan-KTP"
-        class="menu-item"
-      >
-        <img src="@/assets/Beranda1.png" alt="Persyaratan Administrasi KTP" />
-      </router-link>
-      <router-link
-        to="/standar-pelayanan/penerbitan/penerbitan-KK"
-        class="menu-item"
-      >
-        <img src="@/assets/Beranda2.png" alt="Persyaratan Administrasi KK" />
-      </router-link>
-      <router-link
-        to="/layanan-online/layanan-akta-kelahiran"
-        class="menu-item"
-      >
-        <img src="@/assets/Beranda3.png" alt="Layanan Akta Kelahiran" />
-      </router-link>
-      <router-link to="/data-penduduk/jumlah-penduduk" class="menu-item">
-        <img src="@/assets/Beranda4.png" alt="Informasi Penduduk" />
-      </router-link>
+      <div class="card">
+        <img src="@/assets/KTP.jpg" alt="KTP Elektronik" class="card-image" />
+        <div class="card-content">
+          <h3 class="card-title">Penerbitan KTP Elektronik</h3>
+          <br />
+          <p class="card-description">
+            Menu ini menyediakan informasi lengkap mengenai persyaratan,
+            prosedur, waktu, biaya, dan produk layanan untuk pengurusan KTP
+            elektronik.
+          </p>
+          <br />
+          <button class="card-button" @click="keHalamanTerbitKTP">
+            Lihat Selengkapnya...
+          </button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="@/assets/KartuKeluarga.png" alt="Kartu Keluarga" class="card-image" />
+        <div class="card-content">
+          <h3 class="card-title">Penerbitan Kartu Keluarga</h3>
+          <br />
+          <p class="card-description">
+            Menu ini menyediakan informasi lengkap mengenai persyaratan,
+            prosedur, waktu, biaya, dan produk layanan untuk pengurusan Kartu Keluarga
+          </p>
+          <br />
+          <button class="card-button" @click="keHalamanTerbitKK">
+            Lihat Selengkapnya...
+          </button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="@/assets/AktaKelahiran.jpg" alt="Akta Kelahiran" class="card-image" />
+        <div class="card-content">
+          <h3 class="card-title">Layanan Akta Kelahiran (Online)</h3>
+          <br />
+          <p class="card-description">
+            Menu ini menyediakan akses formulir online untuk mempermudah pengurusan akta kelahiran
+          </p>
+          <br />
+          <button class="card-button" @click="keHalamanLayananAkta">
+            Lihat Selengkapnya...
+          </button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="@/assets/Penduduk.jpg" alt="Data Penduduk" class="card-image" />
+        <div class="card-content">
+          <h3 class="card-title">Data Jumlah Penduduk</h3>
+          <br />
+          <p class="card-description">
+            Menu ini menyediakan informasi data kependudukan berdasarkan nama wilayah, jenis kelamin, dan total jumlah penduduk
+          </p>
+          <br />
+          <button class="card-button" @click="keHalamanDataPenduduk">
+            Lihat Selengkapnya...
+          </button>
+        </div>
+      </div>
+
     </div>
 
     <div class="latest-news">
@@ -92,11 +131,25 @@ export default {
     navigateTo(path) {
       this.$router.push(path);
     },
+    keHalamanTerbitKTP() {
+      this.$router.push("/standar-pelayanan/penerbitan/penerbitan-KTP");
+    },
+    keHalamanTerbitKK() {
+      this.$router.push("/standar-pelayanan/penerbitan/penerbitan-KK");
+    },
+    keHalamanLayananAkta() {
+      this.$router.push("/layanan-online/layanan-akta-kelahiran");
+    },
+    keHalamanDataPenduduk() {
+      this.$router.push("/data-penduduk/jumlah-penduduk");
+    },
   },
 };
 </script>
 
 <style>
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -127,7 +180,7 @@ body {
 /* carousel */
 .carousel {
   position: relative;
-  text-align: center; 
+  text-align: center;
 }
 
 /* tombol panah */
@@ -200,9 +253,9 @@ body {
 
 .menu-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-  flex: 1;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Mengatur grid responsif */
+  gap: 30px; /* Menambahkan jarak antar kartu */
+  padding: 20px; /* Memberikan ruang di sekitar grid */
 }
 
 .menu-item {
@@ -214,5 +267,53 @@ body {
   width: 200%;
   height: 200%;
   object-fit: cover;
+}
+
+.card {
+  width: 350px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: left;
+  margin: 10px 50px; 
+}
+
+.card-image {
+  width: 100%;
+  height: 250px;
+  border-radius: 10px;
+}
+
+.card-content {
+  padding: 16px;
+}
+
+.card-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.card-description {
+  font-size: 20px;
+  color: #666;
+  margin-bottom: 12px;
+}
+
+.card-button {
+  background: white;
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  font-size: 18px;
+  border-radius: 18px;
+  border-color: #78A3BD;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.card-button:hover {
+  background: #8bbbd7;
 }
 </style>

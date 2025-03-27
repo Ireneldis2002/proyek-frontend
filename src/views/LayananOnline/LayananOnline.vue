@@ -3,39 +3,134 @@
   <div class="container">
     <!-- 4 Menu Items Section -->
     <section class="menu-grid">
-      <router-link to="/layanan-online/layanan-akta-kelahiran" class="menu-item">
-        <img src="@/assets/Layanan1.png" alt="Akta Kelahiran" />
-      </router-link>
-
-      <router-link to="/layanan-online/layanan-kartu-keluarga" class="menu-item">
-        <img src="@/assets/Layanan2.png" alt="Kartu Keluarga" />
-      </router-link>
-
-      <router-link to="/layanan-online/layanan-kartu-identitas-anak" class="menu-item">
-        <img src="@/assets/Layanan3.png" alt="Kartu Identitas Anak" />
-      </router-link>
-
-      <router-link to="/layanan-online/konsolidasi-database" class="menu-item">
-        <img src="@/assets/Layanan4.png" alt="Kartu Identitas Anak" />
-      </router-link>
-
+      <div class="card">
+        <img
+          src="@/assets/AktaKelahiran.jpg"
+          alt="Akta Kelahiran"
+          class="card-image"
+        />
+        <div class="card-content">
+          <h3 class="card-title">
+            <span>[Online]</span> <br />
+            Layanan Akta Kelahiran
+          </h3>
+          <br />
+          <p class="card-description">
+            Menu ini menyediakan layanan pembuatan akta kelahiran secara online
+          </p>
+          <br />
+          <button class="card-button" @click="keHalamanAktaKelahiran">
+            Lihat Selengkapnya...
+          </button>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="@/assets/KartuKeluarga.png"
+          alt="Kartu Keluarga"
+          class="card-image"
+        />
+        <div class="card-content">
+          <h3 class="card-title">
+            <span>[Online]</span> <br />
+            Layanan Kartu Keluarga
+          </h3>
+          <br />
+          <p class="card-description">
+            Menu ini menyediakan layanan pembuatan kartu keluarga (KK) secara online
+          </p>
+          <br />
+          <button class="card-button" @click="keHalamanKartuKeluarga">
+            Lihat Selengkapnya...
+          </button>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="@/assets/KartuKeluarga.png"
+          alt="Kartu Keluarga"
+          class="card-image"
+        />
+        <div class="card-content">
+          <h3 class="card-title">
+            <span>[Online]</span> <br />
+            Layanan Kartu Identitas Anak (KIA)
+          </h3>
+          <br />
+          <p class="card-description">
+            Menu ini menyediakan layanan pembuatan kartu identitas anak (KIA) secara online
+          </p>
+          <br />
+          <button class="card-button" @click="keHalamanKIA">
+            Lihat Selengkapnya...
+          </button>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="@/assets/database.jpg"
+          alt="Data Penduduk"
+          class="card-image"
+        />
+        <div class="card-content">
+          <h3 class="card-title">
+            <span>[Online]</span> <br />
+            Konsolidasi Database
+          </h3>
+          <br />
+          <p class="card-description">
+            Menu ini menyediakan layanan mengsinkronisasi data secara online
+          </p>
+          <br />
+          <button class="card-button" @click="keHalamanKonsolidasi">
+            Lihat Selengkapnya...
+          </button>
+        </div>
+      </div>
     </section>
 
-    <!-- Persyaratan Section -->
+    <!-- Persyaratan Sidebar -->
     <section class="persyaratan">
-  <h2>Persyaratan</h2>
-  <hr />
-  <ol>
-    <li><router-link :to="{ name: 'CatatLahir' }">Pencatatan Kelahiran</router-link></li>
-    <li><router-link :to="{ name: 'CatatLahir' }">Pencatatan Lahir Mati</router-link></li>
-    <li><router-link :to="{ name: 'TerbitKIA' }">Penerbitan Kartu Identitas Anak (KIA)</router-link></li>
-    <li><router-link :to="{ name: 'TerbitKK' }">Penerbitan Kartu Keluarga Baru</router-link></li>
-    <li><router-link :to="{ name: 'TerbitKK' }">Penerbitan Kartu Keluarga Karena Perubahan Data</router-link></li>
-    <li><router-link :to="{ name: 'TerbitKK' }">Penerbitan Kartu Keluarga Karena Hilang</router-link></li>
-    <li><router-link :to="{ name: 'LayananKonsolidasi2' }">Konsolidasi Database</router-link></li>
-  </ol>
-</section>
-
+      <h2>Persyaratan</h2>
+      <hr />
+      <ol>
+        <li>
+          <router-link :to="{ name: 'CatatLahir' }"
+            >Pencatatan Kelahiran</router-link
+          >
+        </li>
+        <li>
+          <router-link :to="{ name: 'CatatLahir' }"
+            >Pencatatan Lahir Mati</router-link
+          >
+        </li>
+        <li>
+          <router-link :to="{ name: 'TerbitKIA' }"
+            >Penerbitan Kartu Identitas Anak (KIA)</router-link
+          >
+        </li>
+        <li>
+          <router-link :to="{ name: 'TerbitKK' }"
+            >Penerbitan Kartu Keluarga Baru</router-link
+          >
+        </li>
+        <li>
+          <router-link :to="{ name: 'TerbitKK' }"
+            >Penerbitan Kartu Keluarga Karena Perubahan Data</router-link
+          >
+        </li>
+        <li>
+          <router-link :to="{ name: 'TerbitKK' }"
+            >Penerbitan Kartu Keluarga Karena Hilang</router-link
+          >
+        </li>
+        <li>
+          <router-link :to="{ name: 'LayananKonsolidasi2' }"
+            >Konsolidasi Database</router-link
+          >
+        </li>
+      </ol>
+    </section>
   </div>
 </template>
 
@@ -46,12 +141,23 @@ export default {
     navigateTo(path) {
       this.$router.push(path);
     },
+    keHalamanAktaKelahiran() {
+      this.$router.push("/layanan-online/layanan-akta-kelahiran");
+    },
+    keHalamanKartuKeluarga() {
+      this.$router.push("/layanan-online/layanan-kartu-keluarga");
+    },
+    keHalamanKIA() {
+      this.$router.push("/layanan-online/layanan-kartu-identitas-anak");
+    },
+    keHalamanKonsolidasi() {
+      this.$router.push("/layanan-online/konsolidasi-database");
+    },
   },
 };
 </script>
 
 <style>
-/* Kontainer utama */
 .container {
   display: flex;
   justify-content: space-between;
@@ -60,11 +166,10 @@ export default {
   margin: 20px;
 }
 
-h1{
-
+h1 {
   font-size: 32px;
   text-align: center;
-  color: #65A5CA;
+  color: #65a5ca;
   margin-bottom: 30px;
   margin-top: 20px;
 }
@@ -95,7 +200,7 @@ h1{
   border-radius: 5px;
 }
 
-/* Persyaratan */
+/* Sidebar Persyaratan */
 .persyaratan {
   width: 300px;
   border: 1px solid #ddd;
@@ -114,9 +219,8 @@ h1{
   border: 1px solid #ddd;
 }
 
-/* Ubah ul ke ol agar penomoran otomatis */
 .persyaratan ol {
-  padding-left: 20px; /* Memberi jarak antara angka dan teks */
+  padding-left: 20px;
 }
 
 .persyaratan li {
@@ -125,5 +229,56 @@ h1{
   color: #333;
   line-height: 1.5;
 }
+
+.card {
+  width: 400px;
+  height: 500px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: left;
+  margin: 10px 50px;
+}
+
+.card-image {
+  width: 100%;
+  height: 250px;
+  border-radius: 10px;
+}
+
+.card-content {
+  padding: 16px;
+}
+
+.card-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.card-description {
+  font-size: 20px;
+  color: #666;
+  margin-bottom: 12px;
+}
+
+.card-button {
+  background: white;
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  font-size: 18px;
+  border-radius: 18px;
+  border-color: #78a3bd;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.card-button:hover {
+  background: #8bbbd7;
+}
+
+
 
 </style>

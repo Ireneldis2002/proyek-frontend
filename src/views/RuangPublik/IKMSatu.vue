@@ -1,54 +1,46 @@
 <template>
-    <div class="ruang-download">
-  
-      <button @click="goBack" class="btn-back">⬅ </button>
-  
-      <header>
-        <h1> Indeks Kepuasan Masyarakat Semester I Tahun 2024</h1>
-      </header>
-  
-      
-  
-      <div class="content-container">
-        <!-- Bagian Menu -->
-        <section class="menu">
-          <table class="menu-table">
-            <div class="image-container">
-          <img src="@/assets/ikm1.png" alt="IKM" />
-        </div>
-          </table>
-        </section>
-  
-        <!-- Sidebar dengan Info dan Pencarian -->
-        <aside class="sidebar">
-          <div class="image-container1">
+  <div class="ruang-publik">
+    <button @click="goBack" class="btn-back">⬅</button>
+
+    <header>
+      <h1>Indeks Kepuasan Masyarakat Semester I Tahun 2024</h1>
+    </header>
+
+    <div class="content-container">
+      <!-- Bagian Menu -->
+      <section class="menu">
+        <table class="menu-table">
+          <div class="image-container">
+            <img src="@/assets/ikm1.png" alt="IKM" />
+          </div>
+        </table>
+      </section>
+
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <div class="image-container1">
           <img src="@/assets/SidebarStandar.png" alt="Gambar Profil" />
         </div>
-        </aside>
-      </div>
-  
-      <!-- Pagination -->
-      
-  
+      </aside>
     </div>
-  </template>
-  
-  <script>
-  export default {
-    name: "IKMPertamaView",
-    methods: {
-              goBack() {
-                  this.$router.go(-1); // Untuk kembali ke halaman sebelumnya
-                  }
-              }
-  };
-  </script>
-  
-  <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+  </div>
+</template>
 
+<script>
+export default {
+  name: "IKMPertamaView",
+  methods: {
+    goBack() {
+      this.$router.go(-1); 
+    },
+  },
+};
+</script>
 
-.ruang-download {
+<style scoped>
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+
+.ruang-publik {
   max-width: 100%;
   padding: 20px 50px;
 }
@@ -56,7 +48,7 @@
 header h1 {
   font-size: 32px;
   text-align: center;
-  color: #65A5CA;
+  color: #65a5ca;
   margin-bottom: 100px;
   margin-top: 20px;
   margin-right: 300px;
@@ -89,14 +81,14 @@ header h1 {
 
 .menu-table td i {
   font-size: 24px;
-  color: #65A5CA;
+  color: #65a5ca;
 }
 
 .image-container {
   display: flex;
-  justify-content: center; /* Center secara horizontal */
-  align-items: center; /* Center secara vertikal */
-  height: 100%; 
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 .image-container img {
@@ -120,9 +112,8 @@ header h1 {
   border-radius: 10px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
-  
-  .btn-back {
-  
+
+.btn-back {
   color: white;
   background-color: #8bbbd7;
   padding: 10px 20px;
@@ -130,8 +121,6 @@ header h1 {
   border-radius: 5px;
   cursor: pointer;
   font-size: 18px;
-  margin-bottom: 10px; /* Jarak antara tombol dan judul */
-  }
-  
-  </style>
-  
+  margin-bottom: 10px;
+}
+</style>

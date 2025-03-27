@@ -1,113 +1,150 @@
 <template>
   <div class="profil-visi-misi">
-
-    <button @click="goBack" class="btn-back">⬅ </button>
-    <br>
-    <br>
-    <h1>Pengajuan Pelayanan Adminduk </h1>
-    <br>
-    <br>
+    <button @click="goBack" class="btn-back">⬅</button>
+    <br />
+    <br />
+    <h1>Pengajuan Pelayanan Adminduk</h1>
+    <br />
+    <br />
     <div class="content-container">
       <!-- PENCARIAN -->
-    <div class="header-container">
-      <div class="search-container">
-        <input
-          type="text"
-          class="search-input"
-          placeholder="Cari file..."
-        />
-        <button class="search-button">
-          <i class="fas fa-search"></i>
-        </button>
+      <div class="header-container">
+        <div class="search-container">
+          <input type="text" class="search-input" placeholder="Cari file..." />
+          <button class="search-button">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
       </div>
-    </div>
 
       <!-- Bagian Teks -->
       <div class="content-section">
         <div class="menu-column">
           <div class="menu-item">
             <ol>
-            <!-- Tabel 1 -->
-            <table border="1" cellpadding="10" cellspacing="0" style="width: 100%; margin-top: 20px; border-collapse: collapse; text-align: left;">
-              <thead>
-                <tr>
+              <!-- Tabel 1 -->
+              <table
+                border="1"
+                cellpadding="10"
+                cellspacing="0"
+                style="
+                  width: 100%;
+                  margin-top: 20px;
+                  border-collapse: collapse;
+                  text-align: left;
+                "
+              >
+                <thead>
+                  <tr>
                     <th></th>
                     <th>Nama File</th>
                     <th>Download</th>
-                </tr>
-              </thead>
-              <tbody>
-                    <tr>
-                      <td><i class="fas fa-file-pdf"></i></td>
-                      <td><b>F-1.04 Surat Pernyataan Tidak Memiliki Dokumen Kependudukan </b></td>
-                      <td>
-                        <a href="/assets/F-1.04_Surat_Pernyataan_Tidak_Memiliki_Dokumen_Kependudukan.pdf" download>
-                          <i class="fas fa-download"></i>
-                        </a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td><i class="fas fa-file-pdf"></i></td>
-                      <td><b> F-1.06 Surat Pernyataan Perubahan Elemen Data Kependudukan</b></td>
-                      <td>
-                        <a href="/assets/F-1.06_Surat_Pernyataan_Perubahan_Elemen_Data_Kependudukan.pdf" download>
-                          <i class="fas fa-download"></i>
-                        </a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td><i class="fas fa-file-pdf"></i></td>
-                      <td><b>F-1.07 Surat Kuasa Dalam Pelayanan Administrasi Kependudukan</b></td>
-                      <td>
-                        <a href="/assets/F-1.07_Surat_Kuasa_Dalam_Pelayanan_Administrasi_Kependudukan.pdf" download>
-                          <i class="fas fa-download"></i>
-                        </a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td><i class="fas fa-file-pdf"></i></td>
-                      <td><b>F-2.03 Surat Pernyataan Tanggung Jawab Mutlak Kebenaran Data Kelahiran</b></td>
-                      <td>
-                        <a href="/assets/F-2.03_SPTJM_Kebenaran_Data_Kelahiran.pdf" download>
-                          <i class="fas fa-download"></i>
-                        </a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td><i class="fas fa-file-pdf"></i></td>
-                      <td><b>F-2.04 Surat Pernyataan Tanggung Jawab Mutlak Kebenaran Sebagai Pasangan Suami Isteri	
-                    </b></td>
-                      <td>
-                        <a href="/assets/F-2.04_SPTJM_Kebenaran_Sebagai_Pasangan_Suami_Isteri.pdf" download>
-                          <i class="fas fa-download"></i>
-                        </a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td><i class="fas fa-file-pdf"></i></td>
-                      <td><b>F-1.05 Surat Pernyataan Tanggung Jawab Mutlak Perkawinan Perceraian Belum Tercatat</b></td>
-                      <td>
-                        <a href="/assets/F-1.05_SPTJM_Perkawinan_Perceraian_Belum_Tercatat.pdf" download>
-                          <i class="fas fa-download"></i>
-                        </a>
-                      </td>
-                    </tr>
-                    
-                    <!-- Tambahkan baris lainnya sesuai kebutuhan -->
-                  </tbody>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><i class="fas fa-file-pdf"></i></td>
+                    <td>
+                      F-1.04 Surat Pernyataan Tidak Memiliki Dokumen
+                      Kependudukan
+                    </td>
+                    <td>
+                      <a
+                        href="/assets/F-1.04_Surat_Pernyataan_Tidak_Memiliki_Dokumen_Kependudukan.pdf"
+                        download
+                      >
+                        <i class="fas fa-download"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><i class="fas fa-file-pdf"></i></td>
+                    <td>
+                      F-1.06 Surat Pernyataan Perubahan Elemen Data Kependudukan
+                    </td>
+                    <td>
+                      <a
+                        href="/assets/F-1.06_Surat_Pernyataan_Perubahan_Elemen_Data_Kependudukan.pdf"
+                        download
+                      >
+                        <i class="fas fa-download"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><i class="fas fa-file-pdf"></i></td>
+                    <td>
+                      F-1.07 Surat Kuasa Dalam Pelayanan Administrasi
+                      Kependudukan
+                    </td>
+                    <td>
+                      <a
+                        href="/assets/F-1.07_Surat_Kuasa_Dalam_Pelayanan_Administrasi_Kependudukan.pdf"
+                        download
+                      >
+                        <i class="fas fa-download"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><i class="fas fa-file-pdf"></i></td>
+                    <td>
+                      F-2.03 Surat Pernyataan Tanggung Jawab Mutlak Kebenaran
+                      Data Kelahiran
+                    </td>
+                    <td>
+                      <a
+                        href="/assets/F-2.03_SPTJM_Kebenaran_Data_Kelahiran.pdf"
+                        download
+                      >
+                        <i class="fas fa-download"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><i class="fas fa-file-pdf"></i></td>
+                    <td>
+                      F-2.04 Surat Pernyataan Tanggung Jawab Mutlak Kebenaran
+                      Sebagai Pasangan Suami Isteri
+                    </td>
+                    <td>
+                      <a
+                        href="/assets/F-2.04_SPTJM_Kebenaran_Sebagai_Pasangan_Suami_Isteri.pdf"
+                        download
+                      >
+                        <i class="fas fa-download"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><i class="fas fa-file-pdf"></i></td>
+                    <td>
+                      F-1.05 Surat Pernyataan Tanggung Jawab Mutlak Perkawinan
+                      Perceraian Belum Tercatat
+                    </td>
+                    <td>
+                      <a
+                        href="/assets/F-1.05_SPTJM_Perkawinan_Perceraian_Belum_Tercatat.pdf"
+                        download
+                      >
+                        <i class="fas fa-download"></i>
+                      </a>
+                    </td>
+                  </tr>
 
-            </table>
+                  <!-- Tambahkan baris lainnya sesuai kebutuhan -->
+                </tbody>
+              </table>
             </ol>
           </div>
-          </div>
+        </div>
       </div>
-      
+
       <!-- Foto di Sebelah Kanan -->
       <div class="image-container">
         <img src="@/assets/SidebarStandar.png" alt="Gambar Profil" />
       </div>
     </div>
-
   </div>
 </template>
 
@@ -115,15 +152,15 @@
 export default {
   name: "RuangDownloadPengajuanView",
   methods: {
-            goBack() {
-                this.$router.go(-1); // Untuk kembali ke halaman sebelumnya
-                }
-            }
+    goBack() {
+      this.$router.go(-1);
+    },
+  },
 };
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
 
 .profil-visi-misi {
   max-width: 100%;
@@ -133,7 +170,7 @@ export default {
 h1 {
   font-size: 32px;
   text-align: left;
-  color: #65A5CA;
+  color: #65a5ca;
   margin-bottom: 30px;
   margin-top: 50px;
   margin-left: 50px;
@@ -155,19 +192,19 @@ h1 {
 }
 
 .menu-item {
-    height: auto;
-    width: 100%;
-    overflow: hidden;
-    background-color: #ffffff;
-    text-align: left;
-    word-wrap: break-word;
-    white-space: normal;
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+  background-color: #ffffff;
+  text-align: left;
+  word-wrap: break-word;
+  white-space: normal;
 }
 
 .menu-item p {
-    margin: 5px 0; /* Jarak antar teks */
-    padding-left: 10px; /* Membuat teks tetap dalam kotak dan tidak terlalu mepet ke kiri */
-    text-align: left;
+  margin: 5px 0;
+  padding-left: 10px;
+  text-align: left;
 }
 
 /* Pindahkan search ke atas kanan tabel */
@@ -182,8 +219,8 @@ h1 {
   display: flex;
   align-items: center;
   position: absolute;
-  top: 400px; /* Jarak dari atas */
-  right: 900px; /* Jarak dari kanan */
+  top: 400px;
+  right: 900px;
 }
 
 .search-input {
@@ -207,7 +244,6 @@ h1 {
   color: #555;
 }
 
-
 .image-container {
   flex: 3;
   display: flex;
@@ -228,8 +264,6 @@ h1 {
   padding-left: 25px;
 }
 
-
-
 h2 {
   font-size: 28px;
   font-weight: bold;
@@ -243,25 +277,31 @@ p {
   margin: 0;
 }
 
-ol, ul {
-    padding-left: 40px; /* Indentasi yang cukup */
+ol,
+ul {
+  padding-left: 40px;
 }
 
 li {
-    font-size: 22px;
-    color: #333;
-    margin-bottom: 10px;
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 10px;
 }
 
 .content-section ol {
-    list-style-position: outside;
-    padding-left: 40px;
-    font-size: 22px;
+  list-style-position: outside;
+  padding-left: 40px;
+  font-size: 22px;
 }
 
 .content-section li {
-    margin-left: 0;
-    font-size: 22px;
+  margin-left: 0;
+  font-size: 22px;
+}
+
+thead th {
+  font-size: 26px;
+  font-weight: bold;
 }
 
 .update {
@@ -276,75 +316,78 @@ li {
 
 /* Styling Tabel */
 .table-container {
-  width: 98%; /* Dari 95% menjadi lebih besar */
+  width: 98%;
   max-width: 100%;
   margin: auto;
 }
 
 table {
-  width: 100%; /* Full width untuk tabel */
-  table-layout: fixed; /* Mengatur lebar kolom secara otomatis */
+  width: 100%;
+  table-layout: fixed;
 }
 
-th, td {
+th,
+td {
   border: 1px solid #ccc;
   padding: 10px;
   text-align: left;
-  word-wrap: break-word; /* Pastikan teks bisa turun jika panjang */
+  word-wrap: break-word;
 }
 
-
 th {
-  background-color: #8BBBD7;
+  background-color: #8bbbd7;
   color: white;
   font-weight: bold;
 }
 
 /* Lebar kolom gambar folder */
-th:nth-child(1), td:nth-child(1) {
-  width: 10%; 
-  text-align: center; /* Agar ikon folder rata tengah */
+th:nth-child(1),
+td:nth-child(1) {
+  width: 10%;
+  text-align: center;
 }
 
 /* Lebar kolom nama file */
-th:nth-child(2), td:nth-child(2) {
-  width: 60%; /* Membuat kolom nama file lebih lebar */
+th:nth-child(2),
+td:nth-child(2) {
+  width: 60%;
 }
 
 /* Lebar kolom gambar folder */
-th:nth-child(3), td:nth-child(3) {
-  width: 10%; 
-  text-align: center; /* Agar ikon folder rata tengah */
+th:nth-child(3),
+td:nth-child(3) {
+  width: 10%;
+  text-align: center;
 }
 
 th {
-  background-color: #8BBBD7;
+  background-color: #8bbbd7;
   color: white;
   font-weight: bold;
 }
 
 /* Lebar kolom jumlah file */
-th:nth-child(3), td:nth-child(3) {
-  width: 30%; /* Kolom jumlah file lebih kecil */
+th:nth-child(3),
+td:nth-child(3) {
+  width: 30%;
 }
 
-.fa-download{
-  color: #78A3BD;
+.fa-download {
+  color: #78a3bd;
 }
 
-.fa-file-pdf{
-  color: #78A3BD;
+.fa-file-pdf {
+  color: #78a3bd;
 }
 
 .btn-back {
-
-color: white;
-background-color: #8bbbd7;
-padding: 10px 20px;
-border-color: white;
-border-radius: 5px;
-cursor: pointer;
-font-size: 18px;
-margin-bottom: 10px; /* Jarak antara tombol dan judul */
+  color: white;
+  background-color: #8bbbd7;
+  padding: 10px 20px;
+  border-color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-bottom: 10px;
 }
 </style>
