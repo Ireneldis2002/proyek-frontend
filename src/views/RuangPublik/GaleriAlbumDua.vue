@@ -9,11 +9,45 @@
     <div class="content-container">
       <!-- Bagian Menu -->
       <section class="menu">
-        <div class="image-container">
-          <img src="@/assets/FotoGaleri.png" alt="Gambar Profil" />
+        <!-- Foto -->
+        <div class="album-container">
+          <h2 class="album-title">FOTO</h2>
+          <div class="photo-grid">
+            <div
+              class="photo-card"
+              v-for="(foto, index) in fotoAlbum"
+              :key="index"
+            >
+              <img :src="foto.src" :alt="foto.title" class="photo-image" />
+              <div class="photo-title">{{ foto.title }}</div>
+            </div>
+          </div>
         </div>
-        <div class="image-container">
-          <img src="@/assets/VideoGaleri.png" alt="Gambar Profil" />
+        <br />
+        <br />
+        <br />
+        <!-- Video -->
+        <div class="video-container">
+          <h2 class="video-title">VIDEO</h2>
+          <div class="video-grid">
+            <div
+              class="video-card"
+              v-for="(video, index) in videoAlbum"
+              :key="index"
+            >
+              <a :href="video.url" target="_blank" class="video-link">
+                <img
+                  :src="video.thumbnail"
+                  :alt="video.title"
+                  class="video-thumbnail"
+                />
+                <div class="overlay">
+                  <span class="play-icon">▶</span>
+                </div>
+              </a>
+              <div class="video-title-text">{{ video.title }}</div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -35,6 +69,28 @@ export default {
     goBack() {
       this.$router.go(-1);
     },
+  },
+  data() {
+    return {
+      fotoAlbum: [
+        { src: require("@/assets/Ombusmen_1.jpg"), title: "Sosialisasi Ombusmen 1" },
+        { src: require("@/assets/Ombusmen_2.jpg"), title: "Sosialisasi Ombusmen 2" },
+        { src: require("@/assets/Ombusmen_3.jpg"), title: "Sosialisasi Ombusmen 3" },
+        { src: require("@/assets/Ombusmen_4.jpg"), title: "Sosialisasi Ombusmen 4" },
+      ],
+      videoAlbum: [
+        {
+          thumbnail: require("@/assets/Ombusmen_1.jpg"),
+          title: "Sosialisasi Tentang Ombusmen",
+          url: "https://www.youtube.com/watch?v=example1",
+        },
+        {
+          thumbnail: require("@/assets/Ombusmen_1.jpg"),
+          title: "Sosialisasi Tentang Ombusmen",
+          url: "https://www.youtube.com/watch?v=example2",
+        },
+      ],
+    };
   },
 };
 </script>
@@ -108,5 +164,127 @@ header h1 {
   cursor: pointer;
   font-size: 18px;
   margin-bottom: 10px;
+}
+
+.album-container {
+  padding: 20px;
+}
+
+.album-title {
+  font-size: 24px;
+  font-weight: bold;
+  background-color: #a8c3d1;
+  padding: 8px 12px;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.photo-grid {
+  display: flex;
+  gap: 16px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.photo-card {
+  width: 300px;
+  height: 300px;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  background: white;
+}
+
+.photo-image {
+  width: 100%;
+  height: 265px;
+  object-fit: cover;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.photo-title {
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
+  padding: 8px;
+  font-size: 14px;
+}
+
+.video-container {
+  padding: 20px;
+}
+
+.video-title {
+  font-size: 24px;
+  font-weight: bold;
+  background-color: #a8c3d1;
+  padding: 8px 12px;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.video-grid {
+  display: flex;
+  gap: 16px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.video-card {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  background: white;
+}
+
+.video-link {
+  display: block;
+  position: relative;
+}
+
+.video-thumbnail {
+  width: 100%;
+  height: 265px;
+  object-fit: cover;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.video-link:hover .overlay {
+  opacity: 1;
+}
+
+.play-icon {
+  font-size: 24px;
+  color: white;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.video-title-text {
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
+  padding: 8px;
+  font-size: 14px;
 }
 </style>

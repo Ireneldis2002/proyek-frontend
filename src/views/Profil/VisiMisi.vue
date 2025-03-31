@@ -35,10 +35,45 @@
       </div>
 
       <!-- Sidebar -->
-      <div class="image-container">
-        <img src="@/assets/ProfilPimpinan.png" alt="Gambar Profil" />
+      <div class="sidebar">
+        <div class="profile">
+          <img
+            src="@/assets/pimpinan.png"
+            alt="Profil Pimpinan"
+            class="profile-img"
+          />
+          <h2 class="position">KEPALA DINAS</h2>
+          <h3 class="name">Lambertus Sigasare, ST. M.Eng</h3>
+          <p class="sub-title"><strong>Mulai Menjabat</strong></p>
+          <p class="date">7 Agustus 2022</p>
+        </div>
+
+        <div class="info-section">
+          <div class="info-header">Informasi Pribadi</div>
+          <div class="info-content">
+            <p><strong>Lahir</strong> <span>29 Januari 1953</span></p>
+            <p><strong>Istri</strong> <span>Ny. Sigasare</span></p>
+            <p><strong>Anak</strong> <span>Sigasare</span></p>
+          </div>
+        </div>
+
+        <div class="info-section">
+          <div class="info-header">Riwayat Pendidikan</div>
+          <div class="info-content">
+            <p>- (Tambahkan Riwayat Pendidikan di sini) -</p>
+          </div>
+        </div>
+
+        <div class="info-section">
+          <div class="info-header">Riwayat Jabatan</div>
+          <div class="info-content">
+            <p>- (Tambahkan Riwayat Jabatan di sini) -</p>
+          </div>
+        </div>
       </div>
     </div>
+
+    <!-- Update -->
     <p class="update">Terakhir Update: 2 Oktober 2024</p>
   </div>
 </template>
@@ -131,6 +166,87 @@ p {
   font-size: 22px;
   color: #333;
   margin: 0;
+}
+
+.sidebar {
+  width: 320px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  padding: 20px;
+  font-family: "Arial", sans-serif;
+}
+
+.profile {
+  padding-bottom: 20px;
+}
+
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ddd;
+}
+
+.position {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0 5px;
+}
+
+.name {
+  font-size: 18px;
+  color: black;
+}
+
+.sub-title {
+  font-size: 16px;
+  color: black;
+  margin: 5px 0;
+}
+
+.date {
+  font-size: 16px;
+  color: #333;
+}
+
+.info-section {
+  margin-top: 15px;
+}
+
+.info-header {
+  background: #65a5ca;
+  color: white;
+  padding: 8px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 4px 4px 0 0;
+  font-size: 18px;
+}
+
+.info-content {
+  background: #f9f9f9;
+  padding: 10px;
+  text-align: left;
+  font-size: 10px;
+}
+
+.info-content p {
+  margin: 5px 0;
+}
+
+.info-content strong {
+  display: inline-block;
+  width: 90px;
+  font-weight: bold;
+  color: #333;
+}
+
+.info-content span {
+  color: #555;
 }
 
 .update {

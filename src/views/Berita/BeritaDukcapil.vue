@@ -8,6 +8,7 @@
       <div class="berita">
         <!-- Card 1 -->
         <div class="card">
+          <div class="line"></div>
           <div class="card-image">
             <img src="@/assets/Berita1.jpeg" alt="Gambar Berita 1" />
           </div>
@@ -124,59 +125,80 @@ export default {
 <style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
 
-.berita-disdukcapil{
+.berita-disdukcapil {
   max-width: 100%;
   padding: 20px 50px;
 }
 
 h1 {
-  font-size: 32px;
+  font-size: 36px;
   text-align: left;
   color: #65a5ca;
   margin-bottom: 30px;
+  font-weight: bold;
 }
 
 .content-container {
-  display: flex; 
-  gap: 20px; 
-  align-items: flex-start; 
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
 }
 
 /* Berita Section */
 .berita {
-  flex: 3; 
+  flex: 3;
 }
 
 .berita h2 {
-  font-size: 24px;
+  font-size: 28px;
   color: #65a5ca;
   margin-bottom: 20px;
+  font-weight: bold;
 }
 
 .card {
   display: flex;
+  align-items: center;
+  max-width: 1100px; /* Lebih panjang */
+  width: 100%;
+  height: auto;
   margin-bottom: 20px;
   background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
   border-radius: 8px;
   overflow: hidden;
+  padding: 20px; /* Lebih luas */
+  border-left: 6px solid #65a5ca; /* Garis di samping kiri */
+}
+
+.card-image {
+  flex-shrink: 0;
+  width: 220px; /* Lebih besar */
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 5px;
 }
 
 .card-image img {
-  width: 200px;
-  height: 150px;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  margin-right: 10px;
 }
 
 .card-content {
-  padding: 10px;
+  flex: 1;
+  padding: 15px;
+  max-width: 800px;
 }
 
 .card-content h3 {
-  font-size: 22px;
+  font-size: 24px; /* Ukuran lebih besar */
   margin: 0;
   color: #333;
+  font-weight: bold;
 }
 
 .card-content .date {
@@ -185,19 +207,25 @@ h1 {
 }
 
 .card-content p {
-  font-size: 20px;
+  font-size: 18px; /* Lebih besar */
   color: #555;
   margin: 10px 0;
+  line-height: 1.6;
 }
 
 .btn {
   background-color: #65a5ca;
-  color: #fff;
+  color: white;
+  padding: 10px 15px;
   border: none;
-  padding: 5px 10px;
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #4a90e2;
 }
 
 .image-container {
@@ -214,4 +242,28 @@ h1 {
   border-radius: 10px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
+
+
+@media (max-width: 768px) {
+  .content-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .card {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+  }
+
+  .card-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .card-content {
+    max-width: 100%;
+  }
+}
+
 </style>
