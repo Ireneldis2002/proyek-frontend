@@ -62,12 +62,38 @@
           </form>
         </div>
 
-        <!-- Sidebar (Ditambahkan) -->
         <aside class="sidebar">
-          <div class="image-container">
-            <img src="@/assets/SidebarLayananAkta.png" alt="Sidebar Informasi" />
+        <div class="persyaratan-box">
+          <h2>PERSYARATAN <br /><span>(Pencatatan Kelahiran)</span></h2>
+          <p class="subheading">Pencatatan Kelahiran WNI :</p>
+          <ol>
+            <li>Mengisi Formulir Pelaporan Kelahiran (F2-2.05)</li>
+            <li>
+              Foto Copy Surat Keterangan Kelahiran dari Rumah
+              Sakit/Puskesmas/Bidan Penolong Kelahiran
+            </li>
+            <li>Foto copy Akta Perkawinan/Buku Nikah Orang Tua</li>
+            <li>Foto Copy Kartu Keluarga dan KTP-El Orang Tua</li>
+            <li>
+              Jika tidak memiliki persyaratan pada point 2, wajib mengisi
+              Formulir SPTJM (F-2.03) Kebenaran data Kelahiran yaitu pernyataan
+              yang dibuat oleh orang tua Kandung/Wali/Pemohon dengan tanggung
+              jawab penuh atas kebenaran data kelahiran seseorang dengan
+              diketahui oleh dua orang saksi
+            </li>
+            <li>
+              Bagi salah satu / kedua pasangan suami istri meninggal, maka wajib
+              mengisi Formulir F2-2.04 (SPTJM) Surat Keterangan Tanggung Jawab
+              Mutlak Kebenaran Sebagai Pasangan Suami Istri dengan melampirkan
+              surat nikah.
+            </li>
+          </ol>
+          <div class="important-note">
+            <strong>PENTING :</strong>
+            <p>Perhatikan Keaslian Data dan <br />Kelengkapan Formulir !</p>
           </div>
-        </aside>
+        </div>
+      </aside>
       </div>
     </div>
 </template>
@@ -107,7 +133,7 @@ export default {
 </script>
 
 <style scoped>
-/* Tombol Kembali */
+
 .btn-back {
   margin: 10px;
   padding: 8px 15px;
@@ -117,31 +143,28 @@ export default {
   cursor: pointer;
 }
 
-/* Layout Utama */
 .content-container {
   display: flex;
   justify-content: space-between;
+  gap: 30px;
   margin: 20px;
 }
 
-/* Kontainer Formulir */
 .form-container {
   flex: 1;
   background: white;
   padding: 30px;
-  border-radius: 10px; /* Lebih melengkung agar mirip */
-  border: 2px solid #999; /* Warna border lebih lembut */
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+  border-radius: 10px;
+  border: 2px solid #999; 
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
   position: relative;
 }
 
-h2 {
+.form-container h2 {
   text-align: center;
   font-size: 22px;
   font-weight: bold;
 }
-
-
 
 .section-title {
   color: #0073b7;
@@ -149,7 +172,6 @@ h2 {
   margin-bottom: 15px;
 }
 
-/* Grid Form */
 .form-grid {
   display: grid;
   grid-template-columns: 1fr 0fr;
@@ -157,7 +179,6 @@ h2 {
   margin-bottom: 20px;
 }
 
-/* Input Styling */
 .input-container {
   display: flex;
   flex-direction: column;
@@ -178,22 +199,19 @@ h2 {
   color: #666;
 }
 
-/* Agar beberapa input full-width */
 .full-width {
   grid-column: span 2;
 }
 
-/* Container untuk tombol agar di kanan */
 .button-container {
   display: flex;
   justify-content: flex-end;
   margin-top: 10px;
 }
 
-/* Kotak Informasi */
 .info-box {
   background-color: #fff;
-  border: 2px solid #ccc; /* Border lebih tegas */
+  border: 2px solid #ccc; 
   padding: 15px;
   border-radius: 5px;
   font-size: 14px;
@@ -202,7 +220,6 @@ h2 {
   text-align: justify;
 }
 
-/* Checkbox Persetujuan */
 .terms-container {
   border: 2px solid #ccc;
   padding: 10px;
@@ -211,12 +228,9 @@ h2 {
   font-size: 14px;
 }
 
-
-
-/* Tombol Submit */
 .btn-submit {
-  padding: 10px 25px;
-  background-color: #65A5CA;
+  padding: 8px 20px;
+  background-color: #65a5ca;
   color: white;
   border: none;
   border-radius: 5px;
@@ -227,5 +241,54 @@ h2 {
 
 .btn-submit:hover {
   background-color: #A0B6D6;
+}
+
+.persyaratan-box {
+  background-color: #a3d1ed;
+  border-radius: 16px;
+  padding: 25px 30px;
+  color: #000;
+  max-width: 500px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.persyaratan-box h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+h2 span {
+  font-weight: normal;
+  font-size: 18px;
+}
+
+.subheading {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+ol {
+  padding-left: 20px;
+}
+
+ol li {
+  margin-bottom: 10px;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.important-note {
+  margin-top: 20px;
+  color: red;
+  font-weight: bold;
+}
+
+.important-note p {
+  color: black;
+  font-weight: normal;
+  font-size: 14px;
+  margin: 5px 0 0;
 }
 </style>

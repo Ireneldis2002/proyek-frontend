@@ -93,8 +93,35 @@
       </div>
 
       <aside class="sidebar">
-        <div class="image-container">
-          <img src="@/assets/SidebarLayananAkta.png" alt="Sidebar Informasi" />
+        <div class="persyaratan-box">
+          <h2>PERSYARATAN <br /><span>(Pencatatan Kelahiran)</span></h2>
+          <p class="subheading">Pencatatan Kelahiran WNI :</p>
+          <ol>
+            <li>Mengisi Formulir Pelaporan Kelahiran (F2-2.05)</li>
+            <li>
+              Foto Copy Surat Keterangan Kelahiran dari Rumah
+              Sakit/Puskesmas/Bidan Penolong Kelahiran
+            </li>
+            <li>Foto copy Akta Perkawinan/Buku Nikah Orang Tua</li>
+            <li>Foto Copy Kartu Keluarga dan KTP-El Orang Tua</li>
+            <li>
+              Jika tidak memiliki persyaratan pada point 2, wajib mengisi
+              Formulir SPTJM (F-2.03) Kebenaran data Kelahiran yaitu pernyataan
+              yang dibuat oleh orang tua Kandung/Wali/Pemohon dengan tanggung
+              jawab penuh atas kebenaran data kelahiran seseorang dengan
+              diketahui oleh dua orang saksi
+            </li>
+            <li>
+              Bagi salah satu / kedua pasangan suami istri meninggal, maka wajib
+              mengisi Formulir F2-2.04 (SPTJM) Surat Keterangan Tanggung Jawab
+              Mutlak Kebenaran Sebagai Pasangan Suami Istri dengan melampirkan
+              surat nikah.
+            </li>
+          </ol>
+          <div class="important-note">
+            <strong>PENTING :</strong>
+            <p>Perhatikan Keaslian Data dan <br />Kelengkapan Formulir !</p>
+          </div>
         </div>
       </aside>
     </div>
@@ -143,6 +170,7 @@ export default {
 .content-container {
   display: flex;
   justify-content: space-between;
+  gap: 30px;
   margin: 20px;
 }
 
@@ -154,7 +182,7 @@ export default {
   border: 2px solid #000;
 }
 
-h2 {
+.form-container h2 {
   text-align: center;
   font-size: 22px;
   font-weight: bold;
@@ -178,6 +206,7 @@ h2 {
   flex-direction: column;
   width: 100%;
 }
+
 .input-container input,
 .input-container select {
   padding: 12px;
@@ -186,20 +215,24 @@ h2 {
   font-size: 14px;
   width: 100%;
 }
+
 .input-container small {
   font-size: 12px;
   color: #666;
 }
+
 .full-width {
   grid-column: span 2;
 }
+
 .button-container {
   display: flex;
   justify-content: flex-end;
   margin-top: 10px;
 }
+
 .btn-submit {
-  padding: 10px 25px;
+  padding: 8px 20px;
   background-color: #65a5ca;
   color: white;
   border: none;
@@ -208,7 +241,57 @@ h2 {
   font-weight: bold;
   cursor: pointer;
 }
+
 .btn-submit:hover {
   background-color: #a0b6d6;
+}
+
+.persyaratan-box {
+  background-color: #a3d1ed;
+  border-radius: 16px;
+  padding: 25px 30px;
+  color: #000;
+  max-width: 500px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.persyaratan-box h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+h2 span {
+  font-weight: normal;
+  font-size: 18px;
+}
+
+.subheading {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+ol {
+  padding-left: 20px;
+}
+
+ol li {
+  margin-bottom: 10px;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.important-note {
+  margin-top: 20px;
+  color: red;
+  font-weight: bold;
+}
+
+.important-note p {
+  color: black;
+  font-weight: normal;
+  font-size: 14px;
+  margin: 5px 0 0;
 }
 </style>

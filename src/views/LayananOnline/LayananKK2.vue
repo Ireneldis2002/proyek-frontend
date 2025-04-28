@@ -85,12 +85,35 @@
           </form>
         </div>
 
-        <!-- Sidebar (Ditambahkan) -->
         <aside class="sidebar">
-          <div class="image-container">
-            <img src="@/assets/SidebarLayananAkta.png" alt="Sidebar Informasi" />
+        <div class="persyaratan-box">
+          <h2>PERSYARATAN <br /><span>(Penerbitan Kartu Keluarga)</span></h2>
+          <ol>
+            <li>Mengisi Formulir Isian Biodata Penduduk F1.01</li>
+            <li>Izin tinggal tetap bagi WNA</li>
+            <li>Surat Pernyataan (Kepala Keluarga) tidak terdata di daerah lain</li>
+            <li>Buku Nikah/Kutipan Akta Perkawinan atau Kutipan Akta Perceraian</li>
+            <li>Surat keterangan pindah, surat keterangan pindah datang</li>
+            <li>
+              Surat keterangan pindah luar negeri yang diterbitkan oleh Dinas Dukcapil bagi Warga Negara
+              Asing yang datang dari luar wilayah NKRI
+            </li>
+            <li>
+              Surat keterangan pengganti tanda identitas bagi Penduduk rentan Administrasi Kependudukan
+            </li>
+            <li>
+              Petikan keputusan presiden tentang pewarganegaraan dan berita acara pengucapan sumpah atau
+              pernyataan janji bagi penduduk WNI yang semua berkewarganegaraan asing atau petikan keputusan
+              menteri yang menyelenggarakan urusan pemerintahan di bidang hukum tentang perubahan status
+              kewarganegaraan
+            </li>
+          </ol>
+          <div class="important-note">
+            <strong>PENTING :</strong>
+            <p>Perhatikan Keaslian Data dan <br />Kelengkapan Formulir !</p>
           </div>
-        </aside>
+        </div>
+      </aside>
       </div>
     </div>
 </template>
@@ -125,7 +148,7 @@ export default {
 </script>
 
 <style scoped>
-/* Tombol Kembali */
+
 .btn-back {
   margin: 10px;
   padding: 8px 15px;
@@ -135,14 +158,13 @@ export default {
   cursor: pointer;
 }
 
-/* Layout Utama */
 .content-container {
   display: flex;
   justify-content: space-between;
+  gap: 30px;
   margin: 20px;
 }
 
-/* Formulir */
 .form-container {
   flex: 2;
   background: white;
@@ -151,7 +173,7 @@ export default {
   border: 2px solid #000;
 }
 
-h2 {
+.form-container h2 {
   text-align: center;
   font-size: 22px;
   font-weight: bold;
@@ -163,7 +185,6 @@ h2 {
   margin-bottom: 15px;
 }
 
-/* Grid Form */
 .form-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -171,7 +192,6 @@ h2 {
   margin-bottom: 20px;
 }
 
-/* Input Styling */
 .input-container {
   display: flex;
   flex-direction: column;
@@ -192,21 +212,16 @@ h2 {
   color: #666;
 }
 
-/* Agar beberapa input full-width */
 .full-width {
   grid-column: span 2;
 }
 
-/* Container untuk tombol agar di kanan */
 .button-container {
   display: flex;
   justify-content: flex-end;
   margin-top: 10px;
 }
 
-
-
-/* Tombol Submit */
 .btn-submit {
   padding: 10px 25px;
   background-color: #65A5CA;
@@ -220,5 +235,54 @@ h2 {
 
 .btn-submit:hover {
   background-color: #A0B6D6;
+}
+
+.persyaratan-box {
+  background-color: #a3d1ed;
+  border-radius: 16px;
+  padding: 25px 30px;
+  color: #000;
+  max-width: 500px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.persyaratan-box h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+h2 span {
+  font-weight: normal;
+  font-size: 18px;
+}
+
+.subheading {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+ol {
+  padding-left: 20px;
+}
+
+ol li {
+  margin-bottom: 10px;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.important-note {
+  margin-top: 20px;
+  color: red;
+  font-weight: bold;
+}
+
+.important-note p {
+  color: black;
+  font-weight: normal;
+  font-size: 14px;
+  margin: 5px 0 0;
 }
 </style>

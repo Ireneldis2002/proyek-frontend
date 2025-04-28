@@ -73,12 +73,35 @@
           </form>
         </div>
 
-        <!-- Sidebar (Ditambahkan) -->
         <aside class="sidebar">
-          <div class="image-container">
-            <img src="@/assets/SidebarLayananAkta.png" alt="Sidebar Informasi" />
+        <div class="persyaratan-box">
+          <h2>PERSYARATAN <br /><span>(Penerbitan Kartu Keluarga)</span></h2>
+          <ol>
+            <li>Mengisi Formulir Isian Biodata Penduduk F1.01</li>
+            <li>Izin tinggal tetap bagi WNA</li>
+            <li>Surat Pernyataan (Kepala Keluarga) tidak terdata di daerah lain</li>
+            <li>Buku Nikah/Kutipan Akta Perkawinan atau Kutipan Akta Perceraian</li>
+            <li>Surat keterangan pindah, surat keterangan pindah datang</li>
+            <li>
+              Surat keterangan pindah luar negeri yang diterbitkan oleh Dinas Dukcapil bagi Warga Negara
+              Asing yang datang dari luar wilayah NKRI
+            </li>
+            <li>
+              Surat keterangan pengganti tanda identitas bagi Penduduk rentan Administrasi Kependudukan
+            </li>
+            <li>
+              Petikan keputusan presiden tentang pewarganegaraan dan berita acara pengucapan sumpah atau
+              pernyataan janji bagi penduduk WNI yang semua berkewarganegaraan asing atau petikan keputusan
+              menteri yang menyelenggarakan urusan pemerintahan di bidang hukum tentang perubahan status
+              kewarganegaraan
+            </li>
+          </ol>
+          <div class="important-note">
+            <strong>PENTING :</strong>
+            <p>Perhatikan Keaslian Data dan <br />Kelengkapan Formulir !</p>
           </div>
-        </aside>
+        </div>
+      </aside>
       </div>
     </div>
 
@@ -114,7 +137,7 @@ export default {
 </script>
 
 <style scoped>
-/* Tombol Kembali */
+
 .btn-back {
   margin: 10px;
   padding: 8px 15px;
@@ -124,31 +147,28 @@ export default {
   cursor: pointer;
 }
 
-/* Layout Utama */
 .content-container {
   display: flex;
   justify-content: space-between;
+  gap: 30px;
   margin: 20px;
 }
 
-/* Kontainer Formulir */
 .form-container {
   flex: 1;
   background: white;
   padding: 30px;
-  border-radius: 10px; /* Lebih melengkung agar mirip */
-  border: 2px solid #999; /* Warna border lebih lembut */
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+  border-radius: 10px; 
+  border: 2px solid #999; 
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1); 
   position: relative;
 }
 
-h2 {
+.form-container h2 {
   text-align: center;
   font-size: 22px;
   font-weight: bold;
 }
-
-
 
 .section-title {
   color: #0073b7;
@@ -156,7 +176,6 @@ h2 {
   margin-bottom: 15px;
 }
 
-/* Grid Form */
 .form-grid {
   display: grid;
   grid-template-columns: 1fr 0fr;
@@ -164,7 +183,6 @@ h2 {
   margin-bottom: 20px;
 }
 
-/* Input Styling */
 .input-container {
   display: flex;
   flex-direction: column;
@@ -185,22 +203,19 @@ h2 {
   color: #666;
 }
 
-/* Agar beberapa input full-width */
 .full-width {
   grid-column: span 2;
 }
 
-/* Container untuk tombol agar di kanan */
 .button-container {
   display: flex;
   justify-content: flex-end;
   margin-top: 10px;
 }
 
-/* Kotak Informasi */
 .info-box {
   background-color: #fff;
-  border: 2px solid #ccc; /* Border lebih tegas */
+  border: 2px solid #ccc; 
   padding: 15px;
   border-radius: 5px;
   font-size: 14px;
@@ -209,7 +224,6 @@ h2 {
   text-align: justify;
 }
 
-/* Checkbox Persetujuan */
 .terms-container {
   border: 2px solid #ccc;
   padding: 10px;
@@ -218,9 +232,6 @@ h2 {
   font-size: 14px;
 }
 
-
-
-/* Tombol Submit */
 .btn-submit {
   padding: 10px 25px;
   background-color: #65A5CA;
@@ -232,7 +243,6 @@ h2 {
   cursor: pointer;
 }
 
-/* Modal Overlay */
 .modal-overlay {
     position: fixed;
     top: 0;
@@ -243,16 +253,15 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1000; /* Pastikan di atas elemen lain */
+    z-index: 1000; 
 }
 
-/* Modal Box */
 .modal {
     background: #d2e3f3;
     padding: 4%;
     border-radius: 8px;
     width: 50%;
-    max-width: 600px; /* Batas maksimum agar tidak terlalu besar */
+    max-width: 600px;
     text-align: center;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     display: flex;
@@ -260,21 +269,18 @@ h2 {
     justify-content: center;
 }
 
-/* Judul Modal */
 .modal-title {
-    font-size: 2rem; /* Ukuran lebih proporsional */
+    font-size: 2rem;
     font-weight: bold;
     margin-bottom: 15px;
 }
 
-/* Paragraf dalam Modal */
 .modal p {
-    font-size: 1.2rem; /* Tidak terlalu besar */
+    font-size: 1.2rem; 
     margin-bottom: 10px;
     line-height: 1.5;
 }
 
-/* Tombol Modal */
 .btn-modal {
     background-color: #65A5CA;
     color: white;
@@ -286,5 +292,52 @@ h2 {
     margin-top: 15px;
 }
 
+.persyaratan-box {
+  background-color: #a3d1ed;
+  border-radius: 16px;
+  padding: 25px 30px;
+  color: #000;
+  max-width: 500px;
+  font-family: "Open Sans", sans-serif;
+}
 
+.persyaratan-box h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+h2 span {
+  font-weight: normal;
+  font-size: 18px;
+}
+
+.subheading {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+ol {
+  padding-left: 20px;
+}
+
+ol li {
+  margin-bottom: 10px;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.important-note {
+  margin-top: 20px;
+  color: red;
+  font-weight: bold;
+}
+
+.important-note p {
+  color: black;
+  font-weight: normal;
+  font-size: 14px;
+  margin: 5px 0 0;
+}
 </style>
