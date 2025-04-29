@@ -1,127 +1,167 @@
 <template>
-    <div class="ruang-buku-tamu">
-      <!-- Tombol Kembali -->
-      <button @click="goBack" class="btn-back">⬅</button>
+  <div class="ruang-buku-tamu">
+    <button @click="goBack" class="btn-back">⬅</button>
 
-      <div class="content-container">
-        <!-- Formulir Pendaftaran -->
-        <div class="form-container">
-          <h2>FORMULIR PENDAFTARAN</h2>
-          <br>
-          <form>
-            <h3 class="section-title">• Data Berkas Persyaratan</h3>
-            <div class="form-grid">
-                
-                <div class="input-container">
-                <label>Akta Kelahiran</label>
-                 <div class="upload-box" @click="triggerFileInput('fileAktaKelahiran')">
-                </div>
-                 <input type="file" ref="fileAktaKelahiran" class="hidden-file-input" @change="handleFileUpload($event, 'fileAktaKelahiran')" />
-                 <p v-if="uploadedFiles.fileAktaKelahiran" class="file-name">{{ uploadedFiles.fileAktaKelahiran.name }}</p>
-                </div>
-
-                <div class="input-container">
-                <label>KTP El-Ayah Kandung</label>
-                 <div class="upload-box" @click="triggerFileInput('fileKTPAyah')">
-                </div>
-                 <input type="file" ref="fileKTPAyah" class="hidden-file-input" @change="handleFileUpload($event, 'fileKTPAyah')" />
-                 <p v-if="uploadedFiles.fileKTPAyah" class="file-name">{{ uploadedFiles.fileKTPAyah.name }}</p>
-                </div>
-
-                <div class="input-container">
-                <label>Kartu Keluarga</label>
-                 <div class="upload-box" @click="triggerFileInput('fileKartuKeluarga')">
-                </div>
-                 <input type="file" ref="fileKartuKeluarga" class="hidden-file-input" @change="handleFileUpload($event, 'fileKartuKeluarga')" />
-                 <p v-if="uploadedFiles.fileKartuKeluarga" class="file-name">{{ uploadedFiles.fileKartuKeluarga.name }}</p>
-                </div>
-
-                <div class="input-container">
-                <label>KTP El-Ibu Kandung</label>
-                 <div class="upload-box" @click="triggerFileInput('fileKTPIbu')">
-                </div>
-                 <input type="file" ref="fileKTPIbu" class="hidden-file-input" @change="handleFileUpload($event, 'fileKTPIbu')" />
-                 <p v-if="uploadedFiles.fileKTPIbu" class="file-name">{{ uploadedFiles.fileKTPIbu.name }}</p>
-                </div>
-
-                
-                <div class="info-box full-width">
-                <p>
-                    Permohonan ini saya ajukan dengan sebenar-benarnya dan apabila dikemudian hari ditemukan pemalsuan data maka SAYA BERSEDIA DIPROSES SECARA HUKUM 
-                    sesuai dengan peraturan perundang-undangan yang berlaku, dan dokumen yang diterbitkan menjadi tidak sah.
-                </p>
-                <!-- Checkbox Persetujuan -->
-            <div class="terms-container">
-              <input type="checkbox" v-model="form.persetujuan" />
-              <label>Saya menyetujui syarat dan ketentuan di atas.</label>
+    <div class="content-container">
+      <div class="form-container">
+        <h2>FORMULIR PENDAFTARAN</h2>
+        <br />
+        <form>
+          <h3 class="section-title">• Data Berkas Persyaratan</h3>
+          <div class="form-grid">
+            <div class="input-container">
+              <label>Akta Kelahiran</label>
+              <div
+                class="upload-box"
+                @click="triggerFileInput('fileAktaKelahiran')"
+              ></div>
+              <input
+                type="file"
+                ref="fileAktaKelahiran"
+                class="hidden-file-input"
+                @change="handleFileUpload($event, 'fileAktaKelahiran')"
+              />
+              <p v-if="uploadedFiles.fileAktaKelahiran" class="file-name">
+                {{ uploadedFiles.fileAktaKelahiran.name }}
+              </p>
             </div>
 
-                </div>
+            <div class="input-container">
+              <label>KTP El-Ayah Kandung</label>
+              <div
+                class="upload-box"
+                @click="triggerFileInput('fileKTPAyah')"
+              ></div>
+              <input
+                type="file"
+                ref="fileKTPAyah"
+                class="hidden-file-input"
+                @change="handleFileUpload($event, 'fileKTPAyah')"
+              />
+              <p v-if="uploadedFiles.fileKTPAyah" class="file-name">
+                {{ uploadedFiles.fileKTPAyah.name }}
+              </p>
+            </div>
 
+            <div class="input-container">
+              <label>Kartu Keluarga</label>
+              <div
+                class="upload-box"
+                @click="triggerFileInput('fileKartuKeluarga')"
+              ></div>
+              <input
+                type="file"
+                ref="fileKartuKeluarga"
+                class="hidden-file-input"
+                @change="handleFileUpload($event, 'fileKartuKeluarga')"
+              />
+              <p v-if="uploadedFiles.fileKartuKeluarga" class="file-name">
+                {{ uploadedFiles.fileKartuKeluarga.name }}
+              </p>
+            </div>
 
-                
+            <div class="input-container">
+              <label>KTP El-Ibu Kandung</label>
+              <div
+                class="upload-box"
+                @click="triggerFileInput('fileKTPIbu')"
+              ></div>
+              <input
+                type="file"
+                ref="fileKTPIbu"
+                class="hidden-file-input"
+                @change="handleFileUpload($event, 'fileKTPIbu')"
+              />
+              <p v-if="uploadedFiles.fileKTPIbu" class="file-name">
+                {{ uploadedFiles.fileKTPIbu.name }}
+              </p>
+            </div>
 
-   
+            <div class="info-box full-width">
+              <p>
+                Permohonan ini saya ajukan dengan sebenar-benarnya dan apabila
+                dikemudian hari ditemukan pemalsuan data maka SAYA BERSEDIA
+                DIPROSES SECARA HUKUM sesuai dengan peraturan perundang-undangan
+                yang berlaku, dan dokumen yang diterbitkan menjadi tidak sah.
+              </p>
+              <div class="terms-container">
+                <input type="checkbox" v-model="form.persetujuan" />
+                <label>Saya menyetujui syarat dan ketentuan di atas.</label>
+              </div>
+            </div>
 
-                 <!-- Tombol Kirim -->
             <div class="button-container">
-              <button type="submit" class="btn-submit" @click="keHalamanKirim">KIRIM</button>
+              <button type="submit" class="btn-submit" @click="keHalamanKirim">
+                KIRIM
+              </button>
             </div>
-
-
-
-           
-            </div>
-          </form>
-        </div>
-
-        <!-- Sidebar (Ditambahkan) -->
-        <aside class="sidebar">
-          <div class="image-container">
-            <img src="@/assets/SidebarLayananKIA.png" alt="Sidebar Informasi" />
           </div>
-        </aside>
+        </form>
       </div>
+
+      <aside class="sidebar">
+        <div class="persyaratan-box">
+          <h2>
+            PERSYARATAN <br /><span>(Penerbitan Kartu Identitas Anak)</span>
+          </h2>
+          <ol>
+            <li>Berumur Kurang dari (tujuh belas) tahun dan belum kawin</li>
+            <li>Kutipan Akta Perkawinan</li>
+            <li>Kartu Keluarga</li>
+            <li>
+              Pas Photo ukuran 3x4 bagi anak usia 5 tahun s/d kurang 17 (tujuh
+              belas) tahun dengan latar merah untuk tahun kelahiran ganjil dan
+              latar biru untuk tahun kelahiran genap
+            </li>
+            <li>Dokumen Perjalanan RI atau Dokumen Perjalanan</li>
+            <li>Kartu izin tinggal tetap bagi WNA</li>
+          </ol>
+          <div class="important-note">
+            <strong>PENTING :</strong>
+            <p>Perhatikan Keaslian Data dan <br />Kelengkapan Formulir !</p>
+          </div>
+        </div>
+      </aside>
     </div>
+  </div>
 </template>
 
 <script>
 export default {
-    name: "LayananKIADuaAAView",
-    data() {
-      return {
-        form: {
-          persetujuan: false,
-        },
-        uploadedFiles: {
-            fileAktaKelahiran: null,
-            fileKTPAyah: null,
-            fileKartuKeluarga: null,
-            fileKTPIbu: null,
-
-    },
-      };
-    },
-    methods: {
-        triggerFileInput(refName) {
-    this.$refs[refName].click();
-  },
-  handleFileUpload(event, fileKey) {
-    this.uploadedFiles[fileKey] = event.target.files[0];
-  },
-      goBack() {
-        this.$router.go(-1);
+  name: "LayananKIADuaAAView",
+  data() {
+    return {
+      form: {
+        persetujuan: false,
       },
-      keHalamanKirim() {
-      this.$router.push('/layanan-online/layanan-kartu-identitas-anak-0-sd-5-tahun-kirim');
+      uploadedFiles: {
+        fileAktaKelahiran: null,
+        fileKTPAyah: null,
+        fileKartuKeluarga: null,
+        fileKTPIbu: null,
+      },
+    };
+  },
+  methods: {
+    triggerFileInput(refName) {
+      this.$refs[refName].click();
     },
-
+    handleFileUpload(event, fileKey) {
+      this.uploadedFiles[fileKey] = event.target.files[0];
     },
+    goBack() {
+      this.$router.go(-1);
+    },
+    keHalamanKirim() {
+      this.$router.push(
+        "/layanan-online/layanan-kartu-identitas-anak-0-sd-5-tahun-kirim"
+      );
+    },
+  },
 };
 </script>
 
 <style scoped>
-/* Tombol Kembali */
 .btn-back {
   margin: 10px;
   padding: 8px 15px;
@@ -131,14 +171,12 @@ export default {
   cursor: pointer;
 }
 
-/* Layout Utama */
 .content-container {
   display: flex;
   justify-content: space-between;
   margin: 20px;
 }
 
-/* Formulir */
 .form-container {
   flex: 2;
   background: white;
@@ -159,7 +197,6 @@ h2 {
   margin-bottom: 15px;
 }
 
-/* Grid Form */
 .form-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -167,7 +204,6 @@ h2 {
   margin-bottom: 20px;
 }
 
-/* Input Styling */
 .input-container {
   display: flex;
   flex-direction: column;
@@ -175,8 +211,8 @@ h2 {
 }
 
 .full-width {
-    grid-column: span 2;
-  }
+  grid-column: span 2;
+}
 
 .input-container input,
 .input-container select {
@@ -192,14 +228,13 @@ h2 {
   color: #666;
 }
 
-/* Agar beberapa input full-width */
 .full-width {
   grid-column: span 2;
 }
 
 .info-box {
   background-color: #fff;
-  border: 2px solid #ccc; /* Border lebih tegas */
+  border: 2px solid #ccc;
   padding: 15px;
   border-radius: 5px;
   font-size: 14px;
@@ -208,20 +243,15 @@ h2 {
   text-align: justify;
 }
 
-/* Container untuk tombol agar di kanan */
 .button-container {
   display: flex;
   justify-content: flex-end;
   margin-top: 10px;
 }
 
-
-
-
-/* Tombol Submit */
 .btn-submit {
   padding: 10px 25px;
-  background-color: #65A5CA;
+  background-color: #65a5ca;
   color: white;
   border: none;
   border-radius: 5px;
@@ -231,6 +261,55 @@ h2 {
 }
 
 .btn-submit:hover {
-  background-color: #A0B6D6;
+  background-color: #a0b6d6;
+}
+
+.persyaratan-box {
+  background-color: #a3d1ed;
+  border-radius: 16px;
+  padding: 25px 30px;
+  color: #000;
+  max-width: 500px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.persyaratan-box h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+h2 span {
+  font-weight: normal;
+  font-size: 18px;
+}
+
+.subheading {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+ol {
+  padding-left: 20px;
+}
+
+ol li {
+  margin-bottom: 10px;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.important-note {
+  margin-top: 20px;
+  color: red;
+  font-weight: bold;
+}
+
+.important-note p {
+  color: black;
+  font-weight: normal;
+  font-size: 14px;
+  margin: 5px 0 0;
 }
 </style>

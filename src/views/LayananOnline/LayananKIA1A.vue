@@ -1,10 +1,9 @@
 <template>
     <div class="ruang-buku-tamu">
-      <!-- Tombol Kembali -->
       <button @click="goBack" class="btn-back">⬅</button>
 
       <div class="content-container">
-        <!-- Formulir Pendaftaran -->
+
         <div class="form-container">
           <h2>FORMULIR PENDAFTARAN</h2>
           <form>
@@ -26,24 +25,38 @@
                 
               </div>
               <div class="input-container">
-                
               </div>
-          
             </div>
-            
-            <!-- Kontainer untuk tombol agar posisinya ke kanan -->
+
             <div class="button-container">
               <button type="submit" class="btn-submit" @click="keHalamanAktaTiga">BERIKUTNYA</button>
             </div>
           </form>
         </div>
 
-        <!-- Sidebar (Ditambahkan) -->
         <aside class="sidebar">
-          <div class="image-container">
-            <img src="@/assets/SidebarLayananKIA.png" alt="Sidebar Informasi" />
+        <div class="persyaratan-box">
+          <h2>
+            PERSYARATAN <br /><span>(Penerbitan Kartu Identitas Anak)</span>
+          </h2>
+          <ol>
+            <li>Berumur Kurang dari (tujuh belas) tahun dan belum kawin</li>
+            <li>Kutipan Akta Perkawinan</li>
+            <li>Kartu Keluarga</li>
+            <li>
+              Pas Photo ukuran 3x4 bagi anak usia 5 tahun s/d kurang 17 (tujuh
+              belas) tahun dengan latar merah untuk tahun kelahiran ganjil dan
+              latar biru untuk tahun kelahiran genap
+            </li>
+            <li>Dokumen Perjalanan RI atau Dokumen Perjalanan</li>
+            <li>Kartu izin tinggal tetap bagi WNA</li>
+          </ol>
+          <div class="important-note">
+            <strong>PENTING :</strong>
+            <p>Perhatikan Keaslian Data dan <br />Kelengkapan Formulir !</p>
           </div>
-        </aside>
+        </div>
+      </aside>
       </div>
     </div>
 </template>
@@ -72,7 +85,6 @@ export default {
 </script>
 
 <style scoped>
-/* Tombol Kembali */
 .btn-back {
   margin: 10px;
   padding: 8px 15px;
@@ -82,14 +94,12 @@ export default {
   cursor: pointer;
 }
 
-/* Layout Utama */
 .content-container {
   display: flex;
   justify-content: space-between;
   margin: 20px;
 }
 
-/* Formulir */
 .form-container {
   flex: 2;
   background: white;
@@ -110,7 +120,6 @@ h2 {
   margin-bottom: 15px;
 }
 
-/* Grid Form */
 .form-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -118,7 +127,6 @@ h2 {
   margin-bottom: 20px;
 }
 
-/* Input Styling */
 .input-container {
   display: flex;
   flex-direction: column;
@@ -139,21 +147,16 @@ h2 {
   color: #666;
 }
 
-/* Agar beberapa input full-width */
 .full-width {
   grid-column: span 2;
 }
 
-/* Container untuk tombol agar di kanan */
 .button-container {
   display: flex;
   justify-content: flex-end;
   margin-top: 10px;
 }
 
-
-
-/* Tombol Submit */
 .btn-submit {
   padding: 10px 25px;
   background-color: #65A5CA;
@@ -167,5 +170,54 @@ h2 {
 
 .btn-submit:hover {
   background-color: #A0B6D6;
+}
+
+.persyaratan-box {
+  background-color: #a3d1ed;
+  border-radius: 16px;
+  padding: 25px 30px;
+  color: #000;
+  max-width: 500px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.persyaratan-box h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+h2 span {
+  font-weight: normal;
+  font-size: 18px;
+}
+
+.subheading {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+ol {
+  padding-left: 20px;
+}
+
+ol li {
+  margin-bottom: 10px;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.important-note {
+  margin-top: 20px;
+  color: red;
+  font-weight: bold;
+}
+
+.important-note p {
+  color: black;
+  font-weight: normal;
+  font-size: 14px;
+  margin: 5px 0 0;
 }
 </style>
