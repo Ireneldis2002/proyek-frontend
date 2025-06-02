@@ -283,7 +283,6 @@ p {
   color: #555;
 }
 
-
 .update {
   margin-top: 40px;
   font-size: 14px;

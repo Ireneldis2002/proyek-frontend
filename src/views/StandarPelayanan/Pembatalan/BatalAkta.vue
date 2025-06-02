@@ -139,10 +139,52 @@
         </div>
       </div>
 
-      <!-- Foto di Sebelah Kanan -->
-      <div class="image-container">
-        <img src="@/assets/SidebarStandar.png" alt="Gambar Profil" />
-      </div>
+      <aside class="sidebar">
+        <div class="logo">
+          <img src="@/assets/Disdukcapil.png" alt="Logo Disdukcapil" />
+        </div>
+
+        <div class="card1">
+          <h3>MOTTO</h3>
+          <p>“Pelayanan Ramah, Mudah, Cepat dan Akuntabel”</p>
+        </div>
+
+        <div class="card2">
+          <h3>KOMITMEN</h3>
+          <ol>
+            <li>Berjanji dan sanggup untuk melaksanakan pelayanan yang</li>
+            <li>Berjanji akan memberikan pelayanan</li>
+            <li>Siap menerima sanksi dari Pimpinan</li>
+          </ol>
+        </div>
+
+        <div class="card3">
+          <h3>MAKLUMAT PELAYANAN</h3>
+          <ol>
+            <li>
+              Berjanji dan memiliki kesanggupan untuk melaksanakan pelayanan
+              publik
+            </li>
+            <li>
+              Memberikan pelayanan publik sesuai dengan kewajiban dan akan
+            </li>
+            <li>
+              Bersedia untuk menerima sanksi dan/atau memberikan kompensasi
+              sesuai dengan ketentuan peraturan
+            </li>
+          </ol>
+        </div>
+
+        <div class="kepala-dinas">
+          <p>
+            KEPALA DINAS <br />KEPENDUDUKAN DAN PENCATATAN SIPIL <br />KABUPATEN
+            ENDE
+          </p>
+          <p class="nama"><strong>Lambertus Sigasare, ST. M.Eng</strong></p>
+          <p class="nip">Pembina Tk. I</p>
+          <p class="nip">NIP. 197510232002121006</p>
+        </div>
+      </aside>
     </div>
     <p class="update">Terakhir Update: 2 Oktober 2024</p>
   </div>
@@ -285,5 +327,108 @@ th {
   background-color: #8bbbd7;
   color: white;
   font-weight: bold;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 350px;
+  background-color: #8bbbd7;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: "Arial", sans-serif;
+}
+
+.logo img {
+  width: 150px;
+  margin-bottom: 30px;
+}
+
+.card1 {
+  background: white;
+  padding: 15px;
+  margin : 0 auto;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  height: 150px;
+}
+
+.card2 {
+  background: white;
+  padding: 15px;
+  margin : 0 auto;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  height: 280px;
+}
+
+.card3 {
+  background: white;
+  padding: 15px;
+  margin : 0 auto;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  height: 420px;
+}
+
+.card h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.card1 h3,
+.card2 h3,
+.card3 h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 30px; 
+  text-align: left;
+}
+
+.card p, .card ol {
+  font-size: 8px;
+  text-align: left;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.card1 p, .card1 li,
+.card2 p, .card2 li,
+.card3 p, .card3 li {
+  text-align: left;
+}
+
+.card ol {
+  padding-left: 18px;
+}
+
+.kepala-dinas {
+  font-size: 18px;
+  color: #333;
+  text-align: center;
+  margin-top: 50px;
+  font-weight: bold;
+}
+
+.kepala-dinas .nama {
+  margin-top: 100px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.kepala-dinas .nip {
+  font-weight: bold;
+  color: #555;
+  font-size: 16px;
 }
 </style>

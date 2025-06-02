@@ -216,7 +216,7 @@ h1 {
   font-weight: bold;
   text-align: center;
   border-radius: 4px 4px 0 0;
-  font-size: 20px; /* Ukuran font header ditingkatkan */
+  font-size: 20px; 
 }
 
 .info-content p {

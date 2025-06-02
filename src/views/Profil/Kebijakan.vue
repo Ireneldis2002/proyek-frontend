@@ -454,7 +454,6 @@ p {
   color: #555;
 }
 
-
 .update {
   margin-top: 40px;
   font-size: 14px;
@@ -465,7 +464,6 @@ p {
   clear: both;
 }
 
-/* Styling Tabel */
 .table-container {
   margin-top: 30px;
 }

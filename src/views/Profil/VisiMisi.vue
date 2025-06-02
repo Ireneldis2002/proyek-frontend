@@ -47,7 +47,6 @@
           <p class="sub-title"><strong>Mulai Menjabat</strong></p>
           <p class="date">7 Agustus 2022</p>
         </div>
-
         <div class="info-section">
           <div class="info-header">Informasi Pribadi</div>
           <div class="info-content">
@@ -56,14 +55,12 @@
             <p><strong>Anak</strong> <span>Sigasare</span></p>
           </div>
         </div>
-
         <div class="info-section">
           <div class="info-header">Riwayat Pendidikan</div>
           <div class="info-content">
             <p>- (Tambahkan Riwayat Pendidikan di sini) -</p>
           </div>
         </div>
-
         <div class="info-section">
           <div class="info-header">Riwayat Jabatan</div>
           <div class="info-content">
@@ -89,7 +86,7 @@ export default {
 
 .profil-visi-misi {
   max-width: 100%;
-  padding: 20px 50px; /* Tambahkan padding untuk memberi ruang */
+  padding: 20px 50px; 
 }
 
 h1 {
@@ -110,39 +107,13 @@ h1 {
   flex: 3;
   display: flex;
   flex-direction: column;
-  gap: 40px; /* Sesuaikan jarak antar elemen */
-  padding-left: 20px; /* Pastikan tidak terlalu mepet ke kiri */
-}
-
-.image-container {
-  flex: 1;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
-  padding-right: 20px;
-}
-
-.image-container img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  margin-right: 0px;
+  gap: 40px; 
+  padding-left: 20px; 
 }
 
 .content-item {
-  position: relative; /* Pastikan ini ada agar .line bisa absolute terhadapnya */
-  padding-left: 25px; /* Beri ruang untuk garis */
-}
-
-.line {
-  width: 5px;
-  height: 60px; /* Atur tinggi agar garis terlihat jelas */
-  background-color: #8bbbd7;
-  position: absolute;
-  left: 0;
-  top: 0;
-  border-radius: 3px;
+  position: relative;
+  padding-left: 25px; 
 }
 
 h2 {

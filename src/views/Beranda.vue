@@ -114,8 +114,8 @@ export default {
     return {
       images: [
         require("@/assets/Carrousel.png"),
-        require("@/assets/logo.png"),
-        require("@/assets/LogoDukcapil.png"),
+        require("@/assets/Carrousel1.jpg"),
+        require("@/assets/Carrousel2.jpg"),
       ],
       currentImage: 0,
     };
@@ -168,7 +168,6 @@ body {
   background-color: #ffffff;
 }
 
-/* gambar */
 .responsive-image {
   width: 100%;
   height: auto;
@@ -177,13 +176,11 @@ body {
   margin: 10px 0;
 }
 
-/* carousel */
 .carousel {
   position: relative;
   text-align: center;
 }
 
-/* tombol panah */
 .arrow {
   position: absolute;
   top: 50%;
@@ -206,6 +203,7 @@ body {
 }
 
 /* Berita */
+
 .latest-news {
   text-align: left;
   margin: 20px 0;
@@ -253,9 +251,9 @@ body {
 
 .menu-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Mengatur grid responsif */
-  gap: 30px; /* Menambahkan jarak antar kartu */
-  padding: 20px; /* Memberikan ruang di sekitar grid */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+  gap: 30px; 
+  padding: 20px; 
 }
 
 .menu-item {

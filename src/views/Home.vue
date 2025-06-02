@@ -1,6 +1,5 @@
 <template>
   <div class="home">
-    <!-- Bagian Header -->
     <header class="header">
       <div class="logo-container">
         <img
@@ -14,7 +13,6 @@
           Kabupaten Ende
         </h1>
       </div>
-      <!-- Bagian Pencarian -->
       <div class="search-container">
         <input type="text" placeholder="Cari..." class="search-input" />
         <button class="search-button">🔍</button>
@@ -639,7 +637,7 @@ export default {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  font-family: "Arial", sans-serif; /* Gaya font untuk keseluruhan */
+  font-family: "Arial", sans-serif;
 }
 
 .header {
@@ -673,12 +671,12 @@ h1 {
 h2 {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  font-size: 26px; /* Ukuran font lebih kecil dari 28px ke 22px */
+  font-size: 26px; 
 }
 
 p {
   font-family: "Open Sans", sans-serif;
-  font-size: 20px; /* Ukuran font lebih kecil */
+  font-size: 20px; 
 }
 
 .secondary-text {
@@ -694,7 +692,6 @@ p {
   width: 250px;
   margin-right: 20px;
 }
-
 .search-input {
   padding: 8px 35px 8px 8px;
   border: 2px solid white;
@@ -704,11 +701,9 @@ p {
   width: 100%;
   box-sizing: border-box;
 }
-
 .search-input::placeholder {
   color: black;
 }
-
 .search-button {
   position: absolute;
   right: 10px;
@@ -721,7 +716,6 @@ p {
   cursor: pointer;
   font-size: 16px;
 }
-
 .search-button:hover {
   color: #ffcc00;
 }
@@ -770,7 +764,6 @@ p {
   z-index: 1000;
   transition: opacity 0.2s ease;
 }
-
 .dropdown-menu li a {
   padding: 8px;
   display: block;
@@ -778,20 +771,16 @@ p {
   margin-left: 10px;
   text-align: center;
 }
-
 .dropdown-menu li a:hover {
   background-color: rgba(139, 187, 215, 0.5);
   color: black !important;
 }
-
 .dropdown.active .dropdown-menu {
   display: block;
 }
-
 .dropdown:hover .dropdown-menu {
   display: block;
 }
-
 .navbar ul li a:hover {
   color: black;
   text-decoration: underline;
@@ -887,8 +876,6 @@ p {
   font-size: 30px; 
 }
 
-
-/* Footer */
 .footer {
   background-color: #8bbbd7;
   text-align: center;
@@ -902,7 +889,6 @@ p {
   font-size: 16px; 
 }
 
-/* Ikon di footer */
 .footer .social-icon {
   font-size: 25px;
 }
