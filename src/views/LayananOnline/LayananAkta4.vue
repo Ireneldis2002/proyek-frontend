@@ -283,7 +283,6 @@ export default {
 </script>
 
 <style scoped>
-
 .btn-back {
   margin: 10px;
   padding: 8px 15px;

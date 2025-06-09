@@ -44,7 +44,6 @@
                 <option value="lain">Lain-lain</option>
               </select>
             </div>
-
             <div class="input-container full-width">
               <label>Tuliskan Permasalahan</label>
               <textarea v-model="form.permasalahan" required></textarea>

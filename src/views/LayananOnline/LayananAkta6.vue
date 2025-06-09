@@ -55,8 +55,7 @@
               <button type="submit" class="btn-submit">KIRIM</button>
             </div>
 
-    
-            <!-- MODAL VALIDASI -->
+
         <div :style="{ display: showModal ? 'flex' : 'none' }" class="modal-overlay">
             <div class="modal">
                 <h3 class="modal-title">TERIMAKASIH TELAH MENGISI FORMULIR</h3>
@@ -121,11 +120,11 @@ export default {
         uploadedFiles: {
             fileDataPendukung: null,
     },
-    showModal: false, // Menyembunyikan modal di awal
+    showModal: false, 
       };
     },
     mounted() {
-    this.showModal = true; // Modal langsung muncul setelah halaman dimuat
+    this.showModal = true; 
   },
   methods: {
     closeModal() {

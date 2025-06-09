@@ -13,42 +13,35 @@
                 type="email"
                 placeholder="Alamat email"
                 v-model="form.email"
-                required
-              />
+                required/>
             </div>
             <div class="input-container">
               <input
                 type="text"
                 placeholder="Nama Lengkap"
                 v-model="form.nama"
-                required
-              />
+                required/>
             </div>
-
             <div class="input-container">
               <input
                 type="text"
                 placeholder="NIK"
                 v-model="form.nik"
-                required
-              />
+                required/>
             </div>
             <div class="input-container">
               <input
                 type="text"
                 placeholder="Nomor Hp/Wa"
                 v-model="form.noHp"
-                required
-              />
+                required/>
             </div>
-
             <div class="input-container full-width">
               <input
                 type="text"
                 placeholder="Alamat Lengkap"
                 v-model="form.alamat"
-                required
-              />
+                required/>
             </div>
           </div>
 

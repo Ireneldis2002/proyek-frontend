@@ -1,7 +1,7 @@
 <template>
   <h1>Layanan Online</h1>
   <div class="container">
-    <!-- 4 Menu Items Section -->
+
     <section class="menu-grid">
       <div class="card">
         <img
@@ -174,60 +174,11 @@ h1 {
   margin-top: 20px;
 }
 
-/* Grid Layanan */
 .menu-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   flex: 1;
-}
-
-.menu-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  background-color: white;
-  cursor: pointer;
-}
-
-.menu-item img {
-  max-width: 80%;
-  height: auto;
-  border-radius: 5px;
-}
-
-/* Sidebar Persyaratan */
-.persyaratan {
-  width: 300px;
-  border: 1px solid #ddd;
-  padding: 15px;
-  background-color: white;
-  border-radius: 10px;
-}
-
-.persyaratan h2 {
-  font-size: 22px;
-  text-align: center;
-  margin-bottom: 5px;
-}
-
-.persyaratan hr {
-  border: 1px solid #ddd;
-}
-
-.persyaratan ol {
-  padding-left: 20px;
-}
-
-.persyaratan li {
-  font-size: 20px;
-  margin-bottom: 8px;
-  color: #333;
-  line-height: 1.5;
 }
 
 .card {
@@ -279,6 +230,35 @@ h1 {
   background: #8bbbd7;
 }
 
+/* Sidebar Persyaratan */
+.persyaratan {
+  width: 300px;
+  border: 1px solid #ddd;
+  padding: 15px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.persyaratan h2 {
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.persyaratan hr {
+  border: 1px solid #ddd;
+}
+
+.persyaratan ol {
+  padding-left: 20px;
+}
+
+.persyaratan li {
+  font-size: 20px;
+  margin-bottom: 8px;
+  color: #333;
+  line-height: 1.5;
+}
 
 
 </style>

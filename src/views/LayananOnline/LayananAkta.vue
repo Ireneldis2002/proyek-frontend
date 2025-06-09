@@ -51,7 +51,6 @@
               />
             </div>
           </div>
-
           <div class="button-container">
             <button type="submit" class="btn-submit" @click="keHalamanAktaDua">
               BERIKUTNYA

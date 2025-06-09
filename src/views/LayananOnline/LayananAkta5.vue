@@ -1,68 +1,82 @@
 <template>
-    <div class="ruang-buku-tamu">
-      <!-- Tombol Kembali -->
-      <button @click="goBack" class="btn-back">⬅</button>
+  <div class="ruang-buku-tamu">
+    <!-- Tombol Kembali -->
+    <button @click="goBack" class="btn-back">⬅</button>
 
-      <div class="content-container">
-        <!-- Formulir Pendaftaran -->
-        <div class="form-container">
-          <h2>FORMULIR PENDAFTARAN</h2>
-          <br>
-          <form>
-            <h3 class="section-title">• Data Pendukung Lainnya</h3>
-            <div class="form-grid">
-                
-                <div class="input-container">
-                <label>Berkas Data Pendukung</label>
-                 <div class="upload-box" @click="triggerFileInput('fileDataPendukung')">
-                </div>
-                 <input type="file" ref="fileDataPendukung" class="hidden-file-input" @change="handleFileUpload($event, 'fileDataPendukung')" />
-                 <p v-if="uploadedFiles.fileDataPendukung" class="file-name">{{ uploadedFiles.fileDataPendukung.name }}</p>
-                 <p class="help-text">*Catatan : Isi Jika terdapat perbedaan data diri yang dimohonkan, contoh yang bisa dijadikan pendukung antara lain : IJazah, Buku/Akta Nikah, Raport, dsb. JIka tidak ada abaikan (Anda bisa Upload lebih dari satu dokumen)</p>
-                </div>
-
-                
-                <div class="input-container">
-                
-                </div>
-
-                <div class="info-box">
-                <p>
-                Sebelum anda menyetujui, mohon perhatiannya: Kami akan meng-verifikasi dan meng-validasi formulir elektronik yang anda isi beserta berkas persyaratan yang anda upload. Jika ternyata ditemukan tidak lengkap atau ada perbedaan nama, maka kami akan menghubungi via nomor WhatsApp yang anda daftar. 
-                 Untuk pengambilan dokumen Akta Kelahiran yang sudah jadi pada kantor Dukcapil, silakan membawa serta berkas persyaratan yang asli. Jika kami merasa formulir elektronik yang anda kirim dan berkas persyaratan yang anda kirim ternyata lengkap maka kami akan mengirim softcopy file Akta Kelahiran ke email atau nomor WhatsApp yang terdaftar. 
-                Silakan anda print sendiri menggunakan kertas putih A4 / 80 gram dokumen softcopy itu, karena sudah dilengkapi Barcode. Untuk mengecek keaslian data bisa scan menggunakan aplikasi android QR Code atau ScanMe yang bisa diunduh secara gratis di Play Store.
-                </p>
-                </div>
-
-                <div class="input-container">
-                
+    <div class="content-container">
+      <!-- Formulir Pendaftaran -->
+      <div class="form-container">
+        <h2>FORMULIR PENDAFTARAN</h2>
+        <br />
+        <form>
+          <h3 class="section-title">• Data Pendukung Lainnya</h3>
+          <div class="form-grid">
+            <div class="input-container">
+              <label>Berkas Data Pendukung</label>
+              <div
+                class="upload-box"
+                @click="triggerFileInput('fileDataPendukung')"
+              ></div>
+              <input
+                type="file"
+                ref="fileDataPendukung"
+                class="hidden-file-input"
+                @change="handleFileUpload($event, 'fileDataPendukung')"
+              />
+              <p v-if="uploadedFiles.fileDataPendukung" class="file-name">
+                {{ uploadedFiles.fileDataPendukung.name }}
+              </p>
+              <p class="help-text">
+                *Catatan : Isi Jika terdapat perbedaan data diri yang
+                dimohonkan, contoh yang bisa dijadikan pendukung antara lain :
+                IJazah, Buku/Akta Nikah, Raport, dsb. JIka tidak ada abaikan
+                (Anda bisa Upload lebih dari satu dokumen)
+              </p>
             </div>
 
+            <div class="input-container"></div>
 
+            <div class="info-box">
+              <p>
+                Sebelum anda menyetujui, mohon perhatiannya: Kami akan
+                meng-verifikasi dan meng-validasi formulir elektronik yang anda
+                isi beserta berkas persyaratan yang anda upload. Jika ternyata
+                ditemukan tidak lengkap atau ada perbedaan nama, maka kami akan
+                menghubungi via nomor WhatsApp yang anda daftar. Untuk
+                pengambilan dokumen Akta Kelahiran yang sudah jadi pada kantor
+                Dukcapil, silakan membawa serta berkas persyaratan yang asli.
+                Jika kami merasa formulir elektronik yang anda kirim dan berkas
+                persyaratan yang anda kirim ternyata lengkap maka kami akan
+                mengirim softcopy file Akta Kelahiran ke email atau nomor
+                WhatsApp yang terdaftar. Silakan anda print sendiri menggunakan
+                kertas putih A4 / 80 gram dokumen softcopy itu, karena sudah
+                dilengkapi Barcode. Untuk mengecek keaslian data bisa scan
+                menggunakan aplikasi android QR Code atau ScanMe yang bisa
+                diunduh secara gratis di Play Store.
+              </p>
+            </div>
 
-                <!-- Checkbox Persetujuan -->
+            <div class="input-container"></div>
             <div class="terms-container">
               <input type="checkbox" v-model="form.persetujuan" />
               <label>Saya menyetujui syarat dan ketentuan di atas.</label>
             </div>
 
-            <div class="input-container">
-                
-            </div>
-
-                 <!-- Tombol Kirim -->
+            <div class="input-container"></div>
             <div class="button-container">
-              <button type="submit" class="btn-submit" @click="keHalamanAktaEnam">KIRIM</button>
+              <button
+                type="submit"
+                class="btn-submit"
+                @click="keHalamanAktaEnam"
+              >
+                KIRIM
+              </button>
             </div>
+          </div>
+        </form>
+      </div>
 
-
-
-           
-            </div>
-          </form>
-        </div>
-
-        <aside class="sidebar">
+      <aside class="sidebar">
         <div class="persyaratan-box">
           <h2>PERSYARATAN <br /><span>(Pencatatan Kelahiran)</span></h2>
           <p class="subheading">Pencatatan Kelahiran WNI :</p>
@@ -94,46 +108,41 @@
           </div>
         </div>
       </aside>
-      </div>
     </div>
+  </div>
 </template>
 
 <script>
 export default {
-    name: "LayananAktaLimaView",
-    data() {
-      return {
-        form: {
-          persetujuan: false,
-        },
-        uploadedFiles: {
-            fileDataPendukung: null,
-    },
-      };
-    },
-    methods: {
-        triggerFileInput(refName) {
-    this.$refs[refName].click();
-  },
-  handleFileUpload(event, fileKey) {
-    this.uploadedFiles[fileKey] = event.target.files[0];
-  },
-      goBack() {
-        this.$router.go(-1);
+  name: "LayananAktaLimaView",
+  data() {
+    return {
+      form: {
+        persetujuan: false,
       },
-      keHalamanAktaEnam() {
-      this.$router.push('/layanan-online/layanan-akta-kelahiran-kirim');
+      uploadedFiles: {
+        fileDataPendukung: null,
+      },
+    };
+  },
+  methods: {
+    triggerFileInput(refName) {
+      this.$refs[refName].click();
     },
-
+    handleFileUpload(event, fileKey) {
+      this.uploadedFiles[fileKey] = event.target.files[0];
     },
-
-
+    goBack() {
+      this.$router.go(-1);
+    },
+    keHalamanAktaEnam() {
+      this.$router.push("/layanan-online/layanan-akta-kelahiran-kirim");
+    },
+  },
 };
-
 </script>
 
 <style scoped>
-
 .btn-back {
   margin: 10px;
   padding: 8px 15px;
@@ -155,7 +164,7 @@ export default {
   background: white;
   padding: 30px;
   border-radius: 10px;
-  border: 2px solid #999; 
+  border: 2px solid #999;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
   position: relative;
 }
@@ -211,7 +220,7 @@ export default {
 
 .info-box {
   background-color: #fff;
-  border: 2px solid #ccc; 
+  border: 2px solid #ccc;
   padding: 15px;
   border-radius: 5px;
   font-size: 14px;
@@ -240,7 +249,7 @@ export default {
 }
 
 .btn-submit:hover {
-  background-color: #A0B6D6;
+  background-color: #a0b6d6;
 }
 
 .persyaratan-box {
